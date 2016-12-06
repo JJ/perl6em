@@ -12,3 +12,32 @@
 *** Teaching programming to (almost) non-programmers.
 *** Contemplate the possibilities of Perl 6 as a beginner's language.
 *** Show the beauty and craft of programming.
+*** Use project-based learning throughout and flipped-learning techniques.
+
+** 0 - Design thinking
+
+Source https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38
+
+*** Empathization
+
+Find users, find out about them, care about them, know their stories. Maybe you are the user, maybe it's someone close to you.
+
+*** Definition
+
+Define the challenge, what you want to do, express the problem.
+
+*** Ideate
+
+Try to find out the solution to the problems your users have. 
+
+*** Prototype
+
+We will transition to actually doing something, incrementally.
+
+*** Test
+
+If you are the user yourself, try it out. See if it is useful as intended. 
+
+
+
+
