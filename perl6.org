@@ -1,0 +1,14 @@
+*Perl 6, the musical
+
+** ℵ - Principles
+
+*** Learning should be fun and engaging: learn by doing.
+*** You are the master of your learning process, and tools, and outcome. 
+*** Learning never stops.
+*** Learning is a two-way process. There is no professor, no student: learning happens ideally in a community. 
+
+** α - Motivation
+
+*** Teaching programming to (almost) non-programmers.
+*** Contemplate the possibilities of Perl 6 as a beginner's language.
+*** Show the beauty and craft of programming.
