@@ -1,3 +1,14 @@
 * Sessions
 
 ** 1. Empathy session (30 minutes)
+** 2. Ideas session (30 minutes)
+** 3. Tools (30 minutes+)
+
+Set up tools, starting with the editor. Atom, emacs, anything like that.
+** 4. Perl 6 (30 minutes)
+
+Set it up, understand the REPL. 
+
+** 5. What is free software (30 minutes)
+
+** 6. Teamwork with git (30 minutes)
