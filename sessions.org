@@ -7,6 +7,8 @@ Took place Dec 6th, 11:30AM.
 
 Dec 8th, 11:00 AM. 
 
+Let's go into the ideation phase, while not leaving the immersion phase http://www.mjvinnovation.com/blog/three-phases-design-thinking-immersion-ideation-prototyping
+
 ** 3. Tools (30 minutes+)
 
 Set up tools, starting with the editor. Atom, emacs, anything like that.
