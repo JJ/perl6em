@@ -1,7 +1,12 @@
 * Sessions
 
 ** 1. Empathy session (30 minutes)
+
+Took place Dec 6th, 11:30AM. 
 ** 2. Ideas session (30 minutes)
+
+Dec 8th, 11:00 AM. 
+
 ** 3. Tools (30 minutes+)
 
 Set up tools, starting with the editor. Atom, emacs, anything like that.
