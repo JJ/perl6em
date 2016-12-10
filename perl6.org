@@ -55,6 +55,11 @@ prototyping go hand in hand.
 
 ** 1 - The tools 
 
+This part will not be leading away from the design thinking mindset,
+but actually will be getting into the last phases of it. Whatever idea
+you had in mind will have to be kept stashed to go back to it whenever
+you need it. 
+
 
 
 
