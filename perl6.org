@@ -24,19 +24,34 @@ Find users, find out about them, care about them, know their stories. Maybe you 
 
 *** Definition
 
-Define the challenge, what you want to do, express the problem.
+Define the challenge, what you want to do, express the problem. This
+phase can be merged with the next one, since it is difficult to define
+the problem without recourse about how you are going to solve the
+problem itself. 
 
 *** Ideate
 
 Try to find out the solution to the problems your users have. 
 
+
+In this phase you are supposed to produce ideas to solve the
+problem. There will be no restriction other than whatever is required
+by your target. You might want to create problems that imply certain
+devices and not others, or solutions that cost no more than a certain
+amount of money. 
+
 *** Prototype
 
-We will transition to actually doing something, incrementally.
+We will transition to actually doing something, incrementally. And
+this is a phase, together with the following one, that is actually in
+the engineering realm, so we are in familiar ground here. 
 
 *** Test
 
-If you are the user yourself, try it out. See if it is useful as intended. 
+If you are the user yourself, try it out. See if it is useful as
+intended. Actually, test-driven design dictates that you cannot
+actually prototype without testing in advance. So testing and
+prototyping go hand in hand. 
 
 
 
