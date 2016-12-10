@@ -11,7 +11,9 @@ Let's go into the ideation phase, while not leaving the immersion phase http://w
 
 ** 3. Tools (30 minutes+)
 
-Set up tools, starting with the editor. Atom, emacs, anything like that.
+Set up tools, starting with the editor. Atom, emacs, anything like
+that, command line, how to work with it, minimal Linux, which is the
+environment of choice. 
 ** 4. Perl 6 (30 minutes)
 
 Set it up, understand the REPL. 
