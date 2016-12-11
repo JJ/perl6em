@@ -58,8 +58,38 @@ prototyping go hand in hand.
 This part will not be leading away from the design thinking mindset,
 but actually will be getting into the last phases of it. Whatever idea
 you had in mind will have to be kept stashed to go back to it whenever
-you need it. 
+you need it. In fact, we are entering the phase called /prototyping/,
+or seen in another way, you are trying to solve a problem for a target
+audience, yourself, by choosing the right tools. 
 
+In this phase you will find that there's no perfect tool for doing
+everything.
 
+=Although the combination Linux + Emacs comes pretty close= 
+
+Let's start with the operating system. That would be Linux. Whew, that
+was short.
+
+*** Shells 
+
+Then, the command line interpreter, also called /shell/. This might seem like a given, but
+in fact different command line interpreters have different
+capabilities. In fact, even the [[https://www.gnu.org/software/bash/][humble bash]] has
+interesting capabilities you can use. Main thing you want to tap is
+the possibility of displaying interesting information in the command
+line, such as the directory you are working on or, later on, the
+branch of the repository you are in. And, in that sense, 
+there are quite a few choices here, but the main
+thing about them is the possibility of /theming/ them, that is, making
+a configuration that allows, mostly, find the information we mention
+above by just selecting a /theme/. In that sense [[http://zsh.sourceforge.net/][zsh]] and [[https://fishshell.com/][fish]] are very
+strong contenders. Install them the usual way, and then select a theme
+that goes easily with your programming habits;
+[[https://github.com/robbyrussell/oh-my-zsh][Oh My Zsh]] or [[https://github.com/Bash-it/bash-it][bash-it]] are good places to start. 
+
+Play a bit with the themes or options until you find one with all the
+colors you want. And then come back here for the...
+
+*** Editors. 
 
 
