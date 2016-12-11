@@ -1,15 +1,27 @@
 * Sessions
 
 ** 1. Empathy session (30 minutes)
+   :PROPERTIES:
+   :Chapter:  0
+   :Tools:    Pen and paper
+   :END:
 
 Took place Dec 6th, 11:30AM. 
 ** 2. Ideas session (30 minutes)
+   :PROPERTIES:
+   :Chapter:  0
+   :Tools:    Pen and paper
+   :END:
 
 Dec 8th, 11:00 AM. 
 
 Let's go into the ideation phase, while not leaving the immersion phase http://www.mjvinnovation.com/blog/three-phases-design-thinking-immersion-ideation-prototyping
 
 ** 3. Tools (30 minutes+)
+   :PROPERTIES:
+   :Tools:    Laptop
+   :Chapter:  1
+   :END:
 
 Set up tools, starting with the editor. Atom, emacs, anything like
 that, command line, how to work with it, minimal Linux, which is the
