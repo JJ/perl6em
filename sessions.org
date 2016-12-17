@@ -30,6 +30,8 @@ environment of choice.
 
 Set it up, understand the REPL. 
 
+Install rakudobrew and start to work with it. Class itself took like 15 minutes, and the rest was devoted to compiling latest version of MoarVM. Note: the $ in the documentation can be mistaken for a command. 
+
 ** 5. What is free software (30 minutes)
 
 ** 6. Teamwork with git (30 minutes)
