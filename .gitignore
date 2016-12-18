@@ -23,3 +23,5 @@ nytprof.out
 auto/
 *.pdf
 *.tex
+*.aux
+*.log
