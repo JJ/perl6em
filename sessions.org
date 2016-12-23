@@ -57,6 +57,16 @@ learn and use GitHub as a place to look for code, and how to fork a
 repository to work on it. Pull requests, if time allows, if it does
 not, let's yield to the next session.
 
+*** Actual development
+
+Sign up for GitHub, create a repository and actually *do nothing* with
+it. Look up Perl6 and other repos, and modify them and create pull
+requests. 
+
+Unexpected hurdles (actually I have found this before): giving the
+repository a name, finding something to do a pull request, things like
+that. 
+
 ** 7. What we know so far
 
 Writeup of what we have learned so far and what we want to
