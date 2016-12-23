@@ -33,6 +33,7 @@ Set it up, understand the REPL.
 Install rakudobrew and start to work with it. Class itself took like 15 minutes, and the rest was devoted to compiling latest version of MoarVM. Note: the $ in the documentation can be mistaken for a command. 
 
 ** 5. What is free software (30 minutes)
+
 Probably a good talk for a Sunday morning. What is free software and
 free licenses, what they mean, what it's like to create and produce
 free software, why everything we do when learning a language should be
@@ -55,3 +56,8 @@ least a license, for the work that will be done. A side effect is to
 learn and use GitHub as a place to look for code, and how to fork a
 repository to work on it. Pull requests, if time allows, if it does
 not, let's yield to the next session.
+
+** 7. What we know so far
+
+Writeup of what we have learned so far and what we want to
+learn. Probably "home" assignment. 
