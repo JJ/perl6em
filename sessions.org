@@ -44,3 +44,14 @@ licenses here are and what we should do about it.
 
 
 ** 6. Teamwork with git (30 minutes)
+
+The first part of this session should be used to create an ID with
+GitHub or, if that's created already, to create repositories that will
+be used to host the assignments and other tests. We will also learn to
+collaborate using Markdown. 
+
+An issue in this session is to learn to use the correct license, or at
+least a license, for the work that will be done. A side effect is to
+learn and use GitHub as a place to look for code, and how to fork a
+repository to work on it. Pull requests, if time allows, if it does
+not, let's yield to the next session.
