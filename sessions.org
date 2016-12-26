@@ -92,3 +92,16 @@ install linenoise with
 #+BEGIN_SRC bash
 zef install Linenoise
 #+END_SRC
+
+Explain Unicode and what it means for modern computing. Test some
+Unicode codepoints. 
+
+Play with operators for a while. 
+
+Hint also at types and why ar they different and what it means for
+operations. use =.WHAT=, as in
+
+
+#+BEGIN_SRC perl6
+
+#+END_SRC
