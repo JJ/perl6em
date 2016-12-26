@@ -103,5 +103,8 @@ operations. use =.WHAT=, as in
 
 
 #+BEGIN_SRC perl6
-
+π.WHAT
 #+END_SRC
+
+You'll have to find a way to type π. Probably a good option is to do it inside emacs. 
+
