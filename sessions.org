@@ -83,4 +83,12 @@ learn. Probably "home" assignment.
  without a real hint of what Perl6, or for that matter any other
  language, is about. 
 
-** Let's work with data.
+** Let's work with the REPL
+
+First, do some basic stuff, calculator style. Then realize that you
+can't go back to what we wrote before to correct or whatever; then
+install linenoise with
+
+#+BEGIN_SRC bash
+zef install Linenoise
+#+END_SRC
