@@ -71,3 +71,16 @@ that.
 
 Writeup of what we have learned so far and what we want to
 learn. Probably "home" assignment. 
+
+*Actual*: we have talked about free software, a bit about Perl6, a bit
+ about teamwork... Some are getting impatient over the actual lack of
+ learning Perl6. So we'll have to go to that soon. Also talked a bit
+ about [[https://github.com/ajs/perl6-Math-Sequences][Working on a
+ Library about sequences]]. A pull request that, BTW, was accepted
+ just today, on Christmas Day.
+
+*Conclusions*: maybe we are out-zenning a bit with doing 7 sessions
+ without a real hint of what Perl6, or for that matter any other
+ language, is about. 
+
+** Let's work with data.
