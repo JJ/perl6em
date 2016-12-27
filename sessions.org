@@ -134,7 +134,11 @@ operations. use =.WHAT=, as in
 
 You'll have to find a way to type π. Probably a good option is to do
 it inside emacs. But the most straightforward is to look for "unicode
-symbols" in Google and copy/paste it.
+symbols" in Google and copy/paste it. You can do the same with other Unicode symbols such as ⅓ or ⅕. 
+
+*** Actual development
+
+We have discovered that =rakudobrew= was not properly installed and had a lot of fun after configuring a Compose key in Gnome. [[https://help.ubuntu.com/community/ComposeKey][Here's how to do it.]]
 
 
 
