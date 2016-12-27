@@ -1,3 +1,7 @@
+#+latex_compiler: xelatex
+#+latex_header: \usepackage{libertine}
+#+latex_header: \usepackage{unicode-math}
+
 * Perl 6, the musical
 
 ** ℵ - Principles
@@ -160,8 +164,8 @@ zef install Linenoise
 #+END_SRC
 
 You can use the usual arithmetic operators =+,-,*,/= but Perl6 adds
-two typographic operators, ÷ and × (this ones are produced in the
-Spanish keyboard with May+AltGr+, or .), like
+two typographic operators, ÷ and × (these ones are produced in the
+Spanish keyboard with May+AltGr+ comma or period), like
 
 #+BEGIN_SRC perl6
 sin(π/3) × sin(π/3) + cos(π/3) × cos(π/3)
@@ -212,6 +216,11 @@ sin(π/3)² + cos(π/3)² + " is 1"
 will yield this error
 #+CAPTION: Errorred expression in the REPL
 #+NAME:   fig:chap2-expression
-[[./img/expression-error.jpg]]
+[[./img/expression-error.png
+]]
 
 
+# Local Variables:
+# org-latex-inputenc-alist: (("utf8" . "utf8x"))
+# eval: (setq org-latex-default-packages-alist (cons '("mathletters" "ucs" nil) org-latex-default-packages-alist))
+# End:
