@@ -1,6 +1,25 @@
+#+name: setup
+#+begin_src emacs-lisp :exports none
+(add-to-list 'org-latex-classes
+           '("perl6"
+              "\\documentclass{article}
+	      [NO-DEFAULT-PACKAGES]
+              [NO-PACKAGES]
+              [NO-EXTRA]"
+	      ("\\verbatim{%s}" . "\\alttt*{%s}")
+              ("\\section{%s}" . "\\section*{%s}")
+              ("\\subsection{%s}" . "\\subsection*{%s}")
+              ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+              ("\\paragraph{%s}" . "\\paragraph*{%s}")
+              ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))
+)
+#+end_src
+
+#+LaTeX_CLASS: perl6
 #+latex_compiler: xelatex
 #+latex_header: \usepackage{libertine}
 #+latex_header: \usepackage{unicode-math}
+#+latex_header: \usepackage{alttt}
 
 * Perl 6, the musical
 
@@ -220,7 +239,3 @@ will yield this error
 ]]
 
 
-# Local Variables:
-# org-latex-inputenc-alist: (("utf8" . "utf8x"))
-# eval: (setq org-latex-default-packages-alist (cons '("mathletters" "ucs" nil) org-latex-default-packages-alist))
-# End:
