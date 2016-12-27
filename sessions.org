@@ -105,7 +105,7 @@ Maybe we are out-zenning a bit with doing 7 sessions
  without a real hint of what Perl6, or for that matter any other
  language, is about. 
 
-** Let's work with the REPL
+** 8. Let's work with the REPL
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  2
