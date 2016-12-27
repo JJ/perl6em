@@ -1,4 +1,6 @@
 #+latex_compiler: xelatex 
+#+latex_header: \usepackage{libertine}
+#+latex_header: \usepackage{unicode-math}
 
 * Sessions
   
@@ -84,13 +86,14 @@ that.
 
 
 ** 7. What we know so far
-
-Writeup of what we have learned so far and what we want to
-learn. Probably "home" assignment. 
    :PROPERTIES:
    :Tools:    Pen and paper 
    :Chapter:  1
    :END:
+
+Writeup of what we have learned so far and what we want to
+learn. Probably "home" assignment. 
+
 
 *** Actual development
 

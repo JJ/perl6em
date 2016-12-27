@@ -1,10 +1,7 @@
-
-#+LaTeX_CLASS: perl6
 #+latex_compiler: xelatex
 #+latex_header: \usepackage{libertine}
 #+latex_header: \usepackage{unicode-math}
 #+latex_header: \usepackage{alltt}
-#+latex_header: \usepackage{hyperref}
 
 * Perl 6, the musical
 
