@@ -107,3 +107,65 @@ from the editor itself, and allow running and debugging. It has got
 all that, so that will be it. 
 
 ** 2 - The expressions
+
+The first thing you need to know about a language, any language, is
+how to compute things. Compute in the more general sense: combine
+things to give other things. This, in general, is called expression,
+which, also in general, is a bunch of symbols linked by *operators*. 
+
+Generally, modern computer languages are able to work with many
+different kind of symbols, and Perl6 is no exception. Let's start with
+that.
+
+*** REPLs and how to use them as glorified calculators
+
+A
+[[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][REPL]
+is a Read-Eval-Print loop. it is a program included with most
+interpreted languages, that presents a command-line prompt and into
+which you can type expressions, and, later on, full statements. But,
+for the time being, let's type
+
+#+BEGIN_SRC bash
+perl6
+#+END_SRC
+
+And we will be into a perl6 REPL into which you can type Perl6 stuff.
+
+Let's try the simplest thing:
+
+#+BEGIN_SRC perl6
+To exit type 'exit' or '^D'
+> sin(π/2)
+#+END_SRC
+
+You will have to find a way to type that π, by copy/pasting it from
+some website or google or right this. It will return the sine of π/2,
+which, as you know, is 1. 
+
+And this is cool, because only some languages are able to handle this
+kind of expressions, and, even more, to use it correctly in math. But
+you can do even more:
+
+#+BEGIN_SRC perl6
+sin(π/2) +1
+#+END_SRC
+
+You can do that by copying/pasting, or else install =Linenoise=, a
+command line that allows you to go back to previous command by typing
+arrow-up. Do it with
+
+#+BEGIN_SRC bash
+zef install Linenoise
+#+END_SRC
+
+You can use the usual arithmetic operators =+,-,*,/= but Perl6 adds
+two typographic operators, ÷ and × (this ones are produced in the
+Spanish keyboard with May+AltGr+, or .), like
+
+#+BEGIN_SRC perl6
+sin(π/3) × sin(π/3) + cos(π/3) × cos(π/3)
+#+END_SRC
+
+Or, even better
+
