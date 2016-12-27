@@ -90,3 +90,52 @@ learn. Probably "home" assignment.
    :Chapter:  1
    :END:
 
+*** Actual development
+
+ We have talked about free software, a bit about Perl6, a bit
+ about teamwork... Some are getting impatient over the actual lack of
+ learning Perl6. So we'll have to go to that soon. Also talked a bit
+ about [[https://github.com/ajs/perl6-Math-Sequences][Working on a
+ Library about sequences]]. A pull request that, BTW, was accepted
+ just today, on Christmas Day.
+
+*** Conclusions so far 
+
+Maybe we are out-zenning a bit with doing 7 sessions
+ without a real hint of what Perl6, or for that matter any other
+ language, is about. 
+
+** Let's work with the REPL
+   :PROPERTIES:
+   :Tools:    Laptop
+   :Chapter:  2
+   :END:
+
+First, do some basic stuff, calculator style. Then realize that you
+can't go back to what we wrote before to correct or whatever; then
+install linenoise with
+
+#+BEGIN_SRC bash
+zef install Linenoise
+#+END_SRC
+
+Explain Unicode and what it means for modern computing. Test some
+Unicode codepoints. 
+
+Play with operators for a while. 
+
+Hint also at types and why ar they different and what it means for
+operations. use =.WHAT=, as in
+
+
+#+BEGIN_SRC perl6
+π.WHAT
+#+END_SRC
+
+You'll have to find a way to type π. Probably a good option is to do
+it inside emacs. But the most straightforward is to look for "unicode
+symbols" in Google and copy/paste it.
+
+
+
+
