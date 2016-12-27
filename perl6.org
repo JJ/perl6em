@@ -169,3 +169,10 @@ sin(π/3) × sin(π/3) + cos(π/3) × cos(π/3)
 
 Or, even better
 
+#+BEGIN_SRC perl6
+sin(π/3)² + cos(π/3)²
+#+END_SRC
+
+One of the objectives of Perl6 is to use the whole range of characters
+that Unicode, if not modern keyboards, offer. This simplifies
+expressions and makes them more readable. 
