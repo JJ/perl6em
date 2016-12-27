@@ -1,7 +1,7 @@
 #+latex_compiler: xelatex
 #+latex_header: \usepackage{libertine}
 #+latex_header: \usepackage{unicode-math}
-#+latex_header: \usepackage{alltt}
+
 
 * Perl 6, the musical
 
@@ -125,24 +125,26 @@ that.
 *** REPLs and how to use them as glorified calculators
 
 A
-[[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][REPL]
+[[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][REPL]]
 is a Read-Eval-Print loop. it is a program included with most
 interpreted languages, that presents a command-line prompt and into
 which you can type expressions, and, later on, full statements. But,
 for the time being, let's type
 
-#+BEGIN_SRC bash
+
+#+BEGIN_EXAMPLE bash
 perl6
-#+END_SRC
+#+END_EXAMPLE
 
 And we will be into a perl6 REPL into which you can type Perl6 stuff.
 
 Let's try the simplest thing:
 
-#+BEGIN_SRC perl6
+
+#+BEGIN_EXAMPLE perl6
 To exit type 'exit' or '^D'
 > sin(π/2)
-#+END_SRC
+#+END_EXAMPLE
 
 You will have to find a way to type that π, by copy/pasting it from
 some website or google or right this. It will return the sine of π/2,
@@ -152,31 +154,35 @@ And this is cool, because only some languages are able to handle this
 kind of expressions, and, even more, to use it correctly in math. But
 you can do even more:
 
-#+BEGIN_SRC perl6
+
+#+BEGIN_EXAMPLE perl6
 sin(π/2) +1
-#+END_SRC
+#+END_EXAMPLE
 
 You can do that by copying/pasting, or else install =Linenoise=, a
 command line that allows you to go back to previous command by typing
 arrow-up. Do it with
 
-#+BEGIN_SRC bash
+
+#+BEGIN_EXAMPLE bash
 zef install Linenoise
-#+END_SRC
+#+END_EXAMPLE
 
 You can use the usual arithmetic operators =+,-,*,/= but Perl6 adds
 two typographic operators, ÷ and × (these ones are produced in the
 Spanish keyboard with May+AltGr+ comma or period), like
 
-#+BEGIN_SRC perl6
+
+#+BEGIN_EXAMPLE perl6
 sin(π/3) × sin(π/3) + cos(π/3) × cos(π/3)
-#+END_SRC
+#+END_EXAMPLE
 
 Or, even better
 
-#+BEGIN_SRC perl6
+
+#+BEGIN_EXAMPLE perl6
 sin(π/3)² + cos(π/3)²
-#+END_SRC
+#+END_EXAMPLE
 
 One of the objectives of Perl6 is to use the whole range of characters
 that Unicode, if not modern keyboards, offer. This simplifies
@@ -203,16 +209,18 @@ you will not have to, although you can, write x**2 but simply x².
 
 All the expressions written above are numbers. 
 
-#+BEGIN_SRC perl6
+
+#+BEGIN_EXAMPLE perl6
 (sin(π/3)² + cos(π/3)²).WHAT
-#+END_SRC
+#+END_EXAMPLE
 
 is going to return =(Num)=, indicating that it is simply a Number. You
 can add or substract numbers that way, but you cannot do 
 
-#+BEGIN_SRC perl6
+
+#+BEGIN_EXAMPLE perl6
 sin(π/3)² + cos(π/3)² + " is 1"
-#+END_SRC
+#+END_EXAMPLE
 
 will yield this error
 #+CAPTION: Errorred expression in the REPL
