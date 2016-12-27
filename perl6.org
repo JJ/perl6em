@@ -1,4 +1,4 @@
-*Perl 6, the musical
+* Perl 6, the musical
 
 ** ℵ - Principles
 
@@ -176,3 +176,42 @@ sin(π/3)² + cos(π/3)²
 One of the objectives of Perl6 is to use the whole range of characters
 that Unicode, if not modern keyboards, offer. This simplifies
 expressions and makes them more readable. 
+
+*** Now that we mention Unicode
+
+Unicode is the way to express all alphabets in the world, and then
+some things that are not really alphabets. It uses up to around sixty
+thousand symbols, and allows us to write, using modern operating
+systems, editors and languages, anything that would have to be
+expressed in living or dead languages, and even some
+emoticons. Unicode is evolving constantly, and for the people means
+that they will be able to use characters that are usual in their own
+language, and also some usual in mathematical expressions. 
+
+Since not all languages, editors, operating systems or even keyboards
+are *modern* in that sense, some impedance should be expected. But
+Perl 6 will not get in your way, allowing you to use them just they
+way they should, so if you want to raise something to the second power
+you will not have to, although you can, write x**2 but simply x².
+
+*** It's not only numbers
+
+All the expressions written above are numbers. 
+
+#+BEGIN_SRC perl6
+(sin(π/3)² + cos(π/3)²).WHAT
+#+END_SRC
+
+is going to return =(Num)=, indicating that it is simply a Number. You
+can add or substract numbers that way, but you cannot do 
+
+#+BEGIN_SRC perl6
+sin(π/3)² + cos(π/3)² + " is 1"
+#+END_SRC
+
+will yield this error
+#+CAPTION: Errorred expression in the REPL
+#+NAME:   fig:chap2-expression
+[[./img/expression-error.jpg]]
+
+
