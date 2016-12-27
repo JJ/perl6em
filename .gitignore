@@ -25,3 +25,5 @@ auto/
 *.tex
 *.aux
 *.log
+*.toc
+*.out
