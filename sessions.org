@@ -1,5 +1,5 @@
 * Sessions
-
+  
 ** 1. Empathy session (30 minutes)
    :PROPERTIES:
    :Chapter:  0
@@ -27,12 +27,21 @@ Set up tools, starting with the editor. Atom, emacs, anything like
 that, command line, how to work with it, minimal Linux, which is the
 environment of choice. 
 ** 4. Perl 6 (30 minutes)
+   :PROPERTIES:
+   :Tools:    Laptop
+   :Chapter:  1
+   :END:
+
 
 Set it up, understand the REPL. 
 
 Install rakudobrew and start to work with it. Class itself took like 15 minutes, and the rest was devoted to compiling latest version of MoarVM. Note: the $ in the documentation can be mistaken for a command. 
 
 ** 5. What is free software (30 minutes)
+   :PROPERTIES:
+   :Tools:    Pen and paper 
+   :Chapter:  1
+   :END:
 
 Probably a good talk for a Sunday morning. What is free software and
 free licenses, what they mean, what it's like to create and produce
@@ -45,6 +54,10 @@ licenses here are and what we should do about it.
 
 
 ** 6. Teamwork with git (30 minutes)
+   :PROPERTIES:
+   :Tools:    Laptop
+   :Chapter:  1
+   :END:
 
 The first part of this session should be used to create an ID with
 GitHub or, if that's created already, to create repositories that will
@@ -67,7 +80,13 @@ Unexpected hurdles (actually I have found this before): giving the
 repository a name, finding something to do a pull request, things like
 that. 
 
+
 ** 7. What we know so far
 
 Writeup of what we have learned so far and what we want to
 learn. Probably "home" assignment. 
+   :PROPERTIES:
+   :Tools:    Pen and paper 
+   :Chapter:  1
+   :END:
+
