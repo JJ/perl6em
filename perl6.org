@@ -323,3 +323,35 @@ them at the same time:
 
 will add everything together. Any operator you put inside brackets
 will be applied to all in turn. Try =[*] 1 … 333=, for instance.
+
+But the coolness factor can be increased:
+#+BEGIN_EXAMPLE perl6
+[+] 1,3 … 333
+#+END_EXAMPLE
+
+and even
+#+BEGIN_EXAMPLE perl6
+[+] 1,3,9 … 333
+#+END_EXAMPLE
+
+Perl6 is able to deal with arithmetic and geometric progressions out
+of the box. And even infinite ones:
+
+#+BEGIN_EXAMPLE perl6
+1,3,9 … ∞
+#+END_EXAMPLE
+
+You can obtain the 100th term using
+
+#+BEGIN_EXAMPLE perl6
+(1,3,9 … ∞)[100]
+#+END_EXAMPLE
+
+or, why not, the terms from 1000 to 1100
+
+#+BEGIN_EXAMPLE perl6
+(1,3,9 … ∞)[1000…1100]
+#+END_EXAMPLE
+
+which will return a pile of numbers, separated by spaces. Besides, at the same time, we have seen how to deal with a single term in a
+list, and how to work with a series of terms. 
