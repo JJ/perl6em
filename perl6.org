@@ -214,7 +214,8 @@ All the expressions written above are numbers.
 (sin(π/3)² + cos(π/3)²).WHAT
 #+END_EXAMPLE
 
-is going to return =(Num)=, indicating that it is simply a Number. You
+is going to return =(Num)=, indicating that it is simply a Number,
+actually a real number. You
 can add or substract numbers that way, but you cannot do 
 
 
@@ -227,5 +228,98 @@ will yield this error
 #+NAME:   fig:chap2-expression
 [[./img/expression-error.png]]
 
+That shows that there are more types of data you can use and work with
+from the REPL. In fact, there are a lot. In general, you cannot mix
+and match and, also in general, every one has got its own operators
+you can work with. You can mix fractions with integer numbers, for
+instance: 
 
+#+BEGIN_EXAMPLE perl6
+ ⅓+4/3
+#+END_EXAMPLE
 
+And 
+
+#+BEGIN_EXAMPLE perl6
+(⅓+4/3).WHAT
+#+END_EXAMPLE
+
+will return =(Rat)=, a Rational, same as =⅓+4=. In fact, most
+[[http://blogs.perl.org/users/ovid/2015/02/a-little-thing-to-love-about-perl-6-and-cobol.html][floating point numbers in Perl 6 will be represented as rational]],
+unless we explicitly tell the interpreter to deal with them as
+floating point, that is real, numbers, which, BTW, cannot be something
+else that fractional numbers since they use a finite representation in
+computers. Mostly.
+
+However, in some cases you can try and mix different things using an
+operator. Operator "~" concatenates stuff, that is, joins things that
+look like words and letters, for instance
+
+#+BEGIN_EXAMPLE perl6
+6 ~ "6"
+#+END_EXAMPLE
+
+will return =66=, and anything you put there will be concatenated. =~=
+is an operator that is not picky about what it has got in both ends. 
+
+*** And there's more
+
+Numbers and words are simple things. But you can string them together
+in something more complex. You can have sets of them, or lists of
+them, or combine them as sets of lists of sets of whatever. Perl 6 is
+great because you do not need to make all things in a complex
+structure be of the same type. You can create a list with the less than
+and more than sign, this way:
+
+#+BEGIN_EXAMPLE perl6
+<a b 7 ⅓ π²>
+#+END_EXAMPLE
+
+And with lists, you can do things like sorting:
+
+#+BEGIN_EXAMPLE perl6
+sort <a b 7 ⅓ π²>
+#+END_EXAMPLE
+
+or combine lists to create a new one using the =X= operator, called
+*cross product* 
+
+#+BEGIN_EXAMPLE perl6
+<a b 7 ⅓ π²> X < → ← >
+#+END_EXAMPLE
+
+for long lists, you might want to use only the first and last term 
+
+#+BEGIN_EXAMPLE perl6
+1...222
+#+END_EXAMPLE
+
+via the *yada, yada, yada* operator, or, even better,
+
+#+BEGIN_EXAMPLE perl6
+1 … 333
+#+END_EXAMPLE
+
+Not so easy or straightforward to combine lists. However, [[http://stackoverflow.com/questions/34567902/perl-6-list-concatenation-without-slip][not
+impossible]]:
+
+#+BEGIN_EXAMPLE perl6
+<a b 7 ⅓ π²> , < → ← >
+#+END_EXAMPLE
+
+is going to create a new list with two elements, each one of which is
+a list. You can *flatten* it:
+
+#+BEGIN_EXAMPLE perl6
+flat <a b 7 ⅓ π²> , < → ← >
+#+END_EXAMPLE
+
+But the coolest thing with lists is the stuff you can do to all of
+them at the same time:
+
+#+BEGIN_EXAMPLE perl6
+[+] 1 … 333
+#+END_EXAMPLE
+
+will add everything together. Any operator you put inside brackets
+will be applied to all in turn. Try =[*] 1 … 333=, for instance.
