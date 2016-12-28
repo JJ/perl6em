@@ -225,7 +225,7 @@ sin(π/3)² + cos(π/3)² + " is 1"
 will yield this error
 #+CAPTION: Errorred expression in the REPL
 #+NAME:   fig:chap2-expression
-[[./img/expression-error.png
-]]
+[[./img/expression-error.png]]
+
 
 
