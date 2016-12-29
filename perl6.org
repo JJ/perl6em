@@ -11,6 +11,9 @@
    :UNNUMBERED: T
    :END:
 
+A few principles that inspire this (book|booklet|manual|you name it),
+originally conceived to help non-programmers get into Perl 6
+
 *** Learning should be fun and engaging: learn by doing.
 *** You are the master of your learning process, and tools, and outcome. 
 *** Learning never stops.
