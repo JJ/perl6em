@@ -128,7 +128,10 @@ To go with the editor, you need some relatively fast way of inputting
 some characters such as ሁ or Щ. I have used the application "Character
 Map" that comes with Ubuntu; after finding a character by the name of
 the alphabet, you can go to Character Details and copy/paste it to
-wherever you want it used. 
+wherever you want it used. You can also click twice and the character
+will appear in the "Text to copy" slot. 
+
+[[./img/charmap.png]]
 
 Of course, something would be missing here if I did not mention `vim`. Here you go, a mention.
 
