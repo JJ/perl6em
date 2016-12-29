@@ -69,7 +69,7 @@ actually prototype without testing in advance. So testing and
 prototyping go hand in hand. 
 
 
-* 1 - The tools 
+* The tools of the trade 
 
 This part will not be leading away from the design thinking mindset,
 but actually will be getting into the last phases of it. Whatever idea
@@ -81,12 +81,14 @@ audience, yourself, by choosing the right tools.
 In this phase you will find that there's no perfect tool for doing
 everything.
 
-=Although the combination Linux + Emacs comes pretty close= 
+#+BEGIN_QUOTE
+Although the combination Linux + Emacs comes pretty close 
+#+END_QUOTE
 
 Let's start with the operating system. That would be Linux. Whew, that
-was short.
+was short. But let's proceed to that thing that actually allows users to run programs, the shell. 
 
-*** Shells 
+** Shells 
 
 Then, the command line interpreter, also called /shell/. This might seem like a given, but
 in fact different command line interpreters have different
@@ -104,9 +106,9 @@ that goes easily with your programming habits;
 [[https://github.com/robbyrussell/oh-my-zsh][Oh My Zsh]] or [[https://github.com/Bash-it/bash-it][bash-it]] are good places to start. 
 
 Play a bit with the themes or options until you find one with all the
-colors you want. And then come back here for the...
+colors and contrast you want. And then come back here for the...
 
-*** Editors. 
+** Editors. 
 
 The choice of an editor goes beyond mere utility to become an
 indentity, a side to stand when the flame war starts. As above, the
@@ -122,7 +124,9 @@ professional editor: syntax highlighting, being able to do some checks
 from the editor itself, and allow running and debugging. It has got
 all that, so that will be it. 
 
-* 2 - The expressions
+Of course, something would be missing here if I did not mention `vim`. Here you go, mention ✓.
+
+* The expressions
 
 The first thing you need to know about a language, any language, is
 how to compute things. Compute in the more general sense: combine
