@@ -141,7 +141,7 @@ You'll have to find a way to type π. Probably a good option is to do
 it inside emacs. But the most straightforward is to look for "unicode
 symbols" in Google and copy/paste it. You can do the same with other Unicode symbols such as ⅓ or ⅕. 
 
-*** Actual development
+** Actual development
 
 We have discovered that =rakudobrew= was not properly installed and had a lot of fun after configuring a Compose key in Gnome. [[https://help.ubuntu.com/community/ComposeKey][Here's how to do it.]]
 We eventually did some simple operations, including working with
@@ -162,3 +162,20 @@ Let's have a go to working with strings, and rationals, and use
 =.WHAT= to find out the type of data. Start to work with sequences,
 and cool things that can be done with them, including, maybe in this
 session, infinite sequences. 
+
+** Actual development
+
+The thing is, come this point, everyone must have tools ready. One
+could not use Linenoise to access previous expressions, and it had to
+be set up. Besides, by now we are using Greek and other letter by the
+bushel and we can't just go to the Internet every time we need a φ. So
+we have learned to use the shell from emacs, and also to use the key
+combo Control-X + 8 + Enter and then the name of the letter. That way
+we can also go ahead and use the three periods and infinity and other
+needed.
+
+Eventually we have started with lists, using indices in lists, and so
+on. But just barely. No time to define sequences, little by little.
+
+Also, someone is getting impatient wanting to save work, things like
+that. Ah, impatience...
