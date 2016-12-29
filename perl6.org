@@ -230,8 +230,24 @@ All the expressions written above are numbers.
 #+END_EXAMPLE
 
 is going to return =(Num)=, indicating that it is simply a Number,
-actually a real number. You
-can add or substract numbers that way, but you cannot do 
+actually a real number. This =.WHAT=, together with surrounding the
+expression via parentheses meaning grouping, is a way to apply a
+/property/ or to call a /method/ on that object. In Perl6, everythin
+is an object, and objects have a class, and you want to call methods
+that correspond to objects of that class, append a dot and use the
+method, possibly with some arguments like =WHAT(is, "the",
+$what)=. Let's not worry about that for the time being, or about
+classes themselves. Just with the fact that every expression is an
+object, and those objects belong to a class; every class in Perl6
+/descends/ from the ur-class called μ or =Mu=. And among the
+[[https://docs.perl6.org/type/Mu][properties of Mu]] is that you can call this =WHAT=. Any other class
+descends from this one, so /you can call =.WHAT= on any object of any
+class/. That is the take-home message, even if you might not know, so
+far, what is an object, or a class. Second take home message:
+/different objects also have different classes/. 
+
+Since both /objects/ at the sides of the =+= are Nums, you
+can add or substract them or do any other arithmetic operation, but you cannot do 
 
 
 #+BEGIN_EXAMPLE perl6
@@ -243,6 +259,12 @@ will yield this error
 #+NAME:   fig:chap2-expression
 [[./img/expression-error.png]]
 
+And the reason for that can be found out by typing:
+#+BEGIN_EXAMPLE perl6
+" is 1".WHAT
+#+END_EXAMPLE
+
+Which, whatever it is, is not a =Num=, so it cannot be added. 
 That shows that there are more types of data you can use and work with
 from the REPL. In fact, there are a lot. In general, you cannot mix
 and match and, also in general, every one has got its own operators
