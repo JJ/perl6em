@@ -124,7 +124,7 @@ professional editor: syntax highlighting, being able to do some checks
 from the editor itself, and allow running and debugging. It has got
 all that, so that will be it. 
 
-Of course, something would be missing here if I did not mention `vim`. Here you go, mention ✓.
+Of course, something would be missing here if I did not mention `vim`. Here you go, a mention.
 
 * The expressions
 
@@ -137,7 +137,7 @@ Generally, modern computer languages are able to work with many
 different kind of symbols, and Perl6 is no exception. Let's start with
 that.
 
-*** REPLs and how to use them as glorified calculators
+** REPLs and how to use them as glorified calculators
 
 A
 [[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][REPL]]
@@ -203,7 +203,7 @@ One of the objectives of Perl6 is to use the whole range of characters
 that Unicode, if not modern keyboards, offer. This simplifies
 expressions and makes them more readable. 
 
-*** Now that we mention Unicode
+** Now that we mention Unicode
 
 Unicode is the way to express all alphabets in the world, and then
 some things that are not really alphabets. It uses up to around sixty
@@ -220,7 +220,7 @@ Perl 6 will not get in your way, allowing you to use them just they
 way they should, so if you want to raise something to the second power
 you will not have to, although you can, write x**2 but simply x².
 
-*** It's not only numbers
+** It's not only numbers
 
 All the expressions written above are numbers. 
 
@@ -277,7 +277,7 @@ look like words and letters, for instance
 will return =66=, and anything you put there will be concatenated. =~=
 is an operator that is not picky about what it has got in both ends. 
 
-*** And there's more
+** And there's more
 
 Numbers and words are simple things. But you can string them together
 in something more complex. You can have sets of them, or lists of
