@@ -2,16 +2,16 @@
 #+latex_header: \usepackage{libertine}
 #+latex_header: \usepackage{unicode-math}
 
-* Sessions
+#+TITLE: Perl 6, the Sessions
   
-** Empathy session (30 minutes)
+* Empathy session (30 minutes)
    :PROPERTIES:
    :Chapter:  0
    :Tools:    Pen and paper
    :END:
 
 Took place Dec 6th, 11:30AM. 
-** Ideas session (30 minutes)
+* Ideas session (30 minutes)
    :PROPERTIES:
    :Chapter:  0
    :Tools:    Pen and paper
@@ -21,7 +21,7 @@ Dec 8th, 11:00 AM.
 
 Let's go into the ideation phase, while not leaving the immersion phase http://www.mjvinnovation.com/blog/three-phases-design-thinking-immersion-ideation-prototyping
 
-** Tools (30 minutes+)
+* Tools (30 minutes+)
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  1
@@ -30,7 +30,7 @@ Let's go into the ideation phase, while not leaving the immersion phase http://w
 Set up tools, starting with the editor. Atom, emacs, anything like
 that, command line, how to work with it, minimal Linux, which is the
 environment of choice. 
-** Perl 6 (30 minutes)
+* Perl 6 (30 minutes)
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  1
@@ -110,7 +110,7 @@ Maybe we are out-zenning a bit with doing 7 sessions
  without a real hint of what Perl6, or for that matter any other
  language, is about. 
 
-** Let's work with the REPL
+* Let's work with the REPL
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  2
@@ -152,7 +152,7 @@ others, mainly including the funny Unicode characters, do not.
 
 
 
-** Working with other kind of data
+* Working with other kind of data
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  2
