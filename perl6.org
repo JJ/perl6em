@@ -6,6 +6,9 @@
 * Perl 6, the musical
 
 ** ℵ - Principles
+   :PROPERTIES:
+   :UNNUMBERED: T
+   :END:
 
 *** Learning should be fun and engaging: learn by doing.
 *** You are the master of your learning process, and tools, and outcome. 
@@ -13,6 +16,9 @@
 *** Learning is a two-way process. There is no professor, no student: learning happens ideally in a community. 
 
 ** α - Motivation
+   :PROPERTIES:
+   :UNNUMBERED: T
+   :END:
 
 *** Teaching programming to (almost) non-programmers.
 *** Contemplate the possibilities of Perl 6 as a beginner's language.
@@ -20,6 +26,9 @@
 *** Use project-based learning throughout and flipped-learning techniques.
 
 ** 0 - Design thinking
+   :PROPERTIES:
+   :UNNUMBERED: t
+   :END:
 
 Source https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38
 
