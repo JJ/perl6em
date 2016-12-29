@@ -152,9 +152,13 @@ others, mainly including the funny Unicode characters, do not.
 
 
 
-** 9. Working with other kind of data
+** Working with other kind of data
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  2
    :END:
 
+Let's have a go to working with strings, and rationals, and use
+=.WHAT= to find out the type of data. Start to work with sequences,
+and cool things that can be done with them, including, maybe in this
+session, infinite sequences. 
