@@ -126,6 +126,19 @@ all that, so that will be it.
 
 Of course, something would be missing here if I did not mention `vim`. Here you go, a mention.
 
+** Shells within editors
+
+Editors are cool because they allow to work with all kind of symbols
+that are not exactly text, or that  cannot be produced with a
+combination of key strokes. Emacs is great at that, and it can access
+the whole set of symbols that are out there by name using a
+combination of keys. And it can also run a shell inside, your favorite
+shell, in fact. So enter =emacs= and then type =Escape key + x= and
+then, when a prompt appears in the lower line, =shell= and you will
+have your shell running /inside/ Emacs, with access to all kind of
+goodies, like saving sessions as files, searching using all Emacs
+facilities, and all kind of symbols that can be used in it. 
+
 * The expressions
 
 The first thing you need to know about a language, any language, is
