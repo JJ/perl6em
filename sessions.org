@@ -144,7 +144,17 @@ symbols" in Google and copy/paste it. You can do the same with other Unicode sym
 *** Actual development
 
 We have discovered that =rakudobrew= was not properly installed and had a lot of fun after configuring a Compose key in Gnome. [[https://help.ubuntu.com/community/ComposeKey][Here's how to do it.]]
+We eventually did some simple operations, including working with
+Unicode characters. Also accessing the Javascript REPL that is
+included in Firefox, and checking out how some things work, and some
+others, mainly including the funny Unicode characters, do not. 
 
 
 
+
+** 9. Working with other kind of data
+   :PROPERTIES:
+   :Tools:    Laptop
+   :Chapter:  2
+   :END:
 
