@@ -4,14 +4,14 @@
 
 * Sessions
   
-** 1. Empathy session (30 minutes)
+** Empathy session (30 minutes)
    :PROPERTIES:
    :Chapter:  0
    :Tools:    Pen and paper
    :END:
 
 Took place Dec 6th, 11:30AM. 
-** 2. Ideas session (30 minutes)
+** Ideas session (30 minutes)
    :PROPERTIES:
    :Chapter:  0
    :Tools:    Pen and paper
@@ -21,7 +21,7 @@ Dec 8th, 11:00 AM.
 
 Let's go into the ideation phase, while not leaving the immersion phase http://www.mjvinnovation.com/blog/three-phases-design-thinking-immersion-ideation-prototyping
 
-** 3. Tools (30 minutes+)
+** Tools (30 minutes+)
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  1
@@ -30,7 +30,7 @@ Let's go into the ideation phase, while not leaving the immersion phase http://w
 Set up tools, starting with the editor. Atom, emacs, anything like
 that, command line, how to work with it, minimal Linux, which is the
 environment of choice. 
-** 4. Perl 6 (30 minutes)
+** Perl 6 (30 minutes)
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  1
@@ -41,7 +41,7 @@ Set it up, understand the REPL.
 
 Install rakudobrew and start to work with it. Class itself took like 15 minutes, and the rest was devoted to compiling latest version of MoarVM. Note: the $ in the documentation can be mistaken for a command. 
 
-** 5. What is free software (30 minutes)
+** What is free software (30 minutes)
    :PROPERTIES:
    :Tools:    Pen and paper 
    :Chapter:  1
@@ -57,7 +57,7 @@ crop of Oracle who's attempting to ask for licenses, and what kind of
 licenses here are and what we should do about it. 
 
 
-** 6. Teamwork with git (30 minutes)
+** Teamwork with git (30 minutes)
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  1
@@ -85,7 +85,7 @@ repository a name, finding something to do a pull request, things like
 that. 
 
 
-** 7. What we know so far
+** What we know so far
    :PROPERTIES:
    :Tools:    Pen and paper 
    :Chapter:  1
@@ -110,7 +110,7 @@ Maybe we are out-zenning a bit with doing 7 sessions
  without a real hint of what Perl6, or for that matter any other
  language, is about. 
 
-** 8. Let's work with the REPL
+** Let's work with the REPL
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  2
