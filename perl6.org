@@ -193,7 +193,7 @@ such as italics or boldface. The fact that they are a formula, and
 that you have to design formulae for every single glyph, means that
 not all glyphs might be available in all fonts. Some fonts will have
 all, or most of them, some of them not. And that, in turn, means that
-some Etruscan letter such as this one 𐆓 that renders beautifully in
+some Etruscan letter such as this one 𐌚 that renders beautifully in
 your editor might show up as an x-marked rectanble or question mark
 somewhere else, a console or a word processor. In fact, depending on
 how you are reading this, you might not see the glyph I'm referring to
@@ -416,8 +416,8 @@ via the *yada, yada, yada* operator, or, even better,
 1 … 333
 #+END_EXAMPLE
 
-Not so easy or straightforward to combine lists. However, [[http://stackoverflow.com/questions/34567902/perl-6-list-concatenation-without-slip][not
-impossible]]:
+Not so easy or straightforward to combine lists. However, it is [[http://stackoverflow.com/questions/34567902/perl-6-list-concatenation-without-slip][not
+impossible]] actually:
 
 #+BEGIN_EXAMPLE perl6
 <a b 7 ⅓ π²> , < → ← >
@@ -471,3 +471,30 @@ or, why not, the terms from 1000 to 1100
 
 which will return a pile of numbers, separated by spaces. Besides, at the same time, we have seen how to deal with a single term in a
 list, and how to work with a series of terms. 
+
+* γ - Thinking like a computer T                                                          :PROPERTIES
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+  
+
+You probably know that computers are unlike humans. But since
+expressions are entered in pretty much the same way you would use
+somewhere else, it's no big deal. However, once you want to
+deconstruct what actually needs to be done to make a computer do
+whatever you want it to do, you have to start to think like a
+computer, in what is known as computational thinking. It is kind of a
+game of "Simon says". You have to precede every instruction you give a
+computer by something that indicates you want it to do precisely that,
+and then you have to say very precisely what it needs to do.
+
+But there is more to that, the fact that you also need to indicate the
+/sequence/ of actions you want the computer to do by indicating that
+in your program. When you work with the REPL, as we have done above,
+the sequence is quite clear: you say something, press Enter, the
+computer thinks for a while or what looks like nothing, you have the
+response. However, when the program gets a bit more complicated, you
+also have to think, in a particular point in time, where the computer
+might be and what that implies regarding values or results you need to
+proceed. 
+
