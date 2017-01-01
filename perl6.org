@@ -473,7 +473,7 @@ or, why not, the terms from 1000 to 1100
 which will return a pile of numbers, separated by spaces. Besides, at the same time, we have seen how to deal with a single term in a
 list, and how to work with a series of terms. 
 
-* γ - Thinking like a computer T                                                          :PROPERTIES
+* γ - Thinking like computers do
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
