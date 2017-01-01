@@ -184,6 +184,13 @@ points group to form a /grapheme cluster/, which is a set of code
 points that constitute a grapheme; the most common example is letters
 with marks such as á, but more complicated expressions might be
 thought of. Or not, depending on your imagination. 
+
+Your take away message here is that you need to know how to use
+Unicode in whatever program you use, and that some particular
+structures of the program, like operators or names, will use graphemes
+with particular properties, probably something alphabetic-like. Also
+that unicode is complicated, but that you should better learn about it
+as soon as possible, as in now. 
 * The expressions
 
 The first thing you need to know about a language, any language, is
