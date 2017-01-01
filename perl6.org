@@ -379,6 +379,26 @@ look like words and letters, for instance
 will return =66=, and anything you put there will be concatenated. =~=
 is an operator that is not picky about what it has got in both ends. 
 
+You cannot add strings together, because that is what they are, but curiously enough, you can multiply them:
+
+#+BEGIN_EXAMPLE perl6
+"1" ~ "\n" ~ "2" x 2 ~ "\n" ~ "3" x 3 ~ "\n" ~ "2" x 2 ~ "\n" ~ "1"
+#+END_EXAMPLE
+
+This being a rather nice and utterly useless example on the operator
+=x=, which /multiplies/ or rather /replicates/ whatever character of
+string it is related to. Introduced together with =\n", the carriage
+return, so that if forms a nice pile of stuff. 
+
+Which is shorter and better in this example
+
+#+BEGIN_EXAMPLE perl6
+for <1 2 3 2 1>  { say $_ x $_ }
+#+END_EXAMPLE
+
+but that's something we will see later on, when we talk about loops
+and all that's nice and beautiful about it. 
+
 ** And there's more
 
 Numbers and words are simple things. But you can string them together
