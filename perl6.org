@@ -151,8 +151,39 @@ have your shell running /inside/ Emacs, with access to all kind of
 goodies, like saving sessions as files, searching using all Emacs
 facilities, and all kind of symbols that can be used in it. 
 
+* ß - We need to talk about Unicode
+   :PROPERTIES:
+   :UNNUMBERED: t
+   :END:
 
+This does not belong to the language proper, but it is still something
+that has to be mentioned. Languages are used to write applications,
+and these can use any language in the world. [[https://unicode-table.com/es/][Unicode]] is the way to use
+any alphabet, and some [[http://www.omniglot.com/conscripts/natlangs.htm][neographies]] and emoticons, in our
+programs. Luckily enough, Perl6 packs one of the best supports for
+this; unluckily, Unicode is complicated /per se/, so we will have to
+learn a bit of linguistics to understand how we, later on, are going
+to handle this, which we will even if we write only for ourselves.
 
+First important concept is the /codepoint/. A code point is pretty
+much equivalent to a letter, although it can be a symbol or also a
+formatting instruction such as Tab or Newline. Every code point
+corresponds to a numeric combination, which is usually expressed in
+hexadecimal; for instance, =0x2017= corresponds to the character =‗=,
+part of a table-drawing set. Every character also has a series of
+attributes, including the category; this character belongs to the =Po=
+[[https://en.wikipedia.org/wiki/Unicode_character_property#General_Category][category]],
+meaning that it is /Punctuation, other/. The [[http://userguide.icu-project.org/strings/properties][properties]] include a
+series of attributes such as the fact that they are numeric or can do
+things like folding to a particular case or be joined to the next
+character, or even if the direction they are written in. 
+
+Characters are written as [[http://mathias.gaunard.com/unicode/doc/html/unicode/introduction_to_unicode.html#unicode.introduction_to_unicode.grapheme_clusters][graphemes]], and usually a code point
+corresponds to a single written grapheme; however, in some cases code
+points group to form a /grapheme cluster/, which is a set of code
+points that constitute a grapheme; the most common example is letters
+with marks such as á, but more complicated expressions might be
+thought of. Or not, depending on your imagination. 
 * The expressions
 
 The first thing you need to know about a language, any language, is
