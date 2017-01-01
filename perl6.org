@@ -603,3 +603,14 @@ applications, they can be data processing units, data storing units,
 data fooing and data baring units. Does not really matter what they
 are, but the thing it that /containerization/ makes easy the creation
 of a whole suite that can be stored and shipped anywhere. 
+
+* η - Testing for the win
+   :PROPERTIES:
+   :UNNUMBERED: t
+    :END:
+  
+/If it is not tested, it is broken/ is something that you should learn
+as soon as you start to crank out code. It actually means /If it is
+not *automatically* tested, it is broken/, that is, it is not enough
+that you give it two or maybe one input, and declare yourself
+satisfied with it. No, son, that is not testing and you know it. 
