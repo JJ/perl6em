@@ -498,3 +498,29 @@ also have to think, in a particular point in time, where the computer
 might be and what that implies regarding values or results you need to
 proceed. 
 
+Which is why we talk about
+[[https://en.wikipedia.org/wiki/Computational_thinking][computational thinking]] as a series of techniques for solving problems
+using computers, including all the steps you need to take to identify
+the problem, put it in a way that can be understood and processed by a
+computer, and then express every step as instructions in program that
+will, eventually, solve the problem. 
+
+We will get back to this later on, but for the time being there are a
+couple of techniques you will need to understand. First is /pattern
+recognition/, which means finding what several different pieces of
+information have in common and, in turn, what to do to solve a problem
+in a case given that you know how to solve it in another case which
+follows the same pattern. When you find something that has a regular
+increasing or arithmetic pattern, for instance, you will discover that
+you can use lists or sequences to solve it, and apply whatever you
+know already on how to deal with sequences. 
+
+The second technique we should focus on right now is /problem
+decomposition/, how to break down a problem in different parts that
+can, more easily, solved. For instance, you want to find what would be
+the number a sequence will reach if left to grow until infinity; first
+you will have to solve the problem of representing the sequence, which
+might not be inmediate, and then how to apply known techniques of
+limit finding, such as
+[[http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props][finding the function that represents the sequence]] and then applying
+what is known about function limits to that sequence. 
