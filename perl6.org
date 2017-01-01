@@ -576,3 +576,30 @@ be the web nowadays. So it does not harm, and it will benefit greatly,
 to learn from now what the web is all about and how we can extract
 information from it, use it to interact with people and publish our
 data so that anyone in the whole wide world can see it. 
+
+
+* ζ - Pack all your troubles in a container
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+  
+Applications run nowadays in all kind of places, so eventually someone
+found a way to put all the stuff you need to run them in a single
+tupperware container and ship it anywhere you need them, in the same
+way as you pack your potato omelette in a tupper and carry it to grab
+a byte in a picnic or during your train trip to Poughkeepsie, as you
+are wont to do. Same goes for programs. Create it, pack it, take it
+anywhere: the cloud, your other computer, anywhere you please. And if
+you add another tupper with mandarines and yet another with a few
+cupcakes, you have got your whole snack-a-lot ready to take anywhere.
+
+Applications nowadays are composed of the equivalent of a three or
+even more course meal. They have several courses plus snacks and even
+a doggie bag to pack leftovers and a plastic bag for organic
+trash. You can carry them in several places on you and your clothes,
+but it is much better to just pack containers for everything and lay
+them out on the table when you are ready to eat. In the case of
+applications, they can be data processing units, data storing units,
+data fooing and data baring units. Does not really matter what they
+are, but the thing it that /containerization/ makes easy the creation
+of a whole suite that can be stored and shipped anywhere. 
