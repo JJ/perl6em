@@ -524,3 +524,21 @@ might not be inmediate, and then how to apply known techniques of
 limit finding, such as
 [[http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props][finding the function that represents the sequence]] and then applying
 what is known about function limits to that sequence. 
+
+Every part of a problem will eventually become an instruction or
+group of instructions called usually /subroutines/ or /functions/. But
+for the time being, it is enough to know that breaking down a problem
+in parts you already know how to solve is the key for solving problems
+of any size. 
+
+* ε - Working as a team
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+  
+
+You will never walk alone when solving a problem. Even if you are
+working in a side project, something you thought about yourself, you
+will need an easy way to keep track of changes and also to easily
+incorporate whatever suggestions or even changes somebody else might
+be doing to your code.
