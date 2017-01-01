@@ -552,7 +552,7 @@ for the time being, it is enough to know that breaking down a problem
 in parts you already know how to solve is the key for solving problems
 of any size. 
 
-* ε - Working as a team
+* δ - Working as a team
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -563,3 +563,16 @@ working in a side project, something you thought about yourself, you
 will need an easy way to keep track of changes and also to easily
 incorporate whatever suggestions or even changes somebody else might
 be doing to your code.
+
+
+* ε - Web weaving
+   :PROPERTIES:
+   :UNNUMBERED: t
+    :END:
+  
+Whatever you do nowadays in computing, you will have to end up
+presenting something somewhere, and that somewhere will most probably
+be the web nowadays. So it does not harm, and it will benefit greatly,
+to learn from now what the web is all about and how we can extract
+information from it, use it to interact with people and publish our
+data so that anyone in the whole wide world can see it. 
