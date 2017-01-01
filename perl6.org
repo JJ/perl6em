@@ -185,6 +185,20 @@ points that constitute a grapheme; the most common example is letters
 with marks such as á, but more complicated expressions might be
 thought of. Or not, depending on your imagination. 
 
+You write graphemes and grapheme clusters as /glyphs/, or letters. And
+these are typeset, in a particular environment, using /fonts/. A font
+is a set of mathematical formulae, yes, there is math involved, that
+allows to render a particular letter in many different sizes and forms
+such as italics or boldface. The fact that they are a formula, and
+that you have to design formulae for every single glyph, means that
+not all glyphs might be available in all fonts. Some fonts will have
+all, or most of them, some of them not. And that, in turn, means that
+some Etruscan letter such as this one 𐆓 that renders beautifully in
+your editor might show up as an x-marked rectanble or question mark
+somewhere else, a console or a word processor. In fact, depending on
+how you are reading this, you might not see the glyph I'm referring to
+at all. 
+
 Your take away message here is that you need to know how to use
 Unicode in whatever program you use, and that some particular
 structures of the program, like operators or names, will use graphemes
