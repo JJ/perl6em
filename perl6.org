@@ -651,4 +651,9 @@ need to know.
 
 Not really. But almost.
 
+* Deploying to the cloud
+You have probably been told, by myself in the previous chapter, that
+the cloud is where you run your program. But it is not going to go,
+all by itself, to a cumulonimbus out there. You have to physically
+take it, and that is what is called /deploying/. 
 * Analyzing data
