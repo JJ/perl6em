@@ -628,11 +628,27 @@ user, but also secure. Never forget that.
 * η - Testing for the win
    :PROPERTIES:
    :UNNUMBERED: t
-    :END:
+   :END:
   
 /If it is not tested, it is broken/ is something that you should learn
 as soon as you start to crank out code. It actually means /If it is
 not *automatically* tested, it is broken/, that is, it is not enough
 that you give it two or maybe one input, and declare yourself
 satisfied with it. No, son, that is not testing and you know it. 
+
+* Regular expressions
+Machine learning is all about understanding text. That text does not
+come in a shape you can easily process it. Regular expressions help
+you deal with text that is not totally structured, but that has some
+regularities in it. 
+* θ - What you need to know about the cloud
+   :PROPERTIES:
+   :UNNUMBERED: t
+   :END:
+
+The /cloud/ is where you run your programs nowadays. That is all you
+need to know.
+
+Not really. But almost.
+
 * Analyzing data
