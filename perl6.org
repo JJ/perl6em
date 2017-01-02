@@ -20,7 +20,7 @@ originally conceived to help non-programmers get into Perl 6
 *** Learning never stops.
 *** Learning is a two-way process. There is no professor, no student: learning happens ideally in a community. 
 
-* ⚀ - Motivation
+* б - Motivation
    :PROPERTIES:
    :UNNUMBERED: T
    :END:
