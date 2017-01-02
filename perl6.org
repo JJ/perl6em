@@ -569,7 +569,12 @@ will need an easy way to keep track of changes and also to easily
 incorporate whatever suggestions or even changes somebody else might
 be doing to your code.
 
-
+* Stand in the shoulders: /modules/ and using whatever is available
+If there is a single motto you should follow when programming, is this
+one: /Don't reinvent the wheel/. Before sitting down to do something,
+check out if it has been already done. In mature languages like Perl,
+the answer is most probably Yes. In some otheres, like this Perl 6 we
+are dealing with, your mileage may vary. 
 * ε - Web weaving
    :PROPERTIES:
    :UNNUMBERED: t
@@ -582,7 +587,10 @@ to learn from now what the web is all about and how we can extract
 information from it, use it to interact with people and publish our
 data so that anyone in the whole wide world can see it. 
 
-
+* Building up: /scripts/ and /programs/
+Doodling with the REPL is fun, but eventually you will need to profit:
+the program has to be stored and maybe shipped somewhere. Architecting
+a script needs to put your computational thinking skills to work. 
 * ζ - Pack all your troubles in a container
     :PROPERTIES:
     :UNNUMBERED: t
