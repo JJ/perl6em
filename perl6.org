@@ -552,6 +552,18 @@ for the time being, it is enough to know that breaking down a problem
 in parts you already know how to solve is the key for solving problems
 of any size. 
 
+* ב‎ - The command line
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+
+In the principle was the command line. That is so true. You run
+scripts from the command line, and you go back to it when you are
+done. But also the Linux was created with a set of command line tools
+that can be integrated with your program to save you typing and
+thinking and energy. There is so much you can do with it, that we will
+need to know how it works, starting with organization of the disk
+drive. 
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
