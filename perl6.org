@@ -30,7 +30,7 @@ originally conceived to help non-programmers get into Perl 6
 *** Show the beauty and craft of programming.
 *** Use project-based learning throughout and flipped-learning techniques.
 
-* 0 - Design thinking
+* α - Design thinking
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
@@ -629,6 +629,25 @@ data fooing and data baring units. Does not really matter what they
 are, but the thing it that /containerization/ makes easy the creation
 of a whole suite that can be stored and shipped anywhere. 
 
+* г - Always play it safe
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+ 
+As long as you have created a program that is out there on the
+Internet, and you need to take care of sending it somewhere, in a
+Docker container or some other way, you need to /play it safe/. A
+cloud container or virtual machine instance is just a resource for
+crackers and fraudsters which will use all means possible to get hold
+of it and hold it hostage for ransom or use it for bitmining,
+launching distributed denial of service attacks, or as a cache for
+stolen data. Fortunately, cloud and hosting providers usually detect
+and deactivate them as soon as they find out, but you might incur in
+huge bills or maybe huge annoyances while you work out with customer
+service to have that bill erased.
+
+That is why, as soon as you start to write your programs, you need to
+play it safe. 
 * Interacting with the user
 Programs are created to be used. Many of them will be used by just
 you. But some of them will be out there. You have to build them for an
