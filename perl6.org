@@ -617,6 +617,14 @@ data fooing and data baring units. Does not really matter what they
 are, but the thing it that /containerization/ makes easy the creation
 of a whole suite that can be stored and shipped anywhere. 
 
+* Interacting with the user
+Programs are created to be used. Many of them will be used by just
+you. But some of them will be out there. You have to build them for an
+indeal user, and that ideal user is a 90-year old FSB agent that is on
+one hand not familiar with modern technology and that on the other
+hand is familiar enough to try and break and enter in your program to
+steal your family secrets. User interfaces have to be easy on the
+user, but also secure. Never forget that. 
 * η - Testing for the win
    :PROPERTIES:
    :UNNUMBERED: t
@@ -627,3 +635,4 @@ as soon as you start to crank out code. It actually means /If it is
 not *automatically* tested, it is broken/, that is, it is not enough
 that you give it two or maybe one input, and declare yourself
 satisfied with it. No, son, that is not testing and you know it. 
+* Analyzing data
