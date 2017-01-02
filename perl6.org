@@ -552,6 +552,11 @@ for the time being, it is enough to know that breaking down a problem
 in parts you already know how to solve is the key for solving problems
 of any size. 
 
+* Working with, in and around data
+Eventually you will need to give things a name, if only to avoid
+cutting, pasting and recomputing stuff every time you need
+it. /Variables/ store results and help you express, in a compact way,
+complicated formulae. 
 * δ - Working as a team
     :PROPERTIES:
     :UNNUMBERED: t
