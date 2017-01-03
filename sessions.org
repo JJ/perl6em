@@ -179,3 +179,8 @@ on. But just barely. No time to define sequences, little by little.
 
 Also, someone is getting impatient wanting to save work, things like
 that. Ah, impatience...
+
+* Series of things (30 minutes)
+
+First some non-conventional operators such as =x= and then let's proceed to talk about sequences and arrays and how to deal with infinite arrays. 
+
