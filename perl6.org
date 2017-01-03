@@ -673,6 +673,7 @@ satisfied with it. No, son, that is not testing and you know it.
    :END:
   
 Testing reduces the need to find errors, but eventually some non-tested feature or a combination of things will make your program behave unexpectedly. No worries. /Debugging/ is the way to go. 
+
 * Regular expressions
 Machine learning is all about understanding text. That text does not
 come in a shape you can easily process it. Regular expressions help
@@ -693,4 +694,9 @@ You have probably been told, by myself in the previous chapter, that
 the cloud is where you run your program. But it is not going to go,
 all by itself, to a cumulonimbus out there. You have to physically
 take it, and that is what is called /deploying/. 
+* ι - The world is my platform
+   :PROPERTIES:
+   :UNNUMBERED: t
+   :END:
+When creating a program, you can literally get the world to process part of your stuff, or obtain data from the same world. /Application programming interfaces/ make accessible, over the Internet, functions that would be annoying or simply impossible to have on your own computer. 
 * Analyzing data
