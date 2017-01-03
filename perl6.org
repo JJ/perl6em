@@ -667,6 +667,12 @@ not *automatically* tested, it is broken/, that is, it is not enough
 that you give it two or maybe one input, and declare yourself
 satisfied with it. No, son, that is not testing and you know it. 
 
+* Д - Find the bug
+   :PROPERTIES:
+   :UNNUMBERED: t
+   :END:
+  
+Testing reduces the need to find errors, but eventually some non-tested feature or a combination of things will make your program behave unexpectedly. No worries. /Debugging/ is the way to go. 
 * Regular expressions
 Machine learning is all about understanding text. That text does not
 come in a shape you can easily process it. Regular expressions help
