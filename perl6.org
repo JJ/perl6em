@@ -722,7 +722,7 @@ Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
 it. /Variables/ store results and help you express, in a compact way,
 complicated formulae. 
-* δ - Understand errors
+* ε - Understand errors
 Shit eventually happens. But when it does, you must be ready to unshit
 everything. 
 
@@ -732,7 +732,7 @@ one: /Don't reinvent the wheel/. Before sitting down to do something,
 check out if it has been already done. In mature languages like Perl,
 the answer is most probably Yes. In some otheres, like this Perl 6 we
 are dealing with, your mileage may vary. 
-* ε - Web weaving
+* ζ - Web weaving
    :PROPERTIES:
    :UNNUMBERED: t
     :END:
@@ -748,7 +748,7 @@ data so that anyone in the whole wide world can see it.
 Doodling with the REPL is fun, but eventually you will need to profit:
 the program has to be stored and maybe shipped somewhere. Architecting
 a script needs to put your computational thinking skills to work. 
-* ζ - Pack all your troubles in a container
+* η - Pack all your troubles in a container
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -801,7 +801,7 @@ one hand not familiar with modern technology and that on the other
 hand is familiar enough to try and break and enter in your program to
 steal your family secrets. User interfaces have to be easy on the
 user, but also secure. Never forget that. 
-* η - Testing for the win
+* θ - Testing for the win
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
@@ -824,7 +824,7 @@ Machine learning is all about understanding text. That text does not
 come in a shape you can easily process it. Regular expressions help
 you deal with text that is not totally structured, but that has some
 regularities in it. 
-* θ - What you need to know about the cloud
+* ι - What you need to know about the cloud
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
@@ -839,7 +839,7 @@ You have probably been told, by myself in the previous chapter, that
 the cloud is where you run your program. But it is not going to go,
 all by itself, to a cumulonimbus out there. You have to physically
 take it, and that is what is called /deploying/. 
-* ι - The world is my platform
+* κ - The world is my platform
    :PROPERTIES:
    :UNNUMBERED: t
    :END:

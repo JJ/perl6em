@@ -41,7 +41,7 @@ Set it up, understand the REPL.
 
 Install rakudobrew and start to work with it. Class itself took like 15 minutes, and the rest was devoted to compiling latest version of MoarVM. Note: the $ in the documentation can be mistaken for a command. 
 
-** What is free software (30 minutes)
+* What is free software (30 minutes)
    :PROPERTIES:
    :Tools:    Pen and paper 
    :Chapter:  1
@@ -57,7 +57,7 @@ crop of Oracle who's attempting to ask for licenses, and what kind of
 licenses here are and what we should do about it. 
 
 
-** Teamwork with git (30 minutes)
+* Teamwork with git (30 minutes)
    :PROPERTIES:
    :Tools:    Laptop
    :Chapter:  1
@@ -85,7 +85,7 @@ repository a name, finding something to do a pull request, things like
 that. 
 
 
-** What we know so far
+* What we know so far
    :PROPERTIES:
    :Tools:    Pen and paper 
    :Chapter:  1
@@ -206,3 +206,16 @@ After the last session, where homework was introduced for the first time, we are
     - Fork and work with other's repositories
     - Accept pull requests and pull changes into local repository with =git pull=
 
+** Actual session
+
+We used the "lessons learned" file that we had compiled in every
+session and we had a lot of fun. One of us had just copied the Emacs
+tutorial stuff, some others were corrected, we performad every
+intended objective. Only unexpected thing was that git was not
+configured and that we really, really, need to navigate the Linux
+filesystem. 
+
+A funny unintended consequence of all this is that is easier to learn
+from scratch that to /unlearn/ what has been learned, so that newbies
+perform /better/ than those that have had some access to bad
+learning. Yes, it's a real WTF. 
