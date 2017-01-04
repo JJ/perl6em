@@ -7,6 +7,14 @@
 #+latex_header: \usepackage{unicode-math}
 #+latex_header: \setmonofont{DejaVu Sans Mono}
 
+* Introduction
+This book is about learning programming using a promising, and almost
+completely new, language: Perl 6. But it is only Perl 6 specific in
+a minority of the content. Most chapters that deal with Perl 6 could
+be rewritten using any other language, preferably a new, cool language
+such as Go or Rust. I, or someone, might do it some day. But for the
+time being, let us be content with Perl 6. Which is also new and cool.
+
 * ℵ - Principles
    :PROPERTIES:
    :UNNUMBERED: T
@@ -101,6 +109,11 @@ Which boils down to "talk little, do a lot". No slides, no heavyweight
 course materials, just a screen with examples, and make people perform
 short tasks and reproduce what is being said by themselves. Hands have
 better memory than eyes. Use that. 
+
+In this book, in most cases activities will have a particular purpose
+and will follow or flow from one chapter, or asides, to the next
+ones, so that you will end up building one, or several, scripts
+or programs or even notes that will be useful by themselves. 
 
 * α - Design thinking
    :PROPERTIES:
@@ -648,7 +661,12 @@ with this, do not worry, you can use [[http://bitbucket.com][BitBucket]], which 
 repositories with some limitations on the number of users and number
 of repos.
 
-Be that as it may, create a repository or project in any of them, and
+Be that as it may, you will need a repository to store all the files
+that you will be writing in this, maybe also your couse notes. It is
+going to be fun start to create a single program, and keep changing it
+over the same file; git will record changes and you will be able to
+track your own progress over this file. In order to do that, create a
+repository or project in any of them, and 
 choose a sensible free software license, as well as Perl as a language
 (closest to Perl6) and also generate a =README.md=, which is in
 Markdown. 
@@ -673,6 +691,9 @@ instance, create a new file with =touch a_new_file=. Not everything in
 the directory is /in/ the repository, you have to purposefully add to
 it. 
 
+#+BEGIN_EXAMPLE perl6
+git add a_new_file
+#+END_EXAMPLE
 
 * Thinking logically
 
