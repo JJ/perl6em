@@ -873,6 +873,18 @@ complicated formulae.
 Shit eventually happens. But when it does, you must be ready to unshit
 everything. 
 
+* ד‎ - Markdown for documentation 
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+
+Every project should have a =README.md= that explains what it is
+about, for everyone else if it is public, for our future self if it is
+not. That =README.md= you have already created is written using
+Markdown, a simplified method that adds marks to plain text to denote
+its role in the document: its importance, if they are headers, and
+even if they represent a hyperlink or the inclusion of an image. 
+
 * Stand in the shoulders: /modules/ and using whatever is available
 If there is a single motto you should follow when programming, is this
 one: /Don't reinvent the wheel/. Before sitting down to do something,
