@@ -846,6 +846,9 @@ cutting, pasting and recomputing stuff every time you need
 it. /Variables/ store results and help you express, in a compact way,
 complicated formulae. 
 * ε - Understand errors
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
 Shit eventually happens. But when it does, you must be ready to unshit
 everything. 
 
