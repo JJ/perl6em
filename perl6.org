@@ -498,7 +498,7 @@ list, and how to work with a series of terms.
     :END:
   
 
-You probably know that computers are unlike humans. But since
+You probably know, or at least have made an educated guess, that computers are unlike humans. But since
 expressions are entered in pretty much the same way you would use
 somewhere else, it's no big deal. However, once you want to
 deconstruct what actually needs to be done to make a computer do
@@ -561,7 +561,27 @@ You will never walk alone when solving a problem. Even if you are
 working in a side project, something you thought about yourself, you
 will need an easy way to keep track of changes and also to easily
 incorporate whatever suggestions or even changes somebody else might
-be doing to your code.
+be doing to your code. And that easy way is to [[https://git-scm.com/][use git]]. =git= is
+described as a distributed source code manager, but it is much more
+than that, it is a way of life. =git= organizes code in
+/repositories/, pretty much corresponding to projects, but including
+also artifacts such as documentation, manuals and examples. 
+
+As a way of life, it needs much more than a single section in a
+book. You will eventually learn as you go, but for the purpose of
+this, let us say you have opened an account in an online Git server
+such as [[http://github.com][GitHub]]. GitHub is free for public repositories, and even for a
+few closed ones if you are a student. If you do not feel comfortable
+with this, do not worry, you can use [[http://bitbucket.com][BitBucket]], which allows private
+repositories with some limitations on the number of users and number
+of repos.
+
+Be that as it may, create a repository or project in any of them, and
+choose a sensible free software license, as well as Perl as a language
+(closest to Perl6) and also generate a =README.md=, which is in
+Markdown. 
+
+
 * Thinking logically
 
 You are going to need in many cases whether something is true or
