@@ -564,6 +564,67 @@ that can be integrated with your program to save you typing and
 thinking and energy. There is so much you can do with it, that we will
 need to know how it works, starting with organization of the disk
 drive. 
+
+The disk drive is nowadays mostly solid-state, or else it is so fast
+you do not need to worry about it. Anyway it is organized like an
+inverted tree, with the =root= at =/= and all branches and leaves
+hanging from it. That tree would branch on /directories/ or /folders/
+and the leaves hanging at the far end would be /files/. In Linux,
+branching is marked by =/=, so a file /this.is.a.file/ in a folder called /jj/ which is
+inside another folder called /home/ will be completely qualified by
+=/home/jj/this.is.a.file=, or, sometimes, using web-style universal
+resource identifier, =file://home/jj/this.is.a.file=. The characters
+beyond the last period are usually called the /extension/. They are no
+big deal, actually, just a part of the name, but they usually have a
+conventional value for particular kind of files, like =.txt= for text
+files and things like that. 
+
+We have already seen a few things the operating system can do,
+including the command /shell/, or command interpreter, which includes
+some orders and also fetches program for you to run, and also
+editors. But there are a few more orders that will be invaluable when
+using Linux as a programmer.
+
+** =find= 
+
+Used to find files by name, it is invaluable when you do not remember
+exactly where you downloaded your repo or you want to find an example
+of a file you have already done in the past. For instance, typing this
+in the command line
+
+#+BEGIN_EXAMPLE perl6
+find /home/thisisme -name "*.pl6" -print
+#+END_EXAMPLE
+
+will return all files with the extension =pl6=, which is the usual one
+in Perl6, in your home directory, as long as your username is
+=thisisme=; change it to your username to apply it to your particular
+situation. 
+
+=find= is, then, kind of like =ls= on steroids. =ls= will return the
+files in your folder, or if you do =ls -alt= will return them sorted
+by date, which is useful when you do not remember the last file you
+were working with. It happens.
+
+** =grep=
+
+You do not remember in which particular file you used a name like
+=foo=? =grep= to the rescue
+
+#+BEGIN_EXAMPLE perl6
+grep foo *.pl6
+#+END_EXAMPLE
+
+will look for your =foo= in all files with the extension =c=.
+
+** Creating things
+
+=mkdir= creates directories, =mkdir -p this/is/a/deep/directory=
+creates a /leaf/ directory and all the rest, and =touch= creates empty
+files. 
+
+
+
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
