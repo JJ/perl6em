@@ -181,9 +181,28 @@ Also, someone is getting impatient wanting to save work, things like
 that. Ah, impatience...
 
 * Series of things (30 minutes)
+  :PROPERTIES:
+   :Tools:    Laptop
+   :Chapter:  2
+   :END:
 
 First some non-conventional operators such as =x= and then let's proceed to talk about sequences and arrays and how to deal with infinite arrays. 
 
 ** Actual session
 
 Some trouble with syntax, which gets in the way. Spaces where they should not be, points less or more, problems with key combinations for Greek letters... all that stuff. But pretty much, a lot done in half an hour. 
+* Working with repositories
+  :PROPERTIES:
+  :Tools:    Laptop
+  :Chapter:  2
+   :END:
+
+After the last session, where homework was introduced for the first time, we are going to work with files in repositories, which is where they should be. We will learn 
+
+    - Download the repository to local filesystem using =git clone=
+    - Add a file to the repository with =git add=
+    - Record changes to the repository with =git commit=
+    - Synchronize local with global repository using =git push=
+    - Fork and work with other's repositories
+    - Accept pull requests and pull changes into local repository with =git pull=
+
