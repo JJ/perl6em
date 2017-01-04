@@ -552,6 +552,60 @@ for the time being, it is enough to know that breaking down a problem
 in parts you already know how to solve is the key for solving problems
 of any size. 
 
+* Thinking logically
+
+You are going to need in many cases whether something is true or
+false: check if a file exists, check if a number is bigger or smaller
+than another, or even check if a complicated local proposition is true
+or not. In fact, everything in computers uses logic, to the point that
+all information is codified using true or false values, what is called
+a /bit/. There are so many layers over that that you do not need to be
+much concerned about this, but you need to know about expressing logic
+in programs, and specially in Perl 6, which is what we are dealing
+with right now. 
+
+** Comparing things
+
+Let's see how Perl6 performs simple comparison operations
+
+#+BEGIN_EXAMPLE perl6
+3 > 2
+#+END_EXAMPLE
+
+will return =True=, 
+
+#+BEGIN_EXAMPLE perl6
+2 == 3
+#+END_EXAMPLE
+
+will return =False=, because 2 is not equal (==) to 3. Remember, == is
+used for comparison, and the rest of the operators are quite
+usual. Whenever an operations can be true or not, it will return a
+=False= or =True= value, and all these comparison operations
+are. Perl6 adds another /smart/ comparison
+
+#+BEGIN_EXAMPLE perl6
+2 ~~ 3
+#+END_EXAMPLE
+
+will return =False=, but
+
+#+BEGIN_EXAMPLE perl6
+2 ~~ "2"
+#+END_EXAMPLE
+
+will return =True=. The /smartness/ of the operation means that it
+will be able to recognize something even across different types, as in
+this case, where we are comparing a number (or =Int=) with a =Str=. It
+is even smarter
+
+#+BEGIN_EXAMPLE perl6
+3 ~~ Ⅲ
+#+END_EXAMPLE
+
+because it understands, as in this case, Roman numerals. 
+
+
 * ב‎ - The command line
     :PROPERTIES:
     :UNNUMBERED: t
