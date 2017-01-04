@@ -72,7 +72,6 @@ intended. Actually, test-driven design dictates that you cannot
 actually prototype without testing in advance. So testing and
 prototyping go hand in hand. 
 
-
 * The tools of the trade 
 
 This part will not be leading away from the design thinking mindset,
@@ -552,6 +551,17 @@ for the time being, it is enough to know that breaking down a problem
 in parts you already know how to solve is the key for solving problems
 of any size. 
 
+* ב‎ - Working as a team
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+  
+
+You will never walk alone when solving a problem. Even if you are
+working in a side project, something you thought about yourself, you
+will need an easy way to keep track of changes and also to easily
+incorporate whatever suggestions or even changes somebody else might
+be doing to your code.
 * Thinking logically
 
 You are going to need in many cases whether something is true or
@@ -606,7 +616,7 @@ is even smarter
 because it understands, as in this case, Roman numerals. 
 
 
-* ב‎ - The command line
+* ‎δ - The command line
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -712,17 +722,9 @@ Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
 it. /Variables/ store results and help you express, in a compact way,
 complicated formulae. 
-* δ - Working as a team
-    :PROPERTIES:
-    :UNNUMBERED: t
-    :END:
-  
-
-You will never walk alone when solving a problem. Even if you are
-working in a side project, something you thought about yourself, you
-will need an easy way to keep track of changes and also to easily
-incorporate whatever suggestions or even changes somebody else might
-be doing to your code.
+* δ - Understand errors
+Shit eventually happens. But when it does, you must be ready to unshit
+everything. 
 
 * Stand in the shoulders: /modules/ and using whatever is available
 If there is a single motto you should follow when programming, is this
