@@ -55,10 +55,52 @@ a completely different story.
    :UNNUMBERED: T
    :END:
 
-*** Teaching programming to (almost) non-programmers.
-*** Contemplate the possibilities of Perl 6 as a beginner's language.
-*** Show the beauty and craft of programming.
-*** Use project-based learning throughout and flipped-learning techniques.
+This is (mostly) a book on Perl 6. But my initial intention was not to
+show how to program in Perl 6. Here are a few of my motivations, which
+might be also your own for actually reading and following this book. 
+
+** Teaching programming to (almost) non-programmers.
+
+Most programming books seem to be written eigther for people that already know
+how to program or for people that barely knows how to press
+keys. There must be a middle ground, and I try to tread it with this
+book. If know how to use a computer, you should be ready to go the
+whole nine yards and learn to create things in Perl 6 by the end of
+the book, if that eventually happens. 
+
+** Contemplate the possibilities of Perl 6 as a beginner's language.
+There seems to be a consensus that there is such a thing as a /good
+language for beginners/, and that that language is Python. Well, maybe
+it is, but why would any other languages, Rust, JavaScript or even C++
+be worse? Asking about the best programming language for beginners is
+like asking about the best foreign language for beginners. Evidently,
+the best is the language you want to learn. If you want to learn
+Chinese, you do not learn first... whatever language is closer to
+yours and easier than Chinese (maybe Vietnamese? No idea, really, I
+got trapped in the metaphor). You learn Chinese and are done with it. 
+
+Point is, when you want to learn to program you usually have some kind
+of job or task in mind. The best language to learn programming is a
+language that can do that job. And Perl 6 can be that language.
+
+** Show the beauty and craft of programming.
+
+"Good technically, but lacks passion" is probably one of the worst
+things that can be said about a musician or even a footballer. Should
+be the case also for programmers. Those focused on getting the job
+done well /technically/ will probably lack the will, or the stamina,
+to learn new things or to completely switch the language or the
+toolbelt you are using. Along with programming, you have to make
+students learn the craft and also the beauty of a minimalistic, fast
+and beautiful program. 
+
+** Use project-based learning throughout and flipped-learning techniques.
+
+
+Which boil down to "talk little, do a lot". No slides, no heavyweight
+course materials, just a screen with examples, and make people perform
+short tasks and reproduce what is being said by themselves. Hands have
+better memory than eyes. Use that. 
 
 * α - Design thinking
    :PROPERTIES:
