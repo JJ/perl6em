@@ -15,10 +15,40 @@
 A few principles that inspire this (book|booklet|manual|you name it),
 originally conceived to help non-programmers get into Perl 6
 
-*** Learning should be fun and engaging: learn by doing.
-*** You are the master of your learning process, and tools, and outcome. 
-*** Learning never stops.
-*** Learning is a two-way process. There is no professor, no student: learning happens ideally in a community. 
+** Learning should be fun and engaging: learn by doing.
+
+The best way to make people actually learn something is by putting
+inmediately to practice whatever is being learned, be it programming
+or weaving. So you should have your computer handy and learn the tools
+as soon as possible to put things to practice. 
+
+** You are the master of your learning process, and tools, and outcome. 
+You should learn at your own step, stopping whenever you want and
+actually taking lessons when you feel like doing it. Engagement will
+ensue. 
+
+** Learning never stops.
+
+If you learn only during the short period where /class/ is taking
+place, you will not learn too much. You have to digest and assimilate
+and come up with new ideas. Some of them will be relevant to whatever
+you are learning, some of them will be revealed as relevant later on,
+some of them will be simply discarded. But you can leverage whatever
+experience you have to enhance what you are learning, even more so if
+it is a programming language. 
+
+** Learning is a two-way process. There is no professor, no student: learning happens ideally in a community. 
+
+This is kinda /zen/, but then the whole thing stinks of a holistic
+experience, where you learn about life by learning about programming
+dha back. That also means that learning comes from every direction at
+once: the other students, maybe whoever is preparing objectives and
+material for the day, but that person will also learn new things about
+him or herself and about whatever is teaching, because the best way to
+learn is to prepare something to be taught to others. 
+
+Besides, there is no learning outside self-learning. But maybe that is
+a completely different story. 
 
 * б - Motivation
    :PROPERTIES:
