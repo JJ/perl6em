@@ -97,7 +97,7 @@ and beautiful program.
 ** Use project-based learning throughout and flipped-learning techniques.
 
 
-Which boil down to "talk little, do a lot". No slides, no heavyweight
+Which boils down to "talk little, do a lot". No slides, no heavyweight
 course materials, just a screen with examples, and make people perform
 short tasks and reproduce what is being said by themselves. Hands have
 better memory than eyes. Use that. 
@@ -653,6 +653,26 @@ choose a sensible free software license, as well as Perl as a language
 (closest to Perl6) and also generate a =README.md=, which is in
 Markdown. 
 
+That creates a git repository in whatever computer hosts GitHub (or
+BitBucket), but git is a distributed system, and you can synchronize
+your computer with the contents of the repository out there. Bring it
+down with 
+
+#+BEGIN_EXAMPLE perl6
+git clone https://github.com/yourname/yourrepo
+#+END_EXAMPLE
+
+and please note I am using =https= here. You can also use the /ssh/
+address and in fact you should, but for the time being let us let it
+be. Remember to take down the username and password you have used,
+because you will need later on.
+
+That command will create a =yourrepo= directory hanging from wherever
+you are. Change to it with =cd yourrepo= and start working there. For
+instance, create a new file with =touch a_new_file=. Not everything in
+the directory is /in/ the repository, you have to purposefully add to
+it. 
+
 
 * Thinking logically
 
@@ -807,6 +827,17 @@ will look for your =foo= in all files with the extension =c=.
 creates a /leaf/ directory and all the rest, and =touch= creates empty
 files. 
 
+
+* ג‎ - Secure connection
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+
+The whole point of programming is working with remote computers. And
+in fact it is almost impossible that you work nowadays without using
+several remote computers, /cloud/ hosts as it were, to perform routine
+tasks. You need to connect to them, and do so efficiently and also
+securely. That is why /ssh/ was invented.
 
 
 * Working with, in and around data
