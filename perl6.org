@@ -579,11 +579,39 @@ big deal, actually, just a part of the name, but they usually have a
 conventional value for particular kind of files, like =.txt= for text
 files and things like that. 
 
+When you are working from the command line, you are always in a
+particular directory, which is called the /working/ directory. You
+probably have used [[https://github.com/Bash-it/bash-it][Bash it]] or something like that to show it on the
+command line; if you have not, well, do it now. =cd= is used to change
+this working directory, and you can use absolute names or
+abbreviations like =..= for the directory that contains your current
+working directory. 
+
 We have already seen a few things the operating system can do,
 including the command /shell/, or command interpreter, which includes
 some orders and also fetches program for you to run, and also
 editors. But there are a few more orders that will be invaluable when
 using Linux as a programmer.
+
+** Moving stuff around
+
+=cp=, as in "copy" copies files to another directory, maybe with
+another name
+
+#+BEGIN_EXAMPLE bash
+cp this.is.the.original.file ../to/this.is.a.copy
+#+END_EXAMPLE
+
+will copy the original file to a directory called =to=, and with a
+different name. =..= is the upper directory. Similarly,
+ 
+#+BEGIN_EXAMPLE bash
+mv this.is.the.original.file ../to/this.is.a.copy
+#+END_EXAMPLE
+
+will /move/ or change the name of the file, that is, copy and also
+remove the original file. If you just want to get rid of a file =rm
+file= will do it. 
 
 ** =find= 
 
@@ -592,7 +620,7 @@ exactly where you downloaded your repo or you want to find an example
 of a file you have already done in the past. For instance, typing this
 in the command line
 
-#+BEGIN_EXAMPLE perl6
+#+BEGIN_EXAMPLE bash
 find /home/thisisme -name "*.pl6" -print
 #+END_EXAMPLE
 
@@ -611,13 +639,13 @@ were working with. It happens.
 You do not remember in which particular file you used a name like
 =foo=? =grep= to the rescue
 
-#+BEGIN_EXAMPLE perl6
+#+BEGIN_EXAMPLE bash
 grep foo *.pl6
 #+END_EXAMPLE
 
 will look for your =foo= in all files with the extension =c=.
 
-** Creating things
+** Creating and destroying things
 
 =mkdir= creates directories, =mkdir -p this/is/a/deep/directory=
 creates a /leaf/ directory and all the rest, and =touch= creates empty
