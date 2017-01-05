@@ -493,7 +493,7 @@ for <1 2 3 2 1>  { say $_ x $_ }
 but that's something we will see later on, when we talk about loops
 and all that's nice and beautiful about it. 
 
-** And there's more
+** Lists of things are also game.
 
 Numbers and words are simple things. But you can string them together
 in something more complex. You can have sets of them, or lists of
@@ -519,19 +519,7 @@ or combine lists to create a new one using the =X= operator, called
 <a b 7 ⅓ π²> X < → ← >
 #+END_EXAMPLE
 
-for long lists, you might want to use only the first and last term 
-
-#+BEGIN_EXAMPLE perl6
-1...222
-#+END_EXAMPLE
-
-via the *yada, yada, yada* operator, or, even better,
-
-#+BEGIN_EXAMPLE perl6
-1 … 333
-#+END_EXAMPLE
-
-Not so easy or straightforward to combine lists. However, it is [[http://stackoverflow.com/questions/34567902/perl-6-list-concatenation-without-slip][not impossible]] actually:
+You can also combine in some other ways, adding one list to another. 
 
 #+BEGIN_EXAMPLE perl6
 <a b 7 ⅓ π²> , < → ← >
@@ -542,6 +530,87 @@ a list. You can *flatten* it:
 
 #+BEGIN_EXAMPLE perl6
 flat <a b 7 ⅓ π²> , < → ← >
+#+END_EXAMPLE
+
+
+* γ - Thinking like computers do
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+  
+
+You probably know, or at least have made an educated guess, that computers are unlike humans. But since
+expressions are entered in pretty much the same way you would use
+somewhere else, it's no big deal. However, once you want to
+deconstruct what actually needs to be done to make a computer do
+whatever you want it to do, you have to start to think like a
+computer, in what is known as computational thinking. It is kind of a
+game of "Simon says". You have to precede every instruction you give a
+computer by something that indicates you want it to do precisely that,
+and then you have to say very precisely what it needs to do.
+
+But there is more to that, the fact that you also need to indicate the
+/sequence/ of actions you want the computer to do by indicating that
+in your program. When you work with the REPL, as we have done above,
+the sequence is quite clear: you say something, press Enter, the
+computer thinks for a while or what looks like nothing, you have the
+response. However, when the program gets a bit more complicated, you
+also have to think, in a particular point in time, where the computer
+might be and what that implies regarding values or results you need to
+proceed. 
+
+Which is why we talk about
+[[https://en.wikipedia.org/wiki/Computational_thinking][computational thinking]] as a series of techniques for solving problems
+using computers, including all the steps you need to take to identify
+the problem, put it in a way that can be understood and processed by a
+computer, and then express every step as instructions in program that
+will, eventually, solve the problem. 
+
+We will get back to this later on, but for the time being there are a
+couple of techniques you will need to understand. First is /pattern
+recognition/, which means finding what several different pieces of
+information have in common and, in turn, what to do to solve a problem
+in a case given that you know how to solve it in another case which
+follows the same pattern. When you find something that has a regular
+increasing or arithmetic pattern, for instance, you will discover that
+you can use lists or sequences to solve it, and apply whatever you
+know already on how to deal with sequences. 
+
+The second technique we should focus on right now is /problem
+decomposition/, how to break down a problem in different parts that
+can, more easily, solved. For instance, you want to find what would be
+the number a sequence will reach if left to grow until infinity; first
+you will have to solve the problem of representing the sequence, which
+might not be inmediate, and then how to apply known techniques of
+limit finding, such as
+[[http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props][finding the function that represents the sequence]] and then applying
+what is known about function limits to that sequence. 
+
+Every part of a problem will eventually become an instruction or
+group of instructions called usually /subroutines/ or /functions/. But
+for the time being, it is enough to know that breaking down a problem
+in parts you already know how to solve is the key for solving problems
+of any size. 
+
+* To infinity and beyond
+
+If you know in advance every single term of a list, writing them down
+as above is the way to handle them. However, you might know a few
+terms of the lists, or how they are generated, and that is that. Let
+us see how to deal with them in Perl 6
+
+** Working with ranges and sequences
+
+For long lists, you might want to use only the first and last term 
+
+#+BEGIN_EXAMPLE perl6
+1...222
+#+END_EXAMPLE
+
+via the *yada, yada, yada* operator, or, even better,
+
+#+BEGIN_EXAMPLE perl6
+1 … 333
 #+END_EXAMPLE
 
 But the coolest thing with lists is the stuff you can do to all of
@@ -606,7 +675,7 @@ working on the 1000th term and on of an infinite list, without working
 out if it is exactly 3000 or some such. You can check out
 [[https://perl6advent.wordpress.com/2010/12/04/the-sequence-operator/][this Advent calendar entry for a few samples of Perl6 coolness too]].
 
-** Working on lists
+** Operating on lists
 Lists are perfectly good subjects for this calculator on steroids we
 have in the REPL. Whatever combination you think about, it is probably
 possible to do it on lists; some of them will work also on infinite
@@ -664,65 +733,6 @@ sucession of multiples of 20? Maybe...
 #+BEGIN_EXAMPLE perl6
  (5,10...Inf)[^20] Z* (4,8...Inf)[^20]
 #+END_EXAMPLE
-
-* γ - Thinking like computers do
-    :PROPERTIES:
-    :UNNUMBERED: t
-    :END:
-  
-
-You probably know, or at least have made an educated guess, that computers are unlike humans. But since
-expressions are entered in pretty much the same way you would use
-somewhere else, it's no big deal. However, once you want to
-deconstruct what actually needs to be done to make a computer do
-whatever you want it to do, you have to start to think like a
-computer, in what is known as computational thinking. It is kind of a
-game of "Simon says". You have to precede every instruction you give a
-computer by something that indicates you want it to do precisely that,
-and then you have to say very precisely what it needs to do.
-
-But there is more to that, the fact that you also need to indicate the
-/sequence/ of actions you want the computer to do by indicating that
-in your program. When you work with the REPL, as we have done above,
-the sequence is quite clear: you say something, press Enter, the
-computer thinks for a while or what looks like nothing, you have the
-response. However, when the program gets a bit more complicated, you
-also have to think, in a particular point in time, where the computer
-might be and what that implies regarding values or results you need to
-proceed. 
-
-Which is why we talk about
-[[https://en.wikipedia.org/wiki/Computational_thinking][computational thinking]] as a series of techniques for solving problems
-using computers, including all the steps you need to take to identify
-the problem, put it in a way that can be understood and processed by a
-computer, and then express every step as instructions in program that
-will, eventually, solve the problem. 
-
-We will get back to this later on, but for the time being there are a
-couple of techniques you will need to understand. First is /pattern
-recognition/, which means finding what several different pieces of
-information have in common and, in turn, what to do to solve a problem
-in a case given that you know how to solve it in another case which
-follows the same pattern. When you find something that has a regular
-increasing or arithmetic pattern, for instance, you will discover that
-you can use lists or sequences to solve it, and apply whatever you
-know already on how to deal with sequences. 
-
-The second technique we should focus on right now is /problem
-decomposition/, how to break down a problem in different parts that
-can, more easily, solved. For instance, you want to find what would be
-the number a sequence will reach if left to grow until infinity; first
-you will have to solve the problem of representing the sequence, which
-might not be inmediate, and then how to apply known techniques of
-limit finding, such as
-[[http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props][finding the function that represents the sequence]] and then applying
-what is known about function limits to that sequence. 
-
-Every part of a problem will eventually become an instruction or
-group of instructions called usually /subroutines/ or /functions/. But
-for the time being, it is enough to know that breaking down a problem
-in parts you already know how to solve is the key for solving problems
-of any size. 
 
 * ב‎ - Working as a team
     :PROPERTIES:
