@@ -532,6 +532,44 @@ a list. You can *flatten* it:
 flat <a b 7 ⅓ π²> , < → ← >
 #+END_EXAMPLE
 
+You can already do interesting things with these lists (or arrays, or
+vectors, stuff in a row, whatever). For instance, you want to pick one
+element randomly, 
+#+BEGIN_EXAMPLE perl6
+ (flat <a b 7 ⅓ π²> , < → ← >).pick
+#+END_EXAMPLE
+will return, every time you run it, a different element. You can do
+that as many times as you want, but it is much easier to use =roll= to
+do it many times for you.
+#+BEGIN_EXAMPLE perl6
+< → ← >.roll(6)
+#+END_EXAMPLE
+will return a whole quiver of arrows.
+
+Maybe you want a single element of the array:
+#+BEGIN_EXAMPLE perl6
+ < → ← >.roll(6)[3]
+#+END_EXAMPLE
+This will return the 4th element, taking into account that all arrays
+start with 0. Otherwise known as a random arrow. Or you might want to
+extract a range
+#+BEGIN_EXAMPLE perl6
+(flat <a b 7 ⅓ π²> , < → ← >)[3..6]
+#+END_EXAMPLE
+uses the /range/ operator =..= (that is, two points), which generates
+a contiguous sequence of elements. Otherwise known as, well,
+range. But these ranges also behave as arrays:
+#+BEGIN_EXAMPLE perl6
+(0..10)[3..6]
+#+END_EXAMPLE perl6
+although they are not exactly the same:
+#+BEGIN_EXAMPLE perl6
+(0..10).WHAT
+#+END_EXAMPLE perl6
+will, effectively, return =(Range)=. 
+
+This is just the start of complex structures with Perl. More to come
+in the next chapters. 
 
 * γ - Thinking like computers do
     :PROPERTIES:
@@ -734,7 +772,7 @@ sucession of multiples of 20? Maybe...
  (5,10...Inf)[^20] Z* (4,8...Inf)[^20]
 #+END_EXAMPLE
 
-* ב‎ - Working as a team
+* δ - Working as a team
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -847,7 +885,7 @@ is even smarter
 because it understands, as in this case, Roman numerals. 
 
 
-* ‎δ - The command line
+* ‎ε - The command line
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -947,7 +985,7 @@ creates a /leaf/ directory and all the rest, and =touch= creates empty
 files. 
 
 
-* ג‎ - Secure connection
+* ב‎ - Secure connection
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -964,14 +1002,14 @@ Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
 it. /Variables/ store results and help you express, in a compact way,
 complicated formulae. 
-* ε - Understand errors
+* ζ - Understand errors
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
 Shit eventually happens. But when it does, you must be ready to unshit
 everything. 
 
-* ד‎ - Markdown for documentation 
+* ג‎ - Markdown for documentation 
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -989,7 +1027,7 @@ one: /Don't reinvent the wheel/. Before sitting down to do something,
 check out if it has been already done. In mature languages like Perl,
 the answer is most probably Yes. In some otheres, like this Perl 6 we
 are dealing with, your mileage may vary. 
-* ζ - Web weaving
+* η - Web weaving
    :PROPERTIES:
    :UNNUMBERED: t
     :END:
@@ -1000,7 +1038,7 @@ be the web nowadays. So it does not harm, and it will benefit greatly,
 to learn from now what the web is all about and how we can extract
 information from it, use it to interact with people and publish our
 data so that anyone in the whole wide world can see it. 
-* ה - Getting help
+* ד‎ - Getting help
    :PROPERTIES:
    :UNNUMBERED: t
     :END:
@@ -1015,7 +1053,7 @@ people in your predicament. Fortunately, Perl 6 is very good at that.
 Doodling with the REPL is fun, but eventually you will need to profit:
 the program has to be stored and maybe shipped somewhere. Architecting
 a script needs to put your computational thinking skills to work. 
-* η - Pack all your troubles in a container
+* θ - Pack all your troubles in a container
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -1068,7 +1106,7 @@ one hand not familiar with modern technology and that on the other
 hand is familiar enough to try and break and enter in your program to
 steal your family secrets. User interfaces have to be easy on the
 user, but also secure. Never forget that. 
-* θ - Testing for the win
+* ι - Testing for the win
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
@@ -1091,7 +1129,7 @@ Machine learning is all about understanding text. That text does not
 come in a shape you can easily process it. Regular expressions help
 you deal with text that is not totally structured, but that has some
 regularities in it. 
-* ι - What you need to know about the cloud
+* κ - What you need to know about the cloud
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
@@ -1106,7 +1144,7 @@ You have probably been told, by myself in the previous chapter, that
 the cloud is where you run your program. But it is not going to go,
 all by itself, to a cumulonimbus out there. You have to physically
 take it, and that is what is called /deploying/. 
-* κ - The world is my platform
+* λ - The world is my platform
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
