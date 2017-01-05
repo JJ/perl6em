@@ -1,0 +1,1722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2017-01-04 mié 21:00 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Perl 6, the musical</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Juan J. merelo" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Perl 6, the musical</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org937272a">1. Introduction</a></li>
+<li><a href="#orgc728d70">ℵ - Principles</a>
+<ul>
+<li><a href="#orgb9fc5b0">Learning should be fun and engaging: learn by doing.</a></li>
+<li><a href="#org319b692">You are the master of your learning process, and tools, and outcome.</a></li>
+<li><a href="#org961e8e6">Learning never stops.</a></li>
+<li><a href="#org17874bb">Learning is a two-way process. There is no professor, no student: learning happens ideally in a community.</a></li>
+</ul>
+</li>
+<li><a href="#org75d144e">б - Motivation</a>
+<ul>
+<li><a href="#org1923636">Teaching programming to (almost) non-programmers.</a></li>
+<li><a href="#org13c4559">Contemplate the possibilities of Perl 6 as a beginner's language.</a></li>
+<li><a href="#org7fc37de">Show the beauty and craft of programming.</a></li>
+<li><a href="#org152f97a">Use project-based learning throughout and flipped-learning techniques.</a></li>
+</ul>
+</li>
+<li><a href="#org400af0a">α - Design thinking</a>
+<ul>
+<li><a href="#org7d4eb81">Empathization</a></li>
+<li><a href="#org893d0fb">Definition</a></li>
+<li><a href="#orgd26c990">Ideate</a></li>
+<li><a href="#orgbe23574">Prototype</a></li>
+<li><a href="#org975ac33">Test</a></li>
+</ul>
+</li>
+<li><a href="#org2dfbbea">2. The tools of the trade</a>
+<ul>
+<li><a href="#org4bf1b96">2.1. Shells</a></li>
+<li><a href="#org8825df4">2.2. Editors.</a></li>
+<li><a href="#org0c74eab">2.3. Shells within editors</a></li>
+</ul>
+</li>
+<li><a href="#org855f219">ß - We need to talk about Unicode</a></li>
+<li><a href="#orga0303fd">3. The expressions</a>
+<ul>
+<li><a href="#org2a257f4">3.1. REPLs and how to use them as glorified calculators</a></li>
+<li><a href="#orgf01399b">3.2. Now that we mention Unicode</a></li>
+<li><a href="#orga06142f">3.3. It's not only numbers</a></li>
+<li><a href="#org281f35e">3.4. And there's more</a></li>
+</ul>
+</li>
+<li><a href="#orgd5c55e0">γ - Thinking like computers do</a></li>
+<li><a href="#org7e7b10a">ב‎ - Working as a team</a></li>
+<li><a href="#org7ca21fd">4. Thinking logically</a>
+<ul>
+<li><a href="#org740677c">4.1. Comparing things</a></li>
+</ul>
+</li>
+<li><a href="#orge8a23d1">‎δ - The command line</a>
+<ul>
+<li><a href="#org7b2abbb">Moving stuff around</a></li>
+<li><a href="#orgde94470"><code>find</code></a></li>
+<li><a href="#org16cc553"><code>grep</code></a></li>
+<li><a href="#orgf3c6acd">Creating and destroying things</a></li>
+</ul>
+</li>
+<li><a href="#orgee3a50a">ג‎ - Secure connection</a></li>
+<li><a href="#orged01a89">5. Working with, in and around data</a></li>
+<li><a href="#org7e45c9c">ε - Understand errors</a></li>
+<li><a href="#org7b7fe9a">ד‎ - Markdown for documentation</a></li>
+<li><a href="#orgb7f9a0a">6. Stand in the shoulders: <i>modules</i> and using whatever is available</a></li>
+<li><a href="#org7e072ac">ζ - Web weaving</a></li>
+<li><a href="#org5def3a5">7. Building up: <i>scripts</i> and <i>programs</i></a></li>
+<li><a href="#org3e97da8">η - Pack all your troubles in a container</a></li>
+<li><a href="#org0be0225">г - Always play it safe</a></li>
+<li><a href="#org9f30164">8. Interacting with the user</a></li>
+<li><a href="#orged9f276">θ - Testing for the win</a></li>
+<li><a href="#org38ccd45">Д - Find the bug</a></li>
+<li><a href="#orgbe98bf2">9. Regular expressions</a></li>
+<li><a href="#org9b7e462">ι - What you need to know about the cloud</a></li>
+<li><a href="#orgd3adbce">10. Deploying to the cloud</a></li>
+<li><a href="#org0923c6b">κ - The world is my platform</a></li>
+<li><a href="#org9cc2621">11. Analyzing data</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org937272a" class="outline-2">
+<h2 id="org937272a"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This book is about learning programming using a promising, and almost
+completely new, language: Perl 6. But it is only Perl 6 specific in
+a minority of the content. Most chapters that deal with Perl 6 could
+be rewritten using any other language, preferably a new, cool language
+such as Go or Rust. I, or someone, might do it some day. But for the
+time being, let us be content with Perl 6. Which is also new and cool.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc728d70" class="outline-2">
+<h2 id="orgc728d70">ℵ - Principles</h2>
+<div class="outline-text-2" id="text-orgc728d70">
+<p>
+A few principles that inspire this (book|booklet|manual|you name it),
+originally conceived to help non-programmers get into Perl 6
+</p>
+</div>
+
+<div id="outline-container-orgb9fc5b0" class="outline-3">
+<h3 id="orgb9fc5b0">Learning should be fun and engaging: learn by doing.</h3>
+<div class="outline-text-3" id="text-orgb9fc5b0">
+<p>
+The best way to make people actually learn something is by putting
+inmediately to practice whatever is being learned, be it programming
+or weaving. So you should have your computer handy and learn the tools
+as soon as possible to put things to practice. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org319b692" class="outline-3">
+<h3 id="org319b692">You are the master of your learning process, and tools, and outcome.</h3>
+<div class="outline-text-3" id="text-org319b692">
+<p>
+You should learn at your own step, stopping whenever you want and
+actually taking lessons when you feel like doing it. Engagement will
+ensue. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org961e8e6" class="outline-3">
+<h3 id="org961e8e6">Learning never stops.</h3>
+<div class="outline-text-3" id="text-org961e8e6">
+<p>
+If you learn only during the short period where <i>class</i> is taking
+place, you will not learn too much. You have to digest and assimilate
+and come up with new ideas. Some of them will be relevant to whatever
+you are learning, some of them will be revealed as relevant later on,
+some of them will be simply discarded. But you can leverage whatever
+experience you have to enhance what you are learning, even more so if
+it is a programming language. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org17874bb" class="outline-3">
+<h3 id="org17874bb">Learning is a two-way process. There is no professor, no student: learning happens ideally in a community.</h3>
+<div class="outline-text-3" id="text-org17874bb">
+<p>
+This is kinda <i>zen</i>, but then the whole thing stinks of a holistic
+experience, where you learn about life by learning about programming
+dha back. That also means that learning comes from every direction at
+once: the other students, maybe whoever is preparing objectives and
+material for the day, but that person will also learn new things about
+him or herself and about whatever is teaching, because the best way to
+learn is to prepare something to be taught to others. 
+</p>
+
+<p>
+Besides, there is no learning outside self-learning. But maybe that is
+a completely different story. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org75d144e" class="outline-2">
+<h2 id="org75d144e">б - Motivation</h2>
+<div class="outline-text-2" id="text-org75d144e">
+<p>
+This is (mostly) a book on Perl 6. But my initial intention was not to
+show how to program in Perl 6. Here are a few of my motivations, which
+might be also your own for actually reading and following this book. 
+</p>
+</div>
+
+<div id="outline-container-org1923636" class="outline-3">
+<h3 id="org1923636">Teaching programming to (almost) non-programmers.</h3>
+<div class="outline-text-3" id="text-org1923636">
+<p>
+Most programming books seem to be written eigther for people that already know
+how to program or for people that barely knows how to press
+keys. There must be a middle ground, and I try to tread it with this
+book. If know how to use a computer, you should be ready to go the
+whole nine yards and learn to create things in Perl 6 by the end of
+the book, if that eventually happens. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org13c4559" class="outline-3">
+<h3 id="org13c4559">Contemplate the possibilities of Perl 6 as a beginner's language.</h3>
+<div class="outline-text-3" id="text-org13c4559">
+<p>
+There seems to be a consensus that there is such a thing as a <i>good
+language for beginners</i>, and that that language is Python. Well, maybe
+it is, but why would any other languages, Rust, JavaScript or even C++
+be worse? Asking about the best programming language for beginners is
+like asking about the best foreign language for beginners. Evidently,
+the best is the language you want to learn. If you want to learn
+Chinese, you do not learn first&#x2026; whatever language is closer to
+yours and easier than Chinese (maybe Vietnamese? No idea, really, I
+got trapped in the metaphor). You learn Chinese and are done with it. 
+</p>
+
+<p>
+Point is, when you want to learn to program you usually have some kind
+of job or task in mind. The best language to learn programming is a
+language that can do that job. And Perl 6 can be that language.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7fc37de" class="outline-3">
+<h3 id="org7fc37de">Show the beauty and craft of programming.</h3>
+<div class="outline-text-3" id="text-org7fc37de">
+<p>
+"Good technically, but lacks passion" is probably one of the worst
+things that can be said about a musician or even a footballer. Should
+be the case also for programmers. Those focused on getting the job
+done well <i>technically</i> will probably lack the will, or the stamina,
+to learn new things or to completely switch the language or the
+toolbelt you are using. Along with programming, you have to make
+students learn the craft and also the beauty of a minimalistic, fast
+and beautiful program. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org152f97a" class="outline-3">
+<h3 id="org152f97a">Use project-based learning throughout and flipped-learning techniques.</h3>
+<div class="outline-text-3" id="text-org152f97a">
+<p>
+Which boils down to "talk little, do a lot". No slides, no heavyweight
+course materials, just a screen with examples, and make people perform
+short tasks and reproduce what is being said by themselves. Hands have
+better memory than eyes. Use that. 
+</p>
+
+<p>
+In this book, in most cases activities will have a particular purpose
+and will follow or flow from one chapter, or asides, to the next
+ones, so that you will end up building one, or several, scripts
+or programs or even notes that will be useful by themselves. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org400af0a" class="outline-2">
+<h2 id="org400af0a">α - Design thinking</h2>
+<div class="outline-text-2" id="text-org400af0a">
+<p>
+Source <a href="https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38">https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38</a>
+</p>
+</div>
+
+<div id="outline-container-org7d4eb81" class="outline-3">
+<h3 id="org7d4eb81">Empathization</h3>
+<div class="outline-text-3" id="text-org7d4eb81">
+<p>
+Find users, find out about them, care about them, know their stories. Maybe you are the user, maybe it's someone close to you.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org893d0fb" class="outline-3">
+<h3 id="org893d0fb">Definition</h3>
+<div class="outline-text-3" id="text-org893d0fb">
+<p>
+Define the challenge, what you want to do, express the problem. This
+phase can be merged with the next one, since it is difficult to define
+the problem without recourse about how you are going to solve the
+problem itself. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd26c990" class="outline-3">
+<h3 id="orgd26c990">Ideate</h3>
+<div class="outline-text-3" id="text-orgd26c990">
+<p>
+Try to find out the solution to the problems your users have. 
+</p>
+
+
+<p>
+In this phase you are supposed to produce ideas to solve the
+problem. There will be no restriction other than whatever is required
+by your target. You might want to create problems that imply certain
+devices and not others, or solutions that cost no more than a certain
+amount of money. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbe23574" class="outline-3">
+<h3 id="orgbe23574">Prototype</h3>
+<div class="outline-text-3" id="text-orgbe23574">
+<p>
+We will transition to actually doing something, incrementally. And
+this is a phase, together with the following one, that is actually in
+the engineering realm, so we are in familiar ground here. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org975ac33" class="outline-3">
+<h3 id="org975ac33">Test</h3>
+<div class="outline-text-3" id="text-org975ac33">
+<p>
+If you are the user yourself, try it out. See if it is useful as
+intended. Actually, test-driven design dictates that you cannot
+actually prototype without testing in advance. So testing and
+prototyping go hand in hand. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2dfbbea" class="outline-2">
+<h2 id="org2dfbbea"><span class="section-number-2">2</span> The tools of the trade</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+This part will not be leading away from the design thinking mindset,
+but actually will be getting into the last phases of it. Whatever idea
+you had in mind will have to be kept stashed to go back to it whenever
+you need it. In fact, we are entering the phase called <i>prototyping</i>,
+or seen in another way, you are trying to solve a problem for a target
+audience, yourself, by choosing the right tools. 
+</p>
+
+<p>
+In this phase you will find that there's no perfect tool for doing
+everything.
+</p>
+
+<blockquote>
+<p>
+Although the combination Linux + Emacs comes pretty close 
+</p>
+</blockquote>
+
+<p>
+Let's start with the operating system. That would be Linux. Whew, that
+was short. But let's proceed to that thing that actually allows users to run programs, the shell. 
+</p>
+</div>
+
+<div id="outline-container-org4bf1b96" class="outline-3">
+<h3 id="org4bf1b96"><span class="section-number-3">2.1</span> Shells</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Then, the command line interpreter, also called <i>shell</i>. This might seem like a given, but
+in fact different command line interpreters have different
+capabilities. In fact, even the <a href="https://www.gnu.org/software/bash/">humble bash</a> has
+interesting capabilities you can use. Main thing you want to tap is
+the possibility of displaying interesting information in the command
+line, such as the directory you are working on or, later on, the
+branch of the repository you are in. And, in that sense, 
+there are quite a few choices here, but the main
+thing about them is the possibility of <i>theming</i> them, that is, making
+a configuration that allows, mostly, find the information we mention
+above by just selecting a <i>theme</i>. In that sense <a href="http://zsh.sourceforge.net/">zsh</a> and <a href="https://fishshell.com/">fish</a> are very
+strong contenders. Install them the usual way, and then select a theme
+that goes easily with your programming habits;
+<a href="https://github.com/robbyrussell/oh-my-zsh">Oh My Zsh</a> or <a href="https://github.com/Bash-it/bash-it">bash-it</a> are good places to start. 
+</p>
+
+<p>
+Play a bit with the themes or options until you find one with all the
+colors and contrast you want. And then come back here for the&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8825df4" class="outline-3">
+<h3 id="org8825df4"><span class="section-number-3">2.2</span> Editors.</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+The choice of an editor goes beyond mere utility to become an
+indentity, a side to stand when the flame war starts. As above, the
+motto is always <i>suit yourself</i>, but since we are in the realm of
+Perl6, I would propose <a href="http://atom.io">Atom</a> as the editor to use. It is a modern
+editor, it has got a good and evolving support for Perl 6, and it is
+free software.
+</p>
+
+<p>
+Not that the traditional Emacs and Vi/Vim are not good choices too. At
+least Emacs, but Atom is easier to use and is improving in speed and
+support by the minute. Besides, it has got everything it takes for
+professional editor: syntax highlighting, being able to do some checks
+from the editor itself, and allow running and debugging. It has got
+all that, so that will be it. 
+</p>
+
+<p>
+To go with the editor, you need some relatively fast way of inputting
+some characters such as ሁ or Щ. I have used the application "Character
+Map" that comes with Ubuntu; after finding a character by the name of
+the alphabet, you can go to Character Details and copy/paste it to
+wherever you want it used. You can also click twice and the character
+will appear in the "Text to copy" slot. 
+</p>
+
+
+<div class="figure">
+<p><img src="./img/charmap.png" alt="charmap.png" />
+</p>
+</div>
+
+<p>
+Of course, something would be missing here if I did not mention `vim`. Here you go, a mention.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0c74eab" class="outline-3">
+<h3 id="org0c74eab"><span class="section-number-3">2.3</span> Shells within editors</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Editors are cool because they allow to work with all kind of symbols
+that are not exactly text, or that  cannot be produced with a
+combination of key strokes. Emacs is great at that, and it can access
+the whole set of symbols that are out there by name using a
+combination of keys. And it can also run a shell inside, your favorite
+shell, in fact. So enter <code>emacs</code> and then type <code>Escape key + x</code> and
+then, when a prompt appears in the lower line, <code>shell</code> and you will
+have your shell running <i>inside</i> Emacs, with access to all kind of
+goodies, like saving sessions as files, searching using all Emacs
+facilities, and all kind of symbols that can be used in it. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org855f219" class="outline-2">
+<h2 id="org855f219">ß - We need to talk about Unicode</h2>
+<div class="outline-text-2" id="text-org855f219">
+<p>
+This does not belong to the language proper, but it is still something
+that has to be mentioned. Languages are used to write applications,
+and these can use any language in the world. <a href="https://unicode-table.com/es/">Unicode</a> is the way to use
+any alphabet, and some <a href="http://www.omniglot.com/conscripts/natlangs.htm">neographies</a> and emoticons, in our
+programs. Luckily enough, Perl6 packs one of the best supports for
+this; unluckily, Unicode is complicated <i>per se</i>, so we will have to
+learn a bit of linguistics to understand how we, later on, are going
+to handle this, which we will even if we write only for ourselves.
+</p>
+
+<p>
+First important concept is the <i>codepoint</i>. A code point is pretty
+much equivalent to a letter, although it can be a symbol or also a
+formatting instruction such as Tab or Newline. Every code point
+corresponds to a numeric combination, which is usually expressed in
+hexadecimal; for instance, <code>0x2017</code> corresponds to the character <code>‗</code>,
+part of a table-drawing set. Every character also has a series of
+attributes, including the category; this character belongs to the <code>Po</code>
+<a href="https://en.wikipedia.org/wiki/Unicode_character_property#General_Category">category</a>,
+meaning that it is <i>Punctuation, other</i>. The <a href="http://userguide.icu-project.org/strings/properties">properties</a> include a
+series of attributes such as the fact that they are numeric or can do
+things like folding to a particular case or be joined to the next
+character, or even if the direction they are written in. 
+</p>
+
+<p>
+Characters are written as <a href="http://mathias.gaunard.com/unicode/doc/html/unicode/introduction_to_unicode.html#unicode.introduction_to_unicode.grapheme_clusters">graphemes</a>, and usually a code point
+corresponds to a single written grapheme; however, in some cases code
+points group to form a <i>grapheme cluster</i>, which is a set of code
+points that constitute a grapheme; the most common example is letters
+with marks such as á, but more complicated expressions might be
+thought of. Or not, depending on your imagination. 
+</p>
+
+<p>
+You write graphemes and grapheme clusters as <i>glyphs</i>, or letters. And
+these are typeset, in a particular environment, using <i>fonts</i>. A font
+is a set of mathematical formulae, yes, there is math involved, that
+allows to render a particular letter in many different sizes and forms
+such as italics or boldface. The fact that they are a formula, and
+that you have to design formulae for every single glyph, means that
+not all glyphs might be available in all fonts. Some fonts will have
+all, or most of them, some of them not. And that, in turn, means that
+some Etruscan letter such as this one 𐌚 that renders beautifully in
+your editor might show up as an x-marked rectanble or question mark
+somewhere else, a console or a word processor. In fact, depending on
+how you are reading this, you might not see the glyph I'm referring to
+at all. 
+</p>
+
+<p>
+Your take away message here is that you need to know how to use
+Unicode in whatever program you use, and that some particular
+structures of the program, like operators or names, will use graphemes
+with particular properties, probably something alphabetic-like. Also
+that unicode is complicated, but that you should better learn about it
+as soon as possible, as in now. 
+</p>
+</div>
+</div>
+<div id="outline-container-orga0303fd" class="outline-2">
+<h2 id="orga0303fd"><span class="section-number-2">3</span> The expressions</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+The first thing you need to know about a language, any language, is
+how to compute things. Compute in the more general sense: combine
+things to give other things. This, in general, is called expression,
+which, also in general, is a bunch of symbols linked by <b>operators</b>. 
+</p>
+
+<p>
+Generally, modern computer languages are able to work with many
+different kind of symbols, and Perl6 is no exception. Let's start with
+that.
+</p>
+</div>
+
+<div id="outline-container-org2a257f4" class="outline-3">
+<h3 id="org2a257f4"><span class="section-number-3">3.1</span> REPLs and how to use them as glorified calculators</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+A
+<a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a>
+is a Read-Eval-Print loop. it is a program included with most
+interpreted languages, that presents a command-line prompt and into
+which you can type expressions, and, later on, full statements. But,
+for the time being, let's type
+</p>
+
+
+<pre class="example">
+perl6
+</pre>
+
+<p>
+And we will be into a perl6 REPL into which you can type Perl6 stuff.
+</p>
+
+<p>
+Let's try the simplest thing:
+</p>
+
+
+<pre class="example">
+To exit type 'exit' or '^D'
+&gt; sin(π/2)
+</pre>
+
+<p>
+You will have to find a way to type that π, by copy/pasting it from
+some website or google or right this. It will return the sine of π/2,
+which, as you know, is 1. 
+</p>
+
+<p>
+And this is cool, because only some languages are able to handle this
+kind of expressions, and, even more, to use it correctly in math. But
+you can do even more:
+</p>
+
+
+<pre class="example">
+sin(π/2) +1
+</pre>
+
+<p>
+You can do that by copying/pasting, or else install <code>Linenoise</code>, a
+command line that allows you to go back to previous command by typing
+arrow-up. Do it with
+</p>
+
+
+<pre class="example">
+zef install Linenoise
+</pre>
+
+<p>
+You can use the usual arithmetic operators <code>+,-,*,/</code> but Perl6 adds
+two typographic operators, ÷ and × (these ones are produced in the
+Spanish keyboard with May+AltGr+ comma or period), like
+</p>
+
+
+<pre class="example">
+sin(π/3) × sin(π/3) + cos(π/3) × cos(π/3)
+</pre>
+
+<p>
+Or, even better
+</p>
+
+
+<pre class="example">
+sin(π/3)² + cos(π/3)²
+</pre>
+
+<p>
+One of the objectives of Perl6 is to use the whole range of characters
+that Unicode, if not modern keyboards, offer. This simplifies
+expressions and makes them more readable. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf01399b" class="outline-3">
+<h3 id="orgf01399b"><span class="section-number-3">3.2</span> Now that we mention Unicode</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Unicode is the way to express all alphabets in the world, and then
+some things that are not really alphabets. It uses up to around sixty
+thousand symbols, and allows us to write, using modern operating
+systems, editors and languages, anything that would have to be
+expressed in living or dead languages, and even some
+emoticons. Unicode is evolving constantly, and for the people means
+that they will be able to use characters that are usual in their own
+language, and also some usual in mathematical expressions. 
+</p>
+
+<p>
+Since not all languages, editors, operating systems or even keyboards
+are <b>modern</b> in that sense, some impedance should be expected. But
+Perl 6 will not get in your way, allowing you to use them just they
+way they should, so if you want to raise something to the second power
+you will not have to, although you can, write x**2 but simply x².
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga06142f" class="outline-3">
+<h3 id="orga06142f"><span class="section-number-3">3.3</span> It's not only numbers</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+All the expressions written above are numbers. 
+</p>
+
+
+<pre class="example">
+(sin(π/3)² + cos(π/3)²).WHAT
+</pre>
+
+<p>
+is going to return <code>(Num)</code>, indicating that it is simply a Number,
+actually a real number. This <code>.WHAT</code>, together with surrounding the
+expression via parentheses meaning grouping, is a way to apply a
+<i>property</i> or to call a <i>method</i> on that object. In Perl6, everythin
+is an object, and objects have a class, and you want to call methods
+that correspond to objects of that class, append a dot and use the
+method, possibly with some arguments like <code>WHAT(is, "the",
+$what)</code>. Let's not worry about that for the time being, or about
+classes themselves. Just with the fact that every expression is an
+object, and those objects belong to a class; every class in Perl6
+<i>descends</i> from the ur-class called μ or <code>Mu</code>. And among the
+<a href="https://docs.perl6.org/type/Mu">properties of Mu</a> is that you can call this <code>WHAT</code>. Any other class
+descends from this one, so <i>you can call <code>.WHAT</code> on any object of any
+class</i>. That is the take-home message, even if you might not know, so
+far, what is an object, or a class. Second take home message:
+<i>different objects also have different classes</i>. 
+</p>
+
+<p>
+Since both <i>objects</i> at the sides of the <code>+</code> are Nums, you
+can add or substract them or do any other arithmetic operation, but you cannot do 
+</p>
+
+
+<pre class="example">
+sin(π/3)² + cos(π/3)² + " is 1"
+</pre>
+
+<p>
+will yield this error
+</p>
+
+<div id="orgca6f7b2" class="figure">
+<p><img src="./img/expression-error.png" alt="expression-error.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Errorred expression in the REPL</p>
+</div>
+
+<p>
+And the reason for that can be found out by typing:
+</p>
+<pre class="example">
+" is 1".WHAT
+</pre>
+
+<p>
+Which, whatever it is, is not a <code>Num</code>, so it cannot be added. 
+That shows that there are more types of data you can use and work with
+from the REPL. In fact, there are a lot. In general, you cannot mix
+and match and, also in general, every one has got its own operators
+you can work with. You can mix fractions with integer numbers, for
+instance: 
+</p>
+
+<pre class="example">
+⅓+4/3
+</pre>
+
+<p>
+And 
+</p>
+
+<pre class="example">
+(⅓+4/3).WHAT
+</pre>
+
+<p>
+will return <code>(Rat)</code>, a Rational, same as <code>⅓+4</code>. In fact, most
+<a href="http://blogs.perl.org/users/ovid/2015/02/a-little-thing-to-love-about-perl-6-and-cobol.html">floating point numbers in Perl 6 will be represented as rational</a>,
+unless we explicitly tell the interpreter to deal with them as
+floating point, that is real, numbers, which, BTW, cannot be something
+else that fractional numbers since they use a finite representation in
+computers. Mostly.
+</p>
+
+<p>
+However, in some cases you can try and mix different things using an
+operator. Operator "~" concatenates stuff, that is, joins things that
+look like words and letters, for instance
+</p>
+
+<pre class="example">
+6 ~ "6"
+</pre>
+
+<p>
+will return <code>66</code>, and anything you put there will be concatenated. <code>~</code>
+is an operator that is not picky about what it has got in both ends. 
+</p>
+
+<p>
+You cannot add strings together, because that is what they are, but curiously enough, you can multiply them:
+</p>
+
+<pre class="example">
+"1" ~ "\n" ~ "2" x 2 ~ "\n" ~ "3" x 3 ~ "\n" ~ "2" x 2 ~ "\n" ~ "1"
+</pre>
+
+<p>
+This being a rather nice and utterly useless example on the operator
+<code>x</code>, which <i>multiplies</i> or rather <i>replicates</i> whatever character of
+string it is related to. Introduced together with =\n", the carriage
+return, so that if forms a nice pile of stuff. 
+</p>
+
+<p>
+Which is shorter and better in this example
+</p>
+
+<pre class="example">
+for &lt;1 2 3 2 1&gt;  { say $_ x $_ }
+</pre>
+
+<p>
+but that's something we will see later on, when we talk about loops
+and all that's nice and beautiful about it. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org281f35e" class="outline-3">
+<h3 id="org281f35e"><span class="section-number-3">3.4</span> And there's more</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Numbers and words are simple things. But you can string them together
+in something more complex. You can have sets of them, or lists of
+them, or combine them as sets of lists of sets of whatever. Perl 6 is
+great because you do not need to make all things in a complex
+structure be of the same type. You can create a list with the less than
+and more than sign, this way:
+</p>
+
+<pre class="example">
+&lt;a b 7 ⅓ π²&gt;
+</pre>
+
+<p>
+And with lists, you can do things like sorting:
+</p>
+
+<pre class="example">
+sort &lt;a b 7 ⅓ π²&gt;
+</pre>
+
+<p>
+or combine lists to create a new one using the <code>X</code> operator, called
+<b>cross product</b> 
+</p>
+
+<pre class="example">
+&lt;a b 7 ⅓ π²&gt; X &lt; → ← &gt;
+</pre>
+
+<p>
+for long lists, you might want to use only the first and last term 
+</p>
+
+<pre class="example">
+1...222
+</pre>
+
+<p>
+via the <b>yada, yada, yada</b> operator, or, even better,
+</p>
+
+<pre class="example">
+1 … 333
+</pre>
+
+<p>
+Not so easy or straightforward to combine lists. However, it is <a href="http://stackoverflow.com/questions/34567902/perl-6-list-concatenation-without-slip">not
+impossible</a> actually:
+</p>
+
+<pre class="example">
+&lt;a b 7 ⅓ π²&gt; , &lt; → ← &gt;
+</pre>
+
+<p>
+is going to create a new list with two elements, each one of which is
+a list. You can <b>flatten</b> it:
+</p>
+
+<pre class="example">
+flat &lt;a b 7 ⅓ π²&gt; , &lt; → ← &gt;
+</pre>
+
+<p>
+But the coolest thing with lists is the stuff you can do to all of
+them at the same time:
+</p>
+
+<pre class="example">
+[+] 1 … 333
+</pre>
+
+<p>
+will add everything together. Any operator you put inside brackets
+will be applied to all in turn. Try <code>[*] 1 … 333</code>, for instance.
+</p>
+
+<p>
+But the coolness factor can be increased:
+</p>
+<pre class="example">
+[+] 1,3 … 333
+</pre>
+
+<p>
+and even
+</p>
+<pre class="example">
+[+] 1,3,9 … 333
+</pre>
+
+<p>
+Perl6 is able to deal with arithmetic and geometric progressions out
+of the box. And even infinite ones:
+</p>
+
+<pre class="example">
+1,3,9 … ∞
+</pre>
+
+<p>
+You can obtain the 100th term using
+</p>
+
+<pre class="example">
+(1,3,9 … ∞)[100]
+</pre>
+
+<p>
+or, why not, the terms from 1000 to 1100
+</p>
+
+<pre class="example">
+(1,3,9 … ∞)[1000…1100]
+</pre>
+
+<p>
+which will return a pile of numbers, separated by spaces. Besides, at the same time, we have seen how to deal with a single term in a
+list, and how to work with a series of terms. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd5c55e0" class="outline-2">
+<h2 id="orgd5c55e0">γ - Thinking like computers do</h2>
+<div class="outline-text-2" id="text-orgd5c55e0">
+<p>
+You probably know, or at least have made an educated guess, that computers are unlike humans. But since
+expressions are entered in pretty much the same way you would use
+somewhere else, it's no big deal. However, once you want to
+deconstruct what actually needs to be done to make a computer do
+whatever you want it to do, you have to start to think like a
+computer, in what is known as computational thinking. It is kind of a
+game of "Simon says". You have to precede every instruction you give a
+computer by something that indicates you want it to do precisely that,
+and then you have to say very precisely what it needs to do.
+</p>
+
+<p>
+But there is more to that, the fact that you also need to indicate the
+<i>sequence</i> of actions you want the computer to do by indicating that
+in your program. When you work with the REPL, as we have done above,
+the sequence is quite clear: you say something, press Enter, the
+computer thinks for a while or what looks like nothing, you have the
+response. However, when the program gets a bit more complicated, you
+also have to think, in a particular point in time, where the computer
+might be and what that implies regarding values or results you need to
+proceed. 
+</p>
+
+<p>
+Which is why we talk about
+<a href="https://en.wikipedia.org/wiki/Computational_thinking">computational thinking</a> as a series of techniques for solving problems
+using computers, including all the steps you need to take to identify
+the problem, put it in a way that can be understood and processed by a
+computer, and then express every step as instructions in program that
+will, eventually, solve the problem. 
+</p>
+
+<p>
+We will get back to this later on, but for the time being there are a
+couple of techniques you will need to understand. First is <i>pattern
+recognition</i>, which means finding what several different pieces of
+information have in common and, in turn, what to do to solve a problem
+in a case given that you know how to solve it in another case which
+follows the same pattern. When you find something that has a regular
+increasing or arithmetic pattern, for instance, you will discover that
+you can use lists or sequences to solve it, and apply whatever you
+know already on how to deal with sequences. 
+</p>
+
+<p>
+The second technique we should focus on right now is <i>problem
+decomposition</i>, how to break down a problem in different parts that
+can, more easily, solved. For instance, you want to find what would be
+the number a sequence will reach if left to grow until infinity; first
+you will have to solve the problem of representing the sequence, which
+might not be inmediate, and then how to apply known techniques of
+limit finding, such as
+<a href="http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props">finding the function that represents the sequence</a> and then applying
+what is known about function limits to that sequence. 
+</p>
+
+<p>
+Every part of a problem will eventually become an instruction or
+group of instructions called usually <i>subroutines</i> or <i>functions</i>. But
+for the time being, it is enough to know that breaking down a problem
+in parts you already know how to solve is the key for solving problems
+of any size. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e7b10a" class="outline-2">
+<h2 id="org7e7b10a">ב‎ - Working as a team</h2>
+<div class="outline-text-2" id="text-org7e7b10a">
+<p>
+You will never walk alone when solving a problem. Even if you are
+working in a side project, something you thought about yourself, you
+will need an easy way to keep track of changes and also to easily
+incorporate whatever suggestions or even changes somebody else might
+be doing to your code. And that easy way is to <a href="https://git-scm.com/">use git</a>. <code>git</code> is
+described as a distributed source code manager, but it is much more
+than that, it is a way of life. <code>git</code> organizes code in
+<i>repositories</i>, pretty much corresponding to projects, but including
+also artifacts such as documentation, manuals and examples. 
+</p>
+
+<p>
+As a way of life, it needs much more than a single section in a
+book. You will eventually learn as you go, but for the purpose of
+this, let us say you have opened an account in an online Git server
+such as <a href="http://github.com">GitHub</a>. GitHub is free for public repositories, and even for a
+few closed ones if you are a student. If you do not feel comfortable
+with this, do not worry, you can use <a href="http://bitbucket.com">BitBucket</a>, which allows private
+repositories with some limitations on the number of users and number
+of repos.
+</p>
+
+<p>
+Be that as it may, you will need a repository to store all the files
+that you will be writing in this, maybe also your couse notes. It is
+going to be fun start to create a single program, and keep changing it
+over the same file; git will record changes and you will be able to
+track your own progress over this file. In order to do that, create a
+repository or project in any of them, and 
+choose a sensible free software license, as well as Perl as a language
+(closest to Perl6) and also generate a <code>README.md</code>, which is in
+Markdown. 
+</p>
+
+<p>
+That creates a git repository in whatever computer hosts GitHub (or
+BitBucket), but git is a distributed system, and you can synchronize
+your computer with the contents of the repository out there. Bring it
+down with 
+</p>
+
+<pre class="example">
+git clone https://github.com/yourname/yourrepo
+</pre>
+
+<p>
+and please note I am using <code>https</code> here. You can also use the <i>ssh</i>
+address and in fact you should, but for the time being let us let it
+be. Remember to take down the username and password you have used,
+because you will need later on.
+</p>
+
+<p>
+That command will create a <code>yourrepo</code> directory hanging from wherever
+you are. Change to it with <code>cd yourrepo</code> and start working there. For
+instance, create a new file with <code>touch a_new_file</code>. Not everything in
+the directory is <i>in</i> the repository, you have to purposefully add to
+it. 
+</p>
+
+<pre class="example">
+git add a_new_file
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org7ca21fd" class="outline-2">
+<h2 id="org7ca21fd"><span class="section-number-2">4</span> Thinking logically</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+You are going to need in many cases whether something is true or
+false: check if a file exists, check if a number is bigger or smaller
+than another, or even check if a complicated local proposition is true
+or not. In fact, everything in computers uses logic, to the point that
+all information is codified using true or false values, what is called
+a <i>bit</i>. There are so many layers over that that you do not need to be
+much concerned about this, but you need to know about expressing logic
+in programs, and specially in Perl 6, which is what we are dealing
+with right now. 
+</p>
+</div>
+
+<div id="outline-container-org740677c" class="outline-3">
+<h3 id="org740677c"><span class="section-number-3">4.1</span> Comparing things</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Let's see how Perl6 performs simple comparison operations
+</p>
+
+<pre class="example">
+3 &gt; 2
+</pre>
+
+<p>
+will return <code>True</code>, 
+</p>
+
+<pre class="example">
+2 == 3
+</pre>
+
+<p>
+will return <code>False</code>, because 2 is not equal (<code>=) to 3. Remember, =</code> is
+used for comparison, and the rest of the operators are quite
+usual. Whenever an operations can be true or not, it will return a
+<code>False</code> or <code>True</code> value, and all these comparison operations
+are. Perl6 adds another <i>smart</i> comparison
+</p>
+
+<pre class="example">
+2 ~~ 3
+</pre>
+
+<p>
+will return <code>False</code>, but
+</p>
+
+<pre class="example">
+2 ~~ "2"
+</pre>
+
+<p>
+will return <code>True</code>. The <i>smartness</i> of the operation means that it
+will be able to recognize something even across different types, as in
+this case, where we are comparing a number (or <code>Int</code>) with a <code>Str</code>. It
+is even smarter
+</p>
+
+<pre class="example">
+3 ~~ Ⅲ
+</pre>
+
+<p>
+because it understands, as in this case, Roman numerals. 
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge8a23d1" class="outline-2">
+<h2 id="orge8a23d1">‎δ - The command line</h2>
+<div class="outline-text-2" id="text-orge8a23d1">
+<p>
+In the principle was the command line. That is so true. You run
+scripts from the command line, and you go back to it when you are
+done. But also the Linux was created with a set of command line tools
+that can be integrated with your program to save you typing and
+thinking and energy. There is so much you can do with it, that we will
+need to know how it works, starting with organization of the disk
+drive. 
+</p>
+
+<p>
+The disk drive is nowadays mostly solid-state, or else it is so fast
+you do not need to worry about it. Anyway it is organized like an
+inverted tree, with the <code>root</code> at <code>/</code> and all branches and leaves
+hanging from it. That tree would branch on <i>directories</i> or <i>folders</i>
+and the leaves hanging at the far end would be <i>files</i>. In Linux,
+branching is marked by <code>/</code>, so a file <i>this.is.a.file</i> in a folder called <i>jj</i> which is
+inside another folder called <i>home</i> will be completely qualified by
+<code>/home/jj/this.is.a.file</code>, or, sometimes, using web-style universal
+resource identifier, <code>file://home/jj/this.is.a.file</code>. The characters
+beyond the last period are usually called the <i>extension</i>. They are no
+big deal, actually, just a part of the name, but they usually have a
+conventional value for particular kind of files, like <code>.txt</code> for text
+files and things like that. 
+</p>
+
+<p>
+When you are working from the command line, you are always in a
+particular directory, which is called the <i>working</i> directory. You
+probably have used <a href="https://github.com/Bash-it/bash-it">Bash it</a> or something like that to show it on the
+command line; if you have not, well, do it now. <code>cd</code> is used to change
+this working directory, and you can use absolute names or
+abbreviations like <code>..</code> for the directory that contains your current
+working directory. 
+</p>
+
+<p>
+We have already seen a few things the operating system can do,
+including the command <i>shell</i>, or command interpreter, which includes
+some orders and also fetches program for you to run, and also
+editors. But there are a few more orders that will be invaluable when
+using Linux as a programmer.
+</p>
+</div>
+
+<div id="outline-container-org7b2abbb" class="outline-3">
+<h3 id="org7b2abbb">Moving stuff around</h3>
+<div class="outline-text-3" id="text-org7b2abbb">
+<p>
+<code>cp</code>, as in "copy" copies files to another directory, maybe with
+another name
+</p>
+
+<pre class="example">
+cp this.is.the.original.file ../to/this.is.a.copy
+</pre>
+
+<p>
+will copy the original file to a directory called <code>to</code>, and with a
+different name. <code>..</code> is the upper directory. Similarly,
+</p>
+
+<pre class="example">
+mv this.is.the.original.file ../to/this.is.a.copy
+</pre>
+
+<p>
+will <i>move</i> or change the name of the file, that is, copy and also
+remove the original file. If you just want to get rid of a file <code>rm
+file</code> will do it. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgde94470" class="outline-3">
+<h3 id="orgde94470"><code>find</code></h3>
+<div class="outline-text-3" id="text-orgde94470">
+<p>
+Used to find files by name, it is invaluable when you do not remember
+exactly where you downloaded your repo or you want to find an example
+of a file you have already done in the past. For instance, typing this
+in the command line
+</p>
+
+<pre class="example">
+find /home/thisisme -name "*.pl6" -print
+</pre>
+
+<p>
+will return all files with the extension <code>pl6</code>, which is the usual one
+in Perl6, in your home directory, as long as your username is
+<code>thisisme</code>; change it to your username to apply it to your particular
+situation. 
+</p>
+
+<p>
+<code>find</code> is, then, kind of like <code>ls</code> on steroids. <code>ls</code> will return the
+files in your folder, or if you do <code>ls -alt</code> will return them sorted
+by date, which is useful when you do not remember the last file you
+were working with. It happens.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16cc553" class="outline-3">
+<h3 id="org16cc553"><code>grep</code></h3>
+<div class="outline-text-3" id="text-org16cc553">
+<p>
+You do not remember in which particular file you used a name like
+<code>foo</code>? <code>grep</code> to the rescue
+</p>
+
+<pre class="example">
+grep foo *.pl6
+</pre>
+
+<p>
+will look for your <code>foo</code> in all files with the extension <code>c</code>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf3c6acd" class="outline-3">
+<h3 id="orgf3c6acd">Creating and destroying things</h3>
+<div class="outline-text-3" id="text-orgf3c6acd">
+<p>
+<code>mkdir</code> creates directories, <code>mkdir -p this/is/a/deep/directory</code>
+creates a <i>leaf</i> directory and all the rest, and <code>touch</code> creates empty
+files. 
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgee3a50a" class="outline-2">
+<h2 id="orgee3a50a">ג‎ - Secure connection</h2>
+<div class="outline-text-2" id="text-orgee3a50a">
+<p>
+The whole point of programming is working with remote computers. And
+in fact it is almost impossible that you work nowadays without using
+several remote computers, <i>cloud</i> hosts as it were, to perform routine
+tasks. You need to connect to them, and do so efficiently and also
+securely. That is why <i>ssh</i> was invented.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orged01a89" class="outline-2">
+<h2 id="orged01a89"><span class="section-number-2">5</span> Working with, in and around data</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Eventually you will need to give things a name, if only to avoid
+cutting, pasting and recomputing stuff every time you need
+it. <i>Variables</i> store results and help you express, in a compact way,
+complicated formulae. 
+</p>
+</div>
+</div>
+<div id="outline-container-org7e45c9c" class="outline-2">
+<h2 id="org7e45c9c">ε - Understand errors</h2>
+<div class="outline-text-2" id="text-org7e45c9c">
+<p>
+Shit eventually happens. But when it does, you must be ready to unshit
+everything. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b7fe9a" class="outline-2">
+<h2 id="org7b7fe9a">ד‎ - Markdown for documentation</h2>
+<div class="outline-text-2" id="text-org7b7fe9a">
+<p>
+Every project should have a <code>README.md</code> that explains what it is
+about, for everyone else if it is public, for our future self if it is
+not. That <code>README.md</code> you have already created is written using
+Markdown, a simplified method that adds marks to plain text to denote
+its role in the document: its importance, if they are headers, and
+even if they represent a hyperlink or the inclusion of an image. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb7f9a0a" class="outline-2">
+<h2 id="orgb7f9a0a"><span class="section-number-2">6</span> Stand in the shoulders: <i>modules</i> and using whatever is available</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+If there is a single motto you should follow when programming, is this
+one: <i>Don't reinvent the wheel</i>. Before sitting down to do something,
+check out if it has been already done. In mature languages like Perl,
+the answer is most probably Yes. In some otheres, like this Perl 6 we
+are dealing with, your mileage may vary. 
+</p>
+</div>
+</div>
+<div id="outline-container-org7e072ac" class="outline-2">
+<h2 id="org7e072ac">ζ - Web weaving</h2>
+<div class="outline-text-2" id="text-org7e072ac">
+<p>
+Whatever you do nowadays in computing, you will have to end up
+presenting something somewhere, and that somewhere will most probably
+be the web nowadays. So it does not harm, and it will benefit greatly,
+to learn from now what the web is all about and how we can extract
+information from it, use it to interact with people and publish our
+data so that anyone in the whole wide world can see it. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5def3a5" class="outline-2">
+<h2 id="org5def3a5"><span class="section-number-2">7</span> Building up: <i>scripts</i> and <i>programs</i></h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Doodling with the REPL is fun, but eventually you will need to profit:
+the program has to be stored and maybe shipped somewhere. Architecting
+a script needs to put your computational thinking skills to work. 
+</p>
+</div>
+</div>
+<div id="outline-container-org3e97da8" class="outline-2">
+<h2 id="org3e97da8">η - Pack all your troubles in a container</h2>
+<div class="outline-text-2" id="text-org3e97da8">
+<p>
+Applications run nowadays in all kind of places, so eventually someone
+found a way to put all the stuff you need to run them in a single
+tupperware container and ship it anywhere you need them, in the same
+way as you pack your potato omelette in a tupper and carry it to grab
+a byte in a picnic or during your train trip to Poughkeepsie, as you
+are wont to do. Same goes for programs. Create it, pack it, take it
+anywhere: the cloud, your other computer, anywhere you please. And if
+you add another tupper with mandarines and yet another with a few
+cupcakes, you have got your whole snack-a-lot ready to take anywhere.
+</p>
+
+<p>
+Applications nowadays are composed of the equivalent of a three or
+even more course meal. They have several courses plus snacks and even
+a doggie bag to pack leftovers and a plastic bag for organic
+trash. You can carry them in several places on you and your clothes,
+but it is much better to just pack containers for everything and lay
+them out on the table when you are ready to eat. In the case of
+applications, they can be data processing units, data storing units,
+data fooing and data baring units. Does not really matter what they
+are, but the thing it that <i>containerization</i> makes easy the creation
+of a whole suite that can be stored and shipped anywhere. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0be0225" class="outline-2">
+<h2 id="org0be0225">г - Always play it safe</h2>
+<div class="outline-text-2" id="text-org0be0225">
+<p>
+As long as you have created a program that is out there on the
+Internet, and you need to take care of sending it somewhere, in a
+Docker container or some other way, you need to <i>play it safe</i>. A
+cloud container or virtual machine instance is just a resource for
+crackers and fraudsters which will use all means possible to get hold
+of it and hold it hostage for ransom or use it for bitmining,
+launching distributed denial of service attacks, or as a cache for
+stolen data. Fortunately, cloud and hosting providers usually detect
+and deactivate them as soon as they find out, but you might incur in
+huge bills or maybe huge annoyances while you work out with customer
+service to have that bill erased.
+</p>
+
+<p>
+That is why, as soon as you start to write your programs, you need to
+play it safe. 
+</p>
+</div>
+</div>
+<div id="outline-container-org9f30164" class="outline-2">
+<h2 id="org9f30164"><span class="section-number-2">8</span> Interacting with the user</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Programs are created to be used. Many of them will be used by just
+you. But some of them will be out there. You have to build them for an
+indeal user, and that ideal user is a 90-year old FSB agent that is on
+one hand not familiar with modern technology and that on the other
+hand is familiar enough to try and break and enter in your program to
+steal your family secrets. User interfaces have to be easy on the
+user, but also secure. Never forget that. 
+</p>
+</div>
+</div>
+<div id="outline-container-orged9f276" class="outline-2">
+<h2 id="orged9f276">θ - Testing for the win</h2>
+<div class="outline-text-2" id="text-orged9f276">
+<p>
+<i>If it is not tested, it is broken</i> is something that you should learn
+as soon as you start to crank out code. It actually means <i>If it is
+not <b>automatically</b> tested, it is broken</i>, that is, it is not enough
+that you give it two or maybe one input, and declare yourself
+satisfied with it. No, son, that is not testing and you know it. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org38ccd45" class="outline-2">
+<h2 id="org38ccd45">Д - Find the bug</h2>
+<div class="outline-text-2" id="text-org38ccd45">
+<p>
+Testing reduces the need to find errors, but eventually some non-tested feature or a combination of things will make your program behave unexpectedly. No worries. <i>Debugging</i> is the way to go. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbe98bf2" class="outline-2">
+<h2 id="orgbe98bf2"><span class="section-number-2">9</span> Regular expressions</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Machine learning is all about understanding text. That text does not
+come in a shape you can easily process it. Regular expressions help
+you deal with text that is not totally structured, but that has some
+regularities in it. 
+</p>
+</div>
+</div>
+<div id="outline-container-org9b7e462" class="outline-2">
+<h2 id="org9b7e462">ι - What you need to know about the cloud</h2>
+<div class="outline-text-2" id="text-org9b7e462">
+<p>
+The <i>cloud</i> is where you run your programs nowadays. That is all you
+need to know.
+</p>
+
+<p>
+Not really. But almost.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd3adbce" class="outline-2">
+<h2 id="orgd3adbce"><span class="section-number-2">10</span> Deploying to the cloud</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+You have probably been told, by myself in the previous chapter, that
+the cloud is where you run your program. But it is not going to go,
+all by itself, to a cumulonimbus out there. You have to physically
+take it, and that is what is called <i>deploying</i>. 
+</p>
+</div>
+</div>
+<div id="outline-container-org0923c6b" class="outline-2">
+<h2 id="org0923c6b">κ - The world is my platform</h2>
+<div class="outline-text-2" id="text-org0923c6b">
+<p>
+When creating a program, you can literally get the world to process part of your stuff, or obtain data from the same world. <i>Application programming interfaces</i> make accessible, over the Internet, functions that would be annoying or simply impossible to have on your own computer. 
+</p>
+</div>
+</div>
+<div id="outline-container-org9cc2621" class="outline-2">
+<h2 id="org9cc2621"><span class="section-number-2">11</span> Analyzing data</h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Juan J. merelo</p>
+<p class="date">Created: 2017-01-04 mié 21:00</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
