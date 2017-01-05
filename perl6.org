@@ -554,7 +554,12 @@ and even
 [+] 1,3,9 … 333
 #+END_EXAMPLE
 
-Perl6 is able to deal with arithmetic and geometric progressions out
+The =[]= is called a /reduce/ operation. If you have heard some big
+data buzz, you have probably heard about an operation called
+*map/reduce*. Well, this is the /reduce/ part. And it is so easy to do
+with Perl6.
+
+Because Perl6 is able to deal with arithmetic and geometric progressions out
 of the box. And even infinite ones:
 
 #+BEGIN_EXAMPLE perl6
@@ -600,7 +605,25 @@ this will also yield a result:
 #+BEGIN_EXAMPLE perl6
 [~] 'a'..'z'
 #+END_EXAMPLE
-collating together all elements in the alphabet. 
+collating together all elements in the alphabet. Preceding it with
+=\=. which you can think of as an accumulator, will instead create
+another array whose elements are the accumulation of the operation up
+to that element. Better if you try it:
+
+#+BEGIN_EXAMPLE perl6
+[\~] 'a'..'z'
+#+END_EXAMPLE
+
+This can be very useful when working on accumulative series, for
+instance, what is the sequence of factorials up to 25?
+#+BEGIN_EXAMPLE perl6
+[\*] 1..25
+#+END_EXAMPLE
+
+This accumulator is called a /zip/ operator. We will see later on what
+it actually means, for the time being it just makes operating with
+series a bit easier. 
+
 
 * γ - Thinking like computers do
     :PROPERTIES:
