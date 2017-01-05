@@ -282,9 +282,11 @@ some Etruscan letter such as this one 𐌚 that renders beautifully in
 your editor might show up as an x-marked rectanble or question mark
 somewhere else, a console or a word processor. In fact, depending on
 how you are reading this, you might not see the glyph I'm referring to
-at all. 
+at all. Some other glyphs, like this jack of diamonds 🃋, will not show
+up on your editor or even in a PDF document. However, you will be able
+to see it in most browsers. 
 
-Your take away message here is that you need to know how to use
+Your take away message here should that you need to know how to use
 Unicode in whatever program you use, and that some particular
 structures of the program, like operators or names, will use graphemes
 with particular properties, probably something alphabetic-like. Also
