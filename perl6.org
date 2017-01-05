@@ -603,7 +603,8 @@ list, and how to work with a series of terms. You can use infinite
 syntax to generate also finite lists if you do not want to compute in
 advance the precise terms of it. For example, above you will be
 working on the 1000th term and on of an infinite list, without working
-out if it is exactly 3000 or some such. 
+out if it is exactly 3000 or some such. You can check out
+[[https://perl6advent.wordpress.com/2010/12/04/the-sequence-operator/][this Advent calendar entry for a few samples of Perl6 coolness too]].
 
 ** Working on lists
 Lists are perfectly good subjects for this calculator on steroids we
@@ -634,6 +635,35 @@ This accumulator is called a /zip/ operator. We will see later on what
 it actually means, for the time being it just makes operating with
 series a bit easier. 
 
+But single lists only take you so far. Previously we have seen the
+comma for kind-of joining two lists. But there are multiple ways of
+creating new lists by combining them. For instance, the /cross/
+operator =X= will create a list of lists from two of them
+#+BEGIN_EXAMPLE perl6
+(1,3...10) X (2,4...10)
+#+END_EXAMPLE
+will combine all even and odd numbers in pairs, combining 1 with 2 to
+10, then doing the same with 3... This can be useful if you want to
+create a combination, but even more so if you turn =X= into a
+hyper-operator by using it to precede any operation such as =*= 
+#+BEGIN_EXAMPLE perl6
+(1,3...10) X* (2,4...10)
+#+END_EXAMPLE
+will create a /flat/ list with the results of multiplying the pairs we
+have generated before. This can be useful for complicated arithmetics,
+but sometimes we only want to pair a couple of lists to create a new
+one that takes one element from each one, combining them like the
+tooth of a zipper. This operation is appropriately named Zip and
+represented by =Z=
+#+BEGIN_EXAMPLE perl6
+ (5,10...Inf)[^20] Z (4,8...Inf)[^20]
+#+END_EXAMPLE
+This creates a new list that zips together similar terms in the
+sequence of multiples of 4 and 5. Can we multiply them to create a
+sucession of multiples of 20? Maybe...
+#+BEGIN_EXAMPLE perl6
+ (5,10...Inf)[^20] Z* (4,8...Inf)[^20]
+#+END_EXAMPLE
 
 * γ - Thinking like computers do
     :PROPERTIES:
