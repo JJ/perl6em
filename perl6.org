@@ -573,7 +573,17 @@ or, why not, the terms from 1000 to 1100
 (1,3,9 … ∞)[1000…1100]
 #+END_EXAMPLE
 
-which will return a pile of numbers, separated by spaces. Besides, at the same time, we have seen how to deal with a single term in a
+which will return a pile of numbers, separated by spaces. It is quite
+usual to start from 0 and go to a particular number. The /caret/ = ^ =
+is used to indicate /0 to/ the number that follows it
+
+#+BEGIN_EXAMPLE perl6
+(0,5,10 … ∞)[^25]
+#+END_EXAMPLE
+
+will list the 25 first elements of the list of multiples of 5. 
+
+ Besides, at the same time, we have seen how to deal with a single term in a
 list, and how to work with a series of terms. You can use infinite
 syntax to generate also finite lists if you do not want to compute in
 advance the precise terms of it. For example, above you will be
