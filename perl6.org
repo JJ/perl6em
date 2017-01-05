@@ -902,7 +902,17 @@ be the web nowadays. So it does not harm, and it will benefit greatly,
 to learn from now what the web is all about and how we can extract
 information from it, use it to interact with people and publish our
 data so that anyone in the whole wide world can see it. 
-
+* ה - Getting help
+   :PROPERTIES:
+   :UNNUMBERED: t
+    :END:
+No matter how good you are, or how easy the learning curve is, you
+might eventually get stuck, because you do not find your way in a maze
+of documents, you do not really know what you are looking for so that
+you cannot tell Google precisely what you want, or maybe you ended up
+in an alley nobody has ever been before. You cry for help, and a
+language is only as good as the facilities that there are for helping
+people in your predicament. Fortunately, Perl 6 is very good at that. 
 * Building up: /scripts/ and /programs/
 Doodling with the REPL is fun, but eventually you will need to profit:
 the program has to be stored and maybe shipped somewhere. Architecting
