@@ -521,14 +521,13 @@ via the *yada, yada, yada* operator, or, even better,
 1 … 333
 #+END_EXAMPLE
 
-Not so easy or straightforward to combine lists. However, it is [[http://stackoverflow.com/questions/34567902/perl-6-list-concatenation-without-slip][not
-impossible]] actually:
+Not so easy or straightforward to combine lists. However, it is [[http://stackoverflow.com/questions/34567902/perl-6-list-concatenation-without-slip][not impossible]] actually:
 
 #+BEGIN_EXAMPLE perl6
 <a b 7 ⅓ π²> , < → ← >
 #+END_EXAMPLE
 
-is going to create a new list with two elements, each one of which is
+The simple /comma/ operator is going to create a new list with two elements, each one of which is
 a list. You can *flatten* it:
 
 #+BEGIN_EXAMPLE perl6
@@ -575,7 +574,23 @@ or, why not, the terms from 1000 to 1100
 #+END_EXAMPLE
 
 which will return a pile of numbers, separated by spaces. Besides, at the same time, we have seen how to deal with a single term in a
-list, and how to work with a series of terms. 
+list, and how to work with a series of terms. You can use infinite
+syntax to generate also finite lists if you do not want to compute in
+advance the precise terms of it. For example, above you will be
+working on the 1000th term and on of an infinite list, without working
+out if it is exactly 3000 or some such. 
+
+** Working on lists
+Lists are perfectly good subjects for this calculator on steroids we
+have in the REPL. Whatever combination you think about, it is probably
+possible to do it on lists; some of them will work also on infinite
+lists, but most probably not. We have already seen =[+]= work on a
+list of numbers. Any sensible operation like =[*]= will also work. But
+this will also yield a result:
+#+BEGIN_EXAMPLE perl6
+[~] 'a'..'z'
+#+END_EXAMPLE
+collating together all elements in the alphabet. 
 
 * γ - Thinking like computers do
     :PROPERTIES:
