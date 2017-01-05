@@ -367,6 +367,16 @@ One of the objectives of Perl6 is to use the whole range of characters
 that Unicode, if not modern keyboards, offer. This simplifies
 expressions and makes them more readable. 
 
+You will not find all numbers in superscript mode. If you want to
+raise a number to the /x/th power, use =**=.
+#+BEGIN_EXAMPLE perl6
+3**25
+#+END_EXAMPLE
+
+Arithmetic only takes you so far in programming. We will learn how to
+deal, and operate, with all kinds of data in this glorified
+calculator. 
+
 ** Now that we mention Unicode
 
 Unicode is the way to express all alphabets in the world, and then
