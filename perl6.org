@@ -781,6 +781,9 @@ sucession of multiples of 20? Maybe...
  (5,10...Inf)[^20] Z* (4,8...Inf)[^20]
 #+END_EXAMPLE
 
+** Doing stuff to lists
+
+
 * δ - Working as a team
     :PROPERTIES:
     :UNNUMBERED: t
