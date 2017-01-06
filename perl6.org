@@ -782,6 +782,51 @@ sucession of multiples of 20? Maybe...
 #+END_EXAMPLE
 
 ** Doing stuff to lists
+Well, that is precisely what we have been doing above. But we need to
+do more. A lot more. 
+
+All we have been doing is combining lists with each other. We have
+also been using lists of exactly the same length. But we might need to
+do some basic operation to a list, or create one list that is not
+exactly an arithmetic or geometric progression. For instance, this
+#+BEGIN_EXAMPLE perl6
+ (1/2,1/3...Inf)[5]
+#+END_EXAMPLE
+will not do what you expect it to do, which would be 1/5. Writing the
+whole range
+#+BEGIN_EXAMPLE perl6
+ (1/2,1/3...Inf)[^5]
+#+END_EXAMPLE
+will show that, what it is actually doing is to turn it into an
+arithmetic sequence that substracts 0.166667 from the previous one,
+despite being relatively clear, for a human, that we are trying to
+create the =1/n=. Sucession. We can do that, however, using the
+hyperoperators =<<>>= and derived. Check this out
+#+BEGIN_EXAMPLE perl6
+1 <</<< (1..100)
+#+END_EXAMPLE
+will return precisely what we are looking for, a descending sequence
+of numbers that ends with 0.01. Please note that we can no longer use
+an infinite (lazy) sequence: we have to ve concrete. 
+
+This =<</<<= is known as an hyperoperator, because it takes a humble
+operator like =/= and turns it into a machine that deals with
+lists. It can also be written =«/«= with the direction of the angular
+brackets pointing at the /smaller/ thing, in this case a single number
+vs. a list. 
+
+What happens if you do
+#+BEGIN_EXAMPLE perl6
+ <1 2> <</<< (1..100)
+#+END_EXAMPLE
+is kind of funny. It is like applying the cookie cutter in the left
+hand side to the right hand side: the first element will be divided by
+1, the second by 2, and so on... You can even take one wing =<<= from
+the hyperdrive, and use it to, for instance, negate a sequence:
+
+#+BEGIN_EXAMPLE perl6
+-<< (1..100)
+#+END_EXAMPLE
 
 
 * δ - Working as a team
