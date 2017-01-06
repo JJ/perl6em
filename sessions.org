@@ -6,14 +6,17 @@
   
 * Empathy session (30 minutes)
    :PROPERTIES:
-   :Chapter:  0
+   :Chapter:  1
    :Tools:    Pen and paper
    :END:
 
-Took place Dec 6th, 11:30AM. 
+Took place Dec 6th, 11:30AM, in the kitchen. We talked about what kind
+of things can be done, introduced the whole /course/ (air quotes
+here), and talked about how everything is going to work.
+
 * Ideas session (30 minutes)
    :PROPERTIES:
-   :Chapter:  0
+   :Chapter:  1
    :Tools:    Pen and paper
    :END:
 
@@ -24,7 +27,7 @@ Let's go into the ideation phase, while not leaving the immersion phase http://w
 * Tools (30 minutes+)
    :PROPERTIES:
    :Tools:    Laptop
-   :Chapter:  1
+   :Chapter:  2
    :END:
 
 Set up tools, starting with the editor. Atom, emacs, anything like
@@ -33,18 +36,26 @@ environment of choice.
 * Perl 6 (30 minutes)
    :PROPERTIES:
    :Tools:    Laptop
-   :Chapter:  1
+   :Chapter:  2
    :END:
 
 
 Set it up, understand the REPL. 
 
-Install rakudobrew and start to work with it. Class itself took like 15 minutes, and the rest was devoted to compiling latest version of MoarVM. Note: the $ in the documentation can be mistaken for a command. 
+Install rakudobrew and start to work with it. Class itself took like
+15 minutes, and the rest was devoted to compiling latest version of
+MoarVM. Note: the $ in the documentation can be mistaken for a
+command.  
+
+** Actual development
+
+This is written way after it took place. And I do not remember
+anything, so I guess it must have been rather uneventful. 
 
 * What is free software (30 minutes)
    :PROPERTIES:
    :Tools:    Pen and paper 
-   :Chapter:  1
+   :Chapter:  2
    :END:
 
 Probably a good talk for a Sunday morning. What is free software and
@@ -60,7 +71,7 @@ licenses here are and what we should do about it.
 * Teamwork with git (30 minutes)
    :PROPERTIES:
    :Tools:    Laptop
-   :Chapter:  1
+   :Chapter:  2
    :END:
 
 The first part of this session should be used to create an ID with
@@ -74,7 +85,7 @@ learn and use GitHub as a place to look for code, and how to fork a
 repository to work on it. Pull requests, if time allows, if it does
 not, let's yield to the next session.
 
-*** Actual development
+** Actual development
 
 Sign up for GitHub, create a repository and actually *do nothing* with
 it. Look up Perl6 and other repos, and modify them and create pull
@@ -88,23 +99,27 @@ that.
 * What we know so far
    :PROPERTIES:
    :Tools:    Pen and paper 
-   :Chapter:  1
+   :Chapter:  2
    :END:
 
 Writeup of what we have learned so far and what we want to
 learn. Probably "home" assignment. 
 
 
-*** Actual development
+** Actual development
 
  We have talked about free software, a bit about Perl6, a bit
  about teamwork... Some are getting impatient over the actual lack of
  learning Perl6. So we'll have to go to that soon. Also talked a bit
  about [[https://github.com/ajs/perl6-Math-Sequences][Working on a
  Library about sequences]]. A pull request that, BTW, was accepted
- just today, on Christmas Day.
+ just today, on Christmas Day. 
 
-*** Conclusions so far 
+The home assignment did not go so well. One turned it in early, one a
+bit after the next session, one did not do it at all. Still doing it,
+weeks after, in fact. 
+
+** Conclusions so far 
 
 Maybe we are out-zenning a bit with doing 7 sessions
  without a real hint of what Perl6, or for that matter any other
@@ -113,7 +128,7 @@ Maybe we are out-zenning a bit with doing 7 sessions
 * Let's work with the REPL
    :PROPERTIES:
    :Tools:    Laptop
-   :Chapter:  2
+   :Chapter:  3
    :END:
 
 First, do some basic stuff, calculator style. Then realize that you
@@ -155,7 +170,7 @@ others, mainly including the funny Unicode characters, do not.
 * Working with other kind of data
    :PROPERTIES:
    :Tools:    Laptop
-   :Chapter:  2
+   :Chapter:  3
    :END:
 
 Let's have a go to working with strings, and rationals, and use
@@ -194,8 +209,8 @@ Some trouble with syntax, which gets in the way. Spaces where they should not be
 * Working with repositories
   :PROPERTIES:
   :Tools:    Laptop
-  :Chapter:  2
-   :END:
+  :Chapter:  3
+  :END:
 
 After the last session, where homework was introduced for the first time, we are going to work with files in repositories, which is where they should be. We will learn 
 
@@ -221,6 +236,10 @@ perform /better/ than those that have had some access to bad
 learning. Yes, it's a real WTF. 
 
 * A series of sequences
+  :PROPERTIES:
+  :Tools:    Laptop
+  :Chapter:  4
+  :END:
 
 Knowing about the "Reduce" operator on sequences (or ranges) and combining sequences to give new sequences. Also, recursive sequences.
 
@@ -233,14 +252,22 @@ The fact that we still have not stored anything so far has not been an obstacle.
 
 Repeating same things over and over is also important. Sequences of commands like opening a shell inside Emacs and typing Perl6 sometimes do not happen and need some help. 
 
-A bit of homework: create a sequence of apartment coordinates combining house number + floor + letter. To be turned in in a Repo.
+A bit of homework: create a sequence of apartment coordinates
+combining house number + floor + letter. To be turned in in a Repo. 
+
+This has ended up in chapter 4. I will have to renumber everything. 
+
 * Documentation is important
 
 Let's learn a bit about markdown and other simple markup languages
 using the Wikipedia and the "Lessons learned" file we have been
 working on for some time. A few words on how to link, on how to evolve
-the documentation, and on how to generate better-quality documents
+the documentation, how to evolve it along the rest of the programs,
+and on how to generate better-quality documents 
 from them. Spell check, things like that.
 
 At the same time, practice familiarity with the filesystem and
-navigating in it. 
+navigating in it. For instance, navigate using Nautilus and them, open
+the menu and click in "Open in a terminal". Filesystem navigation is a
+very necessary skill, and one that is sometimes lacking in traditional
+programming. 
