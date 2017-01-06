@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2017-01-06 vie 10:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Perl 6, the Sessions</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Juan J. merelo" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Perl 6, the Sessions</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org01118d3">1. Empathy session (30 minutes)</a></li>
+<li><a href="#org963fe44">2. Ideas session (30 minutes)</a></li>
+<li><a href="#orgf5b1ecc">3. Tools (30 minutes+)</a></li>
+<li><a href="#org36d3168">4. Perl 6 (30 minutes)</a>
+<ul>
+<li><a href="#org4457eaa">4.1. Actual development</a></li>
+</ul>
+</li>
+<li><a href="#orga3bede1">5. What is free software (30 minutes)</a></li>
+<li><a href="#orgb44c6c2">6. Teamwork with git (30 minutes)</a>
+<ul>
+<li><a href="#orgc536e65">6.1. Actual development</a></li>
+</ul>
+</li>
+<li><a href="#orgbe6aa27">7. What we know so far</a>
+<ul>
+<li><a href="#org90de0f6">7.1. Actual development</a></li>
+<li><a href="#orge6dab80">7.2. Conclusions so far</a></li>
+</ul>
+</li>
+<li><a href="#orge862c7a">8. Let's work with the REPL</a>
+<ul>
+<li><a href="#org9a0766d">8.1. Actual development</a></li>
+</ul>
+</li>
+<li><a href="#org8a802ba">9. Working with other kind of data</a>
+<ul>
+<li><a href="#orgc977107">9.1. Actual development</a></li>
+</ul>
+</li>
+<li><a href="#orgc2e8d0e">10. Series of things (30 minutes)</a>
+<ul>
+<li><a href="#org46cbaa0">10.1. Actual session</a></li>
+</ul>
+</li>
+<li><a href="#org2233e5e">11. Working with repositories</a>
+<ul>
+<li><a href="#org39f2282">11.1. Actual session</a></li>
+</ul>
+</li>
+<li><a href="#orge51f9cd">12. A series of sequences</a>
+<ul>
+<li><a href="#org8b02231">12.1. Actual session</a></li>
+</ul>
+</li>
+<li><a href="#org9576cef">13. Documentation is important</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org01118d3" class="outline-2">
+<h2 id="org01118d3"><span class="section-number-2">1</span> Empathy session (30 minutes)</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Took place Dec 6th, 11:30AM, in the kitchen. We talked about what kind
+of things can be done, introduced the whole <i>course</i> (air quotes
+here), and talked about how everything is going to work.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org963fe44" class="outline-2">
+<h2 id="org963fe44"><span class="section-number-2">2</span> Ideas session (30 minutes)</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Dec 8th, 11:00 AM. 
+</p>
+
+<p>
+Let's go into the ideation phase, while not leaving the immersion phase <a href="http://www.mjvinnovation.com/blog/three-phases-design-thinking-immersion-ideation-prototyping">http://www.mjvinnovation.com/blog/three-phases-design-thinking-immersion-ideation-prototyping</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf5b1ecc" class="outline-2">
+<h2 id="orgf5b1ecc"><span class="section-number-2">3</span> Tools (30 minutes+)</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Set up tools, starting with the editor. Atom, emacs, anything like
+that, command line, how to work with it, minimal Linux, which is the
+environment of choice. 
+</p>
+</div>
+</div>
+<div id="outline-container-org36d3168" class="outline-2">
+<h2 id="org36d3168"><span class="section-number-2">4</span> Perl 6 (30 minutes)</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Set it up, understand the REPL. 
+</p>
+
+<p>
+Install rakudobrew and start to work with it. Class itself took like
+15 minutes, and the rest was devoted to compiling latest version of
+MoarVM. Note: the $ in the documentation can be mistaken for a
+command.  
+</p>
+</div>
+
+<div id="outline-container-org4457eaa" class="outline-3">
+<h3 id="org4457eaa"><span class="section-number-3">4.1</span> Actual development</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+This is written way after it took place. And I do not remember
+anything, so I guess it must have been rather uneventful. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga3bede1" class="outline-2">
+<h2 id="orga3bede1"><span class="section-number-2">5</span> What is free software (30 minutes)</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Probably a good talk for a Sunday morning. What is free software and
+free licenses, what they mean, what it's like to create and produce
+free software, why everything we do when learning a language should be
+free so that other benefit from it.  
+</p>
+
+<p>
+We are telling the story of Java, how it is about to become the cash
+crop of Oracle who's attempting to ask for licenses, and what kind of
+licenses here are and what we should do about it. 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgb44c6c2" class="outline-2">
+<h2 id="orgb44c6c2"><span class="section-number-2">6</span> Teamwork with git (30 minutes)</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+The first part of this session should be used to create an ID with
+GitHub or, if that's created already, to create repositories that will
+be used to host the assignments and other tests. We will also learn to
+collaborate using Markdown. 
+</p>
+
+<p>
+An issue in this session is to learn to use the correct license, or at
+least a license, for the work that will be done. A side effect is to
+learn and use GitHub as a place to look for code, and how to fork a
+repository to work on it. Pull requests, if time allows, if it does
+not, let's yield to the next session.
+</p>
+</div>
+
+<div id="outline-container-orgc536e65" class="outline-3">
+<h3 id="orgc536e65"><span class="section-number-3">6.1</span> Actual development</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+Sign up for GitHub, create a repository and actually <b>do nothing</b> with
+it. Look up Perl6 and other repos, and modify them and create pull
+requests. 
+</p>
+
+<p>
+Unexpected hurdles (actually I have found this before): giving the
+repository a name, finding something to do a pull request, things like
+that. 
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgbe6aa27" class="outline-2">
+<h2 id="orgbe6aa27"><span class="section-number-2">7</span> What we know so far</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Writeup of what we have learned so far and what we want to
+learn. Probably "home" assignment. 
+</p>
+</div>
+
+
+<div id="outline-container-org90de0f6" class="outline-3">
+<h3 id="org90de0f6"><span class="section-number-3">7.1</span> Actual development</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+We have talked about free software, a bit about Perl6, a bit
+about teamwork&#x2026; Some are getting impatient over the actual lack of
+learning Perl6. So we'll have to go to that soon. Also talked a bit
+about <a href="https://github.com/ajs/perl6-Math-Sequences">Working on a
+Library about sequences</a>. A pull request that, BTW, was accepted
+just today, on Christmas Day. 
+</p>
+
+<p>
+The home assignment did not go so well. One turned it in early, one a
+bit after the next session, one did not do it at all. Still doing it,
+weeks after, in fact. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge6dab80" class="outline-3">
+<h3 id="orge6dab80"><span class="section-number-3">7.2</span> Conclusions so far</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+Maybe we are out-zenning a bit with doing 7 sessions
+ without a real hint of what Perl6, or for that matter any other
+ language, is about. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge862c7a" class="outline-2">
+<h2 id="orge862c7a"><span class="section-number-2">8</span> Let's work with the REPL</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+First, do some basic stuff, calculator style. Then realize that you
+can't go back to what we wrote before to correct or whatever; then
+install linenoise with
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">zef install Linenoise
+</pre>
+</div>
+
+<p>
+Explain Unicode and what it means for modern computing. Test some
+Unicode codepoints. 
+</p>
+
+<p>
+Play with operators for a while. 
+</p>
+
+<p>
+Hint also at types and why ar they different and what it means for
+operations. use <code>.WHAT</code>, as in
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-perl6"><span style="color: #cccccc; background-color: #181a26;">&#960;</span><span style="color: #f08080;">.</span><span style="color: #cccccc; background-color: #181a26;">WHAT</span>
+</pre>
+</div>
+
+<p>
+You'll have to find a way to type π. Probably a good option is to do
+it inside emacs. But the most straightforward is to look for "unicode
+symbols" in Google and copy/paste it. You can do the same with other Unicode symbols such as ⅓ or ⅕. 
+</p>
+</div>
+
+<div id="outline-container-org9a0766d" class="outline-3">
+<h3 id="org9a0766d"><span class="section-number-3">8.1</span> Actual development</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+We have discovered that <code>rakudobrew</code> was not properly installed and had a lot of fun after configuring a Compose key in Gnome. <a href="https://help.ubuntu.com/community/ComposeKey">Here's how to do it.</a>
+We eventually did some simple operations, including working with
+Unicode characters. Also accessing the Javascript REPL that is
+included in Firefox, and checking out how some things work, and some
+others, mainly including the funny Unicode characters, do not. 
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org8a802ba" class="outline-2">
+<h2 id="org8a802ba"><span class="section-number-2">9</span> Working with other kind of data</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Let's have a go to working with strings, and rationals, and use
+<code>.WHAT</code> to find out the type of data. Start to work with sequences,
+and cool things that can be done with them, including, maybe in this
+session, infinite sequences. 
+</p>
+</div>
+
+<div id="outline-container-orgc977107" class="outline-3">
+<h3 id="orgc977107"><span class="section-number-3">9.1</span> Actual development</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+The thing is, come this point, everyone must have tools ready. One
+could not use Linenoise to access previous expressions, and it had to
+be set up. Besides, by now we are using Greek and other letter by the
+bushel and we can't just go to the Internet every time we need a φ. So
+we have learned to use the shell from emacs, and also to use the key
+combo Control-X + 8 + Enter and then the name of the letter. That way
+we can also go ahead and use the three periods and infinity and other
+needed.
+</p>
+
+<p>
+Eventually we have started with lists, using indices in lists, and so
+on. But just barely. No time to define sequences, little by little.
+</p>
+
+<p>
+Also, someone is getting impatient wanting to save work, things like
+that. Ah, impatience&#x2026;
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc2e8d0e" class="outline-2">
+<h2 id="orgc2e8d0e"><span class="section-number-2">10</span> Series of things (30 minutes)</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+First some non-conventional operators such as <code>x</code> and then let's proceed to talk about sequences and arrays and how to deal with infinite arrays. 
+</p>
+</div>
+
+<div id="outline-container-org46cbaa0" class="outline-3">
+<h3 id="org46cbaa0"><span class="section-number-3">10.1</span> Actual session</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+Some trouble with syntax, which gets in the way. Spaces where they should not be, points less or more, problems with key combinations for Greek letters&#x2026; all that stuff. But pretty much, a lot done in half an hour. 
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org2233e5e" class="outline-2">
+<h2 id="org2233e5e"><span class="section-number-2">11</span> Working with repositories</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+After the last session, where homework was introduced for the first time, we are going to work with files in repositories, which is where they should be. We will learn 
+</p>
+
+<ul class="org-ul">
+<li>Download the repository to local filesystem using <code>git clone</code></li>
+<li>Add a file to the repository with <code>git add</code></li>
+<li>Record changes to the repository with <code>git commit</code></li>
+<li>Synchronize local with global repository using <code>git push</code></li>
+<li>Fork and work with other's repositories</li>
+<li>Accept pull requests and pull changes into local repository with <code>git pull</code></li>
+</ul>
+</div>
+
+<div id="outline-container-org39f2282" class="outline-3">
+<h3 id="org39f2282"><span class="section-number-3">11.1</span> Actual session</h3>
+<div class="outline-text-3" id="text-11-1">
+<p>
+We used the "lessons learned" file that we had compiled in every
+session and we had a lot of fun. One of us had just copied the Emacs
+tutorial stuff, some others were corrected, we performad every
+intended objective. Only unexpected thing was that git was not
+configured and that we really, really, need to navigate the Linux
+filesystem. 
+</p>
+
+<p>
+A funny unintended consequence of all this is that is easier to learn
+from scratch that to <i>unlearn</i> what has been learned, so that newbies
+perform <i>better</i> than those that have had some access to bad
+learning. Yes, it's a real WTF. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge51f9cd" class="outline-2">
+<h2 id="orge51f9cd"><span class="section-number-2">12</span> A series of sequences</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+Knowing about the "Reduce" operator on sequences (or ranges) and combining sequences to give new sequences. Also, recursive sequences.
+</p>
+</div>
+
+<div id="outline-container-org8b02231" class="outline-3">
+<h3 id="org8b02231"><span class="section-number-3">12.1</span> Actual session</h3>
+<div class="outline-text-3" id="text-12-1">
+<p>
+This starts to be a little complicated. Also boring. But mostly complicated. When you are getting in some complexity, but mainly working over the same essential material, which is sequences, you start to get a bit fed up with it. So maybe we will switch to ancillary material next ocassion. 
+Anyway, the concept of crossing and zipping has been caught fast by using the zipper metaphor and hand-weaving. So let us call it a day and let us go to greener pastures.
+</p>
+
+<p>
+The fact that we still have not stored anything so far has not been an obstacle. No program has been written, and none has been needed. 
+</p>
+
+<p>
+Repeating same things over and over is also important. Sequences of commands like opening a shell inside Emacs and typing Perl6 sometimes do not happen and need some help. 
+</p>
+
+<p>
+A bit of homework: create a sequence of apartment coordinates
+combining house number + floor + letter. To be turned in in a Repo. 
+</p>
+
+<p>
+This has ended up in chapter 4. I will have to renumber everything. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9576cef" class="outline-2">
+<h2 id="org9576cef"><span class="section-number-2">13</span> Documentation is important</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+Let's learn a bit about markdown and other simple markup languages
+using the Wikipedia and the "Lessons learned" file we have been
+working on for some time. A few words on how to link, on how to evolve
+the documentation, how to evolve it along the rest of the programs,
+and on how to generate better-quality documents 
+from them. Spell check, things like that.
+</p>
+
+<p>
+At the same time, practice familiarity with the filesystem and
+navigating in it. For instance, navigate using Nautilus and them, open
+the menu and click in "Open in a terminal". Filesystem navigation is a
+very necessary skill, and one that is sometimes lacking in traditional
+programming. 
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Juan J. merelo</p>
+<p class="date">Created: 2017-01-06 vie 10:03</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
