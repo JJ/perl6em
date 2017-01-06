@@ -828,6 +828,23 @@ the hyperdrive, and use it to, for instance, negate a sequence:
 -<< (1..100)
 #+END_EXAMPLE
 
+When the two lists have the same length, the arrows can go in any
+direction, it will not matter much. Let us create random fixtures for
+a (subset of) the Premie League
+#+BEGIN_EXAMPLE perl6
+( <ARS AST BOU CHE EVE LEI LIV MCI MUN NEW>.pick(10) 
+  «~» 
+    ( " - " «~« <ARS AST BOU CHE EVE LEI LIV MCI MUN NEW>.pick(10))) 
+    »~» "\n"
+#+END_EXAMPLE
+This, which could admittedly be a little shorter, uses these
+hyperoperators to combine acronyms so that they are separed by a dash,
+which is what = " - " «~« = does, and then put the whole result in
+different lines, which is done by the = »~» "\n" = in the last line. A
+great achievement, with a small amount of coding involved. We are
+using throughout the =~= string concatenation operator, which is what
+allows us to create such a compact statement. 
+
 
 * δ - Working as a team
     :PROPERTIES:
