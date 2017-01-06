@@ -234,3 +234,13 @@ The fact that we still have not stored anything so far has not been an obstacle.
 Repeating same things over and over is also important. Sequences of commands like opening a shell inside Emacs and typing Perl6 sometimes do not happen and need some help. 
 
 A bit of homework: create a sequence of apartment coordinates combining house number + floor + letter. To be turned in in a Repo.
+* Documentation is important
+
+Let's learn a bit about markdown and other simple markup languages
+using the Wikipedia and the "Lessons learned" file we have been
+working on for some time. A few words on how to link, on how to evolve
+the documentation, and on how to generate better-quality documents
+from them. Spell check, things like that.
+
+At the same time, practice familiarity with the filesystem and
+navigating in it. 
