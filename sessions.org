@@ -271,3 +271,15 @@ navigating in it. For instance, navigate using Nautilus and them, open
 the menu and click in "Open in a terminal". Filesystem navigation is a
 very necessary skill, and one that is sometimes lacking in traditional
 programming. 
+
+* Card shuffle
+
+Talk about different ways of picking random elements out of an array,
+or a whole bunch of them. The single objective of this class will be
+to create a deck of French cards using the correct Unicode symbols and
+all, and then an expression to shuffle them. 
+
+Finally, it will be saved as a [[https://gist.github.com][gist]] and shown to everyone for
+comments. The /gist/ will have to be written in Markdown, with a
+description of what it is and a step-by-step explanation of the
+expression. 
