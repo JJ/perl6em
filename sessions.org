@@ -258,6 +258,10 @@ combining house number + floor + letter. To be turned in in a Repo.
 This has ended up in chapter 4. I will have to renumber everything. 
 
 * Documentation is important
+  :PROPERTIES:
+  :Tools:    Laptop
+  :Chapter:  4
+  :END:
 
 Let's learn a bit about markdown and other simple markup languages
 using the Wikipedia and the "Lessons learned" file we have been
@@ -272,6 +276,12 @@ the menu and click in "Open in a terminal". Filesystem navigation is a
 very necessary skill, and one that is sometimes lacking in traditional
 programming. 
 
+** Actual development
+This was scheduled for January 6th, we are being kind of intensive
+lately. But it is gift-giving day in Spain and we played at one of the
+games  that was given. Maybe an ocassion to gamify learning, but I
+failed to see how. 
+
 * Card shuffle
 
 Talk about different ways of picking random elements out of an array,
@@ -283,3 +293,5 @@ Finally, it will be saved as a [[https://gist.github.com][gist]] and shown to ev
 comments. The /gist/ will have to be written in Markdown, with a
 description of what it is and a step-by-step explanation of the
 expression. 
+* It is so true
+Learning a bit about Boolean values and how to work with them. 
