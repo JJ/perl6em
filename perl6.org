@@ -1172,6 +1172,11 @@ will look for your =foo= in all files with the extension =c=.
 creates a /leaf/ directory and all the rest, and =touch= creates empty
 files. 
 
+* Pack all your troubles in a bag. And a set. 
+Perl6 is, intentionally, designed for math, so it includes some
+representation for data that can be found usually in math classes. Not
+only that, it can work with them just in the way you did in your
+school math class, using the same symbols. 
 * ב‎ - Secure connection
     :PROPERTIES:
     :UNNUMBERED: t
