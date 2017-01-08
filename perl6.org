@@ -845,7 +845,6 @@ great achievement, with a small amount of coding involved. We are
 using throughout the =~= string concatenation operator, which is what
 allows us to create such a compact statement. 
 
-
 * δ - Working as a team
     :PROPERTIES:
     :UNNUMBERED: t
@@ -999,6 +998,52 @@ is even smarter
 
 because it understands, as in this case, Roman numerals. 
 
+** And filtering them
+
+Now that we know how to deal with truths and untruths, we can use this
+knowledge to deal with sequences and filter them depending on whether
+a condition is true or not. We can, for instance, use ready-made
+functions such as =is-prime= 
+#+BEGIN_EXAMPLE perl6
+(2000..2100).grep( { .is-prime} )
+#+END_EXAMPLE
+As you might remember, putting parentheses around an expression, in
+this case a =Range= (remember, two points) turns it into an /object/
+and thus something that is amenable of using some methods. [[https://docs.perl6.org/routine/grep][=grep=]] is
+one of them: given a list, applies an expression to every member of
+the list returning another list with only the elements where the
+expression is true. The expression, as you see, is between
+parentheses, and since every element is treated as an object by itself
+by =grep=, the =.is-prime= way of writing it indicates that you are
+taking the first element, applying the =is-prime= function, select
+that element for the result if it is true, and so no. That expression
+above tells us the number of prime years (not premium years) in this
+century. How many are there?
+
+What there is is many ways of writing that. To reduce clutter, Perl6
+allows also the parentheses to be suppressed.
+#+BEGIN_EXAMPLE perl6
+(2000..2100).grep: { .is-prime} 
+#+END_EXAMPLE
+by a colon. And you can also invert the way of dealing with this,
+putting =grep= at the forefront
+#+BEGIN_EXAMPLE perl6
+grep { .is-prime}, 1..Inf
+#+END_EXAMPLE
+and, right there, you have the list of all prime numbers. Which one is
+the number 1000th? (it might take a while).
+
+In fact, if you are applying a simple method such as this one to every
+element, there is an
+[[http://blogs.perl.org/users/zoffix_znet/2016/02/perl-6-shortcuts-part-1.html][even simpler  way of doing it]]:
+#+BEGIN_EXAMPLE perl6
+(0,π/2,π,3*π/2,2*π)».sin
+#+END_EXAMPLE
+Using the parentheses and commas we create an array, and the =».=
+construction will apply the operation behind to eacn and every member
+of it, returning the sine of all these angles. Any operation with a
+single operand you can think of can be applied, in this way, to a
+whole array of things. Which is cool. 
 
 * ‎ε - The command line
     :PROPERTIES:
@@ -1099,7 +1144,6 @@ will look for your =foo= in all files with the extension =c=.
 creates a /leaf/ directory and all the rest, and =touch= creates empty
 files. 
 
-
 * ב‎ - Secure connection
     :PROPERTIES:
     :UNNUMBERED: t
@@ -1110,7 +1154,6 @@ in fact it is almost impossible that you work nowadays without using
 several remote computers, /cloud/ hosts as it were, to perform routine
 tasks. You need to connect to them, and do so efficiently and also
 securely. That is why /ssh/ was invented.
-
 
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
