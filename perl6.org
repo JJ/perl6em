@@ -1043,7 +1043,13 @@ Using the parentheses and commas we create an array, and the =».=
 construction will apply the operation behind to eacn and every member
 of it, returning the sine of all these angles. Any operation with a
 single operand you can think of can be applied, in this way, to a
-whole array of things. Which is cool. 
+whole array of things. Which is cool. Even cooler, you can use the
+=so= we learned above to filter only those whose cosine is not zero:
+#+BEGIN_EXAMPLE perl6
+grep { .so }, (0,π/2,π,3*π/2,2*π)».cos
+#+END_EXAMPLE
+This might work in the future, but for the time being =cos= is pretty
+close to 0, but not exactly 0. 
 
 * ‎ε - The command line
     :PROPERTIES:
