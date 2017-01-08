@@ -1062,7 +1062,7 @@ or even computing whether an element is or not in a particular array,
 using =∈=, or the mathematical symbol for /belongs to/, which returns
 False in this case. That can be an
 easy and straightforward way of finding out multiples, for
-instance. Multiples that you can also extract using =grep=
+instance. Multiples that [[https://trizen.gitbooks.io/perl6-rosettacode/content/programming_tasks/F/Filter.html][you can also extract using =grep=]]
 #+BEGIN_EXAMPLE perl6
 (1..100).grep(* %% 7)
 #+END_EXAMPLE
