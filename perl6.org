@@ -1061,9 +1061,16 @@ or even computing whether an element is or not in a particular array,
 #+END_EXAMPLE
 using =∈=, or the mathematical symbol for /belongs to/, which returns
 False in this case. That can be an
-easy and straightforward way of finding out multiples, for instance. 
-
-
+easy and straightforward way of finding out multiples, for
+instance. Multiples that you can also extract using =grep=
+#+BEGIN_EXAMPLE perl6
+(1..100).grep(* %% 7)
+#+END_EXAMPLE
+where, in this case, =*= is a stand-in for the element, which we had
+not used before. We had used it before as the end of a sequence
+meaning /everything/. This is pretty much the same, /everyone/. Perl6
+reuses symbols like this n different contexts, but at the same time it
+gives them similar, or the same, meaning. That is good and well. 
 
 
 * ‎ε - The command line
