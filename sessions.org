@@ -293,5 +293,25 @@ Finally, it will be saved as a [[https://gist.github.com][gist]] and shown to ev
 comments. The /gist/ will have to be written in Markdown, with a
 description of what it is and a step-by-step explanation of the
 expression. 
+
+** Actual development
+
+This has been an amazing session. With very little new material, just
+=pick= and =roll=, it was about putting to practice what had been done
+so far, including documentation and using GitHub for publishing
+things. 
+
+The dynamics was mostly self-organized, and with three persons, two
+teams have been created. This the [[https://t.co/nUspT3ohZ1][first result]] and the
+[[https://gist.github.com/ElenaMerelo/3903f46a2d492dd0b76151054a598721][second team]]. They have had a lot of fun while they were doing it, and
+also while writing it down in Markdown. Different solutions, different
+ways of understanding the structures, but all in all it shows that
+Perl 6 is a great language, allowing to do things in very different
+ways. Informative error messages also help quite a lot to get things
+right. 
+
 * It is so true
-Learning a bit about Boolean values and how to work with them. 
+
+Learning a bit about Boolean values and how to work with them. I am
+not sure how to proceed with this. We can do it fast or we can do it
+good. It's probably better if we do it fast. 
