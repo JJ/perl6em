@@ -921,9 +921,9 @@ in programs, and specially in Perl 6, which is what we will deal right next.
 "Out there". "I am your father". All of these things together. Well,
 truth is =True= and false is =False= in Perl6. However, there are
 other things that are also true, or not, depending on the context,
-because, as we have seen before, the types of things flow and change
+because, as we have seen before, the types and thus the real value of things flow and change
 depending on the context. Fortunately, we have a handy operator that
-asks any and everything if it it is true or not: =?=.
+asks any and everything if it is true or not: =?=.
 
 So let's see what kind of things are true or not:
 #+BEGIN_EXAMPLE perl6
@@ -931,13 +931,20 @@ So let's see what kind of things are true or not:
 #+END_EXAMPLE
 will show us two =False=s; the "" and the 0. So empty strings and void
 numbers are equivalent to false. Also empty arrays, check out =?()=,
-while non-empty arrays are =True=. 
+while non-empty arrays are =True=. Besides, we are using here,
+similarly to what we used before, a single operator applied to all the
+elements in a list, which we surround with parentheses and sprinkle
+with commas since they are of different types: strings and
+numbers... This operator will apply, to every single member of the
+list, the /unary/ operation =?=. That is akin to doing =?""= and so
+on, until the end of the list. Perl6 saves typing and frees us from
+metacarpal tunnel syndrome. 
 
 And what you can ask, you can negate:
 #+BEGIN_EXAMPLE perl6
 !<< ("","False",0,1,333,0.5)
 #+END_EXAMPLE
-will show exactly the opposite. =!= negates the expression it is in
+will result exactly in the opposite. =!= negates the expression it is in
 front of. By the way, these operators that are /in front of/ are
 called preffix operators; since they operate in a single element they
 are also /unary/, but that goes without saying if they are preffixing
