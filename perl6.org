@@ -966,7 +966,8 @@ is, obviously, =False=.
 
 ** Comparing things
 
-Let's see how Perl6 performs simple comparison operations
+Affirming and negating is a great way to learn philosophy, but we need
+a bit of arithmetic too. Let's see how Perl6 performs simple comparison operations
 
 #+BEGIN_EXAMPLE perl6
 3 > 2
@@ -1004,6 +1005,29 @@ is even smarter
 #+END_EXAMPLE
 
 because it understands, as in this case, Roman numerals. 
+
+=~~= is kind of an universal comparator, but in case you are working
+with strings, =>= is not going to work. Operators over strings are
+built as acronyms of the operation, for instance, =ge= for /greater
+than or equal/, as in 
+
+#+BEGIN_EXAMPLE perl6
+"aardvark" ge "bee"
+#+END_EXAMPLE
+
+This will take into account the lexicographical order, which is kind
+of like the alphabetical, but taking into account ordering in
+Unicode. Thus
+
+#+BEGIN_EXAMPLE perl6
+"ρ" le "Ρ"
+#+END_EXAMPLE
+
+because apparently small letters go /after/ capital letters, but
+#+BEGIN_EXAMPLE perl6
+"ᚙ" gt "ﺶ"
+#+END_EXAMPLE
+because, well, that is the way it is. 
 
 ** And filtering them
 
