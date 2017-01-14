@@ -907,15 +907,14 @@ git add a_new_file
 
 * Thinking logically
 
-You are going to need in many cases whether something is true or
+You are going to need in many cases to check whether something is true or
 false: check if a file exists, check if a number is bigger or smaller
-than another, or even check if a complicated local proposition is true
+than another, or even check if a complicated logical proposition is true
 or not. In fact, everything in computers uses logic, to the point that
-all information is codified using true or false values, what is called
-a /bit/. There are so many layers over that that you do not need to be
-much concerned about this, but you need to know about expressing logic
-in programs, and specially in Perl 6, which is what we are dealing
-with right now. 
+all information is codified using true or false values; a single true/false value is called
+a /bit/. There are so many layers over that single bit that you do not need to be
+much concerned about them, but you need to know about expressing and using logic
+in programs, and specially in Perl 6, which is what we will deal right next. 
 
 ** The truth is...
 
