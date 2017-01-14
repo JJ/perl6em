@@ -1039,11 +1039,12 @@ functions such as =is-prime=
 (2000..2100).grep( { .is-prime} )
 #+END_EXAMPLE
 As you might remember, putting parentheses around an expression, in
-this case a =Range= (remember, two points) turns it into an /object/
+this case a =Range= (remember, two periods) turns it into an /object/
 and thus something that is amenable of using some methods. [[https://docs.perl6.org/routine/grep][=grep=]] is
 one of them: given a list, applies an expression to every member of
 the list returning another list with only the elements where the
-expression is true. The expression, as you see, is between
+expression is true. The expression which is surrounded by curly
+braces, as you see, is between 
 parentheses, and since every element is treated as an object by itself
 by =grep=, the =.is-prime= way of writing it indicates that you are
 taking the first element, applying the =is-prime= function, select
@@ -1064,7 +1065,8 @@ grep { .is-prime}, 1..Inf
 and, right there, you have the list of all prime numbers. Which one is
 the number 1000th? (it might take a while).
 
-In fact, if you are applying a simple method such as this one to every
+In fact, if you are applying a single method that takes only one
+parameter, such as the one above to every
 element, there is an
 [[http://blogs.perl.org/users/zoffix_znet/2016/02/perl-6-shortcuts-part-1.html][even simpler  way of doing it]]:
 #+BEGIN_EXAMPLE perl6
@@ -1079,8 +1081,9 @@ whole array of things. Which is cool. Even cooler, you can use the
 #+BEGIN_EXAMPLE perl6
 grep { .so }, (0,π/2,π,3*π/2,2*π)».cos
 #+END_EXAMPLE
-This might work in the future, but for the time being =cos= is pretty
-close to 0, but not exactly 0. 
+This might work with precision in the future, but for the time being =cos= is pretty
+close to 0, but not exactly 0, so =grep= actually returns all elements
+of the array, which are effectively non-zero. 
 
 You might do simpler things to arrays, like computing the minimum:
 #+BEGIN_EXAMPLE perl6
@@ -1090,18 +1093,21 @@ or even computing whether an element is or not in a particular array,
 #+BEGIN_EXAMPLE perl6
  332 ∈  (7,14...2000)
 #+END_EXAMPLE
-using =∈=, or the mathematical symbol for /belongs to/, which returns
+using =∈=, which is the mathematical symbol for /belongs to/ and returns
 False in this case. That can be an
 easy and straightforward way of finding out multiples, for
-instance. Multiples that [[https://trizen.gitbooks.io/perl6-rosettacode/content/programming_tasks/F/Filter.html][you can also extract using =grep=]]
+instance, or if an element is included in a more complex
+sequence. Multiples that [[https://trizen.gitbooks.io/perl6-rosettacode/content/programming_tasks/F/Filter.html][you can also extract using =grep=]] 
 #+BEGIN_EXAMPLE perl6
 (1..100).grep(* %% 7)
 #+END_EXAMPLE
-where, in this case, =*= is a stand-in for the element, which we had
-not used before. We had used it before as the end of a sequence
+where, in this case, =*= is a stand-in for the element in the list, which we had
+not used before in this way; we had used it before as the end of a sequence
 meaning /everything/. This is pretty much the same, /everyone/. Perl6
-reuses symbols like this n different contexts, but at the same time it
-gives them similar, or the same, meaning. That is good and well. 
+reuses symbols like this in different contexts, but at the same time it
+gives them similar, or the same, meaning. That is good and well and
+saves you from learning lots of different squiggles for stuff that
+pretty much does the same. 
 
 
 * ‎ε - The command line
