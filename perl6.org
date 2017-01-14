@@ -3,6 +3,7 @@
 
 #+latex_compiler: xelatex
 #+LaTeX_CLASS: book
+#+HTML_MATHJAX:  path:"//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"
 #+latex_header: \usepackage{libertine}
 #+latex_header: \usepackage{unicode-math}
 #+latex_header: \setmonofont{DejaVu Sans Mono}

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-01-05 jue 18:36 -->
+<!-- 2017-01-14 sáb 19:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Perl 6, the musical</title>
@@ -246,7 +246,7 @@ for the JavaScript code in this tag.
 });
 </script>
 <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+        src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -255,93 +255,97 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2a91943">1. Introduction</a></li>
-<li><a href="#orge7b416f">ℵ - Principles</a>
+<li><a href="#org5e377e0">1. Introduction</a></li>
+<li><a href="#org14360b0">ℵ - Principles</a>
 <ul>
-<li><a href="#org37e904f">Learning should be fun and engaging: learn by doing.</a></li>
-<li><a href="#orgb3dde57">You are the master of your learning process, and tools, and outcome.</a></li>
-<li><a href="#orgb6c81fc">Learning never stops.</a></li>
-<li><a href="#org2f500ea">Learning is a two-way process. There is no professor, no student: learning happens ideally in a community.</a></li>
+<li><a href="#org3e2b3f8">Learning should be fun and engaging: learn by doing.</a></li>
+<li><a href="#org0cd5f3f">You are the master of your learning process, and tools, and outcome.</a></li>
+<li><a href="#org5febe9c">Learning never stops.</a></li>
+<li><a href="#org6e811f4">Learning is a two-way process. There is no professor, no student: learning happens ideally in a community.</a></li>
 </ul>
 </li>
-<li><a href="#org454586a">б - Motivation</a>
+<li><a href="#orgcb70273">б - Motivation</a>
 <ul>
-<li><a href="#org9c77baf">Teaching programming to (almost) non-programmers.</a></li>
-<li><a href="#org52fb6c3">Contemplate the possibilities of Perl 6 as a beginner's language.</a></li>
-<li><a href="#orgf43fde0">Show the beauty and craft of programming.</a></li>
-<li><a href="#org79e690a">Use project-based learning throughout and flipped-learning techniques.</a></li>
+<li><a href="#orgacdb104">Teaching programming to (almost) non-programmers.</a></li>
+<li><a href="#org9d9f431">Contemplate the possibilities of Perl 6 as a beginner's language.</a></li>
+<li><a href="#org0498371">Show the beauty and craft of programming.</a></li>
+<li><a href="#org03b4063">Use project-based learning throughout and flipped-learning techniques.</a></li>
 </ul>
 </li>
-<li><a href="#org218271b">α - Design thinking</a>
+<li><a href="#org689e58f">α - Design thinking</a>
 <ul>
-<li><a href="#orgdc7ecbd">Empathization</a></li>
-<li><a href="#orga16b23d">Definition</a></li>
-<li><a href="#org6a60376">Ideate</a></li>
-<li><a href="#orgfa84a25">Prototype</a></li>
-<li><a href="#orgea9ac9d">Test</a></li>
+<li><a href="#orgfcff43f">Empathization</a></li>
+<li><a href="#orgabe3c0a">Definition</a></li>
+<li><a href="#orgce3b56e">Ideate</a></li>
+<li><a href="#org7030e17">Prototype</a></li>
+<li><a href="#orga328830">Test</a></li>
 </ul>
 </li>
-<li><a href="#org9297044">2. The tools of the trade</a>
+<li><a href="#orgc57944e">2. The tools of the trade</a>
 <ul>
-<li><a href="#orgc9e0ae2">2.1. Shells</a></li>
-<li><a href="#orgb1ac15b">2.2. Editors.</a></li>
-<li><a href="#org9fce319">2.3. Shells within editors</a></li>
+<li><a href="#org7a1df4c">2.1. Shells</a></li>
+<li><a href="#org7614b28">2.2. Editors.</a></li>
+<li><a href="#org9a26ce6">2.3. Shells within editors</a></li>
 </ul>
 </li>
-<li><a href="#orgceedf0b">ß - We need to talk about Unicode</a></li>
-<li><a href="#orgd764ad8">3. The expressions</a>
+<li><a href="#orgd750453">ß - We need to talk about Unicode</a></li>
+<li><a href="#orgbcee00f">3. The expressions</a>
 <ul>
-<li><a href="#orgbdc0f5f">3.1. REPLs and how to use them as glorified calculators</a></li>
-<li><a href="#org7eff3c8">3.2. Now that we mention Unicode</a></li>
-<li><a href="#org5203258">3.3. It's not only numbers</a></li>
-<li><a href="#org487b3bb">3.4. Lists of things are also game.</a></li>
+<li><a href="#org64e4620">3.1. REPLs and how to use them as glorified calculators</a></li>
+<li><a href="#orgb0a6cbb">3.2. Now that we mention Unicode</a></li>
+<li><a href="#org8c7bebf">3.3. It's not only numbers</a></li>
+<li><a href="#org140f004">3.4. Lists of things are also game.</a></li>
 </ul>
 </li>
-<li><a href="#orgebbc0af">γ - Thinking like computers do</a></li>
-<li><a href="#org95becd8">4. To infinity and beyond</a>
+<li><a href="#orga590c79">γ - Thinking like computers do</a></li>
+<li><a href="#orgc2cb1e9">4. To infinity and beyond</a>
 <ul>
-<li><a href="#orge5467f3">4.1. Working with ranges and sequences</a></li>
-<li><a href="#org9a9856e">4.2. Operating on lists</a></li>
+<li><a href="#org7699dac">4.1. Working with ranges and sequences</a></li>
+<li><a href="#org8a11763">4.2. Operating on lists</a></li>
+<li><a href="#orge69e146">4.3. Doing stuff to lists</a></li>
 </ul>
 </li>
-<li><a href="#orgecaacee">δ - Working as a team</a></li>
-<li><a href="#org7226966">5. Thinking logically</a>
+<li><a href="#orgfebf4ca">δ - Working as a team</a></li>
+<li><a href="#org6657e1f">5. Thinking logically</a>
 <ul>
-<li><a href="#orga8b2e5a">5.1. Comparing things</a></li>
+<li><a href="#orgef30045">5.1. The truth is&#x2026;</a></li>
+<li><a href="#org740811c">5.2. Comparing things</a></li>
+<li><a href="#org04aec26">5.3. And filtering them</a></li>
 </ul>
 </li>
-<li><a href="#orgafbac37">‎ε - The command line</a>
+<li><a href="#org87c3f86">‎ε - The command line</a>
 <ul>
-<li><a href="#org964e962">Moving stuff around</a></li>
-<li><a href="#org76f3010"><code>find</code></a></li>
-<li><a href="#org926e99e"><code>grep</code></a></li>
-<li><a href="#org8e80f43">Creating and destroying things</a></li>
+<li><a href="#org78e743b">Moving stuff around</a></li>
+<li><a href="#org8251443"><code>find</code></a></li>
+<li><a href="#org8a843b1"><code>grep</code></a></li>
+<li><a href="#org88df2b1">Creating and destroying things</a></li>
 </ul>
 </li>
-<li><a href="#org7f3d3a0">ב‎ - Secure connection</a></li>
-<li><a href="#orgdabfb15">6. Working with, in and around data</a></li>
-<li><a href="#org0a01848">ζ - Understand errors</a></li>
-<li><a href="#orgc7ba768">ג‎ - Markdown for documentation</a></li>
-<li><a href="#orgde52669">7. Stand in the shoulders: <i>modules</i> and using whatever is available</a></li>
-<li><a href="#org9d98fd1">η - Web weaving</a></li>
-<li><a href="#org626f8e6">ד‎ - Getting help</a></li>
-<li><a href="#orgfef69a9">8. Building up: <i>scripts</i> and <i>programs</i></a></li>
-<li><a href="#orgd7b3ecf">θ - Pack all your troubles in a container</a></li>
-<li><a href="#org29c81ce">г - Always play it safe</a></li>
-<li><a href="#org8da9616">9. Interacting with the user</a></li>
-<li><a href="#org893cc47">ι - Testing for the win</a></li>
-<li><a href="#org7c470ab">Д - Find the bug</a></li>
-<li><a href="#org1c45b83">10. Regular expressions</a></li>
-<li><a href="#org88c5aa5">κ - What you need to know about the cloud</a></li>
-<li><a href="#orgf07e224">11. Deploying to the cloud</a></li>
-<li><a href="#org2bcf756">λ - The world is my platform</a></li>
-<li><a href="#org6531eff">12. Analyzing data</a></li>
+<li><a href="#orgfa70026">6. Pack all your troubles in a bag. And a set.</a></li>
+<li><a href="#org58a9558">ב‎ - Secure connection</a></li>
+<li><a href="#orga96692d">7. Working with, in and around data</a></li>
+<li><a href="#org1df033c">ζ - Understand errors</a></li>
+<li><a href="#org8152bad">ג‎ - Markdown for documentation</a></li>
+<li><a href="#org0a1b46f">8. Stand in the shoulders: <i>modules</i> and using whatever is available</a></li>
+<li><a href="#org6b778a4">η - Web weaving</a></li>
+<li><a href="#org40e2e0b">ד‎ - Getting help</a></li>
+<li><a href="#org1b34873">9. Building up: <i>scripts</i> and <i>programs</i></a></li>
+<li><a href="#org2837202">θ - Pack all your troubles in a container</a></li>
+<li><a href="#orge56982b">г - Always play it safe</a></li>
+<li><a href="#org65718f7">10. Interacting with the user</a></li>
+<li><a href="#org98fbdf2">ι - Testing for the win</a></li>
+<li><a href="#orgd6f66c5">Д - Find the bug</a></li>
+<li><a href="#org3dbf127">11. Regular expressions</a></li>
+<li><a href="#org00c7637">κ - What you need to know about the cloud</a></li>
+<li><a href="#org41356fc">12. Deploying to the cloud</a></li>
+<li><a href="#org5132f45">λ - The world is my platform</a></li>
+<li><a href="#org4d0464f">13. Analyzing data</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org2a91943" class="outline-2">
-<h2 id="org2a91943"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-org5e377e0" class="outline-2">
+<h2 id="org5e377e0"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This book is about learning programming using a promising, and almost
@@ -354,18 +358,18 @@ time being, let us be content with Perl 6. Which is also new and cool.
 </div>
 </div>
 
-<div id="outline-container-orge7b416f" class="outline-2">
-<h2 id="orge7b416f">ℵ - Principles</h2>
-<div class="outline-text-2" id="text-orge7b416f">
+<div id="outline-container-org14360b0" class="outline-2">
+<h2 id="org14360b0">ℵ - Principles</h2>
+<div class="outline-text-2" id="text-org14360b0">
 <p>
 A few principles that inspire this (book|booklet|manual|you name it),
 originally conceived to help non-programmers get into Perl 6
 </p>
 </div>
 
-<div id="outline-container-org37e904f" class="outline-3">
-<h3 id="org37e904f">Learning should be fun and engaging: learn by doing.</h3>
-<div class="outline-text-3" id="text-org37e904f">
+<div id="outline-container-org3e2b3f8" class="outline-3">
+<h3 id="org3e2b3f8">Learning should be fun and engaging: learn by doing.</h3>
+<div class="outline-text-3" id="text-org3e2b3f8">
 <p>
 The best way to make people actually learn something is by putting
 inmediately to practice whatever is being learned, be it programming
@@ -375,9 +379,9 @@ as soon as possible to put things to practice.
 </div>
 </div>
 
-<div id="outline-container-orgb3dde57" class="outline-3">
-<h3 id="orgb3dde57">You are the master of your learning process, and tools, and outcome.</h3>
-<div class="outline-text-3" id="text-orgb3dde57">
+<div id="outline-container-org0cd5f3f" class="outline-3">
+<h3 id="org0cd5f3f">You are the master of your learning process, and tools, and outcome.</h3>
+<div class="outline-text-3" id="text-org0cd5f3f">
 <p>
 You should learn at your own step, stopping whenever you want and
 actually taking lessons when you feel like doing it. Engagement will
@@ -386,9 +390,9 @@ ensue.
 </div>
 </div>
 
-<div id="outline-container-orgb6c81fc" class="outline-3">
-<h3 id="orgb6c81fc">Learning never stops.</h3>
-<div class="outline-text-3" id="text-orgb6c81fc">
+<div id="outline-container-org5febe9c" class="outline-3">
+<h3 id="org5febe9c">Learning never stops.</h3>
+<div class="outline-text-3" id="text-org5febe9c">
 <p>
 If you learn only during the short period where <i>class</i> is taking
 place, you will not learn too much. You have to digest and assimilate
@@ -401,9 +405,9 @@ it is a programming language.
 </div>
 </div>
 
-<div id="outline-container-org2f500ea" class="outline-3">
-<h3 id="org2f500ea">Learning is a two-way process. There is no professor, no student: learning happens ideally in a community.</h3>
-<div class="outline-text-3" id="text-org2f500ea">
+<div id="outline-container-org6e811f4" class="outline-3">
+<h3 id="org6e811f4">Learning is a two-way process. There is no professor, no student: learning happens ideally in a community.</h3>
+<div class="outline-text-3" id="text-org6e811f4">
 <p>
 This is kinda <i>zen</i>, but then the whole thing stinks of a holistic
 experience, where you learn about life by learning about programming
@@ -422,9 +426,9 @@ a completely different story.
 </div>
 </div>
 
-<div id="outline-container-org454586a" class="outline-2">
-<h2 id="org454586a">б - Motivation</h2>
-<div class="outline-text-2" id="text-org454586a">
+<div id="outline-container-orgcb70273" class="outline-2">
+<h2 id="orgcb70273">б - Motivation</h2>
+<div class="outline-text-2" id="text-orgcb70273">
 <p>
 This is (mostly) a book on Perl 6. But my initial intention was not to
 show how to program in Perl 6. Here are a few of my motivations, which
@@ -432,9 +436,9 @@ might be also your own for actually reading and following this book.
 </p>
 </div>
 
-<div id="outline-container-org9c77baf" class="outline-3">
-<h3 id="org9c77baf">Teaching programming to (almost) non-programmers.</h3>
-<div class="outline-text-3" id="text-org9c77baf">
+<div id="outline-container-orgacdb104" class="outline-3">
+<h3 id="orgacdb104">Teaching programming to (almost) non-programmers.</h3>
+<div class="outline-text-3" id="text-orgacdb104">
 <p>
 Most programming books seem to be written eigther for people that already know
 how to program or for people that barely knows how to press
@@ -446,9 +450,9 @@ the book, if that eventually happens.
 </div>
 </div>
 
-<div id="outline-container-org52fb6c3" class="outline-3">
-<h3 id="org52fb6c3">Contemplate the possibilities of Perl 6 as a beginner's language.</h3>
-<div class="outline-text-3" id="text-org52fb6c3">
+<div id="outline-container-org9d9f431" class="outline-3">
+<h3 id="org9d9f431">Contemplate the possibilities of Perl 6 as a beginner's language.</h3>
+<div class="outline-text-3" id="text-org9d9f431">
 <p>
 There seems to be a consensus that there is such a thing as a <i>good
 language for beginners</i>, and that that language is Python. Well, maybe
@@ -469,9 +473,9 @@ language that can do that job. And Perl 6 can be that language.
 </div>
 </div>
 
-<div id="outline-container-orgf43fde0" class="outline-3">
-<h3 id="orgf43fde0">Show the beauty and craft of programming.</h3>
-<div class="outline-text-3" id="text-orgf43fde0">
+<div id="outline-container-org0498371" class="outline-3">
+<h3 id="org0498371">Show the beauty and craft of programming.</h3>
+<div class="outline-text-3" id="text-org0498371">
 <p>
 "Good technically, but lacks passion" is probably one of the worst
 things that can be said about a musician or even a footballer. Should
@@ -485,9 +489,9 @@ and beautiful program.
 </div>
 </div>
 
-<div id="outline-container-org79e690a" class="outline-3">
-<h3 id="org79e690a">Use project-based learning throughout and flipped-learning techniques.</h3>
-<div class="outline-text-3" id="text-org79e690a">
+<div id="outline-container-org03b4063" class="outline-3">
+<h3 id="org03b4063">Use project-based learning throughout and flipped-learning techniques.</h3>
+<div class="outline-text-3" id="text-org03b4063">
 <p>
 Which boils down to "talk little, do a lot". No slides, no heavyweight
 course materials, just a screen with examples, and make people perform
@@ -505,9 +509,9 @@ or programs or even notes that will be useful by themselves.
 </div>
 </div>
 
-<div id="outline-container-org218271b" class="outline-2">
-<h2 id="org218271b">α - Design thinking</h2>
-<div class="outline-text-2" id="text-org218271b">
+<div id="outline-container-org689e58f" class="outline-2">
+<h2 id="org689e58f">α - Design thinking</h2>
+<div class="outline-text-2" id="text-org689e58f">
 <p>
 This has been mostly obtained from
 <a href="https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38">this document</a> at Stanford University. <i>Design thinking</i> teaches you
@@ -520,18 +524,18 @@ designer. They are usually these ones.
 </p>
 </div>
 
-<div id="outline-container-orgdc7ecbd" class="outline-3">
-<h3 id="orgdc7ecbd">Empathization</h3>
-<div class="outline-text-3" id="text-orgdc7ecbd">
+<div id="outline-container-orgfcff43f" class="outline-3">
+<h3 id="orgfcff43f">Empathization</h3>
+<div class="outline-text-3" id="text-orgfcff43f">
 <p>
 Find users, find out about them, care about them, know their stories. Maybe you are the user, maybe it's someone close to you.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga16b23d" class="outline-3">
-<h3 id="orga16b23d">Definition</h3>
-<div class="outline-text-3" id="text-orga16b23d">
+<div id="outline-container-orgabe3c0a" class="outline-3">
+<h3 id="orgabe3c0a">Definition</h3>
+<div class="outline-text-3" id="text-orgabe3c0a">
 <p>
 Define the challenge, what you want to do, express the problem. This
 phase can be merged with the next one, since it is difficult to define
@@ -541,9 +545,9 @@ problem itself.
 </div>
 </div>
 
-<div id="outline-container-org6a60376" class="outline-3">
-<h3 id="org6a60376">Ideate</h3>
-<div class="outline-text-3" id="text-org6a60376">
+<div id="outline-container-orgce3b56e" class="outline-3">
+<h3 id="orgce3b56e">Ideate</h3>
+<div class="outline-text-3" id="text-orgce3b56e">
 <p>
 Try to find out the solution to the problems your users have. 
 </p>
@@ -559,9 +563,9 @@ amount of money.
 </div>
 </div>
 
-<div id="outline-container-orgfa84a25" class="outline-3">
-<h3 id="orgfa84a25">Prototype</h3>
-<div class="outline-text-3" id="text-orgfa84a25">
+<div id="outline-container-org7030e17" class="outline-3">
+<h3 id="org7030e17">Prototype</h3>
+<div class="outline-text-3" id="text-org7030e17">
 <p>
 We will transition to actually doing something, incrementally. And
 this is a phase, together with the following one, that is actually in
@@ -570,9 +574,9 @@ the engineering realm, so we are in familiar ground here.
 </div>
 </div>
 
-<div id="outline-container-orgea9ac9d" class="outline-3">
-<h3 id="orgea9ac9d">Test</h3>
-<div class="outline-text-3" id="text-orgea9ac9d">
+<div id="outline-container-orga328830" class="outline-3">
+<h3 id="orga328830">Test</h3>
+<div class="outline-text-3" id="text-orga328830">
 <p>
 If you are the user yourself, try it out. See if it is useful as
 intended. Actually, test-driven design dictates that you cannot
@@ -583,8 +587,8 @@ prototyping go hand in hand.
 </div>
 </div>
 
-<div id="outline-container-org9297044" class="outline-2">
-<h2 id="org9297044"><span class="section-number-2">2</span> The tools of the trade</h2>
+<div id="outline-container-orgc57944e" class="outline-2">
+<h2 id="orgc57944e"><span class="section-number-2">2</span> The tools of the trade</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 This part will not be leading away from the design thinking mindset,
@@ -612,8 +616,8 @@ was short. But let's proceed to that thing that actually allows users to run pro
 </p>
 </div>
 
-<div id="outline-container-orgc9e0ae2" class="outline-3">
-<h3 id="orgc9e0ae2"><span class="section-number-3">2.1</span> Shells</h3>
+<div id="outline-container-org7a1df4c" class="outline-3">
+<h3 id="org7a1df4c"><span class="section-number-3">2.1</span> Shells</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Then, the command line interpreter, also called <i>shell</i>. This might seem like a given, but
@@ -639,8 +643,8 @@ colors and contrast you want. And then come back here for the&#x2026;
 </div>
 </div>
 
-<div id="outline-container-orgb1ac15b" class="outline-3">
-<h3 id="orgb1ac15b"><span class="section-number-3">2.2</span> Editors.</h3>
+<div id="outline-container-org7614b28" class="outline-3">
+<h3 id="org7614b28"><span class="section-number-3">2.2</span> Editors.</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 The choice of an editor goes beyond mere utility to become an
@@ -681,8 +685,8 @@ Of course, something would be missing here if I did not mention `vim`. Here you 
 </div>
 </div>
 
-<div id="outline-container-org9fce319" class="outline-3">
-<h3 id="org9fce319"><span class="section-number-3">2.3</span> Shells within editors</h3>
+<div id="outline-container-org9a26ce6" class="outline-3">
+<h3 id="org9a26ce6"><span class="section-number-3">2.3</span> Shells within editors</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Editors are cool because they allow to work with all kind of symbols
@@ -700,9 +704,9 @@ facilities, and all kind of symbols that can be used in it.
 </div>
 </div>
 
-<div id="outline-container-orgceedf0b" class="outline-2">
-<h2 id="orgceedf0b">ß - We need to talk about Unicode</h2>
-<div class="outline-text-2" id="text-orgceedf0b">
+<div id="outline-container-orgd750453" class="outline-2">
+<h2 id="orgd750453">ß - We need to talk about Unicode</h2>
+<div class="outline-text-2" id="text-orgd750453">
 <p>
 This does not belong to the language proper, but it is still something
 that has to be mentioned. Languages are used to write applications,
@@ -766,8 +770,8 @@ as soon as possible, as in now.
 </p>
 </div>
 </div>
-<div id="outline-container-orgd764ad8" class="outline-2">
-<h2 id="orgd764ad8"><span class="section-number-2">3</span> The expressions</h2>
+<div id="outline-container-orgbcee00f" class="outline-2">
+<h2 id="orgbcee00f"><span class="section-number-2">3</span> The expressions</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 The first thing you need to know about a language, any language, is
@@ -783,8 +787,8 @@ that.
 </p>
 </div>
 
-<div id="outline-container-orgbdc0f5f" class="outline-3">
-<h3 id="orgbdc0f5f"><span class="section-number-3">3.1</span> REPLs and how to use them as glorified calculators</h3>
+<div id="outline-container-org64e4620" class="outline-3">
+<h3 id="org64e4620"><span class="section-number-3">3.1</span> REPLs and how to use them as glorified calculators</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 A
@@ -884,8 +888,8 @@ calculator.
 </div>
 </div>
 
-<div id="outline-container-org7eff3c8" class="outline-3">
-<h3 id="org7eff3c8"><span class="section-number-3">3.2</span> Now that we mention Unicode</h3>
+<div id="outline-container-orgb0a6cbb" class="outline-3">
+<h3 id="orgb0a6cbb"><span class="section-number-3">3.2</span> Now that we mention Unicode</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Unicode is the way to express all alphabets in the world, and then
@@ -908,8 +912,8 @@ you will not have to, although you can, write x**2 but simply x².
 </div>
 </div>
 
-<div id="outline-container-org5203258" class="outline-3">
-<h3 id="org5203258"><span class="section-number-3">3.3</span> It's not only numbers</h3>
+<div id="outline-container-org8c7bebf" class="outline-3">
+<h3 id="org8c7bebf"><span class="section-number-3">3.3</span> It's not only numbers</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 All the expressions written above are numbers. 
@@ -953,7 +957,7 @@ sin(π/3)² + cos(π/3)² + " is 1"
 will yield this error
 </p>
 
-<div id="orgb1c8fc1" class="figure">
+<div id="org83335a8" class="figure">
 <p><img src="./img/expression-error.png" alt="expression-error.png" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Errorred expression in the REPL</p>
@@ -1041,8 +1045,8 @@ and all that's nice and beautiful about it.
 </div>
 </div>
 
-<div id="outline-container-org487b3bb" class="outline-3">
-<h3 id="org487b3bb"><span class="section-number-3">3.4</span> Lists of things are also game.</h3>
+<div id="outline-container-org140f004" class="outline-3">
+<h3 id="org140f004"><span class="section-number-3">3.4</span> Lists of things are also game.</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 Numbers and words are simple things. But you can string them together
@@ -1147,9 +1151,9 @@ in the next chapters.
 </div>
 </div>
 
-<div id="outline-container-orgebbc0af" class="outline-2">
-<h2 id="orgebbc0af">γ - Thinking like computers do</h2>
-<div class="outline-text-2" id="text-orgebbc0af">
+<div id="outline-container-orga590c79" class="outline-2">
+<h2 id="orga590c79">γ - Thinking like computers do</h2>
+<div class="outline-text-2" id="text-orga590c79">
 <p>
 You probably know, or at least have made an educated guess, that computers are unlike humans. But since
 expressions are entered in pretty much the same way you would use
@@ -1217,8 +1221,8 @@ of any size.
 </div>
 </div>
 
-<div id="outline-container-org95becd8" class="outline-2">
-<h2 id="org95becd8"><span class="section-number-2">4</span> To infinity and beyond</h2>
+<div id="outline-container-orgc2cb1e9" class="outline-2">
+<h2 id="orgc2cb1e9"><span class="section-number-2">4</span> To infinity and beyond</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 If you know in advance every single term of a list, writing them down
@@ -1228,8 +1232,8 @@ us see how to deal with them in Perl 6
 </p>
 </div>
 
-<div id="outline-container-orge5467f3" class="outline-3">
-<h3 id="orge5467f3"><span class="section-number-3">4.1</span> Working with ranges and sequences</h3>
+<div id="outline-container-org7699dac" class="outline-3">
+<h3 id="org7699dac"><span class="section-number-3">4.1</span> Working with ranges and sequences</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 For long lists, you might want to use only the first and last term 
@@ -1333,8 +1337,8 @@ out if it is exactly 3000 or some such. You can check out
 </div>
 </div>
 
-<div id="outline-container-org9a9856e" class="outline-3">
-<h3 id="org9a9856e"><span class="section-number-3">4.2</span> Operating on lists</h3>
+<div id="outline-container-org8a11763" class="outline-3">
+<h3 id="org8a11763"><span class="section-number-3">4.2</span> Operating on lists</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 Lists are perfectly good subjects for this calculator on steroids we
@@ -1411,11 +1415,99 @@ sucession of multiples of 20? Maybe&#x2026;
 </pre>
 </div>
 </div>
+
+<div id="outline-container-orge69e146" class="outline-3">
+<h3 id="orge69e146"><span class="section-number-3">4.3</span> Doing stuff to lists</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Well, that is precisely what we have been doing above. But we need to
+do more. A lot more. 
+</p>
+
+<p>
+All we have been doing is combining lists with each other. We have
+also been using lists of exactly the same length. But we might need to
+do some basic operation to a list, or create one list that is not
+exactly an arithmetic or geometric progression. For instance, this
+</p>
+<pre class="example">
+(1/2,1/3...Inf)[5]
+</pre>
+<p>
+will not do what you expect it to do, which would be 1/5. Writing the
+whole range
+</p>
+<pre class="example">
+(1/2,1/3...Inf)[^5]
+</pre>
+<p>
+will show that, what it is actually doing is to turn it into an
+arithmetic sequence that substracts 0.166667 from the previous one,
+despite being relatively clear, for a human, that we are trying to
+create the <code>1/n</code>. Sucession. We can do that, however, using the
+hyperoperators <code>&lt;&lt;&gt;&gt;</code> and derived. Check this out
+</p>
+<pre class="example">
+1 &lt;&lt;/&lt;&lt; (1..100)
+</pre>
+<p>
+will return precisely what we are looking for, a descending sequence
+of numbers that ends with 0.01. Please note that we can no longer use
+an infinite (lazy) sequence: we have to ve concrete. 
+</p>
+
+<p>
+This <code>&lt;&lt;/&lt;&lt;</code> is known as an hyperoperator, because it takes a humble
+operator like <code>/</code> and turns it into a machine that deals with
+lists. It can also be written <code>«/«</code> with the direction of the angular
+brackets pointing at the <i>smaller</i> thing, in this case a single number
+vs. a list. 
+</p>
+
+<p>
+What happens if you do
+</p>
+<pre class="example">
+&lt;1 2&gt; &lt;&lt;/&lt;&lt; (1..100)
+</pre>
+<p>
+is kind of funny. It is like applying the cookie cutter in the left
+hand side to the right hand side: the first element will be divided by
+1, the second by 2, and so on&#x2026; You can even take one wing <code>&lt;&lt;</code> from
+the hyperdrive, and use it to, for instance, negate a sequence:
+</p>
+
+<pre class="example">
+-&lt;&lt; (1..100)
+</pre>
+
+<p>
+When the two lists have the same length, the arrows can go in any
+direction, it will not matter much. Let us create random fixtures for
+a (subset of) the Premie League
+</p>
+<pre class="example">
+( &lt;ARS AST BOU CHE EVE LEI LIV MCI MUN NEW&gt;.pick(10) 
+  «~» 
+    ( " - " «~« &lt;ARS AST BOU CHE EVE LEI LIV MCI MUN NEW&gt;.pick(10))) 
+    »~» "\n"
+</pre>
+<p>
+This, which could admittedly be a little shorter, uses these
+hyperoperators to combine acronyms so that they are separed by a dash,
+which is what = " - " «~« = does, and then put the whole result in
+different lines, which is done by the = »~» "\n" = in the last line. A
+great achievement, with a small amount of coding involved. We are
+using throughout the <code>~</code> string concatenation operator, which is what
+allows us to create such a compact statement. 
+</p>
+</div>
+</div>
 </div>
 
-<div id="outline-container-orgecaacee" class="outline-2">
-<h2 id="orgecaacee">δ - Working as a team</h2>
-<div class="outline-text-2" id="text-orgecaacee">
+<div id="outline-container-orgfebf4ca" class="outline-2">
+<h2 id="orgfebf4ca">δ - Working as a team</h2>
+<div class="outline-text-2" id="text-orgfebf4ca">
 <p>
 You will never walk alone when solving a problem. Even if you are
 working in a side project, something you thought about yourself, you
@@ -1483,8 +1575,8 @@ git add a_new_file
 </div>
 </div>
 
-<div id="outline-container-org7226966" class="outline-2">
-<h2 id="org7226966"><span class="section-number-2">5</span> Thinking logically</h2>
+<div id="outline-container-org6657e1f" class="outline-2">
+<h2 id="org6657e1f"><span class="section-number-2">5</span> Thinking logically</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 You are going to need in many cases whether something is true or
@@ -1499,9 +1591,69 @@ with right now.
 </p>
 </div>
 
-<div id="outline-container-orga8b2e5a" class="outline-3">
-<h3 id="orga8b2e5a"><span class="section-number-3">5.1</span> Comparing things</h3>
+<div id="outline-container-orgef30045" class="outline-3">
+<h3 id="orgef30045"><span class="section-number-3">5.1</span> The truth is&#x2026;</h3>
 <div class="outline-text-3" id="text-5-1">
+<p>
+"Out there". "I am your father". All of these things together. Well,
+truth is <code>True</code> and false is <code>False</code> in Perl6. However, there are
+other things that are also true, or not, depending on the context,
+because, as we have seen before, the types of things flow and change
+depending on the context. Fortunately, we have a handy operator that
+asks any and everything if it it is true or not: <code>?</code>.
+</p>
+
+<p>
+So let's see what kind of things are true or not:
+</p>
+<pre class="example">
+?&lt;&lt; ("","False",0,1,333,0.5)
+</pre>
+<p>
+will show us two <code>False=s; the "" and the 0. So empty strings and void
+numbers are equivalent to false. Also empty arrays, check out =?()</code>,
+while non-empty arrays are <code>True</code>. 
+</p>
+
+<p>
+And what you can ask, you can negate:
+</p>
+<pre class="example">
+!&lt;&lt; ("","False",0,1,333,0.5)
+</pre>
+<p>
+will show exactly the opposite. <code>!</code> negates the expression it is in
+front of. By the way, these operators that are <i>in front of</i> are
+called preffix operators; since they operate in a single element they
+are also <i>unary</i>, but that goes without saying if they are preffixing
+something. Operators in the middle of two things are called <i>infix</i>
+and they happen to be <i>binary</i>. Finally, there is also a <i>ternary</i>
+operator, but we will get to that soon.
+</p>
+
+<p>
+So, finally, <code>?True</code> is <code>True</code> and <code>!True</code> is <code>False</code>. And there is
+no bigger true than that. So
+</p>
+
+<pre class="example">
+so "this"
+</pre>
+<p>
+is <code>True</code> and
+</p>
+<pre class="example">
+so ""
+</pre>
+<p>
+is, obviously, <code>False</code>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org740811c" class="outline-3">
+<h3 id="org740811c"><span class="section-number-3">5.2</span> Comparing things</h3>
+<div class="outline-text-3" id="text-5-2">
 <p>
 Let's see how Perl6 performs simple comparison operations
 </p>
@@ -1554,12 +1706,113 @@ because it understands, as in this case, Roman numerals.
 </p>
 </div>
 </div>
+
+<div id="outline-container-org04aec26" class="outline-3">
+<h3 id="org04aec26"><span class="section-number-3">5.3</span> And filtering them</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+Now that we know how to deal with truths and untruths, we can use this
+knowledge to deal with sequences and filter them depending on whether
+a condition is true or not. We can, for instance, use ready-made
+functions such as <code>is-prime</code> 
+</p>
+<pre class="example">
+(2000..2100).grep( { .is-prime} )
+</pre>
+<p>
+As you might remember, putting parentheses around an expression, in
+this case a <code>Range</code> (remember, two points) turns it into an <i>object</i>
+and thus something that is amenable of using some methods. <a href="https://docs.perl6.org/routine/grep"><code>grep</code></a> is
+one of them: given a list, applies an expression to every member of
+the list returning another list with only the elements where the
+expression is true. The expression, as you see, is between
+parentheses, and since every element is treated as an object by itself
+by <code>grep</code>, the <code>.is-prime</code> way of writing it indicates that you are
+taking the first element, applying the <code>is-prime</code> function, select
+that element for the result if it is true, and so no. That expression
+above tells us the number of prime years (not premium years) in this
+century. How many are there?
+</p>
+
+<p>
+What there is is many ways of writing that. To reduce clutter, Perl6
+allows also the parentheses to be suppressed.
+</p>
+<pre class="example">
+(2000..2100).grep: { .is-prime}
+</pre>
+<p>
+by a colon. And you can also invert the way of dealing with this,
+putting <code>grep</code> at the forefront
+</p>
+<pre class="example">
+grep { .is-prime}, 1..Inf
+</pre>
+<p>
+and, right there, you have the list of all prime numbers. Which one is
+the number 1000th? (it might take a while).
+</p>
+
+<p>
+In fact, if you are applying a simple method such as this one to every
+element, there is an
+<a href="http://blogs.perl.org/users/zoffix_znet/2016/02/perl-6-shortcuts-part-1.html">even simpler  way of doing it</a>:
+</p>
+<pre class="example">
+(0,π/2,π,3*π/2,2*π)».sin
+</pre>
+<p>
+Using the parentheses and commas we create an array, and the <code>».</code>
+construction will apply the operation behind to eacn and every member
+of it, returning the sine of all these angles. Any operation with a
+single operand you can think of can be applied, in this way, to a
+whole array of things. Which is cool. Even cooler, you can use the
+<code>so</code> we learned above to filter only those whose cosine is not zero:
+</p>
+<pre class="example">
+grep { .so }, (0,π/2,π,3*π/2,2*π)».cos
+</pre>
+<p>
+This might work in the future, but for the time being <code>cos</code> is pretty
+close to 0, but not exactly 0. 
+</p>
+
+<p>
+You might do simpler things to arrays, like computing the minimum:
+</p>
+<pre class="example">
+min (3/4, 5/6, 3/8, 2/3)
+</pre>
+<p>
+or even computing whether an element is or not in a particular array,
+</p>
+<pre class="example">
+332 ∈  (7,14...2000)
+</pre>
+<p>
+using <code>∈</code>, or the mathematical symbol for <i>belongs to</i>, which returns
+False in this case. That can be an
+easy and straightforward way of finding out multiples, for
+instance. Multiples that <a href="https://trizen.gitbooks.io/perl6-rosettacode/content/programming_tasks/F/Filter.html">you can also extract using <code>grep</code></a>
+</p>
+<pre class="example">
+(1..100).grep(* %% 7)
+</pre>
+<p>
+where, in this case, <code>*</code> is a stand-in for the element, which we had
+not used before. We had used it before as the end of a sequence
+meaning <i>everything</i>. This is pretty much the same, <i>everyone</i>. Perl6
+reuses symbols like this n different contexts, but at the same time it
+gives them similar, or the same, meaning. That is good and well. 
+</p>
+</div>
+</div>
 </div>
 
 
-<div id="outline-container-orgafbac37" class="outline-2">
-<h2 id="orgafbac37">‎ε - The command line</h2>
-<div class="outline-text-2" id="text-orgafbac37">
+<div id="outline-container-org87c3f86" class="outline-2">
+<h2 id="org87c3f86">‎ε - The command line</h2>
+<div class="outline-text-2" id="text-org87c3f86">
 <p>
 In the principle was the command line. That is so true. You run
 scripts from the command line, and you go back to it when you are
@@ -1605,9 +1858,9 @@ using Linux as a programmer.
 </p>
 </div>
 
-<div id="outline-container-org964e962" class="outline-3">
-<h3 id="org964e962">Moving stuff around</h3>
-<div class="outline-text-3" id="text-org964e962">
+<div id="outline-container-org78e743b" class="outline-3">
+<h3 id="org78e743b">Moving stuff around</h3>
+<div class="outline-text-3" id="text-org78e743b">
 <p>
 <code>cp</code>, as in "copy" copies files to another directory, maybe with
 another name
@@ -1634,9 +1887,9 @@ file</code> will do it.
 </div>
 </div>
 
-<div id="outline-container-org76f3010" class="outline-3">
-<h3 id="org76f3010"><code>find</code></h3>
-<div class="outline-text-3" id="text-org76f3010">
+<div id="outline-container-org8251443" class="outline-3">
+<h3 id="org8251443"><code>find</code></h3>
+<div class="outline-text-3" id="text-org8251443">
 <p>
 Used to find files by name, it is invaluable when you do not remember
 exactly where you downloaded your repo or you want to find an example
@@ -1664,9 +1917,9 @@ were working with. It happens.
 </div>
 </div>
 
-<div id="outline-container-org926e99e" class="outline-3">
-<h3 id="org926e99e"><code>grep</code></h3>
-<div class="outline-text-3" id="text-org926e99e">
+<div id="outline-container-org8a843b1" class="outline-3">
+<h3 id="org8a843b1"><code>grep</code></h3>
+<div class="outline-text-3" id="text-org8a843b1">
 <p>
 You do not remember in which particular file you used a name like
 <code>foo</code>? <code>grep</code> to the rescue
@@ -1682,9 +1935,9 @@ will look for your <code>foo</code> in all files with the extension <code>c</cod
 </div>
 </div>
 
-<div id="outline-container-org8e80f43" class="outline-3">
-<h3 id="org8e80f43">Creating and destroying things</h3>
-<div class="outline-text-3" id="text-org8e80f43">
+<div id="outline-container-org88df2b1" class="outline-3">
+<h3 id="org88df2b1">Creating and destroying things</h3>
+<div class="outline-text-3" id="text-org88df2b1">
 <p>
 <code>mkdir</code> creates directories, <code>mkdir -p this/is/a/deep/directory</code>
 creates a <i>leaf</i> directory and all the rest, and <code>touch</code> creates empty
@@ -1694,10 +1947,20 @@ files.
 </div>
 </div>
 
-
-<div id="outline-container-org7f3d3a0" class="outline-2">
-<h2 id="org7f3d3a0">ב‎ - Secure connection</h2>
-<div class="outline-text-2" id="text-org7f3d3a0">
+<div id="outline-container-orgfa70026" class="outline-2">
+<h2 id="orgfa70026"><span class="section-number-2">6</span> Pack all your troubles in a bag. And a set.</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Perl6 is, intentionally, designed for math, so it includes some
+representation for data that can be found usually in math classes. Not
+only that, it can work with them just in the way you did in your
+school math class, using the same symbols. 
+</p>
+</div>
+</div>
+<div id="outline-container-org58a9558" class="outline-2">
+<h2 id="org58a9558">ב‎ - Secure connection</h2>
+<div class="outline-text-2" id="text-org58a9558">
 <p>
 The whole point of programming is working with remote computers. And
 in fact it is almost impossible that you work nowadays without using
@@ -1708,10 +1971,9 @@ securely. That is why <i>ssh</i> was invented.
 </div>
 </div>
 
-
-<div id="outline-container-orgdabfb15" class="outline-2">
-<h2 id="orgdabfb15"><span class="section-number-2">6</span> Working with, in and around data</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orga96692d" class="outline-2">
+<h2 id="orga96692d"><span class="section-number-2">7</span> Working with, in and around data</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
@@ -1720,9 +1982,9 @@ complicated formulae.
 </p>
 </div>
 </div>
-<div id="outline-container-org0a01848" class="outline-2">
-<h2 id="org0a01848">ζ - Understand errors</h2>
-<div class="outline-text-2" id="text-org0a01848">
+<div id="outline-container-org1df033c" class="outline-2">
+<h2 id="org1df033c">ζ - Understand errors</h2>
+<div class="outline-text-2" id="text-org1df033c">
 <p>
 Shit eventually happens. But when it does, you must be ready to unshit
 everything. 
@@ -1730,9 +1992,9 @@ everything.
 </div>
 </div>
 
-<div id="outline-container-orgc7ba768" class="outline-2">
-<h2 id="orgc7ba768">ג‎ - Markdown for documentation</h2>
-<div class="outline-text-2" id="text-orgc7ba768">
+<div id="outline-container-org8152bad" class="outline-2">
+<h2 id="org8152bad">ג‎ - Markdown for documentation</h2>
+<div class="outline-text-2" id="text-org8152bad">
 <p>
 Every project should have a <code>README.md</code> that explains what it is
 about, for everyone else if it is public, for our future self if it is
@@ -1744,9 +2006,9 @@ even if they represent a hyperlink or the inclusion of an image.
 </div>
 </div>
 
-<div id="outline-container-orgde52669" class="outline-2">
-<h2 id="orgde52669"><span class="section-number-2">7</span> Stand in the shoulders: <i>modules</i> and using whatever is available</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-org0a1b46f" class="outline-2">
+<h2 id="org0a1b46f"><span class="section-number-2">8</span> Stand in the shoulders: <i>modules</i> and using whatever is available</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 If there is a single motto you should follow when programming, is this
 one: <i>Don't reinvent the wheel</i>. Before sitting down to do something,
@@ -1756,9 +2018,9 @@ are dealing with, your mileage may vary.
 </p>
 </div>
 </div>
-<div id="outline-container-org9d98fd1" class="outline-2">
-<h2 id="org9d98fd1">η - Web weaving</h2>
-<div class="outline-text-2" id="text-org9d98fd1">
+<div id="outline-container-org6b778a4" class="outline-2">
+<h2 id="org6b778a4">η - Web weaving</h2>
+<div class="outline-text-2" id="text-org6b778a4">
 <p>
 Whatever you do nowadays in computing, you will have to end up
 presenting something somewhere, and that somewhere will most probably
@@ -1769,9 +2031,9 @@ data so that anyone in the whole wide world can see it.
 </p>
 </div>
 </div>
-<div id="outline-container-org626f8e6" class="outline-2">
-<h2 id="org626f8e6">ד‎ - Getting help</h2>
-<div class="outline-text-2" id="text-org626f8e6">
+<div id="outline-container-org40e2e0b" class="outline-2">
+<h2 id="org40e2e0b">ד‎ - Getting help</h2>
+<div class="outline-text-2" id="text-org40e2e0b">
 <p>
 No matter how good you are, or how easy the learning curve is, you
 might eventually get stuck, because you do not find your way in a maze
@@ -1783,9 +2045,9 @@ people in your predicament. Fortunately, Perl 6 is very good at that.
 </p>
 </div>
 </div>
-<div id="outline-container-orgfef69a9" class="outline-2">
-<h2 id="orgfef69a9"><span class="section-number-2">8</span> Building up: <i>scripts</i> and <i>programs</i></h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-org1b34873" class="outline-2">
+<h2 id="org1b34873"><span class="section-number-2">9</span> Building up: <i>scripts</i> and <i>programs</i></h2>
+<div class="outline-text-2" id="text-9">
 <p>
 Doodling with the REPL is fun, but eventually you will need to profit:
 the program has to be stored and maybe shipped somewhere. Architecting
@@ -1793,9 +2055,9 @@ a script needs to put your computational thinking skills to work.
 </p>
 </div>
 </div>
-<div id="outline-container-orgd7b3ecf" class="outline-2">
-<h2 id="orgd7b3ecf">θ - Pack all your troubles in a container</h2>
-<div class="outline-text-2" id="text-orgd7b3ecf">
+<div id="outline-container-org2837202" class="outline-2">
+<h2 id="org2837202">θ - Pack all your troubles in a container</h2>
+<div class="outline-text-2" id="text-org2837202">
 <p>
 Applications run nowadays in all kind of places, so eventually someone
 found a way to put all the stuff you need to run them in a single
@@ -1823,9 +2085,9 @@ of a whole suite that can be stored and shipped anywhere.
 </div>
 </div>
 
-<div id="outline-container-org29c81ce" class="outline-2">
-<h2 id="org29c81ce">г - Always play it safe</h2>
-<div class="outline-text-2" id="text-org29c81ce">
+<div id="outline-container-orge56982b" class="outline-2">
+<h2 id="orge56982b">г - Always play it safe</h2>
+<div class="outline-text-2" id="text-orge56982b">
 <p>
 As long as you have created a program that is out there on the
 Internet, and you need to take care of sending it somewhere, in a
@@ -1846,9 +2108,9 @@ play it safe.
 </p>
 </div>
 </div>
-<div id="outline-container-org8da9616" class="outline-2">
-<h2 id="org8da9616"><span class="section-number-2">9</span> Interacting with the user</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-org65718f7" class="outline-2">
+<h2 id="org65718f7"><span class="section-number-2">10</span> Interacting with the user</h2>
+<div class="outline-text-2" id="text-10">
 <p>
 Programs are created to be used. Many of them will be used by just
 you. But some of them will be out there. You have to build them for an
@@ -1860,9 +2122,9 @@ user, but also secure. Never forget that.
 </p>
 </div>
 </div>
-<div id="outline-container-org893cc47" class="outline-2">
-<h2 id="org893cc47">ι - Testing for the win</h2>
-<div class="outline-text-2" id="text-org893cc47">
+<div id="outline-container-org98fbdf2" class="outline-2">
+<h2 id="org98fbdf2">ι - Testing for the win</h2>
+<div class="outline-text-2" id="text-org98fbdf2">
 <p>
 <i>If it is not tested, it is broken</i> is something that you should learn
 as soon as you start to crank out code. It actually means <i>If it is
@@ -1873,18 +2135,18 @@ satisfied with it. No, son, that is not testing and you know it.
 </div>
 </div>
 
-<div id="outline-container-org7c470ab" class="outline-2">
-<h2 id="org7c470ab">Д - Find the bug</h2>
-<div class="outline-text-2" id="text-org7c470ab">
+<div id="outline-container-orgd6f66c5" class="outline-2">
+<h2 id="orgd6f66c5">Д - Find the bug</h2>
+<div class="outline-text-2" id="text-orgd6f66c5">
 <p>
 Testing reduces the need to find errors, but eventually some non-tested feature or a combination of things will make your program behave unexpectedly. No worries. <i>Debugging</i> is the way to go. 
 </p>
 </div>
 </div>
 
-<div id="outline-container-org1c45b83" class="outline-2">
-<h2 id="org1c45b83"><span class="section-number-2">10</span> Regular expressions</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-org3dbf127" class="outline-2">
+<h2 id="org3dbf127"><span class="section-number-2">11</span> Regular expressions</h2>
+<div class="outline-text-2" id="text-11">
 <p>
 Machine learning is all about understanding text. That text does not
 come in a shape you can easily process it. Regular expressions help
@@ -1893,9 +2155,9 @@ regularities in it.
 </p>
 </div>
 </div>
-<div id="outline-container-org88c5aa5" class="outline-2">
-<h2 id="org88c5aa5">κ - What you need to know about the cloud</h2>
-<div class="outline-text-2" id="text-org88c5aa5">
+<div id="outline-container-org00c7637" class="outline-2">
+<h2 id="org00c7637">κ - What you need to know about the cloud</h2>
+<div class="outline-text-2" id="text-org00c7637">
 <p>
 The <i>cloud</i> is where you run your programs nowadays. That is all you
 need to know.
@@ -1907,9 +2169,9 @@ Not really. But almost.
 </div>
 </div>
 
-<div id="outline-container-orgf07e224" class="outline-2">
-<h2 id="orgf07e224"><span class="section-number-2">11</span> Deploying to the cloud</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-org41356fc" class="outline-2">
+<h2 id="org41356fc"><span class="section-number-2">12</span> Deploying to the cloud</h2>
+<div class="outline-text-2" id="text-12">
 <p>
 You have probably been told, by myself in the previous chapter, that
 the cloud is where you run your program. But it is not going to go,
@@ -1918,21 +2180,21 @@ take it, and that is what is called <i>deploying</i>.
 </p>
 </div>
 </div>
-<div id="outline-container-org2bcf756" class="outline-2">
-<h2 id="org2bcf756">λ - The world is my platform</h2>
-<div class="outline-text-2" id="text-org2bcf756">
+<div id="outline-container-org5132f45" class="outline-2">
+<h2 id="org5132f45">λ - The world is my platform</h2>
+<div class="outline-text-2" id="text-org5132f45">
 <p>
 When creating a program, you can literally get the world to process part of your stuff, or obtain data from the same world. <i>Application programming interfaces</i> make accessible, over the Internet, functions that would be annoying or simply impossible to have on your own computer. 
 </p>
 </div>
 </div>
-<div id="outline-container-org6531eff" class="outline-2">
-<h2 id="org6531eff"><span class="section-number-2">12</span> Analyzing data</h2>
+<div id="outline-container-org4d0464f" class="outline-2">
+<h2 id="org4d0464f"><span class="section-number-2">13</span> Analyzing data</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Juan J. merelo</p>
-<p class="date">Created: 2017-01-05 jue 18:36</p>
+<p class="date">Created: 2017-01-14 sáb 19:32</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
