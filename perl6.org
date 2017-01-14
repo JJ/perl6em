@@ -1213,7 +1213,11 @@ files.
 Perl6 is, intentionally, designed for math, so it includes some
 representation for data that can be found usually in math classes. Not
 only that, it can work with them just in the way you did in your
-school math class, using the same symbols. 
+school math class, using the same symbols. For instance, let's talk
+about Sets.
+
+** What is a set and what can it do for me.
+
 * ב‎ - Secure connection
     :PROPERTIES:
     :UNNUMBERED: t
