@@ -1357,6 +1357,33 @@ name, except that subroutines, them too, can have no name, as
 above. However, they do have a /signature/, the list of parameters
 behind the arrow or the word =sub=, in parentheses in this case.
 
+Blocks can be simpler than subroutines, however, so we do not even
+have to declare the names of those parameters. Use whatever you want,
+like here
+#+BEGIN_EXAMPLE perl6
+{ $^foo ** $^bar }( 12,13 )
+#+END_EXAMPLE
+which will raise 12 to the 13th power; that is what =**= does. We are
+using the oh so common foo and bar. In this case, the caret =^= iw
+produced by typing wherever the caret is and then the space, since it
+is a key that is usually composed as a circumflex accent with other characters to produce
+things like /brûlé/, which looks like it has been made up, but is
+actually French. 
+
+ But do you remember that Perl 6
+can easily deal with Unicode characters? From now on I propose to use
+ß and þ as substitutes for the hackneyed =foo= and =bar=, like here
+#+BEGIN_EXAMPLE perl6
+{ ([*] 1..$^ß ) / ( [*] 1..$^þ) * ([*] 1..($^ß - $^þ)) }(5,3)
+#+END_EXAMPLE
+the part between braces computes $n \choose m$, that is, the
+[[https://en.wikipedia.org/wiki/Binomial_coefficient][binomial coefficient]]. It does so by computing the factorial of ß,
+which is what  =[*] 1..$^ß = does, remember, the meta-operator =[]=
+applied to =*= applies the product to all the elements in the range
+1:ß. And then it divides it by the factorial of þ multiplied by the
+factorial of =ß - þ=. Easy, right? Remember not to use too big
+numbers, or it will take a little while. 
+
 * ζ - Understand errors
     :PROPERTIES:
     :UNNUMBERED: t
@@ -1500,7 +1527,7 @@ need to know.
 
 Not really. But almost.
 
-* Deploying to the cloud
+* ж- Deploying to the cloud
 You have probably been told, by myself in the previous chapter, that
 the cloud is where you run your program. But it is not going to go,
 all by itself, to a cumulonimbus out there. You have to physically
