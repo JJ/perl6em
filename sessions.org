@@ -283,6 +283,10 @@ games  that was given. Maybe an ocassion to gamify learning, but I
 failed to see how. 
 
 * Card shuffle
+  :PROPERTIES:
+  :Tools:    Laptop
+  :Chapter:  4
+  :END:
 
 Talk about different ways of picking random elements out of an array,
 or a whole bunch of them. The single objective of this class will be
@@ -311,7 +315,17 @@ ways. Informative error messages also help quite a lot to get things
 right. 
 
 * It is so true
+  :PROPERTIES:
+  :Tools:    Laptop
+  :Chapter:  5
+  :END:
 
 Learning a bit about Boolean values and how to work with them. I am
 not sure how to proceed with this. We can do it fast or we can do it
 good. It's probably better if we do it fast. 
+
+The basic ideas is how Boolean types are the results of checks, and
+what kind of things are considered true and not true. Also a primer on
+unary/preffix operators and how to call them.  
+
+
