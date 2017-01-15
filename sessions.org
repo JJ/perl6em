@@ -329,3 +329,15 @@ what kind of things are considered true and not true. Also a primer on
 unary/preffix operators and how to call them.  
 
 
+* Back to the command line
+  :PROPERTIES:
+  :Tools:    Laptop
+  :Chapter:  5
+  :END:
+
+We need to learn a bit about the command line: when we are actually in
+it, what kind of orders are available, and some basic stuff, mainly in
+order to combine different commands to perform tasks. 
+
+In this session, we will also experiment with somebody else /leading/
+or explaining things. 

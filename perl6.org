@@ -1133,7 +1133,9 @@ True || (7 < 10)
     :UNNUMBERED: t
     :END:
 
-In the principle was the command line. That is so true. You run
+In the principle was the command line. 
+
+That is so true. You run
 scripts from the command line, and you go back to it when you are
 done. But also the Linux was created with a set of command line tools
 that can be integrated with your program to save you typing and
