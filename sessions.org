@@ -328,6 +328,22 @@ The basic ideas is how Boolean types are the results of checks, and
 what kind of things are considered true and not true. Also a primer on
 unary/preffix operators and how to call them.  
 
+** Actual development
+
+It has been a whole week since the last class, and it is quite obvious
+this is losing a bit of steam. Life gets in the way, we are entering
+college exams period, plus the rest of the life, and we could barely
+squeeze 20 minutes into the morning of January 15th. It is good,
+anyway, that we can continue at all, and that we have been able to
+learn a bit of logic, in a logical way, asking what seems true and
+what is not true and wondering why an empty string is false, while a
+non-empty string is true, even if it contains "False" and things like
+that. 
+
+Then we have continued to comparisons, and I have realized some of the
+comparison glyphs, such as ≤ do not work. I'll have to check that out
+and update the material.
+
 
 * Back to the command line
   :PROPERTIES:
