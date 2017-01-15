@@ -1330,8 +1330,32 @@ a =True= or =False= value. There is still another way of doing it
 (1..1000).grep: * %% 11
 #+END_EXAMPLE
 with the colon =:= opening the way for a block, a construction that is
-totally equivalent and saves a character.
-
+totally equivalent and saves a character. This means that =Whatever=,
+that is, =*= and the /topical/ variable, =$_=, can work in pretty much
+the same way. However, they cannot be used interchangeably. The curly
+block takes =$_=, while the colon or braced block takes =*=. This
+#+BEGIN_EXAMPLE perl6
+(1..1000).grep($_ %% 11)
+#+END_EXAMPLE
+will positively end in an error. /Pointy blocks/ to the
+rescue. [[https://design.perl6.org/S06.html#___top][Pointy blocks]] have an arrow up front, and the arrow is
+followed by a parameter name:
+#+BEGIN_EXAMPLE perl6
+(1..1000).grep: -> $a {$a %% 11}
+#+END_EXAMPLE
+This is exactly the same as above, provided that whatever is behind
+the arrow is alwo used as a variable there. This is more verbose for
+this kind of expression, but it is even more verbose to white it this
+way, which is also equivalent:
+#+BEGIN_EXAMPLE perl6
+(1..1000).grep: sub ($a) {$a %% 11}
+#+END_EXAMPLE
+We have followed a path that takes us all the way from simple code
+chunks to /subroutines/ or, as they are generally called,
+/functions/. Actually, our Blocks are basically subroutines with no
+name, except that subroutines, them too, can have no name, as
+above. However, they do have a /signature/, the list of parameters
+behind the arrow or the word =sub=, in parentheses in this case.
 
 * ζ - Understand errors
     :PROPERTIES:
