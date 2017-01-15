@@ -1133,6 +1133,8 @@ True || (7 < 10)
     :UNNUMBERED: t
     :END:
 
+# This is the beginning of the session 
+
 In the principle was the command line. 
 
 That is so true. You run
@@ -1228,6 +1230,8 @@ will look for your =foo= in all files with the extension =c=.
 =mkdir= creates directories, =mkdir -p this/is/a/deep/directory=
 creates a /leaf/ directory and all the rest, and =touch= creates empty
 files. 
+
+# This could be the end of the session
 
 * Pack all your troubles in a bag. And a set. 
 Perl6 is, intentionally, designed for math, so it includes some
