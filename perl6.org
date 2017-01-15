@@ -1313,17 +1313,18 @@ called with, 2 in this case.
 
 
 
-* Working with, in and around data
-Eventually you will need to give things a name, if only to avoid
-cutting, pasting and recomputing stuff every time you need
-it. /Variables/ store results and help you express, in a compact way,
-complicated formulae. 
 * ζ - Understand errors
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
 Shit eventually happens. But when it does, you must be ready to unshit
 everything. 
+
+* Working with, in and around data
+Eventually you will need to give things a name, if only to avoid
+cutting, pasting and recomputing stuff every time you need
+it. /Variables/ store results and help you express, in a compact way,
+complicated formulae. 
 
 * ג‎ - Markdown for documentation 
     :PROPERTIES:
