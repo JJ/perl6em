@@ -1372,13 +1372,13 @@ actually French.
 
  But do you remember that Perl 6
 can easily deal with Unicode characters? From now on I propose to use
-ß and þ as substitutes for the hackneyed =foo= and =bar=, like here
+ß and þ as substitutes for the hackneyed c=foo= and =bar=, like here
 #+BEGIN_EXAMPLE perl6
 { ([*] 1..$^ß ) / ( [*] 1..$^þ) * ([*] 1..($^ß - $^þ)) }(5,3)
 #+END_EXAMPLE
 the part between braces computes $n \choose m$, that is, the
 [[https://en.wikipedia.org/wiki/Binomial_coefficient][binomial coefficient]]. It does so by computing the factorial of ß,
-which is what  =[*] 1..$^ß = does, remember, the meta-operator =[]=
+which is what  =[*] 1..$^ß= does, remember, the meta-operator =[]=
 applied to =*= applies the product to all the elements in the range
 1:ß. And then it divides it by the factorial of þ multiplied by the
 factorial of =ß - þ=. Easy, right? Remember not to use too big
