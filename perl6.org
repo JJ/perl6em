@@ -1285,6 +1285,34 @@ several remote computers, /cloud/ hosts as it were, to perform routine
 tasks. You need to connect to them, and do so efficiently and also
 securely. That is why /ssh/ was invented.
 
+* Changing things
+We have already seen how built-in functions operate on data and
+extract information from them or change them in different ways. In
+fact, operators such as =*= are nothing but functions in disguise,
+with 3 + 4 actually being =adds(3,4)=.
+
+It is going to be a lot of fun if we can build our own, right? Let's
+do exactly that. 
+#+BEGIN_EXAMPLE perl6
+{ $_ * 2 }
+#+END_EXAMPLE
+is a piece of code that will multiply by two whatever gets handled to
+it. 
+#+BEGIN_EXAMPLE perl6
+{ $_ * 2 }.WHAT
+#+END_EXAMPLE
+Will return =Block= which is what Perl6 calls these pieces of code
+that can act on other things, like this
+#+BEGIN_EXAMPLE perl6
+{ $_ * 2 }( 2 )
+#+END_EXAMPLE
+will apply the function to the number 2, returning, you guessed
+it, 4. Functions are applied to things using these parentheses, and,
+as you have seen, =$_= is a stand-in for whatever the function is
+called with, 2 in this case. 
+
+
+
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
