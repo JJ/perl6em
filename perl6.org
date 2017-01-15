@@ -983,16 +983,16 @@ will return =False=, because 2 is not equal (==) to 3. Remember, == is
 used for comparison, and the rest of the operators are quite
 usual. Whenever an operations can be true or not, it will return a
 =False= or =True= value, and all these comparison operations
-are. Perl6 adds another /smart/ comparison
+are. This equality operator is quite smart
 
 #+BEGIN_EXAMPLE perl6
-2 ~~ 3
+2 == 3
 #+END_EXAMPLE
 
 will return =False=, but
 
 #+BEGIN_EXAMPLE perl6
-2 ~~ "2"
+2 == "2"
 #+END_EXAMPLE
 
 will return =True=. The /smartness/ of the operation means that it
@@ -1001,13 +1001,32 @@ this case, where we are comparing a number (or =Int=) with a =Str=. It
 is even smarter
 
 #+BEGIN_EXAMPLE perl6
-3 ~~ Ⅲ
+3 == Ⅲ
 #+END_EXAMPLE
 
 because it understands, as in this case, Roman numerals. 
 
-=~~= is kind of an universal comparator, but in case you are working
-with strings, =>= is not going to work. Operators over strings are
+There is also =~~=, which is kind of an universal matching, equivalent
+to /is a kind of/. It behaves as == when the type is the same,
+although
+
+#+BEGIN_EXAMPLE perl6
+3 ~~ "3.0"
+#+END_EXAMPLE
+
+will return =False=. = 3 ~~ Int =, howver, will be =True=. 
+
+All these equality operators have a dark side which does exactly the
+opposite. We have seen before that =!= is the negation of all that's
+True, so, effectively, != will mean /not equal/ and !~ /does not
+match/. Check it out, it is really true. That it is that way, I mean. 
+
+In case you are working
+with strings, =>= is not going to work, with ="a" < "b"= yielding an
+error that tells you it cannot convert a string to a number; it will
+work, though, for ="10" < "011"=, but after turning them into numbers;
+alphabetically, "011" goes /before/ "10". That is why there are
+specific operators for strings, whose names are
 built as acronyms of the operation, for instance, =ge= for /greater
 than or equal/, as in 
 
