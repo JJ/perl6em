@@ -1109,7 +1109,25 @@ gives them similar, or the same, meaning. That is good and well and
 saves you from learning lots of different squiggles for stuff that
 pretty much does the same. 
 
+** This and that. Or that.
 
+Checks pile up to form a pyramid in which whatever emerges as true or
+false at the top depends on what happens at the bottom. Sometimes it
+is enough with one of the conditions holding, sometimes you need all
+the conditions to hold at the same time.  These are the logical
+operators, which are called =AND= and =OR=. ANDing two premises holds
+true only if both are true, ORing them is true as long as one of them
+is.
+
+#+BEGIN_EXAMPLE perl6
+(7 > 1) && (7 < 10)
+#+END_EXAMPLE
+is =True= since both inequalities hold; also 
+
+#+BEGIN_EXAMPLE perl6
+True || (7 < 10)
+#+END_EXAMPLE
+ is True.
 * ‎ε - The command line
     :PROPERTIES:
     :UNNUMBERED: t
