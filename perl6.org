@@ -1311,6 +1311,26 @@ it, 4. Functions are applied to things using these parentheses, and,
 as you have seen, =$_= is a stand-in for whatever the function is
 called with, 2 in this case. 
 
+We have already seen a bit of these chunks of code in action
+previously, when using =grep=. 
+#+BEGIN_EXAMPLE perl6
+(1..1000).grep(* %% 11)
+#+END_EXAMPLE
+will return only numbers that are divisible by 11 by applying the
+function =* %% 11=, which returns =True= for every element that is
+divisible by 11 and forms a new list with all elements for which this
+expression is true. What we are using is, in fact, this /chunk of
+code/ or =Block=, and in fact, we can write it this way:
+#+BEGIN_EXAMPLE perl6
+(1..1000).grep( {$_ %% 11} )
+#+END_EXAMPLE
+showing that what we are doing it handling =grep= a block that returns
+a =True= or =False= value. There is still another way of doing it
+#+BEGIN_EXAMPLE perl6
+(1..1000).grep: * %% 11
+#+END_EXAMPLE
+with the colon =:= opening the way for a block, a construction that is
+totally equivalent and saves a character.
 
 
 * ζ - Understand errors
