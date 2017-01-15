@@ -5,9 +5,68 @@ Draft date: 18/12/2016
 Copyright:
     CC-BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
 
-This is a play about a family learning Perl6 and drawing lessons for life and programming and art and life. 
+This is a play about a family learning Perl6 and drawing lessons for life and programming and art and life. It is also about Perl 5 and Perl 6. It could be a coming-of-age story, except that this probably has already happened with Perl 6 or will never happen, depending on who you ask.
 
-#Act I
+The play is intended for two actors, because that is how it is going to happen, no props except what is going to be projected in the screen; at least, I will try not to have more than two actors at the same time in the scene. If it positively needs a third one, it can be drawn from the public. Truly minimalistic, and intended for trade conferences and somesuch. There is going to be no courtain, except if we are able to find volunteers that act as such. 
 
-=Meet the actors and set up the problem. 
+#Version α
 
+=Meet the actors and set up the problem. New languages are hard, people want to stick to old ones 
+
+INT. OFFICE - #DAY 1#
+
+JJ is sitting in an office with a computer. He is wearing a Perl 5
+tee, with camels or onions or something that cries out, quite clearly,
+that he's Perl 5 through and through. He is disheveled, hair in a
+shock, shaking the computer. 
+
+SLIDE TO:
+Slide shows https://perl6advent.wordpress.com/2015/12/07/day-7-unicode-perl-6-and-you/
+
+JJ (reads aloud from
+https://perl6advent.wordpress.com/2015/12/07/day-7-unicode-perl-6-and-you/)
+"If you don’t want to work at a grapheme level, then you have several
+other string types to choose from: If you’re interested in working
+within a particular normalization, there’s the self-explanatory types
+of NFC, NFD, NFKC, and NFKD. If you just want to work with codepoints
+and not bother with normalization, there’s the Uni string type (which
+may be most appropriate in cases where you don’t want the NFC
+normalization that comes with normal Str, and keep text as-is). And if
+you want to work at the binary level, well, there’s always the Blob
+family of types :) "
+(leaving the computer on the table and messing with his hair, then
+holding his chin and wondering aloud)
+Do I want to work at the grapheme level? What is
+a grapheme? What is KFC? Kentucky Fried Character? But it's NKFC, so
+it's not fried? Luckily, we have the Blob family of types! What is a
+Blob! Like the Hulk, but softer?
+
+SLIDES TO:
+slide shows the Hulk. 
+
+@JJ (still in dispair)
+I just wanted to process a simple screen play in Fountain markdown!
+
+SLIDES TO:
+Screengrab of this play.
+
+Camelia shows up, representing Perl 6. She's got a T-shirt with
+Camelia and is young and blonde and has a magic wand in her hand. She
+is smiling and somersaults into the scene.
+
+
+#Version ß
+
+=What has happened in the past and how this has caused the present
+
+#Release Candidate 1
+
+=What possible users are doing in the present.
+
+#Release Candidate 2
+
+=What will happen in the future if all goes the way it does.
+
+#Version 1.0
+
+=What we can do to change all that, a call to action. 
