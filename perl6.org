@@ -27,7 +27,7 @@ originally conceived to help non-programmers get into Perl 6
 ** Learning should be fun and engaging: learn by doing.
 
 The best way to make people actually learn something is by putting
-inmediately to practice whatever is being learned, be it programming
+immediately to practice whatever is being learned, be it programming
 or weaving. So you should have your computer handy and learn the tools
 as soon as possible to put things to practice. 
 
@@ -50,7 +50,7 @@ it is a programming language.
 
 This is kinda /zen/, but then the whole thing stinks of a holistic
 experience, where you learn about life by learning about programming
-dha back. That also means that learning comes from every direction at
+and back. That also means that learning comes from every direction at
 once: the other students, maybe whoever is preparing objectives and
 material for the day, but that person will also learn new things about
 him or herself and about whatever is teaching, because the best way to
@@ -70,7 +70,7 @@ might be also your own for actually reading and following this book.
 
 ** Teaching programming to (almost) non-programmers.
 
-Most programming books seem to be written eigther for people that already know
+Most programming books seem to be written either for people that already know
 how to program or for people that barely knows how to press
 keys. There must be a middle ground, and I try to tread it with this
 book. If know how to use a computer, you should be ready to go the
@@ -100,7 +100,7 @@ be the case also for programmers. Those focused on getting the job
 done well /technically/ will probably lack the will, or the stamina,
 to learn new things or to completely switch the language or the
 toolbelt you are using. Along with programming, you have to make
-students learn the craft and also the beauty of a minimalistic, fast
+students learn the craft and also the beauty of a minimalist, fast
 and beautiful program. 
 
 ** Use project-based learning throughout and flipped-learning techniques.
@@ -130,7 +130,7 @@ oftentimes /you/ are customer, so you will be satisfied twice for the
 same low price. Anyway, there are several phases in thinking like a
 designer. They are usually these ones. 
 
-** Empathization
+** Empathizing
 
 Find users, find out about them, care about them, know their stories. Maybe you are the user, maybe it's someone close to you.
 
@@ -207,7 +207,7 @@ colors and contrast you want. And then come back here for the...
 ** Editors. 
 
 The choice of an editor goes beyond mere utility to become an
-indentity, a side to stand when the flame war starts. As above, the
+identity, a side to stand when the flame war starts. As above, the
 motto is always /suit yourself/, but since we are in the realm of
 Perl6, I would propose [[http://atom.io][Atom]] as the editor to use. It is a modern
 editor, it has got a good and evolving support for Perl 6, and it is
@@ -287,7 +287,7 @@ that you have to design formulae for every single glyph, means that
 not all glyphs might be available in all fonts. Some fonts will have
 all, or most of them, some of them not. And that, in turn, means that
 some Etruscan letter such as this one 𐌚 that renders beautifully in
-your editor might show up as an x-marked rectanble or question mark
+your editor might show up as an x-marked rectangle or question mark
 somewhere else, a console or a word processor. In fact, depending on
 how you are reading this, you might not see the glyph I'm referring to
 at all. Some other glyphs, like this jack of diamonds 🃋, will not show
@@ -298,7 +298,7 @@ Your take away message here should that you need to know how to use
 Unicode in whatever program you use, and that some particular
 structures of the program, like operators or names, will use graphemes
 with particular properties, probably something alphabetic-like. Also
-that unicode is complicated, but that you should better learn about it
+that Unicode is complicated, but that you should better learn about it
 as soon as possible, as in now. 
 * The expressions
 
@@ -416,7 +416,7 @@ All the expressions written above are numbers.
 is going to return =(Num)=, indicating that it is simply a Number,
 actually a real number. This =.WHAT=, together with surrounding the
 expression via parentheses meaning grouping, is a way to apply a
-/property/ or to call a /method/ on that object. In Perl6, everythin
+/property/ or to call a /method/ on that object. In Perl6, everything
 is an object, and objects have a class, and you want to call methods
 that correspond to objects of that class, append a dot and use the
 method, possibly with some arguments like =WHAT(is, "the",
@@ -431,7 +431,7 @@ far, what is an object, or a class. Second take home message:
 /different objects also have different classes/. 
 
 Since both /objects/ at the sides of the =+= are Nums, you
-can add or substract them or do any other arithmetic operation, but you cannot do 
+can add or subtract them or do any other arithmetic operation, but you cannot do 
 
 
 #+BEGIN_EXAMPLE perl6
@@ -439,7 +439,7 @@ sin(π/3)² + cos(π/3)² + " is 1"
 #+END_EXAMPLE
 
 will yield this error
-#+CAPTION: Errorred expression in the REPL
+#+CAPTION: Errored expression in the REPL
 #+NAME:   fig:chap2-expression
 [[./img/expression-error.png]]
 
@@ -629,7 +629,7 @@ decomposition/, how to break down a problem in different parts that
 can, more easily, solved. For instance, you want to find what would be
 the number a sequence will reach if left to grow until infinity; first
 you will have to solve the problem of representing the sequence, which
-might not be inmediate, and then how to apply known techniques of
+might not be immediate, and then how to apply known techniques of
 limit finding, such as
 [[http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props][finding the function that represents the sequence]] and then applying
 what is known about function limits to that sequence. 
@@ -777,7 +777,7 @@ represented by =Z=
 #+END_EXAMPLE
 This creates a new list that zips together similar terms in the
 sequence of multiples of 4 and 5. Can we multiply them to create a
-sucession of multiples of 20? Maybe...
+succession of multiples of 20? Maybe...
 #+BEGIN_EXAMPLE perl6
  (5,10...Inf)[^20] Z* (4,8...Inf)[^20]
 #+END_EXAMPLE
@@ -799,16 +799,16 @@ whole range
  (1/2,1/3...Inf)[^5]
 #+END_EXAMPLE
 will show that, what it is actually doing is to turn it into an
-arithmetic sequence that substracts 0.166667 from the previous one,
+arithmetic sequence that subtracts 0.166667 from the previous one,
 despite being relatively clear, for a human, that we are trying to
-create the =1/n=. Sucession. We can do that, however, using the
+create the =1/n=. Succession. We can do that, however, using the
 hyperoperators =<<>>= and derived. Check this out
 #+BEGIN_EXAMPLE perl6
 1 <</<< (1..100)
 #+END_EXAMPLE
 will return precisely what we are looking for, a descending sequence
 of numbers that ends with 0.01. Please note that we can no longer use
-an infinite (lazy) sequence: we have to ve concrete. 
+an infinite (lazy) sequence: we have to be concrete. 
 
 This =<</<<= is known as an hyperoperator, because it takes a humble
 operator like =/= and turns it into a machine that deals with
@@ -831,7 +831,7 @@ the hyperdrive, and use it to, for instance, negate a sequence:
 
 When the two lists have the same length, the arrows can go in any
 direction, it will not matter much. Let us create random fixtures for
-a (subset of) the Premie League
+a (subset of) the Premier League
 #+BEGIN_EXAMPLE perl6
 ( <ARS AST BOU CHE EVE LEI LIV MCI MUN NEW>.pick(10) 
   «~» 
@@ -839,7 +839,7 @@ a (subset of) the Premie League
     »~» "\n"
 #+END_EXAMPLE
 This, which could admittedly be a little shorter, uses these
-hyperoperators to combine acronyms so that they are separed by a dash,
+hyperoperators to combine acronyms so that they are separated by a dash,
 which is what = " - " «~« = does, and then put the whole result in
 different lines, which is done by the = »~» "\n" = in the last line. A
 great achievement, with a small amount of coding involved. We are
@@ -872,7 +872,7 @@ repositories with some limitations on the number of users and number
 of repos.
 
 Be that as it may, you will need a repository to store all the files
-that you will be writing in this, maybe also your couse notes. It is
+that you will be writing in this, maybe also your course notes. It is
 going to be fun start to create a single program, and keep changing it
 over the same file; git will record changes and you will be able to
 track your own progress over this file. In order to do that, create a
@@ -946,8 +946,8 @@ And what you can ask, you can negate:
 #+END_EXAMPLE
 will result exactly in the opposite. =!= negates the expression it is in
 front of. By the way, these operators that are /in front of/ are
-called preffix operators; since they operate in a single element they
-are also /unary/, but that goes without saying if they are preffixing
+called prefix operators; since they operate in a single element they
+are also /unary/, but that goes without saying if they are prefixing
 something. Operators in the middle of two things are called /infix/
 and they happen to be /binary/. Finally, there is also a /ternary/
 operator, but we will get to that soon.
@@ -1014,7 +1014,7 @@ although
 3 ~~ "3.0"
 #+END_EXAMPLE
 
-will return =False=. = 3 ~~ Int =, howver, will be =True=. 
+will return =False=. = 3 ~~ Int =, however, will be =True=. 
 
 All these equality operators have a dark side which does exactly the
 opposite. We have seen before that =!= is the negation of all that's
@@ -1092,7 +1092,7 @@ element, there is an
 (0,π/2,π,3*π/2,2*π)».sin
 #+END_EXAMPLE
 Using the parentheses and commas we create an array, and the =».=
-construction will apply the operation behind to eacn and every member
+construction will apply the operation behind to each and every member
 of it, returning the sine of all these angles. Any operation with a
 single operand you can think of can be applied, in this way, to a
 whole array of things. Which is cool. Even cooler, you can use the
@@ -1344,7 +1344,7 @@ followed by a parameter name:
 (1..1000).grep: -> $a {$a %% 11}
 #+END_EXAMPLE
 This is exactly the same as above, provided that whatever is behind
-the arrow is alwo used as a variable there. This is more verbose for
+the arrow is also used as a variable there. This is more verbose for
 this kind of expression, but it is even more verbose to white it this
 way, which is also equivalent:
 #+BEGIN_EXAMPLE perl6
@@ -1364,7 +1364,7 @@ like here
 { $^foo ** $^bar }( 12,13 )
 #+END_EXAMPLE
 which will raise 12 to the 13th power; that is what =**= does. We are
-using the oh so common foo and bar. In this case, the caret =^= iw
+using the oh so common foo and bar. In this case, the caret =^= is
 produced by typing wherever the caret is and then the space, since it
 is a key that is usually composed as a circumflex accent with other characters to produce
 things like /brûlé/, which looks like it has been made up, but is
@@ -1421,7 +1421,7 @@ even if they represent a hyperlink or the inclusion of an image.
 If there is a single motto you should follow when programming, is this
 one: /Don't reinvent the wheel/. Before sitting down to do something,
 check out if it has been already done. In mature languages like Perl,
-the answer is most probably Yes. In some otheres, like this Perl 6 we
+the answer is most probably Yes. In some others, like this Perl 6 we
 are dealing with, your mileage may vary. 
 * η - Web weaving
    :PROPERTIES:
@@ -1497,7 +1497,7 @@ play it safe.
 * Interacting with the user
 Programs are created to be used. Many of them will be used by just
 you. But some of them will be out there. You have to build them for an
-indeal user, and that ideal user is a 90-year old FSB agent that is on
+ideal user, and that ideal user is a 90-year old FSB agent that is on
 one hand not familiar with modern technology and that on the other
 hand is familiar enough to try and break and enter in your program to
 steal your family secrets. User interfaces have to be easy on the
