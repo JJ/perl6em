@@ -9,6 +9,8 @@ This is a play about a family learning Perl6 and drawing lessons for life and pr
 
 The play is intended for two actors, because that is how it is going to happen, no props except what is going to be projected in the screen; at least, I will try not to have more than two actors at the same time in the scene. If it positively needs a third one, it can be drawn from the public. Truly minimalistic, and intended for trade conferences and somesuch. There is going to be no courtain, except if we are able to find volunteers that act as such.
 
+"I have endeavoured in this little play, to raise the butterfly of an Idea, which shall not put my readers out of humour with themselves, with each other, with coding, or with us".
+
 ===
 
 #Version α
@@ -67,6 +69,33 @@ They disappear from stage, and get props with cutouts from a camel and a butterf
 
 SLIDES TO:
 White screen for projection.
+
+STORYTELLER
+Once upon a time, there was a bedouin called Bab-el-Larry-ben-Wall, who created a camel to take care of the usual things that camels do, system administration and web programming.
+
+Camel slides into view, and walks and up down.
+
+STORYTELLER
+Web was not invented yet, to the camel was not too busy. But then the web came, and web frameworks, and Booking, and Unicode, and the camel started to get bigger and bigger and even bigger.
+
+Camel gets closer to light source, becoming bigger until it covers almost the whole screen.
+
+STORYTELLER
+So big, in fact, that, well, it was big. It was fast, and widely used, and respected, and helped Bab-el-Larry-ben-Wall and many others with a lot of stuff. But Bab-el-Larry-ben-Wall was not happy, and, in the spirit that later made people create Javascript framework every Tuesday, decided to create a new thing for biohacking and interestellar travel and brain dumps and many other things that did not exist yet but that when actually existing would break the camel back. Ah, and Unicode.
+
+Butterfly flies in. Camelia shows up holding the butterfly, which is stuck to her magic wand. JJ walks in.
+
+CAMELIA
+And they lived happily ever after, the butterfly happier than the camel, because, you know, it's a butterfly, and no camelid is known for his happiness. And that is why you have to do all your stuff in Perl 6.
+
+JJ
+Bah! Humbug!
+
+
+
+
+
+
 
 
 
