@@ -1192,6 +1192,27 @@ some orders and also fetches program for you to run, and also
 editors. But there are a few more orders that will be invaluable when
 using Linux as a programmer.
 
+** Calling names
+
+Sometimes you need to refer to lots of things at the same time, like a
+bunch of files with a common characteristic or simply all of
+them. Linux, in the same way as all modern operating systems, has a
+way of using /wildcard/ characters to mean "lots of things". The most
+widely used is the /asterisk/ =*=, also the Kleene star for some
+obscure reason. Anyway, when you find =*= in an expression it means
+/whatever/. As in =ls *= means /list whatever stuff is in this
+directory/ or =ls ../*= means /list whatever stuff is in the directory
+right above this one/. 
+
+You can combine it with other characters. =a*.p6= will mean all files
+whose name starts with =a= and has the =.p6= /extension/, since
+whatever goes beyond the last dot is usually called /extension/ and
+usually is peculiar to a kind of files, such as the Perl 6 files in
+this case. 
+
+There are [[http://www.linfo.org/wildcard.html][more powerful wildcards]] and many ways of including and
+excluding particular files. It will help you to know them, but for the
+time being this wildcard characters is all you need. 
 ** Moving stuff around
 
 =cp=, as in "copy" copies files to another directory, maybe with
