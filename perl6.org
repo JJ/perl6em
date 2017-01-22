@@ -1277,11 +1277,19 @@ output of other things. For instance
 ls *.pl6 > all-perl6-files.txt
 #+END_EXAMPLE
 will create a file that contains the names of all files with that
-extension, while 
+extension, check out the use of the wildcard =*= discussed just above, while 
 #+BEGIN_EXAMPLE bash
 touch I_am_touched
 #+END_EXAMPLE
-creates an empty file.
+creates an empty file. Which, by the way, can be incredibly useful
+things. If the file is created, it is /touched/ in such a way that it
+is as good as new and will appear first when you list the directory
+with `ls -alt`, which is the way all directories should be shown. 
+
+Finally, here is something that you should use sparingly, if ever. =rm
+-rf stuff= will delete the directory subtree that starts with
+=stuff=. And once things have been deleted, they are deleted for ever
+in Linux. So be careful, and always backup. 
 
 
 # This could be the end of the session
