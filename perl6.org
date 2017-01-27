@@ -1315,10 +1315,13 @@ tasks. You need to connect to them, and do so efficiently and also
 securely. That is why /ssh/ was invented.
 
 * Changing things
+
 We have already seen how built-in functions operate on data and
 extract information from them or change them in different ways. In
 fact, operators such as =*= are nothing but functions in disguise,
-with 3 + 4 actually being =adds(3,4)=.
+with 3 + 4 actually being actually =adds(3,4)=. Anything that operates
+or changes things, converting them into others, is a /function/,
+although if they use funny symbols we will call them operators. 
 
 It is going to be a lot of fun if we can build our own, right? Let's
 do exactly that. 
@@ -1326,18 +1329,28 @@ do exactly that.
 { $_ * 2 }
 #+END_EXAMPLE
 is a piece of code that will multiply by two whatever gets handled to
-it. 
+it. The giveaway that turns it into a function are the curly
+brackets. Putting funny symbols that enclose, or close, other symbols
+has been used quite frequently, using quotes, or angle brackets, or
+parentheses to enclose arrays or lists or strings. The first giveaway
+here are those curly brackets. And the second is the =$=. Functions
+have to operate on something, right? So this =$_= (dollar, underscore)
+will be a /stand-in/ for whatever the function is going to operate
+in. In fact, you dont need this =$_= to actually make a function;
+curly brackets are more than enough, but ={ 42 }= would be a boring
+function that just returns the answer to life, the universe and
+everything. Let us find out how Perl6 calls these functions. 
 #+BEGIN_EXAMPLE perl6
 { $_ * 2 }.WHAT
 #+END_EXAMPLE
 Will return =Block= which is what Perl6 calls these pieces of code
-that can act on other things, like this
+that can act on other things and return stuff, like this
 #+BEGIN_EXAMPLE perl6
 { $_ * 2 }( 2 )
 #+END_EXAMPLE
 will apply the function to the number 2, returning, you guessed
 it, 4. Functions are applied to things using these parentheses, and,
-as you have seen, =$_= is a stand-in for whatever the function is
+as you might have seen, =$_= is a stand-in for whatever the function is
 called with, 2 in this case. 
 
 We have already seen a bit of these chunks of code in action
@@ -1348,18 +1361,24 @@ previously, when using =grep=.
 will return only numbers that are divisible by 11 by applying the
 function =* %% 11=, which returns =True= for every element that is
 divisible by 11 and forms a new list with all elements for which this
-expression is true. What we are using is, in fact, this /chunk of
-code/ or =Block=, and in fact, we can write it this way:
+expression is true. Instead of =$_= as above we are using =*=, the
+wildcard symbol, which, of course, is called =Whatever=
+What we are using is, in fact, a /chunk of
+code/ or =Block=, and in fact, we can rewrite the above expression this way:
 #+BEGIN_EXAMPLE perl6
 (1..1000).grep( {$_ %% 11} )
 #+END_EXAMPLE
 showing that what we are doing it handling =grep= a block that returns
-a =True= or =False= value. There is still another way of doing it
+a =True= or =False= value. There is still another way of doing it,
+because in Perl6, just like in Perl, there are many ways of doing
+everything: 
 #+BEGIN_EXAMPLE perl6
 (1..1000).grep: * %% 11
 #+END_EXAMPLE
 with the colon =:= opening the way for a block, a construction that is
-totally equivalent and saves a character. This means that =Whatever=,
+totally equivalent to the one above and saves a character (a visible
+character, anyway, because you will need the whitespace for
+legibility). This means that =Whatever=, 
 that is, =*= and the /topical/ variable, =$_=, can work in pretty much
 the same way. However, they cannot be used interchangeably. The curly
 block takes =$_=, while the colon or braced block takes =*=. This
