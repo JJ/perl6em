@@ -1493,6 +1493,65 @@ right. They are a way of saying /You are probably right, but could you
 please explain things in a slightly different way so that I can
 actually confirm that?/
 
+Let us see an example. Say that you skip a curly bracket, like this
+#+BEGIN_EXAMPLE perl6
+ ( { $^ß * 2},{$^þ / 2 )
+#+END_EXAMPLE
+Happens all the time, right? You skip a key, maybe avert your gaze to
+check out incoming Telegram messages, whatever. And then that
+happens. The interpreter will tell you this:
+#+CAPTION: Errored expression in the REPL
+#+NAME:   fig:simple error
+[[./img/simple-error.png]]
+First is says what's wrong. =Missing block=. It is not as helpful as,
+"Hey, you forgot to put curly braces here", but, once again, if it
+would have been able to figure that out it would have fixed it by
+itself. But you can work with that error. If you cannot really point
+out what's wrong, [[https://www.google.es/search?client=ubuntu&channel=fs&q=perl+6+missing+block&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=aBWLWLDJCKOs8wfA_Y7IBA#safe=off&channel=fs&q=perl+6+%22missing+block%22][Google is your friend]], and will take you to 
+[[http://blogs.perl.org/users/zoffix_znet/2016/08/the-awesome-errors-of-perl-6.html][this article of Zoffix Znet on, precisely, Perl 6 errors]]. That example
+points out to the fact that Perl 6 says so when it is waiting for some
+block to be there, or, as it happens here, to be properly
+enclosed. Besides, the next line is even more helpful, pointing out
+with a yellow ⏏ exactly the place where it should have been whatever
+it was expecting, a curly bracket in this case. See? It has been just
+a misunderstanding. Besides, it is much clearer later on. It is saying
+it was expecting either an statement end, or modifier, or modifer
+loop. The =}= is how you put an end to the block. The fact that there
+are three different things is the reason why the error, let's not
+call it error any more, the misunderstanding, is there in the first
+place. There were three possible things that could go there, and poor
+Perl 6 cannot understand which one you meant. It is no big deal,
+really, but you see how reading the error carefully will help you find
+the solution fast enough.
+
+All misunderstandings in Perl 6 will follow the same structure. First, the error,
+what is wrong. Second, where it is wrong, and third, what it was
+expecting, and also the reason why it really could not recover from
+the error. 
+
+Some errors will not arrive from typing, but from applying what you
+know of other languages here. 
+#+BEGIN_EXAMPLE perl6
+( 3 == 2)?"Yes":"No"
+#+END_EXAMPLE
+This ternary operator is not going to work here. However, there is a
+very helpful error message
+#+CAPTION: Errored expression in the REPL
+#+NAME:   fig:perl5 error
+[[./img/perl5-error.png]]
+In this case, it is perfectly clear to Camelia, the friendly Perl6
+interpreter, what's wrong. However, the problem is that in this new
+Perl6 language it simply cannot be done that way, so it says =in Perl
+6 please use ?? and !!=. You see? Not only I understand you, but take
+you by the hand to the use of features thar are almost, but not quite,
+the same as you did before.
+
+Misunderstandings will happen here, there and everywhere. So it is
+better not to make a big fuss about them. Check them out carefully,
+try to follow the advice, if any, check out DuckDuckGo or Google for
+possible solutions, and, if everything fails, you can still try and
+get some help from the community. We will see to that later on. 
+
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
