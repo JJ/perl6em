@@ -1448,7 +1448,29 @@ stuff using these chunks of code:
 ( { $^ß * 2},{$^þ / 2} )
 #+END_EXAMPLE
 is an array of code blocks. The same thing with =$_= would yield a
-rather weird error related to something being /raw/.
+rather weird error related to something being /raw/, but they are
+placeholders all the same. And what do we have here? A little list of
+code blocks. Before we have applied single code blocks to arrays of
+non-code things. But code things are also things, or, as it is said it
+functional programming, they are first-class citizens, so you can
+apply code blocks to code blocks, like here:
+#+BEGIN_EXAMPLE perl6
+ ( { $^ß * 2},{$^þ / 2} ).grep:  { $_.(2) %% 2 }
+#+END_EXAMPLE
+Try to wrap your head around this, which is functional programming in
+a nutshell. Remember how =$_= was used as a placeholder for things
+like numbers before? We are using it here as a placeholder for code
+blocks. So what $ $_.(2) $ does is to apply (herein the =.()) code
+block to the number two, and then apply the /divisible by/ operator
+=%%=. Eventually, it will be true if the code block, applied to the
+number two, returns something that is divisible by two. In this case,
+it will return an array with a single element, the first one in the
+array, obviously. Once again, check this out, because it is quite
+cool. Not cool as in can't-be-done-in-any-other-language, but still
+cool: we have applied a function to a list of functions which returns
+another list of functions. 
+
+So these are functions for you. In Perl 6. 
 
 * ζ - Understand errors
     :PROPERTIES:
