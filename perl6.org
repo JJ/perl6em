@@ -1385,20 +1385,30 @@ block takes =$_=, while the colon or braced block takes =*=. This
 #+BEGIN_EXAMPLE perl6
 (1..1000).grep($_ %% 11)
 #+END_EXAMPLE
-will positively end in an error. /Pointy blocks/ to the
+will positively end in an error. Besides, =Whatever= positively means
+whatever and you can use it for one or even several
+parameters. However, =* * *= is not the thing with the biggest
+readability ever.
+
+/Pointy blocks/ to the
 rescue. [[https://design.perl6.org/S06.html#___top][Pointy blocks]] have an arrow up front, and the arrow is
-followed by a parameter name:
+followed by a list of parameter names:
 #+BEGIN_EXAMPLE perl6
 (1..1000).grep: -> $a {$a %% 11}
 #+END_EXAMPLE
-This is exactly the same as above, provided that whatever is behind
-the arrow is also used as a variable there. This is more verbose for
-this kind of expression, but it is even more verbose to white it this
+This expression works exactly in the same as the rest of the
+expressions above (remember, there are many ways of doing it), provided that whatever is behind
+the arrow is also used as a variable inside the block in curly brackets. This is more verbose for
+this kind of expression, but it is even more verbose to write it this
 way, which is also equivalent:
 #+BEGIN_EXAMPLE perl6
 (1..1000).grep: sub ($a) {$a %% 11}
 #+END_EXAMPLE
-We have followed a path that takes us all the way from simple code
+
+Meet the =sub= keyword, which is used to name /subroutines/. What are
+subroutines? Actually, they are simply code blocks, and the fact that
+this code behaves the same as above is exactly for that reason. We
+have followed a path that takes us all the way from simple code 
 chunks to /subroutines/ or, as they are generally called,
 /functions/. Actually, our Blocks are basically subroutines with no
 name, except that subroutines, them too, can have no name, as
@@ -1407,18 +1417,18 @@ behind the arrow or the word =sub=, in parentheses in this case.
 
 Blocks can be simpler than subroutines, however, so we do not even
 have to declare the names of those parameters. Use whatever you want,
-like here
+like here, as long as they have the dollar and caret in front:
 #+BEGIN_EXAMPLE perl6
 { $^foo ** $^bar }( 12,13 )
 #+END_EXAMPLE
 which will raise 12 to the 13th power; that is what =**= does. We are
 using the oh so common foo and bar. In this case, the caret =^= is
-produced by typing wherever the caret is and then the space, since it
+produced by typing the key wherever the caret is and then the space, since it
 is a key that is usually composed as a circumflex accent with other characters to produce
-things like /brûlé/, which looks like it has been made up, but is
-actually French. 
+things like /brûlé/, which looks like it has been made up by some word
+inventor, but is actually French. 
 
-But do you remember that Perl 6
+And while But do you remember that Perl 6
 can easily deal with Unicode characters? From now on I propose to use
 ß and þ as substitutes for the hackneyed =foo= and =bar=, like here
 #+BEGIN_EXAMPLE perl6
