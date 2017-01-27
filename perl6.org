@@ -1146,7 +1146,34 @@ is =True= since both inequalities hold; also
 #+BEGIN_EXAMPLE perl6
 True || (7 < 10)
 #+END_EXAMPLE
- is True.
+is True.
+
+But what happens if we want to do something when an expression is
+true, and something different when it is false? Could we put all that
+in an expression. Well, yes:
+#+BEGIN_EXAMPLE perl6
+(3 > 2)??"Bigger"!!"Smaller"
+#+END_EXAMPLE
+The ternary operator is one of the few that deals with three
+arguments. The first one, before the =??=, is an expression that can
+be true or false, or, actually, any of the equivalents we have seen
+above. If it is true, then the result will be what is between the =??=
+and the "!!". If it is not, then what is left, what we find behind the
+=!!=. What will it be in this case? Check it out and you will see.
+
+This operator is quite useful, and fast, when you want to check
+alternatives in a single sentence. For instance, checking types
+#+BEGIN_EXAMPLE perl6
+("3".WHAT ~~ (Str))??"Tres"!!3
+#+END_EXAMPLE
+This will return =Tres=, since "3" is actually a string. Remember that
+you have to use the parentheses to wrap around teh expression, almost
+always. 
+
+You will find these expressions later on in many places. It is worth
+the while to devote a while to test them so that you end up knowing
+perfectly how they work and what to do with them.
+
 * ‎ε - The command line
     :PROPERTIES:
     :UNNUMBERED: t
