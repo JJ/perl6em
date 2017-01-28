@@ -1347,12 +1347,39 @@ in Linux. So be careful, and always backup.
 
 * Pack all your troubles in a bag. And a set. 
 Perl6 is, intentionally, designed for math, so it includes some
-representation for data that can be found usually in math classes. Not
+representation for data that can be found usually in math courses. Not
 only that, it can work with them just in the way you did in your
 school math class, using the same symbols. For instance, let's talk
 about Sets.
 
 ** What is a set and what can it do for me.
+
+A set is a group of things whose order does not matter much. 
+#+BEGIN_EXAMPLE perl6
+set(1,⅓,"foo",{ $^þ %% 3})
+#+END_EXAMPLE 
+Superficially it is similar to an array, with the parentheses and all,
+but it /does/ need the word =set= before it. In fact, you can easily
+turn an array into a set, as long as it is a finite set and not an
+infinite one. 
+#+BEGIN_EXAMPLE perl6
+set(^1000})
+#+END_EXAMPLE 
+
+Sets can be used for baskets, or shelves, or groups of people... When
+order does not make a logical sense, and you are more interested in
+knowing if something belongs to a set or not, =Set= is the kind of
+structure you must give your data. Which might be handy in cases such
+as this one
+#+BEGIN_EXAMPLE perl6
+127 ∈  set(7,14...1000)
+#+END_EXAMPLE 
+which is a very compact way of checking if 127 is, or not, multiple of
+seven and will return false, which means that
+#+BEGIN_EXAMPLE perl6
+127 ∉  set(7,14...1000)
+#+END_EXAMPLE 
+will obviously return =True=
 
 * ב‎ - Secure connection
     :PROPERTIES:
