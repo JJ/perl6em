@@ -1381,6 +1381,8 @@ seven and will return false, which means that
 #+END_EXAMPLE 
 will obviously return =True=
 
+# Continue with other set stuff
+
 * ב‎ - Secure connection
     :PROPERTIES:
     :UNNUMBERED: t
@@ -1549,6 +1551,12 @@ cool: we have applied a function to a list of functions which returns
 another list of functions. 
 
 So these are functions for you. In Perl 6. 
+
+** Going back to sequences
+
+These expressions allow us to be much more flexible when building
+sequences, which, as it happens, are becoming a showcase of Perl 6
+power and ability.
 
 * ζ - Understand errors
     :PROPERTIES:
