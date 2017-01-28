@@ -1174,6 +1174,30 @@ You will find these expressions later on in many places. It is worth
 the while to devote a while to test them so that you end up knowing
 perfectly how they work and what to do with them.
 
+** Back to infinity. And beyond.
+Now that we got the hang of expressions we can go back again to these
+infinite sequences we are so fond of. What we have seen so far are
+sequences that are either infinite and thus ended with * or ∞ or
+finite ending with a particular number. But we know now how to add
+conditions, right? Let's use them in definition of sequences.
+#+BEGIN_EXAMPLE perl6
+11,22 ...  * %% 7
+#+END_EXAMPLE
+Where before we had the asterisk or =Whatever=, now we have a
+/condition/. When =True=, the sequence will end. In this case, when it
+arrives to 77. Maybe we want it to end right before that, in which
+case we use the /up to, but not including/ operator, the dots plus a
+caret
+#+BEGIN_EXAMPLE perl6
+2100,2200 ...^ * %% 400
+#+END_EXAMPLE
+Will yield the years ending a century, in this millenium, that [[https://en.wikipedia.org/wiki/Century_leap_year][are not]] a leap year, since
+only those that can be divided by 400 actually are leap year. 
+
+This is but a simple example, but it allows you to see the flexibility
+of the language and how some types of expression, logical expressions,
+can be applied to other part, defining sequences. 
+
 * ‎ε - The command line
     :PROPERTIES:
     :UNNUMBERED: t
