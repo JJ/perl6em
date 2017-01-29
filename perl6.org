@@ -1936,3 +1936,11 @@ When creating a program, you can literally get the world to process part of your
 The first objective you have when writing a program is to make it
 work. The second is to make it work /all the time/. The third is to
 make it work /faster, and all the time/. Performance matters.
+* a classy affair
+We have already seen that data usually does not walk alone. It has
+some properties, and there are some things you can do to certain kind
+of data, some functions you can call, which you cannot in other types
+of data. At the end of the cay, a class is only another way of calling
+a Type. Which means you can create your own types, and then create
+objects that have that type. 
+
