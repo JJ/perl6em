@@ -1734,6 +1734,22 @@ try to follow the advice, if any, check out DuckDuckGo or Google for
 possible solutions, and, if everything fails, you can still try and
 get some help from the community. We will see to that later on. 
 
+* Where did I put my keys?
+
+Vectors and sequences are nice ways of arranging things, one after the
+other, but they are just a simple way of getting to a particular
+value in a bunch of things. One value is stored in the first position
+(which, remember, is always 0), and another in the position 333. The
+language takes care of doing some computation to access whatever is
+stored in position 333. At the end of the day, you use a /key/, which
+happens to be a number, to compute the place where the corresponding
+value is stored, but sequences are simply lists of pairs with
+position and the value stored in that position.
+
+But think about hotel rooms. They do not go all the way from 0 to the
+total number of rooms, they use some code that starts with the floor
+number and that continues with some sequence of numbers in the floor.
+
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
