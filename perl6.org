@@ -1350,7 +1350,7 @@ Perl6 is, intentionally, designed for math, so it includes some
 representation for data that can be found usually in math courses. Not
 only that, it can work with them just in the way you did in your
 school math class, using the same symbols. For instance, let's talk
-about Sets.
+about Sets. And later, we will talk about the type that gives some sense to this chapter's title: Bags. 
 
 ** What is a set and what can it do for me.
 
@@ -1739,6 +1739,19 @@ Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
 it. /Variables/ store results and help you express, in a compact way,
 complicated formulae. 
+
+** Some things change. Some things don't.
+
+Calling it something a variable might be a bit misleading when it
+actually does not vary. However, in the very beginning everything
+variable could vary, because they were simply a bunch of memory
+positions that got to be called by a name. You wrote something else in
+that position, well, it became actually /variable/. 
+
+However, we are in the 21st century, and some variables actually
+don't. Has anyone come up with another name? Noooo. So we get stuck
+with it, and have to add some fancy-pants adjectives to tell apart the
+variables that vary from the variables that do not. 
 
 * ג‎ - Markdown for documentation 
     :PROPERTIES:
