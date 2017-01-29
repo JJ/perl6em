@@ -1917,6 +1917,10 @@ need to know.
 
 Not really. But almost.
 
+* Keep things where you can get them back again
+And this is like the lengthiest chapter title ever, but it is really
+important to learn to store data and do so in a way that can be easily
+retrieved later on . 
 * ж- Deploying to the cloud
 You have probably been told, by myself in the previous chapter, that
 the cloud is where you run your program. But it is not going to go,
