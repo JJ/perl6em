@@ -1381,6 +1381,16 @@ seven and will return false, which means that
 #+END_EXAMPLE 
 will obviously return =True=
 
+** Sets coming together
+
+One cool things about sets is that you can use them as a single thing
+with several values at the same time. These are called [[https://docs.perl6.org/type/Junction][Junctions]] and
+only correspond to a single logical value if you evaluate them to
+return true or false. 
+#+BEGIN_EXAMPLE perl6
+all <innie minnie moe 0>
+#+END_EXAMPLE 
+
 # Continue with other set stuff
 
 * ב‎ - Secure connection
