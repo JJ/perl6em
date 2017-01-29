@@ -1554,9 +1554,33 @@ So these are functions for you. In Perl 6.
 
 ** Going back to sequences
 
+As we always do, we will try to apply what we know to defining and creating sequences, there are [[https://en.wikibooks.org/wiki/Real_Analysis/Sequences][lots of them]] than can be used for fun and profit. 
+
 These expressions allow us to be much more flexible when building
 sequences, which, as it happens, are becoming a showcase of Perl 6
-power and ability.
+power and features. For starters, these chunks of code can be used to
+generate new sequences from old ones
+#+BEGIN_EXAMPLE perl6
+map *², 1..∞
+#+END_EXAMPLE
+This expression, that uses =map= for the first time, is the sequence
+of all square natural numbers. =map= effectively /maps/, as in a
+function, one value to another, creating a new element out of the old
+elements of the array it maps via an expression. And the code chunk we
+use for mapping is = *²=, which elevates to the second power
+=Whatever=. If you want to see it in a more code-like form, 
+#+BEGIN_EXAMPLE perl6
+ (map {$^þ²}, 1..∞)[333]
+#+END_EXAMPLE
+which uses the placeholder =$^þ= instead of =Whatever= and, since it
+is now a proper chunk of code, it has to be surrounded by curly
+braces. Besides, we are using the result, which is an infinite
+sequence, as a real object of which we extract element number 333. We
+can use whatever element we want, since it is infinite, and this is,
+besides, a way of holding in a lazy sequence all integer squares /in
+the world/.
+
+
 
 * ζ - Understand errors
     :PROPERTIES:
