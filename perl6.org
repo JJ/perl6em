@@ -1578,9 +1578,55 @@ braces. Besides, we are using the result, which is an infinite
 sequence, as a real object of which we extract element number 333. We
 can use whatever element we want, since it is infinite, and this is,
 besides, a way of holding in a lazy sequence all integer squares /in
-the world/.
+the world/. Besides, this is a map as in a real function: defined from
+an infinite set onto another infinite set. Mind you, it is not a
+=Set=, just a set in the general sense. =Set=s are finite, sets are
+not. 
 
+You can also use these expressions to define series where new
+elements are the result of applying some operation to the former
+elements. See it here:
+#+BEGIN_EXAMPLE perl6
+(1,.9999999999999999, { $^ß * $^þ}...∞)
+#+END_EXAMPLE
+This is a theoretically infinite series, which, in fact, goes to 0
+pretty fast due to the actually finite nature of real numbers as
+represented by computers, and where each term is the result of
+multiplying the two previous terms. Just try and find out the 100
+first terms and you will see that beyond the first 90 it is actually
+not so far away from 0. You know, sequences can converge or, actually,
+diverge.
 
+Divergence is not actually a big deal. The whole idea of the
+[[https://en.wikipedia.org/wiki/Mandelbrot_set][Mandelbrot set]] is built around it. Apply =z²+c= to any number =c= and
+see what happens. Does it diverge? It's not in the Mandelbrot
+set. Does it not? Well, assign it a beautiful color and draw it. We do
+it right here:
+#+BEGIN_EXAMPLE perl6
+(0,{$^ß²+0.5+0.3i}...∞)[^100]
+#+END_EXAMPLE
+Which is a sequence just like the old ones, only it's got an
+=i=. Well, we were before talking about a number =c= and that is is
+because it is a /complex/ number. Complex numbers are pairs of /real/
+numbers, where one part of the couple is called real and the other,
+the one that precedes =i=, /imaginary/. Just think about them like
+your old =x= and =y= numbers, only i² is equal to -1, so when we
+elevate complex numbers to the second power, they can sometimes turn
+into real numbers. No big deal, really; the big deal is that what we
+have above is a series of complex numbers which will actually diverge
+to a =Inf-Inf\i= value, which is how Perl represents a couple of
+infinites. But not all values go to infinity.
+#+BEGIN_EXAMPLE perl6
+(0,{$^ß²-0.5+0.3i}...∞)[^100]
+#+END_EXAMPLE
+Precisely at the other side of the /real/ axis, this value will never
+go to infinity; if you look at the mandelbrot set, it would be to the
+left and top of the toppled heart-like shape, in the black area;
+actually, it converges to something like
+=-0.382545950491141+0.169962816621862i= after a few iterations. The
+whole point of this is to show how, using just a simple expression,
+you can defint complex mathematical relations and sequences. With Perl
+6, of course. 
 
 * ζ - Understand errors
     :PROPERTIES:
