@@ -1817,6 +1817,14 @@ people in your predicament. Fortunately, Perl 6 is very good at that.
 Doodling with the REPL is fun, but eventually you will need to profit:
 the program has to be stored and maybe shipped somewhere. Architecting
 a script needs to put your computational thinking skills to work. 
+
+** Show and tell
+
+Any good program should be self describing, and of course a /good/
+program is what /you/ do, except it is not. Do yourself a favor and
+explain what is going on in your program all the time and any time you
+do something that is too clever or exactly the opposite. That probably
+means /always/. 
 * θ - Pack all your troubles in a container
     :PROPERTIES:
     :UNNUMBERED: t
