@@ -1756,7 +1756,7 @@ cutting, pasting and recomputing stuff every time you need
 it. /Variables/ store results and help you express, in a compact way,
 complicated formulae. 
 
-** Some things change. Some things don't.
+** Some things change. Some others don't.
 
 Calling it something a variable might be a bit misleading when it
 actually does not vary. However, in the very beginning everything
@@ -1798,6 +1798,10 @@ be the web nowadays. So it does not harm, and it will benefit greatly,
 to learn from now what the web is all about and how we can extract
 information from it, use it to interact with people and publish our
 data so that anyone in the whole wide world can see it. 
+* Functions mean fun
+Functions are just baptized pieces of code, but in the same way it
+happens in magic kingdoms, knowing the name of something gives you
+a handle to work with it. And work you will do. 
 * ד‎ - Getting help
    :PROPERTIES:
    :UNNUMBERED: t
@@ -1838,7 +1842,8 @@ applications, they can be data processing units, data storing units,
 data fooing and data baring units. Does not really matter what they
 are, but the thing it that /containerization/ makes easy the creation
 of a whole suite that can be stored and shipped anywhere. 
-
+* you decide
+But sometimes it is better to let the machine do it for you.
 * г - Always play it safe
     :PROPERTIES:
     :UNNUMBERED: t
@@ -1876,7 +1881,12 @@ as soon as you start to crank out code. It actually means /If it is
 not *automatically* tested, it is broken/, that is, it is not enough
 that you give it two or maybe one input, and declare yourself
 satisfied with it. No, son, that is not testing and you know it. 
-
+* It's deja vu all over again
+What computers are good at is at repeating things. However, that has
+not made anyone name them repeaters instead of computers. Actually, in
+some European countries they are called /sorters/, from the French
+/ordinateur/ that means exactly that. Looks like French people are
+good at making up words and also naming things in unexpected ways. 
 * Д - Find the bug
    :PROPERTIES:
    :UNNUMBERED: t
@@ -1910,3 +1920,7 @@ take it, and that is what is called /deploying/.
    :END:
 When creating a program, you can literally get the world to process part of your stuff, or obtain data from the same world. /Application programming interfaces/ make accessible, over the Internet, functions that would be annoying or simply impossible to have on your own computer. 
 * Analyzing data
+* μ - Performance to the max
+The first objective you have when writing a program is to make it
+work. The second is to make it work /all the time/. The third is to
+make it work /faster, and all the time/. Performance matters.
