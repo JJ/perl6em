@@ -1552,6 +1552,7 @@ another list of functions.
 
 So these are functions for you. In Perl 6. 
 
+
 ** Going back to sequences
 
 As we always do, we will try to apply what we know to defining and creating sequences, there are [[https://en.wikibooks.org/wiki/Real_Analysis/Sequences][lots of them]] than can be used for fun and profit. 
@@ -1627,6 +1628,31 @@ actually, it converges to something like
 whole point of this is to show how, using just a simple expression,
 you can defint complex mathematical relations and sequences. With Perl
 6, of course. 
+
+Besides, remember, functions are first class citizens, and sequences
+two. You can create a code chunk that returns a sequence, and combine
+placeholders to do so. Check this out:
+#+BEGIN_EXAMPLE perl6
+{ (0,{$^ß²+$_}...∞) }
+#+END_EXAMPLE
+This is a conde chunk that returns a sequence; the only thing we have
+done is to put curly brackets around it. We have two different kind of
+placeholders: =$_= will be a stand-in for whatever we handle to the
+code chunk, while $^ß is the placeholder for the sequence itself. Perl
+6 is able to find out which is which. And secuence generators generate
+sequences:
+#+BEGIN_EXAMPLE perl6
+{ (0,{$^ß²+$_}...∞) }(.01+.1i)
+#+END_EXAMPLE
+Here we use parenthesis to hand the number that will substitute =$_=
+in the sequence. And, of course, we can also use the infinite sequence
+itself via a couple of more parentheses:
+#+BEGIN_EXAMPLE perl6
+({ (0,{$^ß²+$_}...∞) }(.01+.1i))[^100]
+#+END_EXAMPLE
+These last parentheses wrap around the sequence so that we can get the
+range of its first 100 elements. Being as it is in the middle of the
+belly of the set, it converges. 
 
 * ζ - Understand errors
     :PROPERTIES:
