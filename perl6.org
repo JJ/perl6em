@@ -1899,6 +1899,8 @@ as soon as you start to crank out code. It actually means /If it is
 not *automatically* tested, it is broken/, that is, it is not enough
 that you give it two or maybe one input, and declare yourself
 satisfied with it. No, son, that is not testing and you know it. 
+* Interacting with the system
+Systems are full of interesting things, and nowadays there is also the Internet, which is full of stuff too. Getting data back and forth is something you are going to need to do, like, all the time. 
 * It's deja vu all over again
 What computers are good at is at repeating things. However, that has
 not made anyone name them repeaters instead of computers. Actually, in
@@ -1936,6 +1938,7 @@ You have probably been told, by myself in the previous chapter, that
 the cloud is where you run your program. But it is not going to go,
 all by itself, to a cumulonimbus out there. You have to physically
 take it, and that is what is called /deploying/. 
+
 * λ - The world is my platform
    :PROPERTIES:
    :UNNUMBERED: t
@@ -1954,3 +1957,6 @@ of data. At the end of the cay, a class is only another way of calling
 a Type. Which means you can create your own types, and then create
 objects that have that type. 
 
+* ν- Agile development for the win
+* Keeping track of time
+You will have to deal with them all the time, so they might as well be part of the system. 
