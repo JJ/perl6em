@@ -1,7 +1,7 @@
 Title: Perl 6, the music-less musical
 Credit: Written by
 Author: Charo & Elena & Cecilia & JJ Merelo
-Draft date: 18/12/2016
+Draft date: 31/1/2017
 Copyright:
     CC-BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
 
@@ -60,7 +60,7 @@ CAMELIA (tut-tuts)
 I am the FairyOps team leader. And I am going to tell you a story. It's a great story. Do you want to hear a nice and beautiful story?
 
 JJ (pulling his hair)
-But... But... I have to prepare this Fountain script and...
+But... But... I have to prepare this script for processing Fountain  and...
 
 CAMELIA (shaking wand)
 git push dash dash force story
@@ -186,7 +186,7 @@ ELEVEN
 I'm ghost of this Emmy season. I'm here in Belgium just for the waffles.
 
 JJ
-OK, I get it. This is where you are going to show me how I rejected beautiful and efficient languages like Python and C# in the past, how I said bad things about vi and Fedora, and how that way I lost all friends and consulting jobs and whatnot.
+OK, I get it. This is where you are going to show me how I rejected beautiful and efficient languages like Python and C\# in the past, how I said bad things about vi and Fedora, and how that way I lost all friends and consulting jobs and whatnot.
 
 ELEVEN
 No
