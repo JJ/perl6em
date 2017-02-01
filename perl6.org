@@ -1901,6 +1901,7 @@ that you give it two or maybe one input, and declare yourself
 satisfied with it. No, son, that is not testing and you know it. 
 * Interacting with the system
 Systems are full of interesting things, and nowadays there is also the Internet, which is full of stuff too. Getting data back and forth is something you are going to need to do, like, all the time. 
+* κ - lay the internet to rest
 * It's deja vu all over again
 What computers are good at is at repeating things. However, that has
 not made anyone name them repeaters instead of computers. Actually, in
@@ -1919,7 +1920,7 @@ Machine learning is all about understanding text. That text does not
 come in a shape you can easily process it. Regular expressions help
 you deal with text that is not totally structured, but that has some
 regularities in it. 
-* κ - What you need to know about the cloud
+* λ - What you need to know about the cloud
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
@@ -1939,13 +1940,22 @@ the cloud is where you run your program. But it is not going to go,
 all by itself, to a cumulonimbus out there. You have to physically
 take it, and that is what is called /deploying/. 
 
-* λ - The world is my platform
+* Using stuff from the cloud
+The isolated application is something that existed in the early
+nineties, but not any more. All applications are connected, in some
+way or another, to other applications, sometimes over the Internet,
+and sometimes to other computers you do not own. Application
+programming interfaces, or APIs, allow you to do so, which is
+great. Those programming interfaces can be easily used to perform many
+of the tasks that programs perform routinely, like authenticating or
+logging activities. We will see a few of these. 
+* μ - The world is my platform
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
 When creating a program, you can literally get the world to process part of your stuff, or obtain data from the same world. /Application programming interfaces/ make accessible, over the Internet, functions that would be annoying or simply impossible to have on your own computer. 
 * Analyzing data
-* μ - Performance to the max
+* ν - Performance to the max
 The first objective you have when writing a program is to make it
 work. The second is to make it work /all the time/. The third is to
 make it work /faster, and all the time/. Performance matters.
@@ -1957,6 +1967,6 @@ of data. At the end of the cay, a class is only another way of calling
 a Type. Which means you can create your own types, and then create
 objects that have that type. 
 
-* ν- Agile development for the win
+* ξ - Agile development for the win
 * Keeping track of time
 You will have to deal with them all the time, so they might as well be part of the system. 
