@@ -22,7 +22,7 @@ INT. OFFICE - DAY #1#
 SLIDE OPENS TO:
 This play is based on actual events. Names and t-shirts have been reduced to a few due to the fact that the rest couldn't actually fly to Brussels because college exams. 
 
-JJ is sitting in an office with a computer. He is wearing a Perl 5 tee, with camels or onions or something that cries out, quite clearly, that he's Perl 5 through and through. He is disheveled, hair in a shock, shaking the computer. 
+JJ is sitting somewhere with a laptop. He is wearing a Perl 5 tee, with camels or onions or something that cries out, quite clearly, that he's Perl 5 through and through. He is disheveled, hair in a shock, shaking the computer. 
 
 SLIDE TO:
 Slide shows perl6advent.wordpress.com/2015/12/07/day-7-unicode-perl-6-and-you/
@@ -60,7 +60,7 @@ CAMELIA (tut-tuts)
 I am the FairyOps team leader. And I am going to tell you a story. It's a great story. Do you want to hear a nice and beautiful story?
 
 JJ (pulling his hair)
-But... But... I have to prepare this script for processing Fountain  and...
+But... But... I have to prepare this script for processing  Fountain  and...
 
 CAMELIA (shaking wand)
 git push dash dash force story
@@ -81,12 +81,12 @@ Camel slides into view, and walks and up down.
 STORYTELLER
 Web was not invented yet, to the camel was not too busy. But then the web came, and web frameworks, and Booking, and Unicode, and the camel started to get bigger and bigger and even bigger.
 
-Camel gets closer to light source, becoming bigger until it covers almost the whole screen.
+Camel gets closer to light source, becoming bigger until it covers almost the whole screen. Let's see how we do that...
 
 STORYTELLER
 So big, in fact, that, well, it was big. It was fast, and widely used, and respected, and helped Bab-el-Larry-ben-Wall and many others with a lot of stuff. But Bab-el-Larry-ben-Wall was not happy, and, in the spirit that later made people create Javascript framework every Tuesday, decided to create a new thing for biohacking and interestellar travel and brain dumps and many other things that did not exist yet but that when actually existing would break the camel back. Ah, and Unicode.
 
-Butterfly flies in. Camelia shows up holding the butterfly, which is stuck to her magic wand. JJ walks in.
+Butterfly flies, or canters, in. Camelia shows up holding the butterfly, which is stuck to her magic wand. JJ walks in.
 
 CAMELIA
 And they lived happily ever after, the butterfly happier than the camel, because, you know, it's a butterfly, and no camelid is known for his happiness. And that is why you have to do all your stuff in Perl 6.
@@ -97,9 +97,7 @@ Bah! Humbug!
 CAMELIA
 You know, I was once like that. Pretty much. But now I'm into FairyOps and I have seen the light from the clouds. And you will see them also. Three spirits will haunt you the next three nights. The spirit of the beta version, the spirit of the first release candidate, and the spirit of the christmas when Perl 6 was eventually released, let's us all thank El-Larry-Ben-Wall or whatever.
 
-She walks back and leave. JJ goes back to his computer, and continues pulling his hair. Curtains close. 
-
-
+She walks back and leaves. JJ goes back to the laptop, and continues pulling his hair. Curtains close. 
 
 
 
@@ -149,7 +147,7 @@ BILL MURRAY (open arms)
 What? You want the spiel again? What's this? Groundhog day?
 
 JJ
-Yes. And you're not a ghost.
+Yes, I want it. And you're not a ghost.
 
 BILL MURRAY (raises finger)
 Yessir I am. A ghost... buster.
@@ -174,7 +172,6 @@ Wait. Are you one of these guys that tries to one-up everybody else's story?
 BILL MURRAY
  No. I knew a guy way worse at that than me.
 
-
 SLIDES TO:
 Text showing 
 
@@ -194,7 +191,7 @@ No
 JJ
 So I did well not learning Python!
 
-High-fives her
+High-fives her.
 
 JJ
 I knew it! Python sucks!
@@ -358,7 +355,7 @@ JJ
 So, Perl 6 is cool, right?
 
 CHARO
-Actually, it is after all! It's easy to learn and is useful, not only if you're an engineer, but also in your everyday life as a nurse, an artist, etc.
+Actually, it is after all! It's easy to learn and is useful, not only if you're an engineer, but also in your everyday life as a nurse, an artist, whatever!
 
 JJ
 You need any more ghosts?
@@ -439,7 +436,7 @@ CHARO
 Perl 6 can do it, don't leave it to Py...
 
 JJ
-Thon is good, Perl 6 caught my eye.
+Thon not good, Perl 6 caught my eye.
 
 CHARO
 And I really love it. This I certify.. 
@@ -448,7 +445,7 @@ JJ
 Yea güey! Yeah
 
 CHARO
-Yeah
+Yeah.
 
 JJ
 What? It's 2017.
