@@ -344,6 +344,18 @@ Then we have continued to comparisons, and I have realized some of the
 comparison glyphs, such as ≤ do not work. I'll have to check that out
 and update the material.
 
+* Filtering things
+
+We are going to deal with how logical expressions allow us to filter
+things. It's back again to simply working with Boolean logic, only we
+are going to use implicit loops and all that. 
+
+The important thing is to think about them as mathematical
+functions. You apply a /filter function/ to obtain one thing out of
+other. We are going to deal also with belonging functions, and
+finally, with using symbols as stand-ins for members of the array. I
+realize it's a pretty jumbled up topic, but let's see. 
+
 
 * Back to the command line
   :PROPERTIES:

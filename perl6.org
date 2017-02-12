@@ -1048,7 +1048,7 @@ because apparently small letters go /after/ capital letters, but
 #+END_EXAMPLE
 because, well, that is the way it is. 
 
-** And filtering them
+** And filtering them (also applying things to a whole lot of them)
 
 Now that we know how to deal with truths and untruths, we can use this
 knowledge to deal with sequences and filter them depending on whether
@@ -1100,11 +1100,11 @@ whole array of things. Which is cool. Even cooler, you can use the
 #+BEGIN_EXAMPLE perl6
 grep { .so }, (0,π/2,π,3*π/2,2*π)».cos
 #+END_EXAMPLE
-This might work with precision in the future, but for the time being =cos= is pretty
+This might work with precision in the future, but for the time being the result of =cos= is pretty
 close to 0, but not exactly 0, so =grep= actually returns all elements
 of the array, which are effectively non-zero. 
 
-You might do simpler things to arrays, like computing the minimum:
+You might want to do simpler things to arrays, like computing the minimum:
 #+BEGIN_EXAMPLE perl6
 min (3/4, 5/6, 3/8, 2/3)
 #+END_EXAMPLE
@@ -1116,7 +1116,9 @@ using =∈=, which is the mathematical symbol for /belongs to/ and returns
 False in this case. That can be an
 easy and straightforward way of finding out multiples, for
 instance, or if an element is included in a more complex
-sequence. Multiples that [[https://trizen.gitbooks.io/perl6-rosettacode/content/programming_tasks/F/Filter.html][you can also extract using =grep=]] 
+sequence. 
+
+Multiples that [[https://trizen.gitbooks.io/perl6-rosettacode/content/programming_tasks/F/Filter.html][you can also extract using =grep=]] 
 #+BEGIN_EXAMPLE perl6
 (1..100).grep(* %% 7)
 #+END_EXAMPLE
