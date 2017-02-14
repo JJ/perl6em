@@ -345,6 +345,10 @@ comparison glyphs, such as ≤ do not work. I'll have to check that out
 and update the material.
 
 * Filtering things
+  :PROPERTIES:
+  :Tools:    Laptop
+  :Chapter:  5
+  :END:
 
 We are going to deal with how logical expressions allow us to filter
 things. It's back again to simply working with Boolean logic, only we
@@ -356,6 +360,15 @@ other. We are going to deal also with belonging functions, and
 finally, with using symbols as stand-ins for members of the array. I
 realize it's a pretty jumbled up topic, but let's see. 
 
+** Actual development
+Actually, it didn't went so badly after almost a month without any
+class. Set up was pretty fast, and we were up and running in no
+time. We took only half an hour on a Sunday afternoon, and the concept
+of stand-ins (called =Whatever=), functions and so on went rather
+well. Besides, it was a good chance to start explaining the
+transformative nature of languages in a functional way: functions that
+take something in and return something else according to some
+expression.
 
 * Back to the command line
   :PROPERTIES:
