@@ -1101,14 +1101,14 @@ whole array of things. Which is cool. Even cooler, you can use the
 grep { .so }, (0,π/2,π,3*π/2,2*π)».cos
 #+END_EXAMPLE
 This might work with precision in the future, but for the time being the result of =cos= is pretty
-close to 0, but not exactly 0, so =grep= actually returns all elements
+close to 0, but not exactly so, which means that =grep= actually returns all elements
 of the array, which are effectively non-zero. 
 
-You might want to do simpler things to arrays, like computing the minimum:
+You might want to do simpler things to arrays, like finding the minimum:
 #+BEGIN_EXAMPLE perl6
 min (3/4, 5/6, 3/8, 2/3)
 #+END_EXAMPLE
-or even computing whether an element is or not in a particular array,
+. From this, you can figure out how to find the maximum, right? Or even computing whether an element is or not in a particular array, 
 #+BEGIN_EXAMPLE perl6
  332 ∈  (7,14...2000)
 #+END_EXAMPLE
