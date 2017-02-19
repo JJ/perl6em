@@ -418,7 +418,12 @@ several parts via these processes
   best one is key to being able to solve the problem quickly and
   efficiently.
 
-
+** Actual development
+Well, it has been a bit of soul-searching. We have decided to open up
+in the future to other languages, which I was going to do anyways,
+only I will do it more intensively. Mainly Javascript, of course. We
+have taken home, or around teh corner, anyway, since we're already
+home, some assignments. We'll get back to them in the last session.
 * Back to the command line
   :PROPERTIES:
   :Tools:    Laptop
