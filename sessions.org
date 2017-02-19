@@ -370,6 +370,55 @@ transformative nature of languages in a functional way: functions that
 take something in and return something else according to some
 expression.
 
+* Computational thinking
+We do need to talk about how computers do things, and how we make
+computers do things. Let's go back to the initial design thinking
+stage, where we talked about what we eventually wanted to do. We might
+not be able to finish it, but we can create a rough prototype along
+these sessions and maybe come up with something way cooler. 
+
+After a round of remembering and maybe changing, let us go back to
+what we can /actually/ do and let us realize a few things.
+
+- *The world is programmable*: everything is built around computers,
+  the Internet and applications and we can use computers to fulfill
+  our curiosity about the world, and even make it change if we
+  can. The world has an API, application programming interface, which
+  we can use to read, and sometimes, write, what is there. Pretty much
+  everything out there has an API: your class system, the Wikipedia,
+  Twitter, Spotify... 
+- *Programming gives you power*: because since everything can be
+  programmable, it helps you get your job done in less time and with
+  more added value. It allows you to automatize repetitive tasks, to
+  keep track of things, to understand better what is going on and what
+  might happen in the future. 
+- *We program in a community*: so there might always be someone out
+  there to help us in whatever we need, answer to our doubts, and
+  maybe even help us build something. We can also help someone build
+  something, and then start to be part of the community. 
+
+That is why programming is seldom the matter of a single language or
+tool. In order to program the world, you have to know the world. But
+you also have to know how to break down a problem to put it into a
+computer. This is usually called
+[[https://docs.google.com/document/d/1i0wg-BMG3TdwsShAyH_0Z1xpFnpVcMvpYJceHGWex_c/edit][computational thinking]] and consists in breaking down a problem in
+several parts via these processes
+- First would be  *decomposition*, breaking down the problem in parts that can be
+  managed separately. 
+- *Abstraction*: understand the processes behind a problem in terms of
+  what is essential, not its appearance. In this process we might find
+  parts of the problem have been solved with off-the-shelf software
+  that we will use, as long as it is free software. *Pattern
+  recognition* helps here to find the correct level of abstraction for
+  a particular problem and common elements in different problems. 
+- *Data collection*: how to get data into the system so that it can
+  solve the problem
+- *Data representation*: there are many ways of representing data in a
+  computer, with different performance and constraints. Choosing the
+  best one is key to being able to solve the problem quickly and
+  efficiently.
+
+
 * Back to the command line
   :PROPERTIES:
   :Tools:    Laptop
