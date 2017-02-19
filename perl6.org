@@ -737,7 +737,6 @@ collating together all elements in the alphabet. Preceding it with
 =\=. which you can think of as an accumulator, will instead create
 another array whose elements are the accumulation of the operation up
 to that element. Better if you try it:
-
 #+BEGIN_EXAMPLE perl6
 [\~] 'a'..'z'
 #+END_EXAMPLE
@@ -1108,7 +1107,29 @@ You might want to do simpler things to arrays, like finding the minimum:
 #+BEGIN_EXAMPLE perl6
 min (3/4, 5/6, 3/8, 2/3)
 #+END_EXAMPLE
-. From this, you can figure out how to find the maximum, right? Or even computing whether an element is or not in a particular array, 
+. From this, you can figure out how to find the maximum, right? And even the greatest common denominator and least common multiple, as long as the array is populated only by integers.
+#+BEGIN_EXAMPLE perl6
+[lcm] (5, 77, 343)
+#+END_EXAMPLE
+And we are doing some trick here, using square brackets to turn an
+operator, =lcm=, which applies to only two operands, to one that can
+be applied to a whole array. You can do the same with any
+operator. Give it a try. In fact we did it way before, when we wanted
+to concatenate a list. Do you remember?
+#+BEGIN_EXAMPLE perl6
+[~] 'a'..'z'
+#+END_EXAMPLE
+Well, this is pretty much the same and rather not what I intended for
+this chapter initially, but you get carried away and this is what
+happens. That chapter also mentioned the /accumulator/ =\=. You can
+put it to good use here:
+#+BEGIN_EXAMPLE perl6
+[\lcm] (5, 77, 343, 881)
+#+END_EXAMPLE
+computing the accumulated least common multiple for one, two and up
+the the four elements of the array. 
+
+Besides doing thing with arrays, you can also do things with, well, other things, and arrays. For instance, computing whether an element is or not in a particular array,  
 #+BEGIN_EXAMPLE perl6
  332 ∈  (7,14...2000)
 #+END_EXAMPLE
