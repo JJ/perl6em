@@ -424,6 +424,28 @@ in the future to other languages, which I was going to do anyways,
 only I will do it more intensively. Mainly Javascript, of course. We
 have taken home, or around teh corner, anyway, since we're already
 home, some assignments. We'll get back to them in the last session.
+* Errors are not errors
+They are simply a way the computer has of telling you it does not understand what you are telling it.
+Let us see a simple syntax errors and how to deal with them, and then let us try to fix those errors following 3 simple steps
+- Understand the error by carefully reading it. It normally says where
+  the error is found, what it understands there, and sometimes some
+  options of what the correct way of doing it would actually be. If
+  one of those ways is what you wanted to do, you're good. If it is
+  not, go back to what you wanted to do and try a slightly different
+  way. It is almost never necessary to do it from scratch.
+- If you cannot figure out what's wrong, there's a strong possibility
+  that the same thing has happened to someone else before. Extract the
+  generic part of the error message (excluding line numbers and
+  variable names) and try to find out what's wrong in the Google or
+  DuckDuckGo entry that shows up.
+- It might be the case that you don't find the answer, or whatever
+  answers you got do not work, remember that you are working in a free
+  software environment. There is always someone out there to help
+  you. In Perl6, there are several IRC channels where people are
+  active all the time, but you can also use GitHub issues or even if
+  it's more generic go to StackOverflow or Reddit, although generally
+  asking questions in StackOverflow is more likely to get a result.
+
 * Back to the command line
   :PROPERTIES:
   :Tools:    Laptop

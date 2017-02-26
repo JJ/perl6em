@@ -1693,7 +1693,7 @@ belly of the set, it converges.
     :END:
 Shit eventually happens. But when it does, you must be ready to unshit
 everything. The first thing that you have to understand is that errors
-are your friends. 80 years of computer science have eventually yielded
+are your friends. 80 years of computer science have eventually given us
 systems and languages that, when something unexpected happens, explain
 quite well what's the problem and even hint at what can be done to fix
 it. Not go all the way to fix it, because that is actually why errors
@@ -1701,8 +1701,8 @@ happen, because the interpreter (in this case) or the system (in
 general) cannot quite figure out what you mean and tell you in about
 so many words. Maybe more.
 
-Besides, error is too strong a word. You think of errors, and you
-think of failure, as in /You are a/. That's not quite it. Errors are
+Besides, error is too strong a word. You see errors, and you
+think of failure, as in /You are a/. That's not quite it. Errors in computers, and even more so in computer languages, are
 actually misunderstandings, and always a path to eventually get things
 right. They are a way of saying /You are probably right, but could you
 please explain things in a slightly different way so that I can
@@ -1766,6 +1766,8 @@ better not to make a big fuss about them. Check them out carefully,
 try to follow the advice, if any, check out DuckDuckGo or Google for
 possible solutions, and, if everything fails, you can still try and
 get some help from the community. We will see to that later on. 
+
+Worse errors are those in which the computer actually does something, but not really what you were looking for. 
 
 * Where did I put my keys?
 
