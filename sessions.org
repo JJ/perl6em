@@ -446,6 +446,14 @@ Let us see a simple syntax errors and how to deal with them, and then let us try
   it's more generic go to StackOverflow or Reddit, although generally
   asking questions in StackOverflow is more likely to get a result.
 
+** Actual development
+
+Short and sweet, I have used several examples to show how errors
+developed and used the gimmick of making them go *beep* when I
+mentioned the word "Error". It has failed, though. And I have used it
+a lot. However, the concept got through. And we're now minus one
+student, down to two. 
+
 * Back to the command line
   :PROPERTIES:
   :Tools:    Laptop
