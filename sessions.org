@@ -466,3 +466,10 @@ order to combine different commands to perform tasks.
 
 In this session, we will also experiment with somebody else /leading/
 or explaining things. 
+
+** Actual development
+
+It was Elena who did the grunt work, heavily influenced by the style
+of teaching at the university, first do this, then do that, but Charo
+was game and ended up doing a lot of nice things. Will try again
+later, now with another one.  
