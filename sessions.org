@@ -476,5 +476,14 @@ It was Elena who did the grunt work, heavily influenced by the style
 of teaching at the university, first do this, then do that, but Charo
 was game and ended up doing a lot of nice things. Will try again
 later, now with another one.  
+* Working on lists
+Back to lists, which are the backbone of this thing, since they can be
+done so many things with so little work.
+
+First, list operators such as =min= which deal with whole lists. Then,
+on to the square bracket which applies to lists in turh, and use it
+with lcm, sum, square, whatever. Then, the escaped operator, which
+accumulate. If time allows, work with ∈ and its usefulness in infinite
+or very big lists 
 
 

@@ -1165,7 +1165,7 @@ pretty much does the same.
 
 ** This and that. Or that.
 
-Checks pile up to form a pyramid in which whatever emerges as true or
+Checks on a list pile up to form a pyramid in which whatever emerges as true or
 false at the top depends on what happens at the bottom. Sometimes it
 is enough with one of the conditions holding, sometimes you need all
 the conditions to hold at the same time.  These are the logical
