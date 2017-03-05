@@ -904,6 +904,18 @@ it.
 git add a_new_file
 #+END_EXAMPLE
 
+This only tells the repository it should be aware of the file. But
+then you have to actually do something about it, like telling the repo
+you are happy with the file such as it is and it should be registered,
+or /committed/. You should go:
+#+BEGIN_EXAMPLE perl6
+git commit -m "Adds file for doing stuff"
+#+END_EXAMPLE
+
+You are not done yet. All these changes are local. You can continue
+adding things
+# Continue here !!!
+
 * Thinking logically
 
 You are going to need in many cases to check whether something is true or
