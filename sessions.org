@@ -245,10 +245,13 @@ Knowing about the "Reduce" operator on sequences (or ranges) and combining seque
 
 ** Actual session
 
-This starts to be a little complicated. Also boring. But mostly complicated. When you are getting in some complexity, but mainly working over the same essential material, which is sequences, you start to get a bit fed up with it. So maybe we will switch to ancillary material next ocassion. 
-Anyway, the concept of crossing and zipping has been caught fast by using the zipper metaphor and hand-weaving. So let us call it a day and let us go to greener pastures.
+This starts to be a little complicated. Also boring. But mostly complicated. When you are getting into some complexity, but mainly working over the same essential material, which is sequences, you start to get a bit fed up with it. So maybe we will switch to ancillary material next ocassion. 
+Anyway, the concept of crossing and zipping has been caught fast by
+using the zipper metaphor and hand-weaving (notice the pun with
+hand-waving ☺). So let us call it a day and go to greener pastures.
 
-The fact that we still have not stored anything so far has not been an obstacle. No program has been written, and none has been needed. 
+The fact that we still have not stored anything so far has not been an
+obstacle. No program has been written, and none has been needed.  
 
 Repeating same things over and over is also important. Sequences of commands like opening a shell inside Emacs and typing Perl6 sometimes do not happen and need some help. 
 
@@ -473,3 +476,5 @@ It was Elena who did the grunt work, heavily influenced by the style
 of teaching at the university, first do this, then do that, but Charo
 was game and ended up doing a lot of nice things. Will try again
 later, now with another one.  
+
+
