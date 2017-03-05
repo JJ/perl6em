@@ -486,4 +486,9 @@ with lcm, sum, square, whatever. Then, the escaped operator, which
 accumulate. If time allows, work with ∈ and its usefulness in infinite
 or very big lists 
 
+** Actual development
+
+It's been short and fast and the biggest problem was remembering how
+to type epsilon (it's the Unicode symbol called ELEMENT OF). We are
+ready for bigger things, I think.
 
