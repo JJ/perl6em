@@ -1459,6 +1459,23 @@ the ones that are included in the first but not in the second and the
 other way round, in this case the two teams that were either demoted
 or promoted, which is this set: =set(RAN, STM)=.
 
+Picking fixtures out of this set is straightforward, using our well
+known =pick=:
+#+BEGIN_EXAMPLE perl6
+set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> ).pick(2)
+#+END_EXAMPLE 
+If we wanted to randomly create a whole football day, we would have to
+keep eliminating teams in every fixture:
+#+BEGIN_EXAMPLE perl6
+set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> ) (-)
+set ( set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> ).pick(2) )
+#+END_EXAMPLE 
+where we /set-ize/ the list returned by pick in order to take it away
+or substract from the original set. 
+
+** Elements in a set
+
+
 
 Which might be handy in cases such
 as this one
