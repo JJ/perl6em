@@ -477,6 +477,11 @@ of teaching at the university, first do this, then do that, but Charo
 was game and ended up doing a lot of nice things. Will try again
 later, now with another one.  
 * Working on lists
+  :PROPERTIES:
+  :Tools:    Laptop
+  :Chapter:  5
+  :END:
+
 Back to lists, which are the backbone of this thing, since they can be
 done so many things with so little work.
 
@@ -492,3 +497,10 @@ It's been short and fast and the biggest problem was remembering how
 to type epsilon (it's the Unicode symbol called ELEMENT OF). We are
 ready for bigger things, I think.
 
+* Leagues of their own
+
+We are going to deal with sets, differentiating them from arrays and
+working with league (including champions league) teams, intersection,
+and that kind of things. Following the principle of minimal surprise,
+we'll allow students to find out how some operations work and how some
+set theory helps arithmetics.

@@ -1772,6 +1772,9 @@ These last parentheses wrap around the sequence so that we can get the
 range of its first 100 elements. Being as it is in the middle of the
 belly of the set, it converges. 
 
+** Calling names
+#We will begin explaining identifiers here. 
+
 * ζ - Understand errors
     :PROPERTIES:
     :UNNUMBERED: t
@@ -1859,7 +1862,7 @@ Worse errors are those in which the computer actually does something, but not re
 Vectors and sequences are nice ways of arranging things, one after the
 other, but they are just a simple way of getting to a particular
 value in a bunch of things. One value is stored in the first position
-(which, remember, is always 0), and another in the position 333. The
+(which, remember, is always referred to as 0), and another in the position 333. The
 language takes care of doing some computation to access whatever is
 stored in position 333. At the end of the day, you use a /key/, which
 happens to be a number, to compute the place where the corresponding
@@ -1870,11 +1873,22 @@ But think about hotel rooms. They do not go all the way from 0 to the
 total number of rooms, they use some code that starts with the floor
 number and that continues with some sequence of numbers in the floor.
 
+
+
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
 it. /Variables/ store results and help you express, in a compact way,
 complicated formulae. 
+
+** Calling things by their name
+
+Naming objects and data is not always necessary, but it is convenient
+if results of operations and operations themselves want to be repeated
+over and over. If you are going to use them only once, there is no
+need to do it, but attaching a label to an operation or a piece of
+data will allow us to keep working on it for a while and create more
+complex operations. 
 
 ** Some things change. Some others don't.
 
