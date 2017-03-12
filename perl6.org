@@ -1779,8 +1779,10 @@ belly of the set, it converges.
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
-Shit eventually happens. But when it does, you must be ready to unshit
-everything. The first thing that you have to understand is that errors
+Shit eventually happens. But when it does, you should know that it is
+not really shit, but a brown and maybe a bit smelly thing, and that
+anyway you must be ready to unshit
+everything, because shit cannot be ignored by starting all over again. The first thing that you have to understand is that errors
 are your friends. 80 years of computer science have eventually given us
 systems and languages that, when something unexpected happens, explain
 quite well what's the problem and even hint at what can be done to fix
