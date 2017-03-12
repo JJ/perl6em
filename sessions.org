@@ -416,7 +416,7 @@ several parts via these processes
   recognition* helps here to find the correct level of abstraction for
   a particular problem and common elements in different problems. 
 - *Data collection*: how to get data into the system so that it can
-  solve the problem
+  solve the problem.
 - *Data representation*: there are many ways of representing data in a
   computer, with different performance and constraints. Choosing the
   best one is key to being able to solve the problem quickly and
@@ -490,7 +490,7 @@ First, list operators such as =min= which deal with whole lists. Then,
 on to the square bracket which applies to lists in turh, and use it
 with lcm, sum, square, whatever. Then, the escaped operator, which
 accumulate. If time allows, work with ∈ and its usefulness in infinite
-or very big lists 
+or very big lists. 
 
 ** Actual development
 
@@ -499,6 +499,10 @@ to type epsilon (it's the Unicode symbol called ELEMENT OF). We are
 ready for bigger things, I think.
 
 * Leagues of their own
+  :PROPERTIES:
+  :Tools:    Laptop
+  :Chapter:  6
+  :END:
 
 We are going to deal with sets, differentiating them from arrays and
 working with league (including champions league) teams, intersection,
