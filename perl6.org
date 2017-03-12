@@ -506,7 +506,7 @@ and all that's nice and beautiful about it.
 ** Lists of things are also game.
 
 Numbers and words are simple things. But you can string them together
-in something more complex. You can have sets of them, or lists of
+in something more complex. You can have groups of them, or lists of
 them, or combine them as sets of lists of sets of whatever. Perl 6 is
 great because you do not need to make all things in a complex
 structure be of the same type. You can create a list with the less than
@@ -1385,7 +1385,7 @@ Perl6 is, intentionally, designed for math, so it includes some
 representation for data that can be found usually in math courses. Not
 only that, it can work with them just in the way you did in your
 school math class, using the same symbols. For instance, let's talk
-about Sets. And later, we will talk about the type that gives some sense to this chapter's title: Bags. 
+about Sets. And later, we will talk about the type that gives some sense to this chapter's title: /Bags/. 
 
 ** What is a set and what can it do for me.
 
@@ -1393,18 +1393,74 @@ A set is a group of things whose order does not matter much.
 #+BEGIN_EXAMPLE perl6
 set(1,⅓,"foo",{ $^þ %% 3})
 #+END_EXAMPLE 
-Superficially it is similar to an array, with the parentheses and all,
-but it /does/ need the word =set= before it. In fact, you can easily
-turn an array into a set, as long as it is a finite set and not an
+An /element/ of a set can be anything. In this case, we have numbers, strings and a function. Superficially, or at least in the way you define it, it is similar to an array, with the parentheses and all,
+but it /does/ need the word =set= before it. 
+#+BEGIN_EXAMPLE perl6
+set(⅓,¼,"a","what?") == set("a","what?",⅓,¼)
+#+END_EXAMPLE 
+will return =True= because they define exactly the same set; remember
+that == was used to check if two things were equal.  
+In fact, you can easily
+turn an array into a set, as long as it is an array representing finitely many things and not an
 infinite one. 
 #+BEGIN_EXAMPLE perl6
 set(^1000})
 #+END_EXAMPLE 
+will create a set with 1000 elements, sincd =^1000= returns a range
+with numbers from 0 to 1000. 
 
-Sets can be used for baskets, or shelves, or groups of people... When
+Sets can be used to represent baskets, or shelves, or groups of people... When
 order does not make a logical sense, and you are more interested in
 knowing if something belongs to a set or not, =Set= is the kind of
-structure you must give your data. Which might be handy in cases such
+structure you must give your data. For instance, this set would
+represent the Scottish Premiership for 2016-2017:
+#+BEGIN_EXAMPLE perl6
+set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> )
+#+end_EXAMPLE
+where we use the =<>= notation to make shorter the defined array that
+is later turned into a set. If we compare it to the premiership of the
+previous year there are subtle changes
+#+BEGIN_EXAMPLE perl6
+set( <ABE CEL DUN DUU HAM HEA INV KIL MOT PAR ROS STJ> )
+#+end_EXAMPLE
+that can be inmediately revealed using
+[[https://perl6advent.wordpress.com/2012/12/13/day-13-bags-and-sets/][set operators]]:
+#+BEGIN_EXAMPLE perl6
+set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> ) ∩ 
+set( <ABE CEL DUN DUU HAM HEA INV KIL MOT PAR ROS STJ> )
+#+end_EXAMPLE
+which returns the set of 11 teams that have not either been promoted or
+relegated. We can even go ahead and create a list or array of teams in
+every division 
+#+BEGIN_EXAMPLE perl6
+(set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> ), 
+ set( <ABE CEL DUN DUU HAM HEA INV KIL MOT PAR ROS STJ> ), 
+ set(<ABE CEL DUN DUU HAM  INV KIL MOT PAR ROS STJ STM >) )
+#+end_EXAMPLE
+which is simply a list of sets separated by commas and surrounded by
+parentheses, and then find out which teams have remained in the
+Scottish premiership for all these years by applying the /reduction/
+operator
+#+BEGIN_EXAMPLE perl6
+[∩] (set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> ), 
+     set( <ABE CEL DUN DUU HAM HEA INV KIL MOT PAR ROS STJ> ), 
+     set(<ABE CEL DUN DUU HAM  INV KIL MOT PAR ROS STJ STM >) 
+    )
+#+end_EXAMPLE
+which will return a set of 10 teams that excludes Rangers, St. Mirren
+and Heart of Midlothian. But we have to think a bit to find that
+out. Set operators can also give us that information.
+#+BEGIN_EXAMPLE perl6
+set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> ) (^) 
+set( <ABE CEL DUN DUU HAM HEA INV KIL MOT PAR ROS STJ> )
+#+end_EXAMPLE
+will return the /symmetric difference/ between the two sets, that is,
+the ones that are included in the first but not in the second and the
+other way round, in this case the two teams that were either demoted
+or promoted, which is this set: =set(RAN, STM)=.
+
+
+Which might be handy in cases such
 as this one
 #+BEGIN_EXAMPLE perl6
 127 ∈  set(7,14...1000)
