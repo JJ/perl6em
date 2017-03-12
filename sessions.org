@@ -1,6 +1,7 @@
 #+latex_compiler: xelatex 
 #+latex_header: \usepackage{libertine}
 #+latex_header: \usepackage{unicode-math}
+#+latex_header: \setmonofont{DejaVu Sans Mono}
 
 #+TITLE: Perl 6, the Sessions
   
