@@ -509,3 +509,10 @@ working with league (including champions league) teams, intersection,
 and that kind of things. Following the principle of minimal surprise,
 we'll allow students to find out how some operations work and how some
 set theory helps arithmetics.
+
+** Actual development
+Lot of time trying to type things without making mistakes, but at least the set stuff went through pretty well. It was a week ago, so I might be wrong...
+
+* Everything is connected
+We will see today how to connect with other computers using ssh, so that we can tap the power of the whole local network to work with Perl. We will show the basics of ssh, as well as how to generate a keypair to connect without using passwords.
+
