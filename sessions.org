@@ -516,3 +516,6 @@ Lot of time trying to type things without making mistakes, but at least the set 
 * Everything is connected
 We will see today how to connect with other computers using ssh, so that we can tap the power of the whole local network to work with Perl. We will show the basics of ssh, as well as how to generate a keypair to connect without using passwords.
 
+** Actual development
+It's been 20+ minutes where the biggest problem was juggling a BT keyboard so that I could interact with my Ubuntuphone and check stuff out there. Other than that, pretty straighforward, and concepts grasped fast.
+
