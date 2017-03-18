@@ -890,7 +890,7 @@ git clone https://github.com/yourname/yourrepo
 #+END_EXAMPLE
 
 and please note I am using =https= here. You can also use the /ssh/
-address and in fact you should, but for the time being let us let it
+address, which will be something like =git@github.com:yourname/yourrepo.git= and in fact you should, but for the time being let us let it
 be. Remember to take down the username and password you have used,
 because you will need later on.
 
@@ -1507,10 +1507,91 @@ all <innie minnie moe 0>
     :END:
 
 The whole point of programming is working with remote computers. And
-in fact it is almost impossible that you work nowadays without using
+in fact it is almost impossible working nowadays without using
 several remote computers, /cloud/ hosts as it were, to perform routine
 tasks. You need to connect to them, and do so efficiently and also
-securely. That is why /ssh/ was invented.
+securely. That is why /ssh/ was invented. This is when you effectively
+notice that there is a lot of Internet above and beyond the web, and
+this is where we are going to start working with it.
+
+Bear in mind that you do not need to use the cloud to need to connect
+securely to other computers. Something as routine as copying files
+from an old laptop to a new laptop can be done better and maybe even
+faster by connecting the two laptops to the local router and doing
+something like this:
+#+BEGIN_EXAMPLE bash
+rsync -avz -e ssh 192.168.1.38:/home/thisisme/ .
+#+END_EXAMPLE
+
+Let us suppose that you are =thisisme= and that, effectively, there is
+a ssh server running in the old laptop. What this command will do is
+to connect through your account to your old laptop, that is, become
+you there, and then start to copy all things from the old account to
+your new account, which is where you should be. This is much better
+than just doing a copy using `cp` since you will effectively
+synchronize the two accounts; if there is something wrong along the
+line, you have to reset your router, whatever, you can start where you
+left it by issuing again the same command from the command line. But
+please bear in mind that what you have done here is first access a
+computer using its internet protocol address, =192.168.1.38=, which is
+a local network address (usual routers start to assign addresses
+starting with 192.168.1.33) and proceed to /run/ something, a copy
+order, in it.
+
+You can in fact go a bit further and directly connect to it, provided
+you have been provided an account:
+#+BEGIN_EXAMPLE bash
+ssh thisisme@192.168.1.38
+#+END_EXAMPLE
+
+This will open a /shell/ in that remote account, and you will be be
+able to run command line and console commands there. Even some
+windows-based commands, if the protocols have been configured
+correctly. But never mind that. Fact it you will be faced with a
+prompt, and whatever you run, =ls=, =emacs=, =perl=, whatever, will be
+run /there/, not at your own computer. You can even humor yourself and
+find out the computer you are connecting from (it will tell you
+something like =Last login: Sat Mar 18 11:19:42 2017 from
+192.168.1.36=, this last one will be the IP address you are connecting
+/from/ and connect /back/ to your computer using that address. That
+is, provided ssh is running as a server and configured to allow this
+kind of connections.
+
+It would be convenient to /not/ use any other kind of
+connection. =ssh= means /secure shell/, and all traffic between the
+two computers (and back) is encrypted, that is, secured from prying
+eyes. But if you have to enter the password every time you will end up
+using a commons password, which goes against security. There is a way,
+however, to work without using a password. The procedure involves
+generating a /key pair/, that is, a pair of keys, a private key that
+will be secured in your computer, a public key that you will copy to
+the computer you are going to
+connect. [[https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/][The procedure is quite clearly explained in GitHub]], but it
+goes basically like this:
+#+BEGIN_EXAMPLE bash
+ssh-keygen -t rsa -b 4096 -C "jjmerelo@gmail.com"
+#+END_EXAMPLE
+
+Use no passphrase, although you might have to use one if you are in a
+computer that lots of people can access. You will have something like
+this:
+#+CAPTION: Generating a key pair
+#+NAME:   fig:chap5-keygen
+[[./img/keygen.png]]
+
+This is going to generate two files, a public and private key; the
+first one will have a =.pub= extension. That public key will be
+checked against your private one, but before you will have to copy it
+to the remote place
+#+BEGIN_EXAMPLE bash
+ssh-copy-id -i .ssh/id_rsa.pub thisisme@192.168.1.36 
+#+END_EXAMPLE
+
+After which you will be able to connect directly to that address,
+without needing to do additional password-typing. Which will be
+extremely convenient for applications that need a fluent connection
+with no prompting. 
+
 
 * Changing things
 
