@@ -202,7 +202,9 @@ that. Ah, impatience...
    :Chapter:  2
    :END:
 
-First some non-conventional operators such as =x= and then let's proceed to talk about sequences and arrays and how to deal with infinite arrays. 
+First some non-conventional operators such as =x= and then let's
+proceed to talk about sequences and arrays and how to deal with
+infinite arrays.  
 
 ** Actual session
 
@@ -487,7 +489,7 @@ Back to lists, which are the backbone of this thing, since they can be
 done so many things with so little work.
 
 First, list operators such as =min= which deal with whole lists. Then,
-on to the square bracket which applies to lists in turh, and use it
+on to the square bracket which applies to lists in turn, and use it
 with lcm, sum, square, whatever. Then, the escaped operator, which
 accumulate. If time allows, work with ∈ and its usefulness in infinite
 or very big lists. 
@@ -518,4 +520,10 @@ We will see today how to connect with other computers using ssh, so that we can 
 
 ** Actual development
 It's been 20+ minutes where the biggest problem was juggling a BT keyboard so that I could interact with my Ubuntuphone and check stuff out there. Other than that, pretty straighforward, and concepts grasped fast.
+
+* Back to Github
+ Now that we have a public key, we will use it to do stuff in github, and we will try to get acquainted with the GitHub command line. The exercise will be to create a expression that does something in particular, and commit and push it to GitHub.
+
+Then we will do again the fork + pull request from other, to learn the mechanics of code review and dynamics.
+
 
