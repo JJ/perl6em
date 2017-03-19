@@ -1163,6 +1163,14 @@ gives them similar, or the same, meaning. That is good and well and
 saves you from learning lots of different squiggles for stuff that
 pretty much does the same. 
 
+What happens if you want to filter by types? This will do the trick:
+#+BEGIN_EXAMPLE perl6
+(¾, π,{ $^þ + 7},"a", "b").grep( {$^þ.WHAT ~~ Str} )
+#+END_EXAMPLE
+Since =~~= is the /is a kind of/ operator, this expression will return
+only those things that are /a kind of/ String. Which one will those
+be? Well... 
+
 ** This and that. Or that.
 
 Checks on a list pile up to form a pyramid in which whatever emerges as true or
