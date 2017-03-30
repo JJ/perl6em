@@ -527,3 +527,5 @@ It's been 20+ minutes where the biggest problem was juggling a BT keyboard so th
 Then we will do again the fork + pull request from other, to learn the mechanics of code review and dynamics.
 
 
+* 6 cool things about perl 6
+This was a weekend in which we were not at home, and besides we have to prepare for D Day, a dev event in Granada. So we were outlining all the stuff they have liked about Perl 6, which will become a presentation tomorrow (yep, it's a bit late when I write this)
