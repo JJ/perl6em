@@ -1988,7 +1988,41 @@ my $series = 1..30
 Most usual variables will only belong to yourself, and only need to be
 seen in the inmediate surroundings, nothing farther away than the
 closest keys. You don't need to say other things, like type and that
-kind of things. Just the name. A variable can hold anything
+stuff. Just the name. 
+
+This =my= is important, because it limits the visibility and the value
+of the variable, what is called the /scope/ to the surrounding block,
+which for the time being is going to be the closest curly braces
+surrounding it. 
+#+BEGIN_EXAMPLE perl6
+my $series = 1..30
+{  my $series = 30..1 }
+$series
+#+END_EXAMPLE
+This would return the initial, and not the inverted, value of
+=$series= since the second example is surrounded by curly braces, that
+limit its range of action. 
+
+This can be used to give functions its own variables
+#+BEGIN_EXAMPLE perl6
+my $reverse-series = {  
+    my $series = 1..$_; 
+    reverse  $series; 
+}
+#+END_EXAMPLE
+This function, that counts down from the number you hand it to 1 and
+can be used this way:
+#+BEGIN_EXAMPLE perl6
+$reverse-series(30)
+#+END_EXAMPLE
+deserves just a little while. First, it is using a variable declared
+with =my= just the way we did before. This /hides/ that variable from
+outside peeping, but also maintains whatever value that variable had
+before calling after it. =my= gives blocks, or functions, the
+possibility of creating their own variables and using them without
+worrying about what was defined outside them. 
+
+A variable can hold anything
 #+BEGIN_EXAMPLE perl6
 my $my-hand = <3 J Q K>
 #+END_EXAMPLE
