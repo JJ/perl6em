@@ -1979,7 +1979,33 @@ if results of operations and operations themselves want to be repeated
 over and over. If you are going to use them only once, there is no
 need to do it, but attaching a label to an operation or a piece of
 data will allow us to keep working on it for a while and create more
-complex operations. 
+complex operations. Variables use /sigils/ in Perl, which are funny
+characters that /precede/ a name. But even before you start to name
+things you  need to know who should know about them. 
+#+BEGIN_EXAMPLE perl6
+my $series = 1..30
+#+END_EXAMPLE
+Most usual variables will only belong to yourself, and only need to be
+seen in the inmediate surroundings, nothing farther away than the
+closest keys. You don't need to say other things, like type and that
+kind of things. Just the name. A variable can hold anything
+#+BEGIN_EXAMPLE perl6
+my $my-hand = <3 J Q K>
+#+END_EXAMPLE
+And you can work with variables just the same way you did before
+without them
+#+BEGIN_EXAMPLE perl6
+$my-hand.elems
+#+END_EXAMPLE
+These variables will dissapear as soon as you get out of the Perl
+shell. 
+In the last case, however, you might want to use =@=, which deals with
+anything that has some /structure/ inside.
+#+BEGIN_EXAMPLE perl6
+our @numbers = flat 2..10 , &lt;A J Q K>
+our @poker-cards =   @numbers X <♥ ♦ ♣ ♠>
+our @poker-cards = @numbers X~ <♥ ♦ ♣ ♠>
+#+END_EXAMPLE
 
 ** Some things change. Some others don't.
 
@@ -1992,8 +2018,7 @@ that position, well, it became actually /variable/.
 However, we are in the 21st century, and some variables actually
 don't. Has anyone come up with another name? Noooo. So we get stuck
 with it, and have to add some fancy-pants adjectives to tell apart the
-variables that vary from the variables that do not. 
-
+variables that vary from the variables that do not.
 * ג‎ - Markdown for documentation 
     :PROPERTIES:
     :UNNUMBERED: t
