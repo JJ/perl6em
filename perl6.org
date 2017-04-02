@@ -2015,12 +2015,83 @@ can be used this way:
 #+BEGIN_EXAMPLE perl6
 $reverse-series(30)
 #+END_EXAMPLE
-deserves just a little while. First, it is using a variable declared
+deserves just a little while here. First, it is using a variable declared
 with =my= just the way we did before. This /hides/ that variable from
 outside peeping, but also maintains whatever value that variable had
 before calling after it. =my= gives blocks, or functions, the
 possibility of creating their own variables and using them without
-worrying about what was defined outside them. 
+worrying about what was defined outside them. Second, we have used the
+more natural dasg =-= as part of the variable name. Most languages
+only allow variables to be named with numbers, letters, and for some
+reason, the underscore symbol. Perl6 is much more flexible, with
+[[https://docs.perl6.org/language/variables#The_my_Declarator][variables]] named using many different letters from different alphabets,
+as well as the dash, the underscore, and, for some reason, the ='=.
+#+BEGIN_EXAMPLE perl6
+my $ain't-this-cool =  { $_, $_*2 … ∞}
+#+END_EXAMPLE
+This function, which returns an infinite series of multiples of
+whatever is used as an argument, and can be used this way:
+#+BEGIN_EXAMPLE perl6
+$ain't-this-cool( 11 )[^10]
+#+END_EXAMPLE
+to return the 10 first multiples of 11, for instance, uses dashes as
+well as apostrophes. This might seem capricious if you come from the
+type of languages that only allowed to call variables
+=SOMETHINGLIKETHIS=, but it actually makes a lot of sense. Before
+coming back to the above defined function, we will talk a bit about
+
+** Naming things
+The main error in a whole generation of programmers is to think that
+programs are written to do stuff. They are not. They are written to do
+stuff /and/ be read by other fellow programmers. This happens
+eventually, whether you want it or not. These fellow programmers will
+want to understand what is going on there, and a you can carry them a
+big part of the way by giving things a proper name. Having a rich way
+of naming things help, but the biggest help comes from following a
+series of practices that have been honed through time.
+
+First and most important, be consistent when naming things. Use always
+first capital letters when you need to use them, lower case when you
+need to do that, use Greek letters for whatever you want them, but
+always Greek, not Phoenician or, god forbid, Carthaginian. You might
+decide, for instance, that all Boolean variables, holding a True or
+False value, must be named using Greek letters, because, you know,
+they invented logic and all.
+#+BEGIN_EXAMPLE perl6
+my $α = True
+my $ß = False
+$α and $ß
+#+END_EXAMPLE
+Always follow that convention. Whatever is going to become a logical
+value, give it a Greek letter name.
+#+BEGIN_EXAMPLE perl6
+my $not-greek = 38
+my $δ = so $not-greek
+#+END_EXAMPLE
+
+A good convention for separing words is also a good idea. Perl 6
+allows to use the dash, as above. You can also use =CamelCaps= but the
+one above is much more readable, and since it is possible, you should
+use it.
+
+The most important thing, however, is to give things their proper
+name. A file name should be =$file-name= and not =$f=. You can use
+verbs for functions, for instance, but do not use =$a= if what you
+mean is =$alphabetical-sequence=. Even if it results in a long name,
+just like that one, prefer the explicit to the cryptic. There is an
+exception to this rule: loop variables are usually called with a
+single letter. You do not /need/ to do it, however, although most
+people will understand if you do so. 
+
+At the end of the day, there are [[http://stackoverflow.com/questions/4211025/what-are-some-best-practices-to-follow-when-naming-variables][many different conventions you can use]]. However, the most
+important thing is this: keep it consistent, make it readable, and
+think about the fellow programmer that will have to maintain the code
+a few years down the line.
+
+** Functions as variables revisited
+#TODO
+
+** What can a variable contain
 
 A variable can hold anything
 #+BEGIN_EXAMPLE perl6
@@ -2037,7 +2108,6 @@ In the last case, however, you might want to use =@=, which deals with
 anything that has some /structure/ inside.
 #+BEGIN_EXAMPLE perl6
 our @numbers = flat 2..10 , &lt;A J Q K>
-our @poker-cards =   @numbers X <♥ ♦ ♣ ♠>
 our @poker-cards = @numbers X~ <♥ ♦ ♣ ♠>
 #+END_EXAMPLE
 
