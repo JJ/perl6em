@@ -529,3 +529,13 @@ Then we will do again the fork + pull request from other, to learn the mechanics
 
 * 6 cool things about perl 6
 This was a weekend in which we were not at home, and besides we have to prepare for D Day, a dev event in Granada. So we were outlining all the stuff they have liked about Perl 6, which will become a presentation tomorrow (yep, it's a bit late when I write this)
+* Junctions and variables
+
+Let's recall a bit what variables are about, and let's use them with junctions, or things that have several values at the same time. They are kinda like sets, only different. 
+
+** Actual development
+
+Not so bad. I started with advice on keeping your laptop safe, which I
+have repeatedly failed to do. It followed with me using =all= instead
+of =any= for no particular reason, but eventually all came to a good
+end, using variables and Junctions and stuff.
