@@ -1501,13 +1501,34 @@ will obviously return =True=
 
 One cool things about sets is that you can use them as a single thing
 with several values at the same time. These are called [[https://docs.perl6.org/type/Junction][Junctions]] and
-only correspond to a single logical value if you evaluate them to
+only match a single logical value if you evaluate them to
 return true or false. 
 #+BEGIN_EXAMPLE perl6
 all <innie minnie moe 0>
 #+END_EXAMPLE 
+or 
+#+BEGIN_EXAMPLE perl6
+(so all <innie minnie moe Really>) == True
+#+END_EXAMPLE 
+which uses =()= for grouping and =so=, as we have seen it before, to
+force a True or False value. In this case, the important part is the
+last element, =Really=, which makes it true or false. 
 
-# Continue with other set stuff
+But the [[https://perl6advent.wordpress.com/2009/12/13/day-13-junctions/][useful thing about Junctions]] is how you can use them to check
+against several values at the same time; if you need to check
+something about several numbers at the same time, try this
+#+BEGIN_EXAMPLE perl6
+so 84 == any 7,14…100
+#+END_EXAMPLE 
+In this example, we are building a series with all multiples of 7 up
+to 100. =any= creates a Junction. The double equal sign will check 84
+against all of the elements in the Juntion, creating a new one that
+might have, or not, a True value. Applying =so= will return =True= as
+long as a single value is True. Obviously, =any= has an opposite: =none"
+#+BEGIN_EXAMPLE perl6
+so 84 == none 11,22…100
+#+END_EXAMPLE 
+will return =True=, since 84 does not appear to be a multiple of 11. 
 
 * ב‎ - Secure connection
     :PROPERTIES:
