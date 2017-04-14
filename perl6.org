@@ -2036,7 +2036,7 @@ can be used this way:
 #+BEGIN_EXAMPLE perl6
 $reverse-series(30)
 #+END_EXAMPLE
-deserves just a little while here. First, it is using a variable declared
+deserves just a little time to ponder here. First, it is using a variable declared
 with =my= just the way we did before. This /hides/ that variable from
 outside peeping, but also maintains whatever value that variable had
 before calling after it. =my= gives blocks, or functions, the
@@ -2060,6 +2060,8 @@ well as apostrophes. This might seem capricious if you come from the
 type of languages that only allowed to call variables
 =SOMETHINGLIKETHIS=, but it actually makes a lot of sense. Before
 coming back to the above defined function, we will talk a bit about
+something else. 
+
 
 ** Naming things
 The main error in a whole generation of programmers is to think that
@@ -2143,7 +2145,8 @@ that position, well, it became actually /variable/.
 However, we are in the 21st century, and some variables actually
 don't. Has anyone come up with another name? Noooo. So we get stuck
 with it, and have to add some fancy-pants adjectives to tell apart the
-variables that vary from the variables that do not.
+variables that vary from the variables that do no
+
 * ג‎ - Markdown for documentation 
     :PROPERTIES:
     :UNNUMBERED: t
