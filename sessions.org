@@ -533,9 +533,15 @@ This was a weekend in which we were not at home, and besides we have to prepare 
 
 Let's recall a bit what variables are about, and let's use them with junctions, or things that have several values at the same time. They are kinda like sets, only different. 
 
+
 ** Actual development
 
 Not so bad. I started with advice on keeping your laptop safe, which I
 have repeatedly failed to do. It followed with me using =all= instead
 of =any= for no particular reason, but eventually all came to a good
-end, using variables and Junctions and stuff.
+end, using variables and Junctions and stuff. Besides, Charo has rediscovered that variables can be declared without actually assigning them anything, something I had not mentioned.
+* A key to a value
+Working with hashes to create complicated data structures. 
+
+** Actual development
+We have worked with our apartment block, and used different ways to describe things. Best way for them to understand is to use real examples, not arbitrary foo and bar variables. 
