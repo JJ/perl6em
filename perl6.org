@@ -2146,7 +2146,6 @@ type of languages that only allowed to call variables
 coming back to the above defined function, we will talk a bit about
 something else. 
 
-
 ** Naming things
 The main error in a whole generation of programmers is to think that
 programs are written to do stuff. They are not. They are written to do
@@ -2199,6 +2198,8 @@ a few years down the line.
 #TODO
 
 ** What can a variable contain
+
+# Add stand-alone variables and what we can do with them. 
 
 A variable can hold anything
 #+BEGIN_EXAMPLE perl6
