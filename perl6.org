@@ -2024,10 +2024,41 @@ But this a single room, and we need the whole hotel. Let's do it here:
 #+BEGIN_EXAMPLE perl6
 {
   101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly"}, 
-  102 => {PAX => 1, amenities => "Open air, no ceiling", name => Daffodil}, 
-  201 => {PAX => 2, amenities => "IKEA room, build it your way", name => Rose}
+  102 => {PAX => 1, amenities => "Open air, no ceiling", name => "Daffodil"}, 
+  201 => {PAX => 2, amenities => "IKEA room, build it your way", name => "Rose"}
 }
 #+END_EXAMPLE
+
+Can we access how the amenities of a single room? Sure:
+#+BEGIN_EXAMPLE perl6
+{
+  101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly"}, 
+  102 => {PAX => 1, amenities => "Open air, no ceiling", name => "Daffodil"}, 
+  201 => {PAX => 2, amenities => "IKEA room, build it your way", name => "Rose"}
+}<101><amenities>
+#+END_EXAMPLE
+
+There is however no way of telling which ones are occupied. We can use
+a logical value to do so, this way:
+#+BEGIN_EXAMPLE perl6
+{
+  101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly", :occupied }, 
+  102 => {PAX => 1, amenities => "Open air, no ceiling", name => "Daffodil"}, 
+  201 => {PAX => 2, amenities => "IKEA room, build it your way", name => "Rose", :occupied}
+}
+#+END_EXAMPLE
+When you type this, you will see that =:occupied= is translated as 
+#+BEGIN_EXAMPLE perl6
+occupied => True 
+#+END_EXAMPLE
+
+The colon =:= in front of the key /turns on/ that value, making it a
+key whose value is true; it does double duty: creates a key-value
+pair, and also gives it a true value. What about the "False" value?
+Nothing: if it is not there, it could as well be false. 
+
+And things are getting a bit complicated here to type them all over
+again. We are going to need to give things a name pretty soon.
 
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
