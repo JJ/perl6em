@@ -1983,9 +1983,51 @@ position and the value stored in that position.
 
 But think about hotel rooms. They do not go all the way from 0 to the
 total number of rooms, they use some code that starts with the floor
-number and that continues with some sequence of numbers in the floor.
+number and that continues with some sequence of numbers in the
+floor. If you used a series to name the rooms or to say how many
+persons were there in each room, many rooms would be /void/ because
+simply they would not exists. There is another way, however. Let us
+say we have this little cute boutique hotel with four rooms. Every
+room will have a name, a maximum capability, and an /amenities/
+list. Every room will have something like this
+#+BEGIN_EXAMPLE perl6
+name: Lilly
+PAX: 3
+amenities: Boiler, Fan, barely any spider
+#+END_EXAMPLE
+Programming languages have different structures to hold different
+types of data. What we are looking for here is some kind of structure
+that allows you to access information by /key/. If I somehow get hold
+of the room, asking about the =name= will return the name the room has
+been given.
 
-
+Let's try this
+#+BEGIN_EXAMPLE perl6
+{ name => 'Lilly', PAX => 3, amenities => 'Boiler, Fan, barely any spider'}
+#+END_EXAMPLE
+which would define pretty much what we have above. If we say:
+#+BEGIN_EXAMPLE perl6
+{ name => 'Lilly', PAX => 3, amenities => 'Boiler, Fan, barely any spider'}<name>
+#+END_EXAMPLE
+or 
+#+BEGIN_EXAMPLE perl6
+{ name => 'Lilly', PAX => 3, amenities => 'Boiler, Fan, barely any spider'}{"name"}
+#+END_EXAMPLE
+we will get the name of the room we are dealing with. Once again the
+angular things =<>= serve as a shortcut to avoid using quotes, which
+we can use if we want, as in the second example. Say we are not
+interested in the amenities. We can extract a part of the values so:
+#+BEGIN_EXAMPLE perl6
+{ name => 'Lilly', PAX => 3, amenities => 'Boiler, Fan, barely any spider'}<name PAX>
+#+END_EXAMPLE
+But this a single room, and we need the whole hotel. Let's do it here:
+#+BEGIN_EXAMPLE perl6
+{
+  101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly"}, 
+  102 => {PAX => 1, amenities => "Open air, no ceiling", name => Daffodil}, 
+  201 => {PAX => 2, amenities => "IKEA room, build it your way", name => Rose}
+}
+#+END_EXAMPLE
 
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
@@ -2136,7 +2178,7 @@ our @poker-cards = @numbers X~ <♥ ♦ ♣ ♠>
 
 ** Some things change. Some others don't.
 
-Calling it something a variable might be a bit misleading when it
+Calling something a variable might be a bit misleading when it
 actually does not vary. However, in the very beginning everything
 variable could vary, because they were simply a bunch of memory
 positions that got to be called by a name. You wrote something else in
