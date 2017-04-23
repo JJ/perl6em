@@ -545,3 +545,17 @@ Working with hashes to create complicated data structures.
 
 ** Actual development
 We have worked with our apartment block, and used different ways to describe things. Best way for them to understand is to use real examples, not arbitrary foo and bar variables. 
+* TEsting pair programming
+
+After explaining a bit how to use arrays to aggregate previous data
+structures, the practice has been using pair programming, where one
+person is at the keyboard, while other is helping or reviewing, to
+make a couple of exercises of simply creating arrays of sets and
+finding their union and intersection. 
+
+** Actual development
+Better than expected, in fact. From the basic operations of emacs to
+the way the variables are defined through typing ability, using pair
+programming has really helped to do the two assignments (one about
+finding things in common in the apartments in our block, other things
+in common in their rooms) quite fast and straightforwardly. 
