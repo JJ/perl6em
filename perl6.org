@@ -2251,6 +2251,26 @@ check out if it has been already done. In mature languages like Perl,
 the answer is most probably Yes. In some others, like this Perl 6 we
 are dealing with, your mileage may vary. 
 
+* κ - Never program alone
+Programming might seem like a lone pursuit, but it is everything
+but. Programming is always done in teams, and you have to consider the
+opinions of the other members of the team, as well as the directions,
+the advice, or simply the code they have written to learn or to build
+upon. However, this interactions happen during meetings or other ways
+of collaboration, mainly through repositores, as we have seen
+before. But there is an alternative way where you
+[[https://en.wikipedia.org/wiki/Pair_programming][collaborate all the time: peer programming]]. Programming in peers
+matches two programmers, one of them at the keyboard, and the other
+performing different functions: deciding what to do next, reviewing
+the code that is being written, and taking into account always the
+/bigger picture/, as opposed to the small task that is being done
+right now right here.
+There are many different ways of carrying this out: programmers can
+have the same degree of seniority or one of them can be senior and
+thus help the other improve her practice. The important thing is that
+it must be done collaboratively and improve the synergies in the team
+by understanding better the capabilities of each other.
+
 * Functions mean fun
 Functions are just baptized pieces of code, but in the same way it
 happens in magic kingdoms, knowing the name of something gives you
