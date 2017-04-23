@@ -2146,6 +2146,7 @@ type of languages that only allowed to call variables
 coming back to the above defined function, we will talk a bit about
 something else. 
 
+
 ** Naming things
 The main error in a whole generation of programmers is to think that
 programs are written to do stuff. They are not. They are written to do
@@ -2193,6 +2194,26 @@ At the end of the day, there are [[http://stackoverflow.com/questions/4211025/wh
 important thing is this: keep it consistent, make it readable, and
 think about the fellow programmer that will have to maintain the code
 a few years down the line.
+
+** Building up with variables
+
+Variables can be used anywhere an expression was used before.  Type
+these lines in the command line, one after the other
+#+BEGIN_EXAMPLE perl6
+my $set-a = set( <a b c>)
+my $set-b = set( <b q r>)
+my $set-c = set( <p c b>)
+my @some-sets = ($set-a, $set-b, $set-c)
+[∩] @some-sets
+#+END_EXAMPLE
+We are using here =@= for groups of things to which we are going to
+apply operations that usually apply to group of things, such as the
+operators surrounded by =[]=. Having an =@= is useful to make the
+operators that are applied to it know that what they are dealing with
+is actually a group of things and that the operation should be applied
+to them separately. In this case, the usual =[∩]=, that is,
+intersection, will be applied to them in turn to return the set that
+includes the element present in all of them, in this case, =b=
 
 ** Functions as variables revisited
 #TODO
