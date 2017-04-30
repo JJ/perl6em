@@ -2343,6 +2343,43 @@ room and assigning it to the name =zipi=
 #+NAME:   fig:js2
 [[./img/js2.png]]
 
+The point here is that you have a expression interpreter readily
+available everywhere you go, and also that computer languages, at
+least modern ones, sometimes look more or less the same. So you can
+just dive into them and start working with them when you need them.
+
+** But you can do real stuff
+You probably do everything in the browser right now. You can start
+program it as well if you know a bit of JavaScript. The same command
+line mentioned above allows you to go into the web page and change its
+code, and you can do that if you want; you can just visit it and see
+how it is done. But it is probably easier to work with environments
+such as [[Woof JS][http://woofjs.com/]], an interactive browser environment, and
+program animations and cool stuff. When you load the page, you find
+something like this:
+#+BEGIN_EXAMPLE javascript
+// Hey there, welcome to WoofJS! WoofJS is a Scratch-inspired JavaScript library for making games.
+// Want to code something together? :-)
+every(.001, 'seconds', () => {
+  var circle = new Circle()
+  // Go, little circles, go!
+  forever(() => {
+    circle.move(5)
+  })
+  // Let's randomize size
+  circle.radius = random(5, 20)
+  // Colors are fun!
+  circle.color = randomColor()
+  // I say scatter!
+  circle.angle = random(0, 360)
+  // Now it's your turn. Play with this code by changing any of the numbers above.
+})
+#+END_EXAMPLE
+(I have compressed a bit the code so that we can see it
+together). First, the lines starting with =//= are comments. They tell
+you what the other non-commented lines do. And just by reading them,
+you can start to understand what the program does. 
+
 * Don't change this
 There is a certain style of programming that makes more efficient to work with data that cannot be changed. Perl6 makes good use of this style of programming. 
 * Stand in the shoulders: /modules/ and using whatever is available
