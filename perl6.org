@@ -2265,6 +2265,14 @@ Markdown, a simplified method that adds marks to plain text to denote
 its role in the document: its importance, if they are headers, and
 even if they represent a hyperlink or the inclusion of an image. 
 
+
+* Functions include fun
+Functions are just baptized pieces of code, but in the same way it
+happens in magic kingdoms, knowing the name of something gives you
+a handle to work with it. And work you will do. 
+
+* Don't change this
+There is a certain style of programming that makes more efficient to work with data that cannot be changed. Perl6 makes good use of this style of programming. 
 * Stand in the shoulders: /modules/ and using whatever is available
 If there is a single motto you should follow when programming, is this
 one: /Don't reinvent the wheel/. Before sitting down to do something,
@@ -2273,6 +2281,10 @@ the answer is most probably Yes. In some others, like this Perl 6 we
 are dealing with, your mileage may vary. 
 
 * κ - Never program alone
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+
 Programming might seem like a lone pursuit, but it is everything
 but. Programming is always done in teams, and you have to consider the
 opinions of the other members of the team, as well as the directions,
@@ -2292,10 +2304,6 @@ thus help the other improve her practice. The important thing is that
 it must be done collaboratively and improve the synergies in the team
 by understanding better the capabilities of each other.
 
-* Functions include fun
-Functions are just baptized pieces of code, but in the same way it
-happens in magic kingdoms, knowing the name of something gives you
-a handle to work with it. And work you will do. 
 * ד‎ - Getting help
    :PROPERTIES:
    :UNNUMBERED: t
