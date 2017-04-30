@@ -1885,7 +1885,7 @@ belly of the set, it converges.
 ** Calling names
 #We will begin explaining identifiers here. 
 
-* η - Understand errors
+* η - errors are not errors
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -2292,7 +2292,7 @@ thus help the other improve her practice. The important thing is that
 it must be done collaboratively and improve the synergies in the team
 by understanding better the capabilities of each other.
 
-* Functions mean fun
+* Functions include fun
 Functions are just baptized pieces of code, but in the same way it
 happens in magic kingdoms, knowing the name of something gives you
 a handle to work with it. And work you will do. 
