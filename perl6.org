@@ -2273,6 +2273,75 @@ a handle to work with it. And work you will do.
     :UNNUMBERED: t
     :END:
 
+You have to speak in tongues if you want to program properly. There is
+never a single language that fits every programming need, but if there
+is one, it is not going to be Perl 6. So we have to, at least, check
+out other language and the first language of choice has to be
+[[https://www.javascript.com/][JavaScript]], if only because it is a language embedded in every browser
+and, eventually, you will need to dabble with it to program the user
+interface of your application, or even whole applications in a single
+web page. 
+
+While at the beginning JS was confined to the browser, it is not any
+more that way. You can program server and desktop applications, even
+embedded applications.
+
+The good thing is: you already know a bit of JS. Let's put it to use
+right away.
+
+** What you already know about JS 
+
+JS is an interpreted language, just like Perl6. There is probably a JS
+interpreter you can access from the command line. Type =js= or =node=
+and check out what happens. But even if you do not, the /developer/
+options of your browser will allow you to access a JS command line
+from every computer, tablet or mobile. In the free browser Firefox,
+for instance, shift-control-K will make a /developer/ console pop
+up. The line at the bottom, with =>>=, will be a javascript console.
+#+CAPTION: Using JS in your browser.
+#+NAME:   fig:js1
+[[./img/js.png]]
+
+It is not the only place you can play with it. The javascript.com site
+includes also an interpreter with an interactive
+tutorial. [[https://jsfiddle.net/][JS fiddle]] allows you to mix it with web sites and
+everything, and can be used later on to program. But let's stick to
+the command line, which is readily available and everywhere. 
+
+And you already know how to work with expressions, as we have seen in
+*The expressions. This
+#+BEGIN_EXAMPLE javascript
+3**25
+#+END_EXAMPLE
+will work exactly the same, but to concatenate two strings you will
+have to use
+#+BEGIN_EXAMPLE javascript
+"3" + "4" 
+#+END_EXAMPLE
+instead of =~= which is what we use for Perl6. Every language has got
+its own symbols as you go away a bit from basic arithmetic
+expressions. Even more so if you deal with math, which will use the
+preffix =Math= in Javascript:
+#+BEGIN_EXAMPLE javascript
+Math.sin(Math.PI/2)
+#+END_EXAMPLE
+Fortunately, this command line will help you along the way by
+displaying all the possibilities that start with a single letter. 
+
+Some things are different: you /do/ need to work with variables if you
+want structures a bit more complex, like the one we have seen in
+*Where did I put my keys?. 
+#+BEGIN_EXAMPLE javascript
+var zipi = { "name": 'Lilly', "PAX": 3, "amenities": 'Boiler, Fan, barely any spider'}
+#+END_EXAMPLE
+The curly braces are exactly the same and there are colons instead of
+fat arrows; also some quotes where we did not need them before. That
+is the particular syntax of the language, but still we are doing
+exactly the same: creating a complex variable that describes a hotel
+room and assigning it to the name =zipi=
+#+CAPTION: Defining variables
+#+NAME:   fig:js2
+[[./img/js2.png]]
 
 * Don't change this
 There is a certain style of programming that makes more efficient to work with data that cannot be changed. Perl6 makes good use of this style of programming. 
