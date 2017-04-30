@@ -2308,8 +2308,8 @@ tutorial. [[https://jsfiddle.net/][JS fiddle]] allows you to mix it with web sit
 everything, and can be used later on to program. But let's stick to
 the command line, which is readily available and everywhere. 
 
-And you already know how to work with expressions, as we have seen in
-*The expressions. This
+And you already know how to work with expressions, as we have seen in chapter
+[[*The expressions]]. This
 #+BEGIN_EXAMPLE javascript
 3**25
 #+END_EXAMPLE
@@ -2329,8 +2329,8 @@ Fortunately, this command line will help you along the way by
 displaying all the possibilities that start with a single letter. 
 
 Some things are different: you /do/ need to work with variables if you
-want structures a bit more complex, like the one we have seen in
-*Where did I put my keys?. 
+want structures a bit more complex, like the one we have seen in chapter
+[[*Where did I put my keys?]]. 
 #+BEGIN_EXAMPLE javascript
 var zipi = { "name": 'Lilly', "PAX": 3, "amenities": 'Boiler, Fan, barely any spider'}
 #+END_EXAMPLE
