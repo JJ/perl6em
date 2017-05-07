@@ -574,3 +574,6 @@ finding their union and intersection.
 * Dabbing with Javascript
 
 JavaScript is a language that will be eventually useful. You need to know a bit, and in order to work with it, we are getting into the browser's console and [[http://woofjs.com][Woof.js]] 
+* Doing pull requests all over again
+
+Pull requests allow you to see other people's code and also to help them improve their documentation and other things. We will see how to find code in GitHub and how to help others by doing pull request over their code.
