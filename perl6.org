@@ -167,14 +167,15 @@ prototyping go hand in hand.
 
 * The tools of the trade 
 
-This part will not be leading away from the design thinking mindset,
-but actually will be getting into the last phases of it. Whatever idea
+It might seem otherwise, but this part is not going to be leading you away from the design thinking mindset, 
+but actually will be introducing you into its last phases, which include prototype and testing. However, whatever idea
 you had in mind will have to be kept stashed to go back to it whenever
-you need it. In fact, we are entering the phase called /prototyping/,
-or seen in another way, you are trying to solve a problem for a target
-audience, yourself, by choosing the right tools. 
+you need it. 
 
-In this phase you will find that there's no perfect tool for doing
+
+In fact, we are entering the phase called /prototyping/,
+or seen in another way, you are trying to solve a problem for a target
+audience, yourself, by choosing the right tools. In this phase you will find that there's no perfect tool for doing
 everything.
 
 #+BEGIN_QUOTE
@@ -249,7 +250,7 @@ facilities, and all kind of symbols that can be used in it.
    :UNNUMBERED: t
    :END:
 
-This does not belong to the language proper, but it is still something
+This section, along with all the other sections with funny characters instead of numbers in front, does not belong to the language proper, but it is still something
 that has to be mentioned. Languages are used to write applications,
 and these can use any language in the world. [[https://unicode-table.com/es/][Unicode]] is the way to use
 any alphabet, and some [[http://www.omniglot.com/conscripts/natlangs.htm][neographies]] and emoticons, in our
