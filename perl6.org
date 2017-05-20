@@ -121,7 +121,7 @@ or programs or even notes that will be useful by themselves.
    :UNNUMBERED: t
    :END:
 
-This has been mostly obtained from
+This section has been mostly inspired by
 [[https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38][this document]] at Stanford University. /Design thinking/ teaches you
 how to think like a designer, which means thinking in a way that
 allows you to create something that is satisfying for yourself and
