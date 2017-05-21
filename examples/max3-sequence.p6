@@ -1,6 +1,6 @@
 #!/usr/bin/env perl6
 
-my @series =  (1..20).map( { rand } ) ; # Hack to make them all have the same range
+my @series =  (1..20).map( { rand } ) ;
 my @series-prime = @series;
 unshift @series-prime, 0;
 pop @series-prime;
