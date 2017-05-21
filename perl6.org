@@ -230,7 +230,14 @@ will appear in the "Text to copy" slot.
 
 [[./img/charmap.png]]
 
-Of course, something would be missing here if I did not mention `vim`. Here you go, a mention.
+Of course, something would be missing here if I did not mention
+`vim`. Here you go, a mention. Or [Atom](http://atom.io). You can
+definitely use them, if that is your
+thing. [[https://github.com/perl6/atom-language-perl6#how-do-i-use-this][Perl6 scripts look positively pretty]] with the Atom Perl 6
+support, and they include goodies such as completing variable names
+and that kind of things. However, Emacs goes a bit further providing
+an environment where you can work with all kind of Unicode characters,
+run the REPL and complete variables if you so like. 
 
 ** Shells within editors
 
