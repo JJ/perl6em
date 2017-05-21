@@ -212,7 +212,11 @@ identity, a side to stand when the flame war starts. As above, the
 motto is always /suit yourself/, but since we are in the realm of
 Perl6, I would propose [[http://atom.io][Atom]] as the editor to use. It is a modern
 editor, it has got a good and evolving support for Perl 6, and it is
-free software.
+free software.  [[https://github.com/perl6/atom-language-perl6#how-do-i-use-this][Perl6 scripts look positively pretty]] with the Atom Perl 6
+support, and they include goodies such as completing variable names
+and that kind of things. However, Emacs goes a bit further providing
+an environment where you can work with all kind of Unicode characters,
+run the REPL and complete variables if you so like. 
 
 Not that the traditional Emacs and Vi/Vim are not good choices too. At
 least Emacs, but Atom is easier to use and is improving in speed and
@@ -230,14 +234,16 @@ will appear in the "Text to copy" slot.
 
 [[./img/charmap.png]]
 
+However, if you are an old-timer getting into new languages, probably
+emacs will be much more suitable for you. Although the
+[[https://github.com/perl6/perl6-mode][mode that supports perl6 is in flux at this precise moment]] it does
+have a couple of advantages that set it apart: the integrated shell
+that allows you to work easily with code alongside REPL, and also how
+easy it is to input Unicode characters. Which are not necessary for
+Perl6, but are terribly convenient. 
+
 Of course, something would be missing here if I did not mention
-`vim`. Here you go, a mention. Or [Atom](http://atom.io). You can
-definitely use them, if that is your
-thing. [[https://github.com/perl6/atom-language-perl6#how-do-i-use-this][Perl6 scripts look positively pretty]] with the Atom Perl 6
-support, and they include goodies such as completing variable names
-and that kind of things. However, Emacs goes a bit further providing
-an environment where you can work with all kind of Unicode characters,
-run the REPL and complete variables if you so like. 
+`vim`. Here you go, a mention.
 
 ** Shells within editors
 
