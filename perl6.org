@@ -218,6 +218,11 @@ and that kind of things. However, Emacs goes a bit further providing
 an environment where you can work with all kind of Unicode characters,
 run the REPL and complete variables if you so like. 
 
+You can also run chunks of code with the
+[[https://atom.io/packages/script][script plugin installed]]. However, for the time being we are going to
+focus on expressions, and these will not print anything except from
+the REPL. You can keep it for later if you so wish. 
+
 Not that the traditional Emacs and Vi/Vim are not good choices too. At
 least Emacs, but Atom is easier to use and is improving in speed and
 support by the minute. Besides, it has got everything it takes for
