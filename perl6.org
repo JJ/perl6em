@@ -2204,7 +2204,7 @@ applications, they can be data processing units, data storing units,
 data fooing and data baring units. Does not really matter what they
 are, but the thing it that /containerization/ makes easy the creation
 of a whole suite that can be stored and shipped anywhere. 
-* you decide
+* You decide
 But sometimes it is better to let the machine do it for you.
 * г - Always play it safe
     :PROPERTIES:
@@ -2251,7 +2251,7 @@ What computers are good at is at repeating things. However, that has
 not made anyone name them repeaters instead of computers. Actually, in
 some European countries they are called /sorters/, from the French
 /ordinateur/ that means exactly that. Looks like French people are
-good at making up words and also naming things in unexpected ways. 
+good at making up words and also naming things in unexpected, but accurate, ways. 
 * Д - Find the bug
    :PROPERTIES:
    :UNNUMBERED: t
@@ -2259,11 +2259,11 @@ good at making up words and also naming things in unexpected ways.
   
 Testing reduces the need to find errors, but eventually some non-tested feature or a combination of things will make your program behave unexpectedly. No worries. /Debugging/ is the way to go. 
 
-* Regular expressions
+* Understanding text
 Machine learning is all about understanding text. That text does not
 come in a shape you can easily process it. Regular expressions help
 you deal with text that is not totally structured, but that has some
-regularities in it. 
+regularities in it. And from regular expressions you can build up grammars, powerful tools that can extract information from any kind of text structured just so.
 * λ - What you need to know about the cloud
    :PROPERTIES:
    :UNNUMBERED: t
@@ -2277,7 +2277,7 @@ Not really. But almost.
 * Keep things where you can get them back again
 And this is like the lengthiest chapter title ever, but it is really
 important to learn to store data and do so in a way that can be easily
-retrieved later on . 
+retrieved later on. 
 * ж- Deploying to the cloud
 You have probably been told, by myself in the previous chapter, that
 the cloud is where you run your program. But it is not going to go,
@@ -2303,7 +2303,7 @@ When creating a program, you can literally get the world to process part of your
 The first objective you have when writing a program is to make it
 work. The second is to make it work /all the time/. The third is to
 make it work /faster, and all the time/. Performance matters.
-* a classy affair
+* A classy affair
 We have already seen that data usually does not walk alone. It has
 some properties, and there are some things you can do to certain kind
 of data, some functions you can call, which you cannot in other types
