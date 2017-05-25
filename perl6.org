@@ -121,7 +121,7 @@ or programs or even notes that will be useful by themselves.
    :UNNUMBERED: t
    :END:
 
-This has been mostly obtained from
+This section has been mostly inspired by
 [[https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38][this document]] at Stanford University. /Design thinking/ teaches you
 how to think like a designer, which means thinking in a way that
 allows you to create something that is satisfying for yourself and
@@ -167,14 +167,15 @@ prototyping go hand in hand.
 
 * The tools of the trade 
 
-This part will not be leading away from the design thinking mindset,
-but actually will be getting into the last phases of it. Whatever idea
+It might seem otherwise, but this part is not going to be leading you away from the design thinking mindset, 
+but actually will be introducing you into its last phases, which include prototype and testing. However, whatever idea
 you had in mind will have to be kept stashed to go back to it whenever
-you need it. In fact, we are entering the phase called /prototyping/,
-or seen in another way, you are trying to solve a problem for a target
-audience, yourself, by choosing the right tools. 
+you need it. 
 
-In this phase you will find that there's no perfect tool for doing
+
+In fact, we are entering the phase called /prototyping/,
+or seen in another way, you are trying to solve a problem for a target
+audience, yourself, by choosing the right tools. In this phase you will find that there's no perfect tool for doing
 everything.
 
 #+BEGIN_QUOTE
@@ -211,7 +212,16 @@ identity, a side to stand when the flame war starts. As above, the
 motto is always /suit yourself/, but since we are in the realm of
 Perl6, I would propose [[http://atom.io][Atom]] as the editor to use. It is a modern
 editor, it has got a good and evolving support for Perl 6, and it is
-free software.
+free software.  [[https://github.com/perl6/atom-language-perl6#how-do-i-use-this][Perl6 scripts look positively pretty]] with the Atom Perl 6
+support, and they include goodies such as completing variable names
+and that kind of things. However, Emacs goes a bit further providing
+an environment where you can work with all kind of Unicode characters,
+run the REPL and complete variables if you so like. 
+
+You can also run chunks of code with the
+[[https://atom.io/packages/script][script plugin installed]]. However, for the time being we are going to
+focus on expressions, and these will not print anything except from
+the REPL. You can keep it for later if you so wish. 
 
 Not that the traditional Emacs and Vi/Vim are not good choices too. At
 least Emacs, but Atom is easier to use and is improving in speed and
@@ -229,7 +239,16 @@ will appear in the "Text to copy" slot.
 
 [[./img/charmap.png]]
 
-Of course, something would be missing here if I did not mention `vim`. Here you go, a mention.
+However, if you are an old-timer getting into new languages, probably
+emacs will be much more suitable for you. Although the
+[[https://github.com/perl6/perl6-mode][mode that supports perl6 is in flux at this precise moment]] it does
+have a couple of advantages that set it apart: the integrated shell
+that allows you to work easily with code alongside REPL, and also how
+easy it is to input Unicode characters. Which are not necessary for
+Perl6, but are terribly convenient. 
+
+Of course, something would be missing here if I did not mention
+`vim`. Here you go, a mention.
 
 ** Shells within editors
 
@@ -249,7 +268,7 @@ facilities, and all kind of symbols that can be used in it.
    :UNNUMBERED: t
    :END:
 
-This does not belong to the language proper, but it is still something
+This section, along with all the other sections with funny characters instead of numbers in front, does not belong to the language proper, but it is still something
 that has to be mentioned. Languages are used to write applications,
 and these can use any language in the world. [[https://unicode-table.com/es/][Unicode]] is the way to use
 any alphabet, and some [[http://www.omniglot.com/conscripts/natlangs.htm][neographies]] and emoticons, in our
@@ -1246,7 +1265,6 @@ can be applied to other part, defining sequences.
     :UNNUMBERED: t
     :END:
 
-# This is the beginning of the session 
 
 In the principle was the command line. 
 
@@ -1386,8 +1404,6 @@ Finally, here is something that you should use sparingly, if ever. =rm
 in Linux. So be careful, and always backup. 
 
 
-# This could be the end of the session
-
 * Pack all your troubles in a bag. And a set. 
 Perl6 is, intentionally, designed for math, so it includes some
 representation for data that can be found usually in math courses. Not
@@ -1501,15 +1517,36 @@ will obviously return =True=
 
 One cool things about sets is that you can use them as a single thing
 with several values at the same time. These are called [[https://docs.perl6.org/type/Junction][Junctions]] and
-only correspond to a single logical value if you evaluate them to
+only match a single logical value if you evaluate them to
 return true or false. 
 #+BEGIN_EXAMPLE perl6
 all <innie minnie moe 0>
 #+END_EXAMPLE 
+or 
+#+BEGIN_EXAMPLE perl6
+(so all <innie minnie moe Really>) == True
+#+END_EXAMPLE 
+which uses =()= for grouping and =so=, as we have seen it before, to
+force a True or False value. In this case, the important part is the
+last element, =Really=, which makes it true or false. 
 
-# Continue with other set stuff
+But the [[https://perl6advent.wordpress.com/2009/12/13/day-13-junctions/][useful thing about Junctions]] is how you can use them to check
+against several values at the same time; if you need to check
+something about several numbers at the same time, try this
+#+BEGIN_EXAMPLE perl6
+so 84 == any 7,14…100
+#+END_EXAMPLE 
+In this example, we are building a series with all multiples of 7 up
+to 100. =any= creates a Junction. The double equal sign will check 84
+against all of the elements in the Juntion, creating a new one that
+might have, or not, a True value. Applying =so= will return =True= as
+long as a single value is True. Obviously, =any= has an opposite: =none"
+#+BEGIN_EXAMPLE perl6
+so 84 == none 11,22…100
+#+END_EXAMPLE 
+will return =True=, since 84 does not appear to be a multiple of 11. 
 
-* ב‎ - Secure connection
+* ζ‎ - Secure connection
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -1864,7 +1901,7 @@ belly of the set, it converges.
 ** Calling names
 #We will begin explaining identifiers here. 
 
-* ζ - Understand errors
+* η - errors are not errors
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -1962,10 +1999,94 @@ position and the value stored in that position.
 
 But think about hotel rooms. They do not go all the way from 0 to the
 total number of rooms, they use some code that starts with the floor
-number and that continues with some sequence of numbers in the floor.
+number and that continues with some sequence of numbers in the
+floor. If you used a series to name the rooms or to say how many
+persons were there in each room, many rooms would be /void/ because
+simply they would not exists. There is another way, however. Let us
+say we have this little cute boutique hotel with four rooms. Every
+room will have a name, a maximum capability, and an /amenities/
+list. Every room will have something like this
+#+BEGIN_EXAMPLE perl6
+name: Lilly
+PAX: 3
+amenities: Boiler, Fan, barely any spider
+#+END_EXAMPLE
+Programming languages have different structures to hold different
+types of data. What we are looking for here is some kind of structure
+that allows you to access information by /key/. If I somehow get hold
+of the room, asking about the =name= will return the name the room has
+been given.
 
+Let's try this
+#+BEGIN_EXAMPLE perl6
+{ name => 'Lilly', PAX => 3, amenities => 'Boiler, Fan, barely any spider'}
+#+END_EXAMPLE
+which would define pretty much what we have above. If we say:
+#+BEGIN_EXAMPLE perl6
+{ name => 'Lilly', PAX => 3, amenities => 'Boiler, Fan, barely any spider'}<name>
+#+END_EXAMPLE
+or 
+#+BEGIN_EXAMPLE perl6
+{ name => 'Lilly', PAX => 3, amenities => 'Boiler, Fan, barely any spider'}{"name"}
+#+END_EXAMPLE
+we will get the name of the room we are dealing with. Once again the
+angular things =<>= serve as a shortcut to avoid using quotes, which
+we can use if we want, as in the second example. Say we are not
+interested in the amenities. We can extract a part of the values so:
+#+BEGIN_EXAMPLE perl6
+{ name => 'Lilly', PAX => 3, amenities => 'Boiler, Fan, barely any spider'}<name PAX>
+#+END_EXAMPLE
+But this a single room, and we need the whole hotel. Let's do it here:
+#+BEGIN_EXAMPLE perl6
+{
+  101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly"}, 
+  102 => {PAX => 1, amenities => "Open air, no ceiling", name => "Daffodil"}, 
+  201 => {PAX => 2, amenities => "IKEA room, build it your way", name => "Rose"}
+}
+#+END_EXAMPLE
 
+Can we access how the amenities of a single room? Sure:
+#+BEGIN_EXAMPLE perl6
+{
+  101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly"}, 
+  102 => {PAX => 1, amenities => "Open air, no ceiling", name => "Daffodil"}, 
+  201 => {PAX => 2, amenities => "IKEA room, build it your way", name => "Rose"}
+}<101><amenities>
+#+END_EXAMPLE
 
+There is however no way of telling which ones are occupied. We can use
+a logical value to do so, this way:
+#+BEGIN_EXAMPLE perl6
+{
+  101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly", :occupied }, 
+  102 => {PAX => 1, amenities => "Open air, no ceiling", name => "Daffodil"}, 
+  201 => {PAX => 2, amenities => "IKEA room, build it your way", name => "Rose", :occupied}
+}
+#+END_EXAMPLE
+When you type this, you will see that =:occupied= is translated as 
+#+BEGIN_EXAMPLE perl6
+occupied => True 
+#+END_EXAMPLE
+
+The colon =:= in front of the key /turns on/ that value, making it a
+key whose value is true; it does double duty: creates a key-value
+pair, and also gives it a true value. What about the "False" value?
+Nothing: if it is not there, it could as well be false. 
+
+And things are getting a bit complicated here to type them all over
+again. We are going to need to give things a name pretty soon.
+
+* θ - Web weaving
+   :PROPERTIES:
+   :UNNUMBERED: t
+    :END:
+  
+Whatever you do nowadays in computing, you will have to end up
+presenting something somewhere, and that somewhere will most probably
+be the web nowadays. So it does not harm, and it will benefit greatly,
+to learn from now what the web is all about and how we can extract
+information from it, use it to interact with people and publish our
+data so that anyone in the whole wide world can see it. 
 * Working with, in and around data
 Eventually you will need to give things a name, if only to avoid
 cutting, pasting and recomputing stuff every time you need
@@ -2015,7 +2136,7 @@ can be used this way:
 #+BEGIN_EXAMPLE perl6
 $reverse-series(30)
 #+END_EXAMPLE
-deserves just a little while here. First, it is using a variable declared
+deserves just a little time to ponder here. First, it is using a variable declared
 with =my= just the way we did before. This /hides/ that variable from
 outside peeping, but also maintains whatever value that variable had
 before calling after it. =my= gives blocks, or functions, the
@@ -2039,6 +2160,8 @@ well as apostrophes. This might seem capricious if you come from the
 type of languages that only allowed to call variables
 =SOMETHINGLIKETHIS=, but it actually makes a lot of sense. Before
 coming back to the above defined function, we will talk a bit about
+something else. 
+
 
 ** Naming things
 The main error in a whole generation of programmers is to think that
@@ -2088,10 +2211,32 @@ important thing is this: keep it consistent, make it readable, and
 think about the fellow programmer that will have to maintain the code
 a few years down the line.
 
+** Building up with variables
+
+Variables can be used anywhere an expression was used before.  Type
+these lines in the command line, one after the other
+#+BEGIN_EXAMPLE perl6
+my $set-a = set( <a b c>)
+my $set-b = set( <b q r>)
+my $set-c = set( <p c b>)
+my @some-sets = ($set-a, $set-b, $set-c)
+[∩] @some-sets
+#+END_EXAMPLE
+We are using here =@= for groups of things to which we are going to
+apply operations that usually apply to group of things, such as the
+operators surrounded by =[]=. Having an =@= is useful to make the
+operators that are applied to it know that what they are dealing with
+is actually a group of things and that the operation should be applied
+to them separately. In this case, the usual =[∩]=, that is,
+intersection, will be applied to them in turn to return the set that
+includes the element present in all of them, in this case, =b=
+
 ** Functions as variables revisited
 #TODO
 
 ** What can a variable contain
+
+# Add stand-alone variables and what we can do with them. 
 
 A variable can hold anything
 #+BEGIN_EXAMPLE perl6
@@ -2113,7 +2258,7 @@ our @poker-cards = @numbers X~ <♥ ♦ ♣ ♠>
 
 ** Some things change. Some others don't.
 
-Calling it something a variable might be a bit misleading when it
+Calling something a variable might be a bit misleading when it
 actually does not vary. However, in the very beginning everything
 variable could vary, because they were simply a bunch of memory
 positions that got to be called by a name. You wrote something else in
@@ -2122,8 +2267,9 @@ that position, well, it became actually /variable/.
 However, we are in the 21st century, and some variables actually
 don't. Has anyone come up with another name? Noooo. So we get stuck
 with it, and have to add some fancy-pants adjectives to tell apart the
-variables that vary from the variables that do not.
-* ג‎ - Markdown for documentation 
+variables that vary from the variables that do no
+
+* ‎ι - Markdown for documentation 
     :PROPERTIES:
     :UNNUMBERED: t
     :END:
@@ -2135,27 +2281,157 @@ Markdown, a simplified method that adds marks to plain text to denote
 its role in the document: its importance, if they are headers, and
 even if they represent a hyperlink or the inclusion of an image. 
 
+
+* Functions include fun
+Functions are just baptized pieces of code, but in the same way it
+happens in magic kingdoms, knowing the name of something gives you
+a handle to work with it. And work you will do. 
+
+* κ - Speak in tongues        
+    :PROPERTIES:
+    :UNNUMBERED: t
+    :END:
+
+You have to speak in tongues if you want to program properly. There is
+never a single language that fits every programming need, but if there
+is one, it is not going to be Perl 6. So we have to, at least, check
+out other language and the first language of choice has to be
+[[https://www.javascript.com/][JavaScript]], if only because it is a language embedded in every browser
+and, eventually, you will need to dabble with it to program the user
+interface of your application, or even whole applications in a single
+web page. 
+
+While at the beginning JS was confined to the browser, it is not any
+more that way. You can program server and desktop applications, even
+embedded applications.
+
+The good thing is: you already know a bit of JS. Let's put it to use
+right away.
+
+** What you already know about JS 
+
+JS is an interpreted language, just like Perl6. There is probably a JS
+interpreter you can access from the command line. Type =js= or =node=
+and check out what happens. But even if you do not, the /developer/
+options of your browser will allow you to access a JS command line
+from every computer, tablet or mobile. In the free browser Firefox,
+for instance, shift-control-K will make a /developer/ console pop
+up. The line at the bottom, with =>>=, will be a javascript console.
+#+CAPTION: Using JS in your browser.
+#+NAME:   fig:js1
+[[./img/js.png]]
+
+It is not the only place you can play with it. The javascript.com site
+includes also an interpreter with an interactive
+tutorial. [[https://jsfiddle.net/][JS fiddle]] allows you to mix it with web sites and
+everything, and can be used later on to program. But let's stick to
+the command line, which is readily available and everywhere. 
+
+And you already know how to work with expressions, as we have seen in chapter
+[[*The expressions]]. This
+#+BEGIN_EXAMPLE javascript
+3**25
+#+END_EXAMPLE
+will work exactly the same, but to concatenate two strings you will
+have to use
+#+BEGIN_EXAMPLE javascript
+"3" + "4" 
+#+END_EXAMPLE
+instead of =~= which is what we use for Perl6. Every language has got
+its own symbols as you go away a bit from basic arithmetic
+expressions. Even more so if you deal with math, which will use the
+preffix =Math= in Javascript:
+#+BEGIN_EXAMPLE javascript
+Math.sin(Math.PI/2)
+#+END_EXAMPLE
+Fortunately, this command line will help you along the way by
+displaying all the possibilities that start with a single letter. 
+
+Some things are different: you /do/ need to work with variables if you
+want structures a bit more complex, like the one we have seen in chapter
+[[*Where did I put my keys?]]. 
+#+BEGIN_EXAMPLE javascript
+var zipi = { "name": 'Lilly', "PAX": 3, "amenities": 'Boiler, Fan, barely any spider'}
+#+END_EXAMPLE
+The curly braces are exactly the same and there are colons instead of
+fat arrows; also some quotes where we did not need them before. That
+is the particular syntax of the language, but still we are doing
+exactly the same: creating a complex variable that describes a hotel
+room and assigning it to the name =zipi=
+#+CAPTION: Defining variables
+#+NAME:   fig:js2
+[[./img/js2.png]]
+
+The point here is that you have a expression interpreter readily
+available everywhere you go, and also that computer languages, at
+least modern ones, sometimes look more or less the same. So you can
+just dive into them and start working with them when you need them.
+
+** But you can do real stuff
+You probably do everything in the browser right now. You can start
+program it as well if you know a bit of JavaScript. The same command
+line mentioned above allows you to go into the web page and change its
+code, and you can do that if you want; you can just visit it and see
+how it is done. But it is probably easier to work with environments
+such as [[Woof JS][http://woofjs.com/]], an interactive browser environment, and
+program animations and cool stuff. When you load the page, you find
+something like this:
+#+BEGIN_EXAMPLE javascript
+// Hey there, welcome to WoofJS! WoofJS is a Scratch-inspired JavaScript library for making games.
+// Want to code something together? :-)
+every(.001, 'seconds', () => {
+  var circle = new Circle()
+  // Go, little circles, go!
+  forever(() => {
+    circle.move(5)
+  })
+  // Let's randomize size
+  circle.radius = random(5, 20)
+  // Colors are fun!
+  circle.color = randomColor()
+  // I say scatter!
+  circle.angle = random(0, 360)
+  // Now it's your turn. Play with this code by changing any of the numbers above.
+})
+#+END_EXAMPLE
+(I have compressed a bit the code so that we can see it
+together). First, the lines starting with =//= are comments. They tell
+you what the other non-commented lines do. And just by reading them,
+you can start to understand what the program does. 
+
+* Don't change this
+There is a certain style of programming that makes more efficient to work with data that cannot be changed. Perl6 makes good use of this style of programming. 
 * Stand in the shoulders: /modules/ and using whatever is available
 If there is a single motto you should follow when programming, is this
 one: /Don't reinvent the wheel/. Before sitting down to do something,
 check out if it has been already done. In mature languages like Perl,
 the answer is most probably Yes. In some others, like this Perl 6 we
 are dealing with, your mileage may vary. 
-* η - Web weaving
-   :PROPERTIES:
-   :UNNUMBERED: t
+
+* κ - Never program alone
+    :PROPERTIES:
+    :UNNUMBERED: t
     :END:
-  
-Whatever you do nowadays in computing, you will have to end up
-presenting something somewhere, and that somewhere will most probably
-be the web nowadays. So it does not harm, and it will benefit greatly,
-to learn from now what the web is all about and how we can extract
-information from it, use it to interact with people and publish our
-data so that anyone in the whole wide world can see it. 
-* Functions mean fun
-Functions are just baptized pieces of code, but in the same way it
-happens in magic kingdoms, knowing the name of something gives you
-a handle to work with it. And work you will do. 
+
+Programming might seem like a lone pursuit, but it is everything
+but. Programming is always done in teams, and you have to consider the
+opinions of the other members of the team, as well as the directions,
+the advice, or simply the code they have written to learn or to build
+upon. However, this interactions happen during meetings or other ways
+of collaboration, mainly through repositores, as we have seen
+before. But there is an alternative way where you
+[[https://en.wikipedia.org/wiki/Pair_programming][collaborate all the time: peer programming]]. Programming in peers
+matches two programmers, one of them at the keyboard, and the other
+performing different functions: deciding what to do next, reviewing
+the code that is being written, and taking into account always the
+/bigger picture/, as opposed to the small task that is being done
+right now right here.
+There are many different ways of carrying this out: programmers can
+have the same degree of seniority or one of them can be senior and
+thus help the other improve her practice. The important thing is that
+it must be done collaboratively and improve the synergies in the team
+by understanding better the capabilities of each other.
+
 * ד‎ - Getting help
    :PROPERTIES:
    :UNNUMBERED: t
@@ -2179,6 +2455,7 @@ program is what /you/ do, except it is not. Do yourself a favor and
 explain what is going on in your program all the time and any time you
 do something that is too clever or exactly the opposite. That probably
 means /always/. 
+
 * θ - Pack all your troubles in a container
     :PROPERTIES:
     :UNNUMBERED: t
@@ -2204,8 +2481,11 @@ applications, they can be data processing units, data storing units,
 data fooing and data baring units. Does not really matter what they
 are, but the thing it that /containerization/ makes easy the creation
 of a whole suite that can be stored and shipped anywhere. 
+
 * You decide
+
 But sometimes it is better to let the machine do it for you.
+
 * г - Always play it safe
     :PROPERTIES:
     :UNNUMBERED: t
@@ -2225,6 +2505,7 @@ service to have that bill erased.
 
 That is why, as soon as you start to write your programs, you need to
 play it safe. 
+
 * Interacting with the user
 Programs are created to be used. Many of them will be used by just
 you. But some of them will be out there. You have to build them for an
@@ -2233,6 +2514,7 @@ one hand not familiar with modern technology and that on the other
 hand is familiar enough to try and break and enter in your program to
 steal your family secrets. User interfaces have to be easy on the
 user, but also secure. Never forget that. 
+
 * ι - Testing for the win
    :PROPERTIES:
    :UNNUMBERED: t
@@ -2293,6 +2575,7 @@ programming interfaces, or APIs, allow you to do so, which is
 great. Those programming interfaces can be easily used to perform many
 of the tasks that programs perform routinely, like authenticating or
 logging activities. We will see a few of these. 
+
 * μ - The world is my platform
    :PROPERTIES:
    :UNNUMBERED: t

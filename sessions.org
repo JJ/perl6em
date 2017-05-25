@@ -430,6 +430,7 @@ in the future to other languages, which I was going to do anyways,
 only I will do it more intensively. Mainly Javascript, of course. We
 have taken home, or around teh corner, anyway, since we're already
 home, some assignments. We'll get back to them in the last session.
+
 * Errors are not errors
 They are simply a way the computer has of telling you it does not understand what you are telling it.
 Let us see a simple syntax errors and how to deal with them, and then let us try to fix those errors following 3 simple steps
@@ -479,6 +480,7 @@ It was Elena who did the grunt work, heavily influenced by the style
 of teaching at the university, first do this, then do that, but Charo
 was game and ended up doing a lot of nice things. Will try again
 later, now with another one.  
+
 * Working on lists
   :PROPERTIES:
   :Tools:    Laptop
@@ -529,3 +531,49 @@ Then we will do again the fork + pull request from other, to learn the mechanics
 
 * 6 cool things about perl 6
 This was a weekend in which we were not at home, and besides we have to prepare for D Day, a dev event in Granada. So we were outlining all the stuff they have liked about Perl 6, which will become a presentation tomorrow (yep, it's a bit late when I write this)
+* Junctions and variables
+
+Let's recall a bit what variables are about, and let's use them with junctions, or things that have several values at the same time. They are kinda like sets, only different. 
+
+
+** Actual development
+
+Not so bad. I started with advice on keeping your laptop safe, which I
+have repeatedly failed to do. It followed with me using =all= instead
+of =any= for no particular reason, but eventually all came to a good
+end, using variables and Junctions and stuff. Besides, Charo has rediscovered that variables can be declared without actually assigning them anything, something I had not mentioned.
+* A key to a value
+Working with hashes to create complicated data structures. 
+
+** Actual development
+We have worked with our apartment block, and used different ways to describe things. Best way for them to understand is to use real examples, not arbitrary foo and bar variables. 
+
+* Checking out pair programming
+
+After explaining a bit how to use arrays to aggregate previous data
+structures, the practice has been using pair programming, where one
+person is at the keyboard, while other is helping or reviewing, to
+make a couple of exercises of simply creating arrays of sets and
+finding their union and intersection. 
+
+** Actual development
+Better than expected, in fact. From the basic operations of emacs to
+the way the variables are defined through typing ability, using pair
+programming has really helped to do the two assignments (one about
+finding things in common in the apartments in our block, other things
+in common in their rooms) quite fast and straightforwardly. 
+
+
+After explaining a bit how to use arrays to aggregate previous data
+structures, the practice has been using pair programming, where one
+person is at the keyboard, while other is helping or reviewing, to
+make a couple of exercises of simply creating arrays of sets and
+finding their union and intersection.
+
+
+* Dabbing with Javascript
+
+JavaScript is a language that will be eventually useful. You need to know a bit, and in order to work with it, we are getting into the browser's console and [[http://woofjs.com][Woof.js]] 
+* Doing pull requests all over again
+
+Pull requests allow you to see other people's code and also to help them improve their documentation and other things. We will see how to find code in GitHub and how to help others by doing pull request over their code.
