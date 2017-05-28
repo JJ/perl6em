@@ -90,7 +90,11 @@ satisfied with it. No, son, that is not testing and you know it.
 
 # Interacting with the system
 
-Computier systems are full of interesting things, and nowadays there is also the Internet, which is full of stuff too. Getting data back and forth is something you are going to need to do, like, all the time. 
+Computier systems are full of interesting things, and nowadays there
+is also the Internet, which is full of stuff too. Getting data back
+and forth is something you are going to need to do, like, all the
+time. This includes working with files, but not only that, dealing
+with data and interfaces that are somewhere across the world. 
 
 
 <a id="orgff0c311"></a>
