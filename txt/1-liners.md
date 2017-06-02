@@ -1,4 +1,3 @@
-
 <a id="org804d699"></a>
 
 # The expressions
@@ -99,10 +98,10 @@ you will not have to, although you can, write x\*\*2 but simply x².
 
 All the expressions written above are numbers. 
 
-    (sin(π/3)² + cos(π/3)²).WHAT
+    (sin(π/3)² + cos(π/3)²).^name
 
-is going to return `(Num)`, indicating that it is simply a Number,
-actually a real number. This `.WHAT`, together with surrounding the
+is going to return `Num`, indicating that it is simply a Number,
+actually a real number. This `.^name`, together with surrounding the
 expression via parentheses meaning grouping, is a way to apply a
 *property* or to call a *method* on that object. In Perl6, everything
 is an object, and objects have a class, and you want to call methods
@@ -112,8 +111,8 @@ $what)`. Let's not worry about that for the time being, or about
 classes themselves. Just with the fact that every expression is an
 object, and those objects belong to a class; every class in Perl6
 *descends* from the ur-class called μ or `Mu`. And among the
-[properties of Mu](https://docs.perl6.org/type/Mu) is that you can call this `WHAT`. Any other class
-descends from this one, so *you can call `.WHAT` on any object of any
+[properties of Mu](https://docs.perl6.org/type/Mu) is that you can call this `^name`. Any other class
+descends from this one, so *you can call `.^name` on any object of any
 class*. That is the take-home message, even if you might not know, so
 far, what is an object, or a class. Second take home message:
 *different objects also have different classes*. 
@@ -129,7 +128,7 @@ will yield this error
 
 And the reason for that can be found out by typing:
 
-    " is 1".WHAT
+    " is 1".^name
 
 Which, whatever it is, is not a `Num`, so it cannot be added. 
 That shows that there are more types of data you can use and work with
@@ -142,9 +141,9 @@ instance:
 
 And 
 
-    (⅓+4/3).WHAT
+    (⅓+4/3).^name
 
-will return `(Rat)`, a Rational, same as `⅓+4`. In fact, most
+will return `Rat`, a Rational, same as `⅓+4`. In fact, most
 [floating point numbers in Perl 6 will be represented as rational](http://blogs.perl.org/users/ovid/2015/02/a-little-thing-to-love-about-perl-6-and-cobol.html),
 unless we explicitly tell the interpreter to deal with them as
 floating point, that is real, numbers, which, BTW, cannot be something
@@ -235,14 +234,14 @@ extract a range
 uses the *range* operator `..` (that is, two points), which generates
 a contiguous sequence of elements. Otherwise known as, well,
 range. But these ranges also behave as arrays:
-\\#+BEGIN<sub>EXAMPLE</sub> perl6
-(0..10)[3..6]
-\\#+END<sub>EXAMPLE</sub> perl6
+
+	(0..10)[3..6]
+
 although they are not exactly the same:
-\\#+BEGIN<sub>EXAMPLE</sub> perl6
-(0..10).WHAT
-\\#+END<sub>EXAMPLE</sub> perl6
-will, effectively, return `(Range)`. 
+
+	(0..10).^name
+
+will, effectively, return `Range`. 
 
 This is just the start of complex structures with Perl. More to come
 in the next chapters. 
