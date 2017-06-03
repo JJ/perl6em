@@ -99,7 +99,7 @@ with data and interfaces that are somewhere across the world.
 
 <a id="orgff0c311"></a>
 
-# κ - lay the internet to rest
+# κ - lay the Internet to rest
 
 
 <a id="org652a59d"></a>

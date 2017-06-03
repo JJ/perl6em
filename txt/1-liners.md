@@ -1074,7 +1074,7 @@ infinite one.
 
     set(^1000})
 
-will create a set with 1000 elements, sincd `^1000` returns a range
+will create a set with 1000 elements, since `^1000` returns a range
 with numbers from 0 to 1000. 
 
 Sets can be used to represent baskets, or shelves, or groups of people&#x2026; When
@@ -1091,7 +1091,7 @@ previous year there are subtle changes
 
     set( <ABE CEL DUN DUU HAM HEA INV KIL MOT PAR ROS STJ> )
 
-that can be inmediately revealed using
+that can be immediately revealed using
 [set operators](https://perl6advent.wordpress.com/2012/12/13/day-13-bags-and-sets/):
 
     set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> ) ∩ 
@@ -1225,7 +1225,7 @@ synchronize the two accounts; if there is something wrong along the
 line, you have to reset your router, whatever, you can start where you
 left it by issuing again the same command from the command line. But
 please bear in mind that what you have done here is first access a
-computer using its internet protocol address, `192.168.1.38`, which is
+computer using its Internet protocol address, `192.168.1.38`, which is
 a local network address (usual routers start to assign addresses
 starting with 192.168.1.33) and proceed to *run* something, a copy
 order, in it.

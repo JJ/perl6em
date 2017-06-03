@@ -24,7 +24,7 @@ things you  need to know who should know about them.
     my $series = 1..30
 
 Most usual variables will only belong to yourself, and only need to be
-seen in the inmediate surroundings, nothing farther away than the
+seen in the immediate surroundings, nothing farther away than the
 closest keys. You don't need to say other things, like type and that
 stuff. Just the name. 
 
