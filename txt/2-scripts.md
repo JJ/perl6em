@@ -274,7 +274,7 @@ have to use
 instead of `~` which is what we use for Perl6. Every language has got
 its own symbols as you go away a bit from basic arithmetic
 expressions. Even more so if you deal with math, which will use the
-preffix `Math` in Javascript:
+prefix `Math` in Javascript:
 
     Math.sin(Math.PI/2)
 

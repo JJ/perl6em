@@ -856,7 +856,7 @@ alternatives in a single sentence. For instance, checking types
     ("3".WHAT ~~ (Str))??"Tres"!!3
 
 This will return `Tres`, since "3" is actually a string. Remember that
-you have to use the parentheses to wrap around teh expression, almost
+you have to use the parentheses to wrap around the expression, almost
 always. 
 
 You will find these expressions later on in many places. It is worth
@@ -884,7 +884,7 @@ caret
 
     2100,2200 ...^ * %% 400
 
-Will yield the years ending a century, in this millenium, that [are not](https://en.wikipedia.org/wiki/Century_leap_year) a leap year, since
+Will yield the years ending a century, in this millennium, that [are not](https://en.wikipedia.org/wiki/Century_leap_year) a leap year, since
 only those that can be divided by 400 actually are leap year. 
 
 This is but a simple example, but it allows you to see the flexibility
