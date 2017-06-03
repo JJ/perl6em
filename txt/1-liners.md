@@ -1186,7 +1186,7 @@ something about several numbers at the same time, try this
 
 In this example, we are building a series with all multiples of 7 up
 to 100. `any` creates a Junction. The double equal sign will check 84
-against all of the elements in the Juntion, creating a new one that
+against all of the elements in the Junction, creating a new one that
 might have, or not, a True value. Applying `so` will return `True` as
 long as a single value is True. Obviously, `any` has an opposite: =none"
 
@@ -1516,7 +1516,7 @@ left and top of the toppled heart-like shape, in the black area;
 actually, it converges to something like
 `-0.382545950491141+0.169962816621862i` after a few iterations. The
 whole point of this is to show how, using just a simple expression,
-you can defint complex mathematical relations and sequences. With Perl
+you can define complex mathematical relations and sequences. With Perl
 6, of course. 
 
 Besides, remember, functions are first class citizens, and sequences
@@ -1529,7 +1529,7 @@ This is a conde chunk that returns a sequence; the only thing we have
 done is to put curly brackets around it. We have two different kind of
 placeholders: `$_` will be a stand-in for whatever we handle to the
 code chunk, while $<sup>ß</sup> is the placeholder for the sequence itself. Perl
-6 is able to find out which is which. And secuence generators generate
+6 is able to find out which is which. And sequence generators generate
 sequences:
 
     { (0,{$^ß²+$_}...∞) }(.01+.1i)
@@ -1597,7 +1597,7 @@ enclosed. Besides, the next line is even more helpful, pointing out
 with a yellow ⏏ exactly the place where it should have been whatever
 it was expecting, a curly bracket in this case. See? It has been just
 a misunderstanding. Besides, it is much clearer later on. It is saying
-it was expecting either an statement end, or modifier, or modifer
+it was expecting either an statement end, or modifier, or modifier
 loop. The `}` is how you put an end to the block. The fact that there
 are three different things is the reason why the error, let's not
 call it error any more, the misunderstanding, is there in the first

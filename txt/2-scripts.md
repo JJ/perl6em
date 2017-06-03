@@ -111,7 +111,7 @@ value, give it a Greek letter name.
     my $not-greek = 38
     my $δ = so $not-greek
 
-A good convention for separing words is also a good idea. Perl 6
+A good convention for separating words is also a good idea. Perl 6
 allows to use the dash, as above. You can also use `CamelCaps` but the
 one above is much more readable, and since it is possible, you should
 use it.
@@ -251,11 +251,11 @@ and check out what happens. But even if you do not, the *developer*
 options of your browser will allow you to access a JS command line
 from every computer, tablet or mobile. In the free browser Firefox,
 for instance, shift-control-K will make a *developer* console pop
-up. The line at the bottom, with `>>`, will be a javascript console.
+up. The line at the bottom, with `>>`, will be a JavaScript console.
 
 ![img](./img/js.png "Using JS in your browser.")
 
-It is not the only place you can play with it. The javascript.com site
+It is not the only place you can play with it. The `JavaScript.com` site
 includes also an interpreter with an interactive
 tutorial. [JS fiddle](https://jsfiddle.net/) allows you to mix it with web sites and
 everything, and can be used later on to program. But let's stick to
@@ -274,7 +274,7 @@ have to use
 instead of `~` which is what we use for Perl6. Every language has got
 its own symbols as you go away a bit from basic arithmetic
 expressions. Even more so if you deal with math, which will use the
-prefix `Math` in Javascript:
+prefix `Math` in JavaScript:
 
     Math.sin(Math.PI/2)
 
