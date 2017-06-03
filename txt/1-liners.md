@@ -33,7 +33,7 @@ Let's try the simplest thing:
     > sin(π/2)
 
 You will have to find a way to type that π, by copy/pasting it from
-some website or google or right this. It will return the sine of π/2,
+some website or Google or right from here. It will return the sine of π/2,
 which, as you know, is 1. 
 
 And this is cool, because only some languages are able to handle this
@@ -124,7 +124,7 @@ can add or subtract them or do any other arithmetic operation, but you cannot do
 
 will yield this error
 
-![img](./img/expression-error.png "Errored expression in the REPL")
+![Errored expression in the REPL](./img/expression-error.png)
 
 And the reason for that can be found out by typing:
 
@@ -543,7 +543,7 @@ down with
 
     git clone https://github.com/yourname/yourrepo
 
-and please note I am using `https` here. You can also use the *ssh*
+and please note I am using `https` here. You can also, and in fact should, use the *ssh*
 address, which will be something like `git@github.com:yourname/yourrepo.git` and in fact you should, but for the time being let us let it
 be. Remember to take down the username and password you have used,
 because you will need later on.
@@ -1266,7 +1266,7 @@ Use no passphrase, although you might have to use one if you are in a
 computer that lots of people can access. You will have something like
 this:
 
-![img](./img/keygen.png "Generating a key pair")
+![Generating a key pair](./img/keygen.png)
 
 This is going to generate two files, a public and private key; the
 first one will have a `.pub` extension. That public key will be
@@ -1583,7 +1583,8 @@ Happens all the time, right? You skip a key, maybe avert your gaze to
 check out incoming Telegram messages, whatever. And then that
 happens. The interpreter will tell you this:
 
-![img](./img/simple-error.png "Errored expression in the REPL")
+![Errored expression in the REPL](./img/simple-error.png )
+
 First is says what's wrong. `Missing block`. It is not as helpful as,
 "Hey, you forgot to put curly braces here", but, once again, if it
 would have been able to figure that out it would have fixed it by
@@ -1618,7 +1619,8 @@ know of other languages here.
 This ternary operator is not going to work here. However, there is a
 very helpful error message
 
-![img](./img/perl5-error.png "Errored expression in the REPL")
+!["Errored expression in the REPL"](./img/perl5-error.png)
+
 In this case, it is perfectly clear to Camelia, the friendly Perl6
 interpreter, what's wrong. However, the problem is that in this new
 Perl6 language it simply cannot be done that way, so it says `in Perl
