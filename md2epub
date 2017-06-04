@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+pandoc -S --toc --epub-metadata=metadata.xml --epub-stylesheet=perl6.css \
+    -o perl6-0.epub perl6-0.txt  txt/0-intro.md txt/1-liners.md
+   
+
+
+
