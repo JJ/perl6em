@@ -398,3 +398,13 @@ people in your predicament. Fortunately, Perl 6 is very good at that.
 But sometimes it is better to let the machine do it for you.
 
 
+<a id="org246952b"></a>
+
+# θ - Web weaving
+
+Whatever you do nowadays in computing, you will have to end up
+presenting something somewhere, and that somewhere will most probably
+be the web nowadays. So it does not harm, and it will benefit greatly,
+to learn from now what the web is all about and how we can extract
+information from it, use it to interact with people and publish our
+data so that anyone in the whole wide world can see it. 

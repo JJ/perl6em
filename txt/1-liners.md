@@ -1728,15 +1728,5 @@ And things are getting a bit complicated here to type them all over
 again. We are going to need to give things a name pretty soon.
 
 
-<a id="org246952b"></a>
-
-# θ - Web weaving
-
-Whatever you do nowadays in computing, you will have to end up
-presenting something somewhere, and that somewhere will most probably
-be the web nowadays. So it does not harm, and it will benefit greatly,
-to learn from now what the web is all about and how we can extract
-information from it, use it to interact with people and publish our
-data so that anyone in the whole wide world can see it. 
 
 
