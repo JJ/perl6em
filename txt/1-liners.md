@@ -124,7 +124,7 @@ can add or subtract them or do any other arithmetic operation, but you cannot do
 
 will yield this error
 
-![Errored expression in the REPL](../img/expression-error.png)
+![Errored expression in the REPL](./img/expression-error.png)
 
 And the reason for that can be found out by typing:
 
@@ -1266,7 +1266,7 @@ Use no passphrase, although you might have to use one if you are in a
 computer that lots of people can access. You will have something like
 this:
 
-![Generating a key pair](../img/keygen.png)
+![Generating a key pair](./img/keygen.png)
 
 This is going to generate two files, a public and private key; the
 first one will have a `.pub` extension. That public key will be
@@ -1583,7 +1583,7 @@ Happens all the time, right? You skip a key, maybe avert your gaze to
 check out incoming Telegram messages, whatever. And then that
 happens. The interpreter will tell you this:
 
-![Errored expression in the REPL](../img/simple-error.png )
+![Errored expression in the REPL](./img/simple-error.png )
 
 First is says what's wrong. `Missing block`. It is not as helpful as,
 "Hey, you forgot to put curly braces here", but, once again, if it
@@ -1619,7 +1619,7 @@ know of other languages here.
 This ternary operator is not going to work here. However, there is a
 very helpful error message
 
-!["Errored expression in the REPL"](../img/perl5-error.png)
+![Helpful error message](./img/perl5-error.png)
 
 In this case, it is perfectly clear to Camelia, the friendly Perl6
 interpreter, what's wrong. However, the problem is that in this new

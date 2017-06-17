@@ -275,7 +275,7 @@ the alphabet, you can go to Character Details and copy/paste it to
 wherever you want it used. You can also click twice and the character
 will appear in the "Text to copy" slot. 
 
-![img](./img/charmap.png)
+![Character map for Unicode](./img/charmap.png)
 
 However, if you are an old-timer getting into new languages, probably
 emacs will be much more suitable for you. Although the
