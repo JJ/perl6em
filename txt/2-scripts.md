@@ -59,7 +59,7 @@ outside peeping, but also maintains whatever value that variable had
 before calling after it. `my` gives blocks, or functions, the
 possibility of creating their own variables and using them without
 worrying about what was defined outside them. Second, we have used the
-more natural dasg `-` as part of the variable name. Most languages
+more natural dash `-` as part of the variable name. Most languages
 only allow variables to be named with numbers, letters, and for some
 reason, the underscore symbol. Perl6 is much more flexible, with
 [variables](https://docs.perl6.org/language/variables#The_my_Declarator) named using many different letters from different alphabets,

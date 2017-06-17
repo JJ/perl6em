@@ -1305,7 +1305,7 @@ parentheses to enclose arrays or lists or strings. The first giveaway
 here are those curly brackets. And the second is the `$`. Functions
 have to operate on something, right? So this `$_` (dollar, underscore)
 will be a *stand-in* for whatever the function is going to operate
-in. In fact, you dont need this `$_` to actually make a function;
+in. In fact, you do not need this `$_` to actually make a function;
 curly brackets are more than enough, but `{ 42 }` would be a boring
 function that just returns the answer to life, the universe and
 everything. Let us find out how Perl6 calls these functions. 
@@ -1525,7 +1525,7 @@ placeholders to do so. Check this out:
 
     { (0,{$^ß²+$_}...∞) }
 
-This is a conde chunk that returns a sequence; the only thing we have
+This is a code chunk that returns a sequence; the only thing we have
 done is to put curly brackets around it. We have two different kind of
 placeholders: `$_` will be a stand-in for whatever we handle to the
 code chunk, while $<sup>ß</sup> is the placeholder for the sequence itself. Perl
@@ -1545,16 +1545,10 @@ range of its first 100 elements. Being as it is in the middle of the
 belly of the set, it converges. 
 
 
-<a id="org7a210eb"></a>
-
-## Calling names
-
-\#We will begin explaining identifiers here. 
-
 
 <a id="org45eef0a"></a>
 
-# η - errors are not errors
+# Errors are not errors
 
 Shit eventually happens. But when it does, you should know that it is
 not really shit, but a brown and maybe a bit smelly thing, and that
@@ -1625,7 +1619,7 @@ In this case, it is perfectly clear to Camelia, the friendly Perl6
 interpreter, what's wrong. However, the problem is that in this new
 Perl6 language it simply cannot be done that way, so it says `in Perl
 6 please use ?? and !!`. You see? Not only I understand you, but take
-you by the hand to the use of features thar are almost, but not quite,
+you by the hand to the use of features that are almost, but not quite,
 the same as you did before.
 
 Misunderstandings will happen here, there and everywhere. So it is
