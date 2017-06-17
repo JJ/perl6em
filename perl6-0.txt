@@ -1,0 +1,5 @@
+# Learning to program with Perl 6: First Steps
+## Getting into programming without leaving the command line.
+
+By [**JJ Merelo**](http://jj.github.io)
+
