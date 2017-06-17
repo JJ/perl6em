@@ -7,15 +7,15 @@ completely new, language: Perl 6. But it is only Perl 6 specific in
 a minority of the content. Most chapters that deal with Perl 6 could
 be rewritten using any other language, preferably a new, cool language
 such as Go or Rust. I, or someone, might do it some day. But for the
-time being, let us be content with Perl 6. Which is also new and cool.
+time being, let us be content with the Perl 6 content. Which is also new and cool.
 
 
 <a id="orga5b1f02"></a>
 
-# ℵ - Principles
+# Principles
 
 A few principles that inspire this (book|booklet|manual|you name it),
-originally conceived to help non-programmers get into Perl 6
+originally conceived to help non-programmers get into Perl 6.
 
 
 <a id="org4fce13a"></a>
@@ -43,7 +43,7 @@ ensue.
 
 If you learn only during the short period where *class* is taking
 place, you will not learn too much. You have to digest and assimilate
-and come up with new ideas. Some of them will be relevant to whatever
+and come up with new ideas anytime and anywhere. Some of them will be relevant to whatever
 you are learning, some of them will be revealed as relevant later on,
 some of them will be simply discarded. But you can leverage whatever
 experience you have to enhance what you are learning, even more so if
@@ -68,7 +68,7 @@ a completely different story.
 
 <a id="org481ad16"></a>
 
-# б - Motivation
+# Motivation
 
 This is (mostly) a book on Perl 6. But my initial intention was not to
 show how to program in Perl 6. Here are a few of my motivations, which
@@ -137,8 +137,9 @@ or programs or even notes that will be useful by themselves.
 
 <a id="org4a46733"></a>
 
-# α - Design thinking
+# Design thinking
 
+If you have to design a project, you might as well do it well. 
 This section has been mostly inspired by
 [this document](https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38) at Stanford University. *Design thinking* teaches you
 how to think like a designer, which means thinking in a way that
@@ -306,9 +307,10 @@ facilities, and all kind of symbols that can be used in it.
 
 <a id="org239311a"></a>
 
-# ß - We need to talk about Unicode
+# We need to talk about Unicode
 
-This section, along with all the other sections with funny characters instead of numbers in front, does not belong to the language proper, but it is still something
+This section, along with some other you will find interleaved with the
+Perl 6 ones, does not belong to the language proper, but it is still something
 that has to be mentioned. Languages are used to write applications,
 and these can use any language in the world. [Unicode](https://unicode-table.com/es/) is the way to use
 any alphabet, and some [neographies](http://www.omniglot.com/conscripts/natlangs.htm) and emoticons, in our
