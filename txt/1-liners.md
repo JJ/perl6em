@@ -124,7 +124,7 @@ can add or subtract them or do any other arithmetic operation, but you cannot do
 
 will yield this error
 
-![Errored expression in the REPL](./img/expression-error.png)
+![Errored expression in the REPL](../img/expression-error.png)
 
 And the reason for that can be found out by typing:
 
@@ -249,7 +249,7 @@ in the next chapters.
 
 <a id="orge9742a4"></a>
 
-# γ - Thinking like computers do
+# Thinking like computers do
 
 You probably know, or at least have made an educated guess, that computers are unlike humans. But since
 expressions are entered in pretty much the same way you would use
@@ -468,7 +468,7 @@ will return precisely what we are looking for, a descending sequence
 of numbers that ends with 0.01. Please note that we can no longer use
 an infinite (lazy) sequence: we have to be concrete. 
 
-This `<</<<` is known as an hyperoperator, because it takes a humble
+This `<</<<` is known as an *hyperoperator*, because it takes a humble
 operator like `/` and turns it into a machine that deals with
 lists. It can also be written `«/«` with the direction of the angular
 brackets pointing at the *smaller* thing, in this case a single number
@@ -505,9 +505,9 @@ allows us to create such a compact statement.
 
 <a id="orgfba02f1"></a>
 
-# δ - Working as a team
+# Working as a team
 
-You will never walk alone when solving a problem. Even if you are
+You will never walk alone when solving a problem using computers. Even if you are
 working in a side project, something you thought about yourself, you
 will need an easy way to keep track of changes and also to easily
 incorporate whatever suggestions or even changes somebody else might
@@ -894,7 +894,7 @@ can be applied to other part, defining sequences.
 
 <a id="org72de2e4"></a>
 
-# ‎ε - The command line
+# ‎The command line
 
 In the principle was the command line. 
 
@@ -1197,7 +1197,7 @@ will return `True`, since 84 does not appear to be a multiple of 11.
 
 <a id="orgd2225af"></a>
 
-# ζ‎ - Secure connection
+# Secure connection
 
 The whole point of programming is working with remote computers. And
 in fact it is almost impossible working nowadays without using
@@ -1266,7 +1266,7 @@ Use no passphrase, although you might have to use one if you are in a
 computer that lots of people can access. You will have something like
 this:
 
-![Generating a key pair](./img/keygen.png)
+![Generating a key pair](../img/keygen.png)
 
 This is going to generate two files, a public and private key; the
 first one will have a `.pub` extension. That public key will be
@@ -1583,7 +1583,7 @@ Happens all the time, right? You skip a key, maybe avert your gaze to
 check out incoming Telegram messages, whatever. And then that
 happens. The interpreter will tell you this:
 
-![Errored expression in the REPL](./img/simple-error.png )
+![Errored expression in the REPL](../img/simple-error.png )
 
 First is says what's wrong. `Missing block`. It is not as helpful as,
 "Hey, you forgot to put curly braces here", but, once again, if it
@@ -1619,7 +1619,7 @@ know of other languages here.
 This ternary operator is not going to work here. However, there is a
 very helpful error message
 
-!["Errored expression in the REPL"](./img/perl5-error.png)
+!["Errored expression in the REPL"](../img/perl5-error.png)
 
 In this case, it is perfectly clear to Camelia, the friendly Perl6
 interpreter, what's wrong. However, the problem is that in this new
