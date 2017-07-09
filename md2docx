@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pandoc -s --toc  \
+       -o perl6-0.docx perl6-0.txt  txt/0-intro.md txt/1-liners.md
+   
