@@ -165,7 +165,7 @@ You cannot add strings together, because that is what they are, but curiously en
 
 This being a rather nice and utterly useless example on the operator
 `x`, which *multiplies* or rather *replicates* whatever character of
-string it is related to. Introduced together with =\n", the carriage
+string it is related to. Introduced together with `\n`, the carriage
 return, so that if forms a nice pile of stuff. 
 
 Which is shorter and better in this example
@@ -497,7 +497,7 @@ a (subset of) the Premier League
 This, which could admittedly be a little shorter, uses these
 hyperoperators to combine acronyms so that they are separated by a dash,
 which is what = " - " «~« = does, and then put the whole result in
-different lines, which is done by the = »~» "\n" = in the last line. A
+different lines, which is done by the = »~» `\n` = in the last line. A
 great achievement, with a small amount of coding involved. We are
 using throughout the `~` string concatenation operator, which is what
 allows us to create such a compact statement. 
@@ -1402,7 +1402,7 @@ can easily deal with Unicode characters? From now on I propose to use
 
     { ([*] 1..$^ß ) / ( [*] 1..$^þ) * ([*] 1..($^ß - $^þ)) }(5,3)
 
-the part between braces computes \(n \choose m\), that is, the
+the part between braces computes n over m, that is, the
 [binomial coefficient](https://en.wikipedia.org/wiki/Binomial_coefficient). It does so by computing the factorial of ß,
 which is what  `[*] 1..$^ß` does, remember, the meta-operator `[]`
 applied to `*` applies the product to all the elements in the range
@@ -1428,7 +1428,7 @@ apply code blocks to code blocks, like here:
 Try to wrap your head around this, which is functional programming in
 a nutshell. Remember how `$_` was used as a placeholder for things
 like numbers before? We are using it here as a placeholder for code
-blocks. So what $ $\_.(2) $ does is to apply (herein the =.()) code
+blocks. So what `$_.(2)` does is to apply (herein the =.()) code
 block to the number two, and then apply the *divisible by* operator
 `%%`. Eventually, it will be true if the code block, applied to the
 number two, returns something that is divisible by two. In this case,
@@ -1458,7 +1458,7 @@ This expression, that uses `map` for the first time, is the sequence
 of all square natural numbers. `map` effectively *maps*, as in a
 function, one value to another, creating a new element out of the old
 elements of the array it maps via an expression. And the code chunk we
-use for mapping is = \*²=, which elevates to the second power
+use for mapping is `*²`, which elevates to the second power
 `Whatever`. If you want to see it in a more code-like form, 
 
     (map {$^þ²}, 1..∞)[333]
@@ -1505,7 +1505,7 @@ your old `x` and `y` numbers, only i² is equal to -1, so when we
 elevate complex numbers to the second power, they can sometimes turn
 into real numbers. No big deal, really; the big deal is that what we
 have above is a series of complex numbers which will actually diverge
-to a `Inf-Inf\i` value, which is how Perl represents a couple of
+to a `Inf-Inf i` value, which is how Perl represents a couple of
 infinites. But not all values go to infinity.
 
     (0,{$^ß²-0.5+0.3i}...∞)[^100]
