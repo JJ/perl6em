@@ -1428,7 +1428,7 @@ apply code blocks to code blocks, like here:
 Try to wrap your head around this, which is functional programming in
 a nutshell. Remember how `$_` was used as a placeholder for things
 like numbers before? We are using it here as a placeholder for code
-blocks. So what `$_.(2)` does is to apply (herein the =.()) code
+blocks. So what `$_.(2)` does is to apply (herein the `.()`) code
 block to the number two, and then apply the *divisible by* operator
 `%%`. Eventually, it will be true if the code block, applied to the
 number two, returns something that is divisible by two. In this case,
@@ -1445,7 +1445,11 @@ So these are functions for you. In Perl 6.
 
 ## Going back to sequences
 
-As we always do, we will try to apply what we know to defining and creating sequences, there are [lots of them](https://en.wikibooks.org/wiki/Real_Analysis/Sequences) than can be used for fun and profit. 
+As we always do in this book, we will try to apply what we know to
+defining and creating sequences; there
+are
+[lots of them](https://en.wikibooks.org/wiki/Real_Analysis/Sequences)
+than can be used for fun and enlightment. 
 
 These expressions allow us to be much more flexible when building
 sequences, which, as it happens, are becoming a showcase of Perl 6
@@ -1471,7 +1475,7 @@ can use whatever element we want, since it is infinite, and this is,
 besides, a way of holding in a lazy sequence all integer squares *in
 the world*. Besides, this is a map as in a real function: defined from
 an infinite set onto another infinite set. Mind you, it is not a
-`Set`, just a set in the general sense. =Set=s are finite, sets are
+`Set`, just a set in the general sense. `Set`s are finite, sets are
 not. 
 
 You can also use these expressions to define series where new
