@@ -1449,7 +1449,7 @@ As we always do in this book, we will try to apply what we know to
 defining and creating sequences; there
 are
 [lots of them](https://en.wikibooks.org/wiki/Real_Analysis/Sequences)
-than can be used for fun and enlightment. 
+than can be used for fun and enlightenment. 
 
 These expressions allow us to be much more flexible when building
 sequences, which, as it happens, are becoming a showcase of Perl 6

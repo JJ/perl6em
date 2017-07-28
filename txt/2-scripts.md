@@ -167,21 +167,26 @@ includes the element present in all of them, in this case, `b`
 
 A variable can hold anything
 
-    my $my-hand = <3 J Q K>
+```
+my $my-hand = <3 J Q K>
+```
 
 And you can work with variables just the same way you did before
 without them
 
-    $my-hand.elems
+```
+$my-hand.elems
+```
 
-These variables will dissapear as soon as you get out of the Perl
+These variables will disappear as soon as you get out of the Perl
 shell. 
 In the last case, however, you might want to use `@`, which deals with
 anything that has some *structure* inside.
 
-    our @numbers = flat 2..10 , &lt;A J Q K>
-    our @poker-cards = @numbers X~ <♥ ♦ ♣ ♠>
-
+```
+our @numbers = flat 2..10 , <A J Q K>
+our @poker-cards = @numbers X~ <♥ ♦ ♣ ♠>
+```
 
 <a id="org5e505c3"></a>
 
@@ -363,7 +368,7 @@ but. Programming is always done in teams, and you have to consider the
 opinions of the other members of the team, as well as the directions,
 the advice, or simply the code they have written to learn or to build
 upon. However, this interactions happen during meetings or other ways
-of collaboration, mainly through repositores, as we have seen
+of collaboration, mainly through repositories, as we have seen
 before. But there is an alternative way where you
 [collaborate all the time: peer programming](https://en.wikipedia.org/wiki/Pair_programming). Programming in peers
 matches two programmers, one of them at the keyboard, and the other

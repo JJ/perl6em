@@ -29,7 +29,7 @@ way as you pack your potato omelette in a tupper and carry it to grab
 a byte in a picnic or during your train trip to Poughkeepsie, as you
 are wont to do. Same goes for programs. Create it, pack it, take it
 anywhere: the cloud, your other computer, anywhere you please. And if
-you add another tupper with mandarines and yet another with a few
+you add another tupper with mandarin oranges and yet another with a few
 cupcakes, you have got your whole snack-a-lot ready to take anywhere.
 
 Applications nowadays are composed of the equivalent of a three or
