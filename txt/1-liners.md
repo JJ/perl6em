@@ -101,14 +101,22 @@ All the expressions written above are numbers.
     (sin(π/3)² + cos(π/3)²).^name
 
 is going to return `Num`, indicating that it is simply a Number,
-actually a real number. This `.^name`, together with surrounding the
-expression via parentheses meaning grouping, is a way to apply a
+actually a real number. This dot `.`. together with surrounding the
+expression via parentheses that group what is inside them, evaluating them, is a way to apply a
 *property* or to call a *method* on that object. In Perl6, everything
 is an object, and objects have a class, and you want to call methods
 that correspond to objects of that class, append a dot and use the
-method, possibly with some arguments like `WHAT(is, "the",
-$what)`. Let's not worry about that for the time being, or about
-classes themselves. Just with the fact that every expression is an
+method, possibly with some arguments like `method(in, "my",
+$madness)`. Let's not worry about that for the time being, or about
+classes themselves, or for that matter, about the caret `^`. 
+
+>Which is
+>actually
+>[calling a meta-class method](https://docs.perl6.org/language/classtut). Powerful
+>stuff. But for the time being `^name` returns a string with the name
+>of the class and that's that. 
+
+Just with the fact that every expression is an
 object, and those objects belong to a class; every class in Perl6
 *descends* from the ur-class called μ or `Mu`. And among the
 [properties of Mu](https://docs.perl6.org/type/Mu) is that you can call this `^name`. Any other class
@@ -810,7 +818,7 @@ pretty much does the same.
 
 What happens if you want to filter by types? This will do the trick:
 
-    (¾, π,{ $^þ + 7},"a", "b").grep( {$^þ.WHAT ~~ Str} )
+    (¾, π,{ $^þ + 7},"a", "b").grep( {$^þ.^name ~~ Str} )
 
 Since `~~` is the *is a kind of* operator, this expression will return
 only those things that are *a kind of* String. Which one will those
@@ -853,7 +861,7 @@ and the "!!". If it is not, then what is left, what we find behind the
 This operator is quite useful, and fast, when you want to check
 alternatives in a single sentence. For instance, checking types
 
-    ("3".WHAT ~~ (Str))??"Tres"!!3
+    ("3".^name ~~ (Str))??"Tres"!!3
 
 This will return `Tres`, since "3" is actually a string. Remember that
 you have to use the parentheses to wrap around the expression, almost
@@ -1310,7 +1318,7 @@ curly brackets are more than enough, but `{ 42 }` would be a boring
 function that just returns the answer to life, the universe and
 everything. Let us find out how Perl6 calls these functions. 
 
-    { $_ * 2 }.WHAT
+    { $_ * 2 }.^name
 
 Will return `Block` which is what Perl6 calls these pieces of code
 that can act on other things and return stuff, like this
