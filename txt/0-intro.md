@@ -146,20 +146,19 @@ or programs or even notes that will be useful by themselves.
 
 # The tools of the trade
 
-It might seem otherwise, but this part is not going to be leading you away from the design thinking mindset, 
-but actually will be introducing you into its last phases, which include prototype and testing. However, whatever idea
-you had in mind will have to be kept stashed to go back to it whenever
-you need it. 
-
-In fact, we are entering the phase called *prototyping*,
-or seen in another way, you are trying to solve a problem for a target
-audience, yourself, by choosing the right tools. In this phase you will find that there's no perfect tool for doing
-everything.
+Programming is learned by programming; but in order to actually make
+the programs work and do something you have to use programs that are
+run from operating systems, in fact *prototyping*; Seen in another
+way, you are trying to solve a problem for a target 
+audience, yourself, by choosing the right tools. In this phase you
+will find that there is no perfect tool for doing everything.
 
 > Although the combination Linux + Emacs comes pretty close 
 
 Let's start with the operating system. That would be Linux. Whew, that
-was short. But let's proceed to that thing that actually allows users to run programs, the shell. 
+was short. Although nowadays Linux is everywhere and you can have a
+Linux command line in Windows 10, and of course also in the Macs. 
+But let's proceed to that thing that actually allows users to run programs, the *shell*. 
 
 
 <a id="orgf0ec3f4"></a>
