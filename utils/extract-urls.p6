@@ -3,6 +3,7 @@
 use v6;
 
 use Text::Markdown;
+use JSON::Tiny;
 
 sub MAIN( $dir = "txt/" ) {
     my @files = $dir.IO.dir(:test(/ ".md" $/));
@@ -14,13 +15,15 @@ sub MAIN( $dir = "txt/" ) {
 	    if ( $i ~~ Text::Markdown::Paragraph ) {
 		for $i.items -> $l {
 		    if ( $l ~~ Text::Markdown::Link ) {
-			push @references, $l.url;
+			if ( $l.url ~~ /http/ ) {
+			    push @references, [$l.url, $l.text];
+			    }
 		    }
 		}
 	    }
 		
 	}
     }
-    dd @references;
+    say to-json @references;
 }
 
