@@ -16,10 +16,11 @@ sub MAIN( $dir = "txt/", $urls-file="urls-with-short.json" ) {
 	%url-hash{$u{'long'}} = $u<short>;
     }
     for @files -> $f {
+	next if $f ~~ /links/;
 	say $f;
-	my $text =$f.slurp();
+	my $text = $f.slurp();
 	$text ~~ s:g/ \[ (<-[ \] ]> +?) \]  \( ( http <-[ ) ]> +? ) \) / $0 → %url-hash{$1} /;
 	my ($basename) = ($f ~~ /(.+)\.md/);
-	spurt $basename ~ "-links.md", $text;
+	spurt $basename[0] ~ "-links.md", $text;
     }
 }
