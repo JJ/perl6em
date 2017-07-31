@@ -10,9 +10,7 @@ such as Go or Rust. I, or someone, might do it some day. But for the
 time being, let us be content with the Perl 6 content. Which is also
 new and cool.
 
-You
-can
-[check out the GitHub repository for this book](https://github.com/JJ/perl6em). It
+You can [check out the GitHub repository for this book](https://github.com/JJ/perl6em). It
 will also contain evolving versions of new chapters and volumes. 
 
 

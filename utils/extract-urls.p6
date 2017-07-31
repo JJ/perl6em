@@ -12,6 +12,7 @@ sub MAIN( $dir = "txt/" ) {
 	my $text =$f.slurp();
 	my $md = Text::Markdown::Document.new($text);
 	for $md.items -> $i {
+	    say $i;
 	    if ( $i ~~ Text::Markdown::Paragraph ) {
 		for $i.items -> $l {
 		    if ( $l ~~ Text::Markdown::Link ) {
@@ -19,6 +20,11 @@ sub MAIN( $dir = "txt/" ) {
 			    push $references, { url => $l.url, text => $l.text };
 			    }
 		    }
+		}
+	    }
+	    if ( $i ~~ Text::Markdown::Link ) {
+		if ( $i.url ~~ /http/ ) {
+		    push $references, { url => $i.url, text => $i.text };
 		}
 	    }
 		

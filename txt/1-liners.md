@@ -1285,7 +1285,7 @@ to the remote place
 
 After which you will be able to connect directly to that address,
 without needing to do additional password-typing. Which will be
-extremely convenient for applications that need a fluent connection
+extremely convenient for applications that need a fluid connection
 with no prompting. 
 
 
