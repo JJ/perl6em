@@ -18,17 +18,8 @@ sub MAIN( $dir = "txt/", $urls-file="urls-with-short.json" ) {
     for @files -> $f {
 	say $f;
 	my $text =$f.slurp();
-	#	$text ~~ s:g/\[(.+?)\]\((\S+)\)/$0 -> $1/;
-	given $text {
-	    #	    my @captures = ($text ~~ m:global/ \[ (<-[ \] ]> +?) \] \( (http <-[ \) ]> +?) \) /);
-	    my @captures = ($text ~~ m:global/ \( ( http <-[ ) ]> +? ) \) /);
-	    for @captures -> $c {
-		say $c[0];
-	    }
-	}
-#	my $new-text = $text.subst: / \[$<text> = <-[ \] ]> + \]\( $<url>= http.+? \) /, "$<text> → $<url>", :g;
-#	say "Text $<text> URL $<url>";
-				
-#	say $new-text;			
+	$text ~~ s:g/ \[ (<-[ \] ]> +?) \]  \( ( http <-[ ) ]> +? ) \) / $0 → %url-hash{$1} /;
+	my ($basename) = ($f ~~ /(.+)\.md/);
+	spurt $basename ~ "-links.md", $text;
     }
 }
