@@ -9,11 +9,11 @@ sub MAIN( $dir = "txt/", $urls-file="urls-with-short.json" ) {
     my @files = $dir.IO.dir(:test(/ ".md" $/));
     my $references;
 
-    say q:to/TEXT/;
+    print q:to/TEXT/;
 # Links embedded in the "Learning to program with Perl 6"
 
-| Text | Long URL | Short URL |
-| ---- | -------  | ......... |
+| Text                        | Long URL          | Short URL      |
+| --------------------------- | ----------------  | -------------- |
 TEXT
     my $json = $urls-file.IO.slurp();
     my @urls = @(from-json $json);

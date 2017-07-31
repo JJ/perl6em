@@ -1,8 +1,7 @@
 # Links embedded in the "Learning to program with Perl 6"
 
-| Text | Long URL | Short URL |
-| ---- | -------  | ......... |
-
+| Text                        | Long URL          | Short URL      |
+| --------------------------- | ----------------  | -------------- |
 | many different conventions you can use | http://stackoverflow.com/questions/4211025/what-are-some-best-practices-to-follow-when-naming-variables | https://goo.gl/CsXZ9M | 
 | JavaScript | https://www.javascript.com/ | https://goo.gl/xFmPUc | 
 | JS fiddle | https://jsfiddle.net/ | https://goo.gl/X6NCCp | 
