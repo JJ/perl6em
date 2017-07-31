@@ -19,6 +19,7 @@ TEXT
     my @urls = @(from-json $json);
     my %url-hash;
     for @urls -> $u {
-	say "| $u<text> | $u<long> | $u<short> | ";
+	my $url = ($u<short> ~~ m!https:..(.+)! );
+	say "| $u<text> | [`$u<long>`]($u<long>) | [`$url[0]`]($u<short>) | ";
     }
 }
