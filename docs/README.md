@@ -1,7 +1,13 @@
-# Perl 6, the musical
+# Learning to program with Perl 6
 
-Perl 6, the musical. Material for learning Perl 6 from scratch. 
 
-You can check out
-the [work in progress of the material in this document](perl6.html)
-and also the [implementation in sessions](sessions.html). 
+This book [Learning to program with Perl 6](http://amzn.to/2vPEMtZ),
+is available in ebook and paperback from Amazon, and focuses on
+teaching how to perform basic programming tasks and solve problems
+using Perl 6, a new and modern language for all kind of things. 
+
+## Links in the book
+
+For those of you that have purchased the old version, or simply do not
+want to type the links in the new version of the
+book, [here are all the links](expanded-links.md). 

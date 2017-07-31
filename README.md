@@ -2,10 +2,12 @@
 
 [![Build Status](https://travis-ci.org/JJ/perl6em.svg?branch=master)](https://travis-ci.org/JJ/perl6em)
 
-Perl 6, the musical. Material for learning Perl 6 from scratch and
-repository for the
-book [Learning to program with Perl 6](http://amzn.to/2vPEMtZ),
-available in ebook and paperback from Amazon. 
+This book [Learning to program with Perl 6](http://amzn.to/2vPEMtZ),
+is available in ebook and paperback from Amazon, and focuses on
+teaching how to perform basic programming tasks and solve problems
+using Perl 6, a new and modern language for all kind of things. Check
+out the (sparse) web at http://jj.github.io/perl6em
+
 
 This repository includes
 also [a play](https://github.com/JJ/perl6em/releases), which was
