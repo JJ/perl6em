@@ -18,7 +18,7 @@ sub MAIN( $dir = "txt/" ) {
 		    if ( $l ~~ Text::Markdown::Link ) {
 			if ( $l.url ~~ /http/ ) {
 			    push $references, { url => $l.url, text => $l.text };
-			    }
+			}
 		    }
 		}
 	    }
