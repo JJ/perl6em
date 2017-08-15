@@ -2,14 +2,13 @@
 
 use v6;
 
-use Text::Markdown;
 use JSON::Tiny;
 
 sub MAIN( $dir = "txt/", $urls-file="urls-with-short.json" ) {
     my @files = $dir.IO.dir(:test(/ ".md" $/));
-    my $references;
 
     my $json = $urls-file.IO.slurp();
+    die "Problems with JSON" if !$json;
     my @urls = @(from-json $json);
     my %url-hash;
     for @urls -> $u {
