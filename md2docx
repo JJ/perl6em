@@ -1,6 +1,6 @@
 #!/bin/bash
 
 utils/expand-urls.p6 txt/ utils/urls-with-short.json
-pandoc -s --toc  \
+pandoc -s --reference-docx=utils/plantilla.docx  \
        -o perl6-0.docx perl6-0.txt  txt/0-intro-links.md txt/1-liners-links.md
 rm txt/*-links.md
