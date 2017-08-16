@@ -12,7 +12,6 @@ sub MAIN( $dir = "txt/" ) {
 	my $text =$f.slurp();
 	my $md = Text::Markdown::Document.new($text);
 	for $md.items -> $i {
-	    say $i;
 	    if ( $i ~~ Text::Markdown::Paragraph ) {
 		for $i.items -> $l {
 		    if ( $l ~~ Text::Markdown::Link ) {

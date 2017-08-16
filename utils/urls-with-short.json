@@ -1,1 +1,137 @@
-[ { "text" : "many different conventions you can use", "short" : "https://goo.gl/CsXZ9M", "long" : "http://stackoverflow.com/questions/4211025/what-are-some-best-practices-to-follow-when-naming-variables" }, { "text" : "JavaScript", "short" : "https://goo.gl/xFmPUc", "long" : "https://www.javascript.com/" }, { "text" : "JS fiddle", "short" : "https://goo.gl/X6NCCp", "long" : "https://jsfiddle.net/" }, { "text" : "collaborate all the time: peer programming", "short" : "https://goo.gl/ITtKb", "long" : "https://en.wikipedia.org/wiki/Pair_programming" }, { "text" : "REPL", "short" : "https://goo.gl/4bxFP", "long" : "https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" }, { "text" : "calling a meta-class method", "short" : "https://goo.gl/YNvTYL", "long" : "https://docs.perl6.org/language/classtut" }, { "text" : "properties of Mu", "short" : "https://goo.gl/rqPEY5", "long" : "https://docs.perl6.org/type/Mu" }, { "text" : "floating point numbers in Perl 6 will be represented as rational", "short" : "https://goo.gl/dJFkFW", "long" : "http://blogs.perl.org/users/ovid/2015/02/a-little-thing-to-love-about-perl-6-and-cobol.html" }, { "text" : "computational thinking", "short" : "https://goo.gl/i1huQQ", "long" : "https://en.wikipedia.org/wiki/Computational_thinking" }, { "text" : "finding the function that represents the sequence", "short" : "https://goo.gl/YDyN17", "long" : "http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props" }, { "text" : "this Advent calendar entry for a few samples of Perl6 coolness too", "short" : "https://goo.gl/TrHNdD", "long" : "https://perl6advent.wordpress.com/2010/12/04/the-sequence-operator/" }, { "text" : "use git", "short" : "https://goo.gl/k6TRGo", "long" : "https://git-scm.com/" }, { "text" : "GitHub", "short" : "https://goo.gl/KkZ8", "long" : "http://github.com" }, { "text" : "BitBucket", "short" : "https://goo.gl/Ua98O", "long" : "http://bitbucket.com" }, { "text" : "even simpler  way of doing it", "short" : "https://goo.gl/4u5VQi", "long" : "http://blogs.perl.org/users/zoffix_znet/2016/02/perl-6-shortcuts-part-1.html" }, { "text" : "Bash it", "short" : "https://goo.gl/c5ZKrj", "long" : "https://github.com/Bash-it/bash-it" }, { "text" : "more powerful wildcards", "short" : "https://goo.gl/PhOk", "long" : "http://www.linfo.org/wildcard.html" }, { "text" : "set operators", "short" : "https://goo.gl/WLNdFA", "long" : "https://perl6advent.wordpress.com/2012/12/13/day-13-bags-and-sets/" }, { "text" : "Junctions", "short" : "https://goo.gl/jSTkfg", "long" : "https://docs.perl6.org/type/Junction" }, { "text" : "useful thing about Junctions", "short" : "https://goo.gl/GKfGEF", "long" : "https://perl6advent.wordpress.com/2009/12/13/day-13-junctions/" }, { "text" : "The procedure is quite clearly explained in GitHub", "short" : "https://goo.gl/r0PGlW", "long" : "https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" }, { "text" : "binomial coefficient", "short" : "https://goo.gl/8ws8Mc", "long" : "https://en.wikipedia.org/wiki/Binomial_coefficient" }, { "text" : "lots of them", "short" : "https://goo.gl/Y7nXrn", "long" : "https://en.wikibooks.org/wiki/Real_Analysis/Sequences" }, { "text" : "Mandelbrot set", "short" : "https://goo.gl/Wm5ZQF", "long" : "https://en.wikipedia.org/wiki/Mandelbrot_set" }, { "text" : "this article of Zoffix Znet on, precisely, Perl 6 errors", "short" : "https://goo.gl/XcG2vp", "long" : "http://blogs.perl.org/users/zoffix_znet/2016/08/the-awesome-errors-of-perl-6.html" }, { "text" : "this document", "short" : "https://goo.gl/FfZNCu", "long" : "https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38" }, { "text" : "check out the GitHub repository for this book", "short" : "https://goo.gl/dgnDD9", "long" : "https://github.com/JJ/perl6em" }, { "text" : "humble bash", "short" : "https://goo.gl/6RLx3F", "long" : "https://www.gnu.org/software/bash/" }, { "text" : "zsh", "short" : "https://goo.gl/WJH6z", "long" : "http://zsh.sourceforge.net/" }, { "text" : "fish", "short" : "https://goo.gl/rtNNRi", "long" : "https://fishshell.com/" }, { "text" : "Oh My Zsh", "short" : "https://goo.gl/vETZQ", "long" : "https://github.com/robbyrussell/oh-my-zsh" }, { "text" : "bash-it", "short" : "https://goo.gl/c5ZKrj", "long" : "https://github.com/Bash-it/bash-it" }, { "text" : "Atom", "short" : "https://goo.gl/GOgVPE", "long" : "http://atom.io" }, { "text" : "Perl6 scripts look positively pretty", "short" : "https://goo.gl/LYqp83", "long" : "https://github.com/perl6/atom-language-perl6#how-do-i-use-this" }, { "text" : "script plugin installed", "short" : "https://goo.gl/54Wnzb", "long" : "https://atom.io/packages/script" }, { "text" : "mode that supports perl6 is in flux at this precise moment", "short" : "https://goo.gl/zkdpjb", "long" : "https://github.com/perl6/perl6-mode" }, { "text" : "Unicode", "short" : "https://goo.gl/UMAuiW", "long" : "https://unicode-table.com/es/" }, { "text" : "neographies", "short" : "https://goo.gl/j8DOBY", "long" : "http://www.omniglot.com/conscripts/natlangs.htm" }, { "text" : "properties", "short" : "https://goo.gl/3YcgAA", "long" : "http://userguide.icu-project.org/strings/properties" } ]
+45
+https://docs.perl6.org/language/variables#The_my_Declarator
+{ "longUrl" : "https://docs.perl6.org/language/variables#The_my_Declarator" }
+{id => https://goo.gl/L4yoHD, kind => urlshortener#url, longUrl => https://docs.perl6.org/language/variables#The_my_Declarator}
+http://stackoverflow.com/questions/4211025/what-are-some-best-practices-to-follow-when-naming-variables
+{ "longUrl" : "http://stackoverflow.com/questions/4211025/what-are-some-best-practices-to-follow-when-naming-variables" }
+{id => https://goo.gl/CsXZ9M, kind => urlshortener#url, longUrl => http://stackoverflow.com/questions/4211025/what-are-some-best-practices-to-follow-when-naming-variables}
+https://www.javascript.com/
+{ "longUrl" : "https://www.javascript.com/" }
+{id => https://goo.gl/xFmPUc, kind => urlshortener#url, longUrl => https://www.javascript.com/}
+https://jsfiddle.net/
+{ "longUrl" : "https://jsfiddle.net/" }
+{id => https://goo.gl/X6NCCp, kind => urlshortener#url, longUrl => https://jsfiddle.net/}
+https://en.wikipedia.org/wiki/Pair_programming
+{ "longUrl" : "https://en.wikipedia.org/wiki/Pair_programming" }
+{id => https://goo.gl/ITtKb, kind => urlshortener#url, longUrl => https://en.wikipedia.org/wiki/Pair_programming}
+https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
+{ "longUrl" : "https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" }
+{id => https://goo.gl/4bxFP, kind => urlshortener#url, longUrl => https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop}
+https://docs.perl6.org/language/classtut
+{ "longUrl" : "https://docs.perl6.org/language/classtut" }
+{id => https://goo.gl/YNvTYL, kind => urlshortener#url, longUrl => https://docs.perl6.org/language/classtut}
+https://docs.perl6.org/type/Mu
+{ "longUrl" : "https://docs.perl6.org/type/Mu" }
+{id => https://goo.gl/rqPEY5, kind => urlshortener#url, longUrl => https://docs.perl6.org/type/Mu}
+http://blogs.perl.org/users/ovid/2015/02/a-little-thing-to-love-about-perl-6-and-cobol.html
+{ "longUrl" : "http://blogs.perl.org/users/ovid/2015/02/a-little-thing-to-love-about-perl-6-and-cobol.html" }
+{id => https://goo.gl/dJFkFW, kind => urlshortener#url, longUrl => http://blogs.perl.org/users/ovid/2015/02/a-little-thing-to-love-about-perl-6-and-cobol.html}
+https://en.wikipedia.org/wiki/Computational_thinking
+{ "longUrl" : "https://en.wikipedia.org/wiki/Computational_thinking" }
+{id => https://goo.gl/i1huQQ, kind => urlshortener#url, longUrl => https://en.wikipedia.org/wiki/Computational_thinking}
+http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props
+{ "longUrl" : "http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props" }
+{id => https://goo.gl/YDyN17, kind => urlshortener#url, longUrl => http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props}
+https://perl6advent.wordpress.com/2010/12/04/the-sequence-operator/
+{ "longUrl" : "https://perl6advent.wordpress.com/2010/12/04/the-sequence-operator/" }
+{id => https://goo.gl/TrHNdD, kind => urlshortener#url, longUrl => https://perl6advent.wordpress.com/2010/12/04/the-sequence-operator/}
+https://git-scm.com/
+{ "longUrl" : "https://git-scm.com/" }
+{id => https://goo.gl/k6TRGo, kind => urlshortener#url, longUrl => https://git-scm.com/}
+http://github.com
+{ "longUrl" : "http://github.com" }
+{id => https://goo.gl/KkZ8, kind => urlshortener#url, longUrl => http://github.com/}
+http://bitbucket.com
+{ "longUrl" : "http://bitbucket.com" }
+{id => https://goo.gl/Ua98O, kind => urlshortener#url, longUrl => http://bitbucket.com/}
+http://blogs.perl.org/users/zoffix_znet/2016/02/perl-6-shortcuts-part-1.html
+{ "longUrl" : "http://blogs.perl.org/users/zoffix_znet/2016/02/perl-6-shortcuts-part-1.html" }
+{id => https://goo.gl/4u5VQi, kind => urlshortener#url, longUrl => http://blogs.perl.org/users/zoffix_znet/2016/02/perl-6-shortcuts-part-1.html}
+https://en.wikipedia.org/wiki/Century_leap_year
+{ "longUrl" : "https://en.wikipedia.org/wiki/Century_leap_year" }
+{id => https://goo.gl/5y6iKT, kind => urlshortener#url, longUrl => https://en.wikipedia.org/wiki/Century_leap_year}
+https://github.com/Bash-it/bash-it
+{ "longUrl" : "https://github.com/Bash-it/bash-it" }
+{id => https://goo.gl/c5ZKrj, kind => urlshortener#url, longUrl => https://github.com/Bash-it/bash-it}
+http://www.linfo.org/wildcard.html
+{ "longUrl" : "http://www.linfo.org/wildcard.html" }
+{id => https://goo.gl/PhOk, kind => urlshortener#url, longUrl => http://www.linfo.org/wildcard.html}
+https://perl6advent.wordpress.com/2012/12/13/day-13-bags-and-sets/
+{ "longUrl" : "https://perl6advent.wordpress.com/2012/12/13/day-13-bags-and-sets/" }
+{id => https://goo.gl/WLNdFA, kind => urlshortener#url, longUrl => https://perl6advent.wordpress.com/2012/12/13/day-13-bags-and-sets/}
+https://docs.perl6.org/type/Junction
+{ "longUrl" : "https://docs.perl6.org/type/Junction" }
+{id => https://goo.gl/jSTkfg, kind => urlshortener#url, longUrl => https://docs.perl6.org/type/Junction}
+https://perl6advent.wordpress.com/2009/12/13/day-13-junctions/
+{ "longUrl" : "https://perl6advent.wordpress.com/2009/12/13/day-13-junctions/" }
+{id => https://goo.gl/GKfGEF, kind => urlshortener#url, longUrl => https://perl6advent.wordpress.com/2009/12/13/day-13-junctions/}
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+{ "longUrl" : "https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" }
+{id => https://goo.gl/r0PGlW, kind => urlshortener#url, longUrl => https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/}
+https://design.perl6.org/S06.html#___top
+{ "longUrl" : "https://design.perl6.org/S06.html#___top" }
+{id => https://goo.gl/vzrtFX, kind => urlshortener#url, longUrl => https://design.perl6.org/S06.html#___top}
+https://en.wikipedia.org/wiki/Binomial_coefficient
+{ "longUrl" : "https://en.wikipedia.org/wiki/Binomial_coefficient" }
+{id => https://goo.gl/8ws8Mc, kind => urlshortener#url, longUrl => https://en.wikipedia.org/wiki/Binomial_coefficient}
+https://en.wikibooks.org/wiki/Real_Analysis/Sequences
+{ "longUrl" : "https://en.wikibooks.org/wiki/Real_Analysis/Sequences" }
+{id => https://goo.gl/Y7nXrn, kind => urlshortener#url, longUrl => https://en.wikibooks.org/wiki/Real_Analysis/Sequences}
+https://en.wikipedia.org/wiki/Mandelbrot_set
+{ "longUrl" : "https://en.wikipedia.org/wiki/Mandelbrot_set" }
+{id => https://goo.gl/Wm5ZQF, kind => urlshortener#url, longUrl => https://en.wikipedia.org/wiki/Mandelbrot_set}
+https://www.google.es/search?client=ubuntu&channel=fs&q=perl+6+missing+block&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=aBWLWLDJCKOs8wfA_Y7IBA#safe=off&channel=fs&q=perl+6+%22missing+block%22
+{ "longUrl" : "https://www.google.es/search?client=ubuntu&channel=fs&q=perl+6+missing+block&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=aBWLWLDJCKOs8wfA_Y7IBA#safe=off&channel=fs&q=perl+6+%22missing+block%22" }
+{id => https://goo.gl/4D7JjP, kind => urlshortener#url, longUrl => https://www.google.es/search?client=ubuntu&channel=fs&q=perl+6+missing+block&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=aBWLWLDJCKOs8wfA_Y7IBA#safe=off&channel=fs&q=perl+6+%22missing+block%22}
+http://blogs.perl.org/users/zoffix_znet/2016/08/the-awesome-errors-of-perl-6.html
+{ "longUrl" : "http://blogs.perl.org/users/zoffix_znet/2016/08/the-awesome-errors-of-perl-6.html" }
+{id => https://goo.gl/XcG2vp, kind => urlshortener#url, longUrl => http://blogs.perl.org/users/zoffix_znet/2016/08/the-awesome-errors-of-perl-6.html}
+https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38
+{ "longUrl" : "https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38" }
+{id => https://goo.gl/FfZNCu, kind => urlshortener#url, longUrl => https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38}
+https://github.com/JJ/perl6em
+{ "longUrl" : "https://github.com/JJ/perl6em" }
+{id => https://goo.gl/dgnDD9, kind => urlshortener#url, longUrl => https://github.com/JJ/perl6em}
+https://www.gnu.org/software/bash/
+{ "longUrl" : "https://www.gnu.org/software/bash/" }
+{id => https://goo.gl/6RLx3F, kind => urlshortener#url, longUrl => https://www.gnu.org/software/bash/}
+http://zsh.sourceforge.net/
+{ "longUrl" : "http://zsh.sourceforge.net/" }
+{id => https://goo.gl/WJH6z, kind => urlshortener#url, longUrl => http://zsh.sourceforge.net/}
+https://fishshell.com/
+{ "longUrl" : "https://fishshell.com/" }
+{id => https://goo.gl/rtNNRi, kind => urlshortener#url, longUrl => https://fishshell.com/}
+https://github.com/robbyrussell/oh-my-zsh
+{ "longUrl" : "https://github.com/robbyrussell/oh-my-zsh" }
+{id => https://goo.gl/vETZQ, kind => urlshortener#url, longUrl => https://github.com/robbyrussell/oh-my-zsh}
+https://github.com/Bash-it/bash-it
+{ "longUrl" : "https://github.com/Bash-it/bash-it" }
+{id => https://goo.gl/c5ZKrj, kind => urlshortener#url, longUrl => https://github.com/Bash-it/bash-it}
+http://atom.io
+{ "longUrl" : "http://atom.io" }
+{id => https://goo.gl/GOgVPE, kind => urlshortener#url, longUrl => http://atom.io/}
+https://github.com/perl6/atom-language-perl6#how-do-i-use-this
+{ "longUrl" : "https://github.com/perl6/atom-language-perl6#how-do-i-use-this" }
+{id => https://goo.gl/LYqp83, kind => urlshortener#url, longUrl => https://github.com/perl6/atom-language-perl6#how-do-i-use-this}
+https://atom.io/packages/script
+{ "longUrl" : "https://atom.io/packages/script" }
+{id => https://goo.gl/54Wnzb, kind => urlshortener#url, longUrl => https://atom.io/packages/script}
+https://github.com/perl6/perl6-mode
+{ "longUrl" : "https://github.com/perl6/perl6-mode" }
+{id => https://goo.gl/zkdpjb, kind => urlshortener#url, longUrl => https://github.com/perl6/perl6-mode}
+https://unicode-table.com/es/
+{ "longUrl" : "https://unicode-table.com/es/" }
+{id => https://goo.gl/UMAuiW, kind => urlshortener#url, longUrl => https://unicode-table.com/es/}
+http://www.omniglot.com/conscripts/natlangs.htm
+{ "longUrl" : "http://www.omniglot.com/conscripts/natlangs.htm" }
+{id => https://goo.gl/j8DOBY, kind => urlshortener#url, longUrl => http://www.omniglot.com/conscripts/natlangs.htm}
+https://en.wikipedia.org/wiki/Unicode_character_property#General_Category
+{ "longUrl" : "https://en.wikipedia.org/wiki/Unicode_character_property#General_Category" }
+{id => https://goo.gl/i2hNeH, kind => urlshortener#url, longUrl => https://en.wikipedia.org/wiki/Unicode_character_property#General_Category}
+http://userguide.icu-project.org/strings/properties
+{ "longUrl" : "http://userguide.icu-project.org/strings/properties" }
+{id => https://goo.gl/3YcgAA, kind => urlshortener#url, longUrl => http://userguide.icu-project.org/strings/properties}
+http://mathias.gaunard.com/unicode/doc/html/unicode/introduction_to_unicode.html#unicode.introduction_to_unicode.grapheme_clusters
+{ "longUrl" : "http://mathias.gaunard.com/unicode/doc/html/unicode/introduction_to_unicode.html#unicode.introduction_to_unicode.grapheme_clusters" }
+{id => https://goo.gl/JxHkUE, kind => urlshortener#url, longUrl => http://mathias.gaunard.com/unicode/doc/html/unicode/introduction_to_unicode.html#unicode.introduction_to_unicode.grapheme_clusters}
+[ { "text" : "variables", "short" : "https://goo.gl/L4yoHD", "long" : "https://docs.perl6.org/language/variables#The_my_Declarator" }, { "text" : "many different conventions you can use", "short" : "https://goo.gl/CsXZ9M", "long" : "http://stackoverflow.com/questions/4211025/what-are-some-best-practices-to-follow-when-naming-variables" }, { "text" : "JavaScript", "short" : "https://goo.gl/xFmPUc", "long" : "https://www.javascript.com/" }, { "text" : "JS fiddle", "short" : "https://goo.gl/X6NCCp", "long" : "https://jsfiddle.net/" }, { "text" : "collaborate all the time: peer programming", "short" : "https://goo.gl/ITtKb", "long" : "https://en.wikipedia.org/wiki/Pair_programming" }, { "text" : "REPL", "short" : "https://goo.gl/4bxFP", "long" : "https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" }, { "text" : "calling a meta-class method", "short" : "https://goo.gl/YNvTYL", "long" : "https://docs.perl6.org/language/classtut" }, { "text" : "properties of Mu", "short" : "https://goo.gl/rqPEY5", "long" : "https://docs.perl6.org/type/Mu" }, { "text" : "floating point numbers in Perl 6 will be represented as rational", "short" : "https://goo.gl/dJFkFW", "long" : "http://blogs.perl.org/users/ovid/2015/02/a-little-thing-to-love-about-perl-6-and-cobol.html" }, { "text" : "computational thinking", "short" : "https://goo.gl/i1huQQ", "long" : "https://en.wikipedia.org/wiki/Computational_thinking" }, { "text" : "finding the function that represents the sequence", "short" : "https://goo.gl/YDyN17", "long" : "http://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx#Limit_Props" }, { "text" : "this Advent calendar entry for a few samples of Perl6 coolness too", "short" : "https://goo.gl/TrHNdD", "long" : "https://perl6advent.wordpress.com/2010/12/04/the-sequence-operator/" }, { "text" : "use git", "short" : "https://goo.gl/k6TRGo", "long" : "https://git-scm.com/" }, { "text" : "GitHub", "short" : "https://goo.gl/KkZ8", "long" : "http://github.com" }, { "text" : "BitBucket", "short" : "https://goo.gl/Ua98O", "long" : "http://bitbucket.com" }, { "text" : "even simpler  way of doing it", "short" : "https://goo.gl/4u5VQi", "long" : "http://blogs.perl.org/users/zoffix_znet/2016/02/perl-6-shortcuts-part-1.html" }, { "text" : "are not", "short" : "https://goo.gl/5y6iKT", "long" : "https://en.wikipedia.org/wiki/Century_leap_year" }, { "text" : "Bash it", "short" : "https://goo.gl/c5ZKrj", "long" : "https://github.com/Bash-it/bash-it" }, { "text" : "more powerful wildcards", "short" : "https://goo.gl/PhOk", "long" : "http://www.linfo.org/wildcard.html" }, { "text" : "set operators", "short" : "https://goo.gl/WLNdFA", "long" : "https://perl6advent.wordpress.com/2012/12/13/day-13-bags-and-sets/" }, { "text" : "Junctions", "short" : "https://goo.gl/jSTkfg", "long" : "https://docs.perl6.org/type/Junction" }, { "text" : "useful thing about Junctions", "short" : "https://goo.gl/GKfGEF", "long" : "https://perl6advent.wordpress.com/2009/12/13/day-13-junctions/" }, { "text" : "The procedure is quite clearly explained in GitHub", "short" : "https://goo.gl/r0PGlW", "long" : "https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" }, { "text" : "Pointy blocks", "short" : "https://goo.gl/vzrtFX", "long" : "https://design.perl6.org/S06.html#___top" }, { "text" : "binomial coefficient", "short" : "https://goo.gl/8ws8Mc", "long" : "https://en.wikipedia.org/wiki/Binomial_coefficient" }, { "text" : "lots of them", "short" : "https://goo.gl/Y7nXrn", "long" : "https://en.wikibooks.org/wiki/Real_Analysis/Sequences" }, { "text" : "Mandelbrot set", "short" : "https://goo.gl/Wm5ZQF", "long" : "https://en.wikipedia.org/wiki/Mandelbrot_set" }, { "text" : "Google is your friend", "short" : "https://goo.gl/4D7JjP", "long" : "https://www.google.es/search?client=ubuntu&channel=fs&q=perl+6+missing+block&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=aBWLWLDJCKOs8wfA_Y7IBA#safe=off&channel=fs&q=perl+6+%22missing+block%22" }, { "text" : "this article of Zoffix Znet on, precisely, Perl 6 errors", "short" : "https://goo.gl/XcG2vp", "long" : "http://blogs.perl.org/users/zoffix_znet/2016/08/the-awesome-errors-of-perl-6.html" }, { "text" : "this document", "short" : "https://goo.gl/FfZNCu", "long" : "https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf?sessionID=e62aa8294d323f1b1540d3ee21e961cf7d1bce38" }, { "text" : "check out the GitHub repository for this book", "short" : "https://goo.gl/dgnDD9", "long" : "https://github.com/JJ/perl6em" }, { "text" : "humble bash", "short" : "https://goo.gl/6RLx3F", "long" : "https://www.gnu.org/software/bash/" }, { "text" : "zsh", "short" : "https://goo.gl/WJH6z", "long" : "http://zsh.sourceforge.net/" }, { "text" : "fish", "short" : "https://goo.gl/rtNNRi", "long" : "https://fishshell.com/" }, { "text" : "Oh My Zsh", "short" : "https://goo.gl/vETZQ", "long" : "https://github.com/robbyrussell/oh-my-zsh" }, { "text" : "bash-it", "short" : "https://goo.gl/c5ZKrj", "long" : "https://github.com/Bash-it/bash-it" }, { "text" : "Atom", "short" : "https://goo.gl/GOgVPE", "long" : "http://atom.io" }, { "text" : "Perl6 scripts look positively pretty", "short" : "https://goo.gl/LYqp83", "long" : "https://github.com/perl6/atom-language-perl6#how-do-i-use-this" }, { "text" : "script plugin installed", "short" : "https://goo.gl/54Wnzb", "long" : "https://atom.io/packages/script" }, { "text" : "mode that supports perl6 is in flux at this precise moment", "short" : "https://goo.gl/zkdpjb", "long" : "https://github.com/perl6/perl6-mode" }, { "text" : "Unicode", "short" : "https://goo.gl/UMAuiW", "long" : "https://unicode-table.com/es/" }, { "text" : "neographies", "short" : "https://goo.gl/j8DOBY", "long" : "http://www.omniglot.com/conscripts/natlangs.htm" }, { "text" : "category", "short" : "https://goo.gl/i2hNeH", "long" : "https://en.wikipedia.org/wiki/Unicode_character_property#General_Category" }, { "text" : "properties", "short" : "https://goo.gl/3YcgAA", "long" : "http://userguide.icu-project.org/strings/properties" }, { "text" : "graphemes", "short" : "https://goo.gl/JxHkUE", "long" : "http://mathias.gaunard.com/unicode/doc/html/unicode/introduction_to_unicode.html#unicode.introduction_to_unicode.grapheme_clusters" } ]
