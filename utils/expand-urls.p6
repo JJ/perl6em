@@ -18,8 +18,7 @@ sub MAIN( $dir = "txt/", $urls-file="urls-with-short.json" ) {
 	next if $f ~~ /links/;
 	say $f;
 	my $text = $f.slurp();
-	#	$text ~~ s:g/ \[ (<-[ \] ]> +?) \]  \( ( http <-[ ) ]> +? ) \) / $0 → %url-hash{$1} /;
-	$text ~~ s:g/ \[ (<-[ \] ]> +?) \]  \( ( http <-[ ) ]> +? ) \) / $0 → $1 /;
+	$text ~~ s:g/ \[ (<-[ \] ]> +?) \]  \( ( http <-[ ) ]> +? ) \) / $0 → %url-hash{$1} /;
 	my ($basename) = ($f ~~ /(.+)\.md/);
 	spurt $basename[0] ~ "-links.md", $text;
     }
