@@ -151,7 +151,7 @@ And
 
     (⅓+4/3).^name
 
-will return `Rat`, a Rational, same as `⅓+4`. In fact, most
+will return `Rat`, a the class used for rational numbers, same as `⅓+4`. In fact, most
 [floating point numbers in Perl 6 will be represented as rational](http://blogs.perl.org/users/ovid/2015/02/a-little-thing-to-love-about-perl-6-and-cobol.html),
 unless we explicitly tell the interpreter to deal with them as
 floating point, that is real, numbers, which, BTW, cannot be something
