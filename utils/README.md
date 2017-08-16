@@ -22,5 +22,6 @@ Get the short version of the URLs
 	
 Finally, to generate the files with expanded, shortened links
 
+	cd ..; utils/expand-urls.p6 txt utils/urls-with-short.json
 	
 	
