@@ -20,5 +20,7 @@ Get the short version of the URLs
 
 	cd utils; ./get-shorty.p6 <big-apy-key> > urls-with-short.json
 	
+Finally, to generate the files with expanded, shortened links
 
+	
 	
