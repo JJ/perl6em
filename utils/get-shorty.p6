@@ -8,18 +8,21 @@ use WWW;
 sub MAIN(  Str $api-key, $file = "urls.json" ) {
     my $json = $file.IO.slurp();
     my $urls = from-json $json;
-    my $shortened;
+    my @shortened;
+    my %already-shortened;
     for $urls.keys -> $i {
 	my $p = $urls[$i];
 	my $this-url = $p<url>;
-	my $response = jpost("https://www.googleapis.com/urlshortener/v1/url?key=$api-key",
-			     to-json({longUrl => $this-url}),
-			     :Content-Type<application/json>,
-);
-
-	push $shortened, { long => $this-url,
-			   short => $response<id>,
-			   text => $p<text> };
+	if ( ! %already-shortened<$this-url> ) {
+	    my $response = jpost("https://www.googleapis.com/urlshortener/v1/url?key=$api-key",
+				 to-json({longUrl => $this-url}),
+				 :Content-Type<application/json>,
+				);
+	    %already-shortened{$this-url}=$response<id>;
+	    push @shortened, { long => $this-url,
+			       short => $response<id>,
+			       text => $p<text> };
+	}
     }
-    say to-json $shortened;
+    say to-json @shortened;
 }
