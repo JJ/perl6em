@@ -126,7 +126,7 @@ and beautiful program.
 
 <a id="org196554a"></a>
 
-## Use project-based learning throughout and flipped-learning techniques.
+## Make learn by doing
 
 Which boils down to "talk little, do a lot". No slides, no heavyweight
 course materials, just a screen with examples, and make people perform

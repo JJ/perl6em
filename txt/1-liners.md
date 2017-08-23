@@ -712,9 +712,9 @@ because, well, that is the way it is.
 
 <a id="orgdac10d4"></a>
 
-## And filtering them (also applying things to a whole lot of them)
+## And filtering them 
 
-Now that we know how to deal with truths and untruths, we can use this
+(Also applying things to a whole lot of them). Now that we know how to deal with truths and untruths, we can use this
 knowledge to deal with sequences and filter them depending on whether
 a condition is true or not. We can, for instance, use ready-made
 functions such as `is-prime` 
@@ -1099,7 +1099,7 @@ previous year there are subtle changes
 
     set( <ABE CEL DUN DUU HAM HEA INV KIL MOT PAR ROS STJ> )
 
-that can be immediately revealed using
+, two are in and two out; which ones can be immediately revealed using
 [set operators](https://perl6advent.wordpress.com/2012/12/13/day-13-bags-and-sets/):
 
     set( <ABE CEL DUN HAM HEA INV KIL MOT PAR RAN ROS STJ> ) ∩ 
