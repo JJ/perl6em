@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Cambia la plantilla de latex al directorio donde esté
+
+pandoc --verbose --template=plantilla.latex \
+    -V language=english -V lang=english \
+    -V author='JJ Merelo' -V title='Learning Perl 6'\
+    -V documentclass=book\
+    -S --latex-engine=xelatex  \
+    -o learn-perl-6.pdf  \
+    txt/0-intro.md txt/1-liners.md --toc
+
+
+
