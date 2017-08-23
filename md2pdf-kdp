@@ -1,14 +1,15 @@
 #!/bin/bash
 
 # Cambia la plantilla de latex al directorio donde esté
-utils/expand-urls.p6 txt utils/urls-with-short.json
+utils/deploy-file.p6 txt utils/urls-with-short.json
 pandoc --template=/home/jmerelo/Libros/perl6em/utils/plantilla-kdp.latex \
     -V language=english -V lang=english \
     -V author='JJ Merelo' -V title='Learning Perl 6'\
     -V documentclass=book\
     -S --latex-engine=xelatex  \
+    --variable monofont="DejaVuSansMono" \
     -o learn-perl-6-kdp.pdf  \
-    txt/0-intro-links.md txt/1-liners-links.md --toc
+    txt/0-intro-deploy.md txt/1-liners-deploy.md --toc
 
-rm txt/*-links.md
+rm txt/*-deploy.md
 

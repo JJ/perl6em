@@ -1699,26 +1699,64 @@ interested in the amenities. We can extract a part of the values so:
 But this a single room, and we need the whole hotel. Let's do it here:
 
     {
-      101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly"}, 
-      102 => {PAX => 1, amenities => "Open air, no ceiling", name => "Daffodil"}, 
-      201 => {PAX => 2, amenities => "IKEA room, build it your way", name => "Rose"}
+      101 => {
+		  PAX => 3, 
+		  amenities => "Boiler, Fan, barely any spider", 
+		  name => "Lilly"
+	  }, 
+      102 => {
+		  PAX => 1, 
+		  amenities => "Open air, no ceiling", 
+		  name => "Daffodil"
+	  }, 
+      201 => {
+		  PAX => 2, 
+		  amenities => "IKEA room, build it your way", 
+		  name => "Rose"
+	  }
     }
 
 Can we access how the amenities of a single room? Sure:
 
-    {
-      101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly"}, 
-      102 => {PAX => 1, amenities => "Open air, no ceiling", name => "Daffodil"}, 
-      201 => {PAX => 2, amenities => "IKEA room, build it your way", name => "Rose"}
+     {
+      101 => {
+		  PAX => 3, 
+		  amenities => "Boiler, Fan, barely any spider", 
+		  name => "Lilly"
+	  }, 
+      102 => {
+		  PAX => 1, 
+		  amenities => "Open air, no ceiling", 
+		  name => "Daffodil"
+	  }, 
+      201 => {
+		  PAX => 2, 
+		  amenities => "IKEA room, build it your way", 
+		  name => "Rose"
+	  }
     }<101><amenities>
 
 There is however no way of telling which ones are occupied. We can use
 a logical value to do so, this way:
 
     {
-      101 => {PAX => 3, amenities => "Boiler, Fan, barely any spider", name => "Lilly", :occupied }, 
-      102 => {PAX => 1, amenities => "Open air, no ceiling", name => "Daffodil"}, 
-      201 => {PAX => 2, amenities => "IKEA room, build it your way", name => "Rose", :occupied}
+      101 => {
+		  PAX => 3, 
+		  amenities => "Boiler, Fan, barely any spider", 
+		  name => "Lilly", 
+		  :occupied 
+	  }, 
+      102 => {
+		  PAX => 1, 
+		  amenities => "Open air, no ceiling", 
+		  name => "Daffodil"
+	  }, 
+      201 => {
+		  PAX => 2, 
+		  amenities => "IKEA room, build it your way", 
+		  name => "Rose", 
+		  :occupied
+	  }
     }
 
 When you type this, you will see that `:occupied` is translated as 

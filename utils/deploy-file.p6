@@ -31,8 +31,7 @@ sub MAIN( $dir = "txt/", $urls-file="urls-with-short.json" ) {
 		my @lines = $i.text.split("\n");
 		for @lines -> $l {
 		    if ( $l.chars > 60 ) {
-			my $wrapped=wrap-text($l,:width(60),:postfix('⤶'),:prefix("      "));
-			say $wrapped;
+			my $wrapped=wrap-text($l,:width(60),:postfix('\\'),:prefix("      "));
 			$text .= subst(/$l/,$wrapped);
 		    }
 		}
