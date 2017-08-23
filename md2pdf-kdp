@@ -8,7 +8,7 @@ pandoc --template=/home/jmerelo/Libros/perl6em/utils/plantilla-kdp.latex \
     -V documentclass=book\
     -S --latex-engine=xelatex  \
     -o learn-perl-6-kdp.pdf  \
-    txt/0-intro.md txt/1-liners.md --toc
+    txt/0-intro-links.md txt/1-liners-links.md --toc
 
 rm txt/*-links.md
 

@@ -75,8 +75,8 @@ a completely different story.
 # Motivation
 
 This is (mostly) a book on Perl 6. But my initial intention was not to
-show how to program in Perl 6. Here are a few of my motivations, which
-might be also your own for actually reading and following this book. 
+show how to program in Perl 6. Here are a few of my actual motivations, which
+might also be your own for actually reading and following this book. 
 
 
 <a id="org26dd317"></a>
