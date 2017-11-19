@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Modak');
+
+section[data-background] h1 { 
+       background-color:rgba(23,23,23,0.7);
+       padding: 50px;
+       margin: 20px;
+       border-radius: 30px
+}
+
+.cool { 
+        background-color:rgba(102, 255, 255,0.7);
+        padding: 30px;
+        margin: 30px;
+        border-radius: 40px;
+        }
+
+.hl { 
+      background-color:rgba(255, 255, 0,0.7);
+      padding: 30px;
+      margin: 30px;
+      border-radius: 40px;
+      }
+
+.pink { 
+       background-color:rgba(255, 192, 203,0.7);
+       padding: 5px;
+       margin: 10px;
+       border-radius: 3px
+}
+
+.bkg { 
+       background-color:rgba(0,43,54,0.7);
+       padding: 30px;
+       margin: 15px;
+       border-radius: 10px
+}
+
+.reveal li { font-size:1.75em }
+.reveal li.credits { font-size:0.75em }
+.credits {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+.credits li { font-size:0.75em }
+
+
+.chart div {
+  font: 30px sans-serif;
+  background-color: orange;
+  text-align: right;
+  padding: 5px;
+  margin: 3px;
+  color: white;
+}
+
+.fija div {
+            font: 14px "Fira Mono";
+            background-color: blue;
+            text-align: right;
+            padding: 2px;
+            margin: 1px;
+            color:  #ff2c2d;
+}
+
+/* Posición fija */
+
+#fija { 
+        position: fixed;
+        border: 3px solid orange;
+        top: 0;
+        right: 0;
+        width: 200px;
+        z-index: 1;           
+}
+
+.reveal.slide .slides > section, .reveal.slide .slides > section > section {
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  align-items: center !important;
+}
+
+
+.print-pdf .reveal.slide .slides > section, .print-pdf .reveal.slide .slides > section > section {
+  min-height: 770px !important;
+  position: relative !important;
+}
+
+h1.title{
+    font-size: 7em;
+    font-family: 'Modak', cursive;
+}
