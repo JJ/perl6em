@@ -207,36 +207,60 @@ $fh2.say( "$year/$month, ", (@perls.map: *.keys ).flat.join(", ") );</code></pre
 	    href='https://www.flickr.com/photos/aubergene/1269028016/'>this
 	      one by Ali Spittel</a>
 	  </section>
+
 	</section>
 
 	<!-- Interpreted & REPL -->
 
 	<section>
-	  <h1>Programming starts with expressions</h1>
-	  <pre><code> "s1krit".comb
+	  <section data-background='https://farm9.staticflickr.com/8256/8676074778_6121795ea6_h_d.jpg'><h1>Better interpreted</h1>
+	    <aside class='notes'>Most languages mentioned are
+	  interpreted. Programming is not compiling, is putting ideas
+	  into code; you don't need to learn and write makefiles to do
+	      that, just run stuff straight away</aside>
+	  </section>
+	  
+	  <section>
+	    <h1>Programming starts with expressions</h1>
+	    <pre><code> "s1krit".comb
 (s 1 k r i t)</code></pre>
-
-	  <pre class='fragment'><code>"s1krit".comb.map: {.ord}
+	    
+	    <pre class='fragment'><code>"s1krit".comb.map: {.ord}
 (115 49 107 114 105 116)</code></pre>
-
-	  <pre class='fragment'><code><1 -1 3 -3 4> <<+<<  "s1krit".comb.map: {.ord}
+	    
+	    <pre class='fragment'><code><1 -1 3 -3 4> <<+<<  "s1krit".comb.map: {.ord}
 (116 48 110 111 109 117)</code></pre>
-
-	  <pre class='fragment'><code>(<1 -1 3 -3 4> <<+<<  "s1krit".comb.map: {.ord}).map: {.chr}
+	    
+	    <pre class='fragment'><code>(<1 -1 3 -3 4> <<+<<  "s1krit".comb.map: {.ord}).map: {.chr}
 (t 0 n o m u)</code></pre>
-
-	</section>
-	
-	<section
-	  data-background='https://farm1.staticflickr.com/139/357015070_0f007ee28f_b_d.jpg'
+	    
+	  </section>
+	  
+	  <section
+	    data-background='https://farm1.staticflickr.com/139/357015070_0f007ee28f_b_d.jpg'
 alt='2'>
-	</section>
+	  </section>
 
-	<section><h1>But still</h1>
-	  <video data-autoplay src="../video/bpython.ogv"></video>
-	  <aside class='notes'>This is <a
-	  href='https://github.com/perl6/user-experience/issues/2'>issue
-	    #2 in the user-experience repo in Perl6</a></aside>
+	  <section data-background='../img/learning-perl-6.jpg'
+		   alt='learning at home'>
+	  </section>
+	  
+	  <section><h1>What happened</h1>
+	    <blockquote>This is written way after it took place. And I do not remember
+	      anything, so I guess it must have been rather
+	      uneventful. </blockquote>
+
+	    <aside class='notes'>I took notes after every session, to
+	      see what stuck and what not.</aside>
+	  </section>
+	  
+	  <section><h1>But still</h1>
+	    <video data-autoplay src="../video/bpython.ogv"></video>
+	    <aside class='notes'>This is <a
+	      href='https://github.com/perl6/user-experience/issues/2'>issue
+	      #2 in the user-experience repo in Perl6</a></aside>
+	  </section>
+
 	</section>
 	
 	<!-- Object Oriented -->
@@ -273,7 +297,7 @@ alt='6'>
 	</section>
 
 	<section>
-	  <h1>Saving Perl5 by making Perl6 first</h1>
+	  <h1>Saving Perl5 by making Perl6 first language</h1>
 	</section>
 	
 	<!-- This makes six :-)  -->
@@ -316,6 +340,9 @@ alt='6'>
 	    <li><a
 	  href='https://www.flickr.com/photos/aubergene/1269028016/'>6
 	      by Julian Burgess</a></li>
+	    <li><a
+	  href='https://www.flickr.com/photos/ntsb/8676074778/'>Interpreters
+	      by NTSB</a></li>
 	  </ul>
 	</section>
       </div>

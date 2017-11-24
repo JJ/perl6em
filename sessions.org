@@ -122,9 +122,8 @@ weeks after, in fact.
 
 ** Conclusions so far 
 
-Maybe we are out-zenning a bit with doing 7 sessions
- without a real hint of what Perl6, or for that matter any other
- language, is about. 
+Maybe we are out-zenning a bit with doing 7 sessions without a real hint of what Perl6, or for that matter any other
+ language, is about. Except for the interpreter, that is. 
 
 * Let's work with the REPL
    :PROPERTIES:
