@@ -32,3 +32,5 @@ auto/
 *.docx
 *.doc
 **/lib/
+
+**/.precomp
