@@ -151,8 +151,32 @@ alt='1'>
 
 	  <section>
 	    <img src='../img/perl-new-repos.png' alt='new repos'>
+	    <aside class='notes'>Not all GitHub events have an
+	    assigned language. One of the few that do have them are
+	    pull requests, for some reason I can't fathom. Push
+	    events, for instance, do not have it. Also forks, but
+	    forks are few and far between. Anyway, here's the
+	    deal. Either Perl and Perl 6 are perfect and do not need
+	    pull requests, or, well, they are not so popular and
+	      decreasingly so.</aside>
 	  </section>
 
+	  <section><h1>ObCode</h1>
+	    <pre><code>my @perls = @ranking[0].pairs.grep( { $^þ.values[0]{'lang'} ~~ /Perl/ } );
+my $year = $m.substr(0,4);
+my $month = $m.substr(4);
+$fh.say( "$year/$month, ",
+   (@perls.map: *.values.map( { $^þ{'c'} } )).flat.join( ", " ) );
+$fh2.say( "$year/$month, ", (@perls.map: *.keys ).flat.join(", ") );</code></pre>
+	    <aside class='notes'>When you get to know it, Perl6 is
+	    pretty cool. And I can use <a
+	    href='https://en.wikipedia.org/wiki/Thorn_(letter)'>the
+	      þorn letter</a> as a variable, used there
+	      because it's conveniently close to ^. Besides, here's a
+	    bit of Perl6 magic, with powerful one-liners to extract
+	    stuff from lists.</aside>
+
+	  </section>
 	    <section>
 	    <img src='../img/perl-rank.png' alt='ranking'>
 	  </section>
