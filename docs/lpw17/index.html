@@ -320,16 +320,43 @@ my $perl-stats = LanguageStats.new( name => 'Perl6', repos => 9999, rank => 1 );
 	
 	<!-- Functional -->
 	<section>
+	  <section><h1>Modern languages are functional</h1>
+	    <h2 class='fragment'>Python reluctantly so</h2>
+	    <aside class='fragment'>Still, most of them have functions as first-class citizens.</aside>
+	  </section>
+
+	  <section>
+	    <pre><code>my $choose = sub { return ([*] 1..$^ß ) / ( [*] 1..$^þ) * ([*] 1..($^ß - $^þ)); };
+	    </code></pre>
+
+	    <pre class='fragment'><code> ( { $^ß * 2},{$^þ / 2} ).grep:  { $_.(2) %% 2 }</code></pre>
+
+	    <aside class='notes'>In its most basic form, functional languages are about treating functions as first class citizens, just like this. But that's already built in. In the second case, we're grepping a function array according to what they return. That's cool</aside>
+	  </section>
+	  
 	  <section
 	data-background='https://farm1.staticflickr.com/186/468638091_4b3bcabc71_o_d.jpg'
 alt='4'>
 	  </section>
+
+	  <section><blockquote>[...] and the concept
+of stand-ins (called =Whatever=), functions and so on went rather
+well. Besides, it was a good chance to start explaining the
+	    transformative nature of languages in a functional way [...]
+	    </blockquote>
+	    <aside class='notes'>When you start to apply filters and functions, you can no longer stop. You avoid the "for tax loop" and that's good.</aside>
+	  </section>
+
+	  <section><h1>But still</h1>
+	    <h2 class='fragment'>No <em>buts</em>. Perl 6 is amazing.</h2>
+	    <h3 class='fragment'>... although maybe...</h3>
+	    <h2 class='fragment'>... It could be a bit faster</h2>
 	</section>
 	
 	<!-- Unicode -->
 	<section>
 	  <section
-	data-background='https://farm1.staticflickr.com/4/8924613_7daed32d0c_o_d.jpg'
+	     data-background='https://farm1.staticflickr.com/4/8924613_7daed32d0c_o_d.jpg'
 alt='5'>
 	  </section>
 	</section>
