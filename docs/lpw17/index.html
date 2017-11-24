@@ -287,13 +287,34 @@ alt='2'>
 use Language;
 our $perl = Language.new(name=> "Perl6", short-name=>"6lang")		
 </code></pre>
-	    
-							      </section>
+	  
+	  </section>
+
+	  <section><h1>Birds of a feather</h1>
+	    <pre><code>class GitHub-Stats {
+    has Int $.pull-requests;
+    has Int $.repos;
+}
+
+class LanguageStats is Language is GitHub-Stats {
+    has Int $.rank;
+}
+
+my $perl-stats = LanguageStats.new( name => 'Perl6', repos => 9999, rank => 1 );
+							     </code></pre>
+	  </section>
 	  
 	  <section
 	     data-background='https://farm1.staticflickr.com/106/297673894_3a2f375452_o_d.jpg'
 	     alt='3'>
 	  </section>
+
+	  <section><h1>But still</h1>
+	    <h2 class='fragment'>OOP seems to be going out of fashion</h2>
+
+	    <aside class='notes'>And people are going all functional. Which is what comes next</aside>
+	  </section>
+	  
 	</section>
 
 	
