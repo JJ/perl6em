@@ -80,7 +80,9 @@ alt='6'>
 	  </section>
 
 	  <section data-background='https://farm7.staticflickr.com/6011/5918980493_44e296d188_o_d.jpg' alt='sad reaper'>
-	    <aside class='notes'>It's kind of sad, and a call to arms to change, in whatever way we can, this trend</aside>
+	    <aside class='notes'>It's kind of sad, and a call to arms
+	    to change, in whatever way we can, this trend. So we have
+	    to do something about that. </aside>
 	  </section>
 	</section>
 
@@ -90,7 +92,13 @@ alt='6'>
 	    <aside class='notes'>You are pretty much polarized, you either hate or you love it and use it until it falls in pieces. But loving or hating...</aside>
 
 	  </section>
+	  
 	  <section data-background='../img/charo-facil.jpg'>
+	    <aside class='notes'>And maybe Perl 6 should be that first
+	    one, or could be that first one. And there's a bit of a
+	      personal story here, that started at last year's lpw and
+	    continued with me teaching my daughters Perl6, with little
+	      or no programming experience</aside>
 	  </section>
 	  
 	</section>
@@ -106,8 +114,12 @@ alt='6'>
 	    <aside class='notes'>Which is totally hated, and is an exercise of preaching to the bleachers. </aside>
 	  </section>
 
-	  <section><h2>What's the deal with 1st languages?</h2>
-	    <img src='../img/1st.png' alt='1st languages poll in Twitter'>
+	  <section><h2>What's the deal with first languages?</h2>
+	    <img src='../img/1st.png' alt='1st languages poll in
+		 Twitter'>
+	    <aside class='notes'>Most people mentioned things like
+	    Python, or C, or even assembler in the comments. All kind
+	      of languages, mostly common, but some pretty weird.</aside>
 	  </section>
 
 	  <section data-background='https://farm7.staticflickr.com/6147/5942914288_aac28ca9aa_b_d.jpg'>
@@ -145,7 +157,9 @@ alt='first'>
 	    alt='coche viejo'>
 	    <h1>Most people still liked them</h1>
 	    <aside class='notes'>It's like your old car in which you
-	      have to spend thousands to keep it working. Still...</aside>
+	      have to spend thousands to keep it working. Still.... I
+	      mean most people didn't hate them. As it happens, with,
+	      well, I've already told you before. </aside>
 	  </section>
 
 	  <section
@@ -172,12 +186,14 @@ alt='1'>
 	  </section>
 
 	  <section><h1>ObCode</h1>
-	    <pre><code>my @perls = @ranking[0].pairs.grep( { $^þ.values[0]{'lang'} ~~ /Perl/ } );
+	    <pre><code>my @perls
+    = @ranking[0].pairs.grep( { $^þ.values[0]{'lang'} ~~ /Perl/ } );
 my $year = $m.substr(0,4);
 my $month = $m.substr(4);
 $fh.say( "$year/$month, ",
    (@perls.map: *.values.map( { $^þ{'c'} } )).flat.join( ", " ) );
 $fh2.say( "$year/$month, ", (@perls.map: *.keys ).flat.join(", ") );</code></pre>
+
 	    <aside class='notes'>When you get to know it, Perl6 is
 	    pretty cool. And I can use <a
 	    href='https://en.wikipedia.org/wiki/Thorn_(letter)'>the
@@ -233,7 +249,7 @@ $fh2.say( "$year/$month, ", (@perls.map: *.keys ).flat.join(", ") );</code></pre
 	  </section>
 	  
 	  <section>
-	    <h1>Programming starts with expressions</h1>
+	    <h2>Programming starts with expressions</h2>
 	    <pre><code> "s1krit".comb
 (s 1 k r i t)</code></pre>
 	    
@@ -294,8 +310,8 @@ alt='2'>
 	    <pre><code>class Language {
     has Str $.name;
     has Str $.short-name;
-}</code>
-	    </pre>
+}</code></pre>
+
 	    <pre class='fragment'><code>use lib ".";
 use Language;
 our $perl = Language.new(name=> "Perl6", short-name=>"6lang")		
@@ -337,11 +353,13 @@ my $perl-stats = LanguageStats.new( name => 'Perl6', repos => 9999, rank => 1 );
 	  <section data-background='https://farm6.staticflickr.com/5546/9088173702_ba14a6c535_o_d.jpg' alt='bauhaus'>
 	    <h1>Modern languages are functional</h1>
 	    <h2 class='fragment'>Python reluctantly so</h2>
-	    <aside class='fragment'>Still, most of them have functions as first-class citizens.</aside>
+
+	    <aside class='notes'>Still, most of them have functions as first-class citizens.</aside>
 	  </section>
 
-	  <section>
-	    <pre><code>my $choose = sub { return ([*] 1..$^ß ) / ( [*] 1..$^þ) * ([*] 1..($^ß - $^þ)); };
+	  <section><h1>Give functions their due</h1>
+	    <pre><code>my $choose =
+    sub { return ([*] 1..$^ß ) / ( [*] 1..$^þ) * ([*] 1..($^ß - $^þ)); };
 	    </code></pre>
 
 	    <pre class='fragment'><code> ( { $^ß * 2},{$^þ / 2} ).grep:  { $_.(2) %% 2 }</code></pre>
@@ -349,12 +367,15 @@ my $perl-stats = LanguageStats.new( name => 'Perl6', repos => 9999, rank => 1 );
 	    <aside class='notes'>In its most basic form, functional languages are about treating functions as first class citizens, just like this. But that's already built in. In the second case, we're grepping a function array according to what they return. That's cool</aside>
 	  </section>
 
-	  <section><h1>Dependent types are awesome</h1>
-	    <pre><code>subset PopularOOLanguages of LanguageStats where .rank <= 10 and .type ~~ 'OO';								
-our $python = LanguageStats.new( type => 'OO', rank=> 2, name => 'Python' )										 
+	  <section><h2>Dependent types are awesome</h2>
+	    <pre><code>subset PopularOOLanguages of LanguageStats
+    where .rank <= 10 and .type ~~ 'OO';		
+our $python =
+   LanguageStats.new( type => 'OO', rank=> 2, name => 'Python' );
 $python ~~ PopularOOLanguages </code></pre>
-							     <pre class='fragment'><code>True</code></pre>
-	<pre class='fragment'><code>our $perl = LanguageStats.new( type => 'OO', rank=> 24, name => 'Perl' )						     
+	<pre class='fragment'><code>True</code></pre>
+	<pre class='fragment'><code>our $perl = LanguageStats.new(
+    type => 'OO', rank=> 24, name => 'Perl' )
 $perl ~~ PopularOOLanguages
 False</code></pre>
 <aside class='notes'>Dependent data types are a pretty cool functional
@@ -406,7 +427,8 @@ alt='5'>
 	    <blockquote>We eventually did some simple operations, including working with Unicode characters.</blockquote>
 	  </section>
 
-	  <section><h1>But still...</h1>
+	  <section data-background='https://farm4.staticflickr.com/3509/3916863285_149282d95a_b_d.jpg'>
+	    <h1>But still...</h1>
 	    <h2 class='fragment'>Input is a pain</h2>
 	    <h2 class='fragment'>Unless you use emacs!</h2>
 	    <aside class='notes'>And back to the fact that we might need a better CLUI, "Command line user interface"</aside>
@@ -547,6 +569,8 @@ alt='6'>
 
 	    <li><a href='https://www.flickr.com/photos/emsiproduction/6467612281/'>Helping
 		hands by EmsiProduction</a></li>
+	    <li><a href='https://www.flickr.com/photos/sk8geek/3916863285/'>Chiseling
+		by Steven Lilley</a></li>
 	  </ul>
 	</section>
       </div>
@@ -560,7 +584,7 @@ alt='6'>
      // - https://github.com/hakimel/reveal.js#configuration
      // - https://github.com/hakimel/reveal.js#dependencies
      Reveal.initialize({
-       width: "90%",
+       width: "95%",
        transition: "fade",
        slideNumber: true,
        history: true,
