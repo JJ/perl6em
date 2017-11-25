@@ -344,8 +344,23 @@ my $perl-stats = LanguageStats.new( name => 'Perl6', repos => 9999, rank => 1 );
 
 	    <aside class='notes'>In its most basic form, functional languages are about treating functions as first class citizens, just like this. But that's already built in. In the second case, we're grepping a function array according to what they return. That's cool</aside>
 	  </section>
+
+	  <section><h1>Dependent types are awesome</h1>
+	    <pre><code>subset PopularOOLanguages of LanguageStats where .rank <= 10 and .type ~~ 'OO';								
+our $python = LanguageStats.new( type => 'OO', rank=> 2, name => 'Python' )										 
+$python ~~ PopularOOLanguages </code></pre>
+							     <pre class='fragment'><code>True</code></pre>
+	<pre class='fragment'><code>our $perl = LanguageStats.new( type => 'OO', rank=> 24, name => 'Perl' )						     
+$perl ~~ PopularOOLanguages
+False</code></pre>
+<aside class='notes'>Dependent data types are a pretty cool functional
+  thing which comes (almost) straight out of the box in
+  Perl6. Check it out
+  in <a href='https://perl6advent.wordpress.com/2016/12/08/how-to-make-use-and-abuse-perl-6-subsets/'>this
+    Advent entry</a>
+	  </aside></section>
 	  
-	  <section
+		    <section
 	data-background='https://farm1.staticflickr.com/186/468638091_4b3bcabc71_o_d.jpg'
 alt='4'>
 	  </section>
