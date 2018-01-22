@@ -11,7 +11,7 @@ sub MAIN( $dir = "txt/", $length = 60 ) {
 	      ==> map( { .text.split("\n") } )
 	      ==> flat()
 	      ==> grep( { .chars > $length }  )
-	      ==> map( { "‣$f → $_\n ⤷ is "~$_.chars~" characters long" } )
+	      ==> map( { "‣$f → $^þ\n ⤷ is "~ $^þ.chars ~" characters long" } )
 	      ==> join( "\n" xx 2 ) );	
     }
 }
