@@ -4,16 +4,14 @@ use v6;
 use Text::Markdown;
 sub MAIN( $dir = "txt/", $length = 60 ) {
     for $dir.IO.dir(:test(/ ".md" $/)) -> $f {
-	my @code-blocks = Text::Markdown::Document.new($f.slurp())
+	say Text::Markdown::Document.new($f.slurp())
 	.items
 	.grep( { $^þ ~~ Text::Markdown::CodeBlock } )
-	.map( { .text.split("\n") } );
-	say @code-blocks;
+	.map( { .text.split("\n") } ).flat
+	.grep( { .chars > $length }  )
+	.map( { "‣$f → $_\n ⤷ is "~$_.chars~" characters long" } )
+	.join( "\n" xx 2 );
 
-	for @code-blocks -> $i {
-	    my @long-lines = $i.text.split("\n").grep( { .chars > $length }  );
-	    say "‣$f → $_\n ⤷ is "~$_.chars~" long\n" for @long-lines;
-	}
 	
     }
 }
