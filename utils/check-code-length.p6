@@ -2,20 +2,14 @@
 
 use v6;
 use Text::Markdown;
-sub MAIN( $dir = "txt/" ) {
+sub MAIN( $dir = "txt/", $length = 60 ) {
     for $dir.IO.dir(:test(/ ".md" $/)) -> $f {
-	my $md = Text::Markdown::Document.new($f.slurp());
-	for $md.items -> $i {
-	    if ( $i ~~ Text::Markdown::CodeBlock ) {
-		my @lines = $i.text.split("\n");
-		for @lines -> $l {
-		    if ( $l.chars > 60 ) {
-			say "→ $l\n→→Has "~$l.chars~" length";
-		    }
-		}
-	    }
-		
-	}
+	Text::Markdown::Document.new($f.slurp())
+	==> grep $^þ ~~ Text::Markdown::CodeBlock
+	==> .text.split("\n")
+	==> grep $^ß.chars > $length
+	==> say "→ " ~ $^ł ~ "\n\t⇒ Has "~ $^ł.chars ~ " length\n";
     }
 }
+
 
