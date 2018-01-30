@@ -14,5 +14,17 @@ also [a play](https://github.com/JJ/perl6em/releases), which was
 [featured in The New Stack](https://thenewstack.io/cs-professor-tries-teaching-family-perl-6/) after
 stating it at the Perl devroom in FOSDEM.
 
+## Building the book
 
+### Requirements
 
+Perl 6 modules required:
+
++ Text::Markdown;
++ Text::Wrap;
++ JSON::Tiny;
+
+On a Debian 8 system the following packages may be required (if not
+already installed):
+
++ texlive-xetex
