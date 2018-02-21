@@ -178,8 +178,6 @@ places to start.
 Play a bit with the themes or options until you find one with all the
 colors and contrast you want. And then come back here for the...
 
-<a id="orgc81ac44"></a>
-
 ## editors.
 
 The choice of an editor goes beyond mere utility to become part of the 
@@ -241,8 +239,8 @@ Perl6, but are terribly convenient.
 I am not going to mention proprietary editors, but maybe I should talk
 about other small editors such as `nano` or even graphic ones such as
 Kate or Geany. I really do not know the state of support for these
-languages and they are not even mentioned in the [Whatever page of the
-Perl6.org website](https://perl6.org/whatever/). So your mileage might
+languages and they are not even mentioned in
+the [Whatever page of the Perl6.org website](https://perl6.org/whatever/). So your mileage might
 vary from 0 to, well, Whatever. 
 
 
