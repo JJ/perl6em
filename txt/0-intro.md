@@ -1,12 +1,10 @@
-<a id="org8457cb6"></a>
-
 # Introduction
 
 This book is about learning programming using a promising, and almost
 completely new, language: Perl 6. But it is only Perl 6 specific in
 a minority of the content. Most chapters that deal with Perl 6 could
 be rewritten using any other language, preferably a new, cool language
-such as Go or Rust. I, or someone, might do it some day. But for the
+such as Go or Rust. I, or someone, might do that some day. But for the
 time being, let us be content with the Perl 6 content. Which is also
 new and cool.
 
@@ -14,25 +12,22 @@ You can [check out the GitHub repository for this book](https://github.com/JJ/pe
 will also contain evolving versions of new chapters and volumes. 
 
 
-<a id="orga5b1f02"></a>
-
 # Principles
 
 A few principles that inspire this (book|booklet|manual|you name it),
 originally conceived to help non-programmers get into Perl 6.
 
 
-<a id="org4fce13a"></a>
-
 ## Learning should be fun and engaging: learn by doing.
 
 The best way to make people actually learn something is by putting
 immediately to practice whatever is being learned, be it programming
 or weaving. So you should have your computer handy and learn the tools
-as soon as possible to put things to practice. 
+as soon as possible by typing, better than cutting and pasting, the
+examples written here. Typing helps you reflect about what you are
+doing, avoid *cargo-culting*, and also introducing innovations by
+making maybe little changes to save keystrokes and see what happens. 
 
-
-<a id="org1174211"></a>
 
 ## You are the master of your learning process, and tools, and outcome.
 
@@ -41,20 +36,16 @@ actually taking lessons when you feel like doing it. Engagement will
 ensue. 
 
 
-<a id="org6b5fadf"></a>
-
 ## Learning never stops.
 
-If you learn only during the short period where *class* is taking
+If you learn only during the short period where *class*, or reading
+the book, is taking
 place, you will not learn too much. You have to digest and assimilate
 and come up with new ideas anytime and anywhere. Some of them will be relevant to whatever
 you are learning, some of them will be revealed as relevant later on,
 some of them will be simply discarded. But you can leverage whatever
 experience you have to enhance what you are learning, even more so if
 it is a programming language. 
-
-
-<a id="org83d4b55"></a>
 
 ## Learning is a two-way process. There is no professor, no student: learning happens ideally in a community.
 
@@ -70,8 +61,6 @@ Besides, there is no learning outside self-learning. But maybe that is
 a completely different story. 
 
 
-<a id="org481ad16"></a>
-
 # Motivation
 
 This is (mostly) a book on Perl 6. But my initial intention was not to
@@ -79,19 +68,14 @@ show how to program in Perl 6. Here are a few of my actual motivations, which
 might also be your own for actually reading and following this book. 
 
 
-<a id="org26dd317"></a>
-
 ## Teaching programming to (almost) non-programmers.
 
 Most programming books seem to be written either for people that already know
 how to program or for people that barely knows how to press
 keys. There must be a middle ground, and I try to tread it with this
-book. If know how to use a computer, you should be ready to go the
+book. If you know how to use a computer, you should be ready to go the
 whole nine yards and learn to create things in Perl 6 by the end of
 the book, if that eventually happens. 
-
-
-<a id="org063a6a4"></a>
 
 ## Contemplate the possibilities of Perl 6 as a beginner's language.
 
@@ -101,30 +85,28 @@ it is, but why would any other languages, Rust, JavaScript or even C++
 be worse? Asking about the best programming language for beginners is
 like asking about the best foreign language for beginners. Evidently,
 the best is the language you want to learn. If you want to learn
-Chinese, you do not learn first&#x2026; whatever language is closer to
+Chinese, you do not learn first whatever language is closer to
 yours and easier than Chinese (maybe Vietnamese? No idea, really, I
 got trapped in the metaphor). You learn Chinese and are done with it. 
 
 Point is, when you want to learn to program you usually have some kind
 of job or task in mind. The best language to learn programming is a
-language that can do that job. And Perl 6 can be that language.
+language that can do that job. 
 
+And Perl 6 can be that language.
 
-<a id="org73a73b3"></a>
 
 ## Show the beauty and craft of programming.
 
 "Good technically, but lacks passion" is probably one of the worst
-things that can be said about a musician or even a footballer. Should
+things that can be said about a musician or even a footballer. That should
 be the case also for programmers. Those focused on getting the job
-done well *technically* will probably lack the will, or the stamina,
+well done  *technically* will probably lack the will, or the stamina,
 to learn new things or to completely switch the language or the
 toolbelt you are using. Along with programming, you have to make
 students learn the craft and also the beauty of a minimalist, fast
-and beautiful program. 
+and crafty program. 
 
-
-<a id="org196554a"></a>
 
 ## Make learn by doing
 
@@ -140,14 +122,12 @@ or programs or even notes that will be useful by themselves.
 
 
 
-<a id="orgd6b64f7"></a>
-
 # The tools of the trade
 
 Programming is learned by programming; but in order to actually make
 the programs work and do something you have to use programs that are
-run from operating systems, in fact *prototyping*; Seen in another
-way, you are trying to solve a problem for a target 
+run from operating systems command lines and user interfaces, in fact
+*prototyping*; looking at it from another angle, you are trying to solve a problem for a target 
 audience, yourself, by choosing the right tools. In this phase you
 will find that there is no perfect tool for doing everything.
 
@@ -155,7 +135,9 @@ will find that there is no perfect tool for doing everything.
 
 Let's start with the operating system. That would be Linux. Whew, that
 was short. Although nowadays Linux is everywhere and you can have a
-Linux command line in Windows 10, and of course also in the Macs. 
+Linux command line in Windows 10, and of course also in the Macs, it
+might still be better to do the real thing and install Linux, even if
+it is booting from a partition or a virtual machine. 
 But let's proceed to that thing that actually allows users to run programs, the *shell*. 
 
 
@@ -163,28 +145,42 @@ But let's proceed to that thing that actually allows users to run programs, the 
 
 ## Shells
 
-Then, the command line interpreter, also called *shell*. This might seem like a given, but
+The command line interpreter is also called *shell*. This might seem
+like a given and used the way it's unwrapped from the box, but
 in fact different command line interpreters have different
-capabilities. In fact, even the [humble bash](https://www.gnu.org/software/bash/) has
-interesting capabilities you can use. Main thing you want to tap is
-the possibility of displaying interesting information in the command
+capabilities. In fact, even
+the [humble bash](https://www.gnu.org/software/bash/) which is the
+default in most Linux distributions has
+interesting capabilities you can use. 
+
+Main thing you want to tap is
+the possibility of displaying relevant information in the command
 line, such as the directory you are working on or, later on, the
-branch of the repository you are in. And, in that sense, 
-there are quite a few choices here, but the main
-thing about them is the possibility of *theming* them, that is, making
-a configuration that allows, mostly, find the information we mention
-above by just selecting a *theme*. In that sense [zsh](http://zsh.sourceforge.net/) and [fish](https://fishshell.com/) are very
-strong contenders. Install them the usual way, and then select a theme
+branch of the repository you are in, where a repository is used to
+store and work in different versions of a program. And, in that sense, 
+there are quite a few choices to do that easily, but the main
+thing about them is the possibility of *theming* them, that is,
+choosing a set of settings that allow, mostly, to find the information we mention
+above by just selecting a *theme*. 
+
+In that sense [zsh](http://zsh.sourceforge.net/) and [fish](https://fishshell.com/) are very
+strong contenders, they are easily themable and come out of the box
+with other capabilities for moving from one directory to another or
+completing commands and command arguments. Install them the usual way,
+that is, `sudo apt install`, `brew install` or the equivalent in other
+operating systems or distributions, and then select a theme
 that goes easily with your programming habits;
-[Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) or [bash-it](https://github.com/Bash-it/bash-it) are good places to start. 
+[Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) for `zsh`
+or [bash-it](https://github.com/Bash-it/bash-it) for `bash`are good
+places to start. 
+
 
 Play a bit with the themes or options until you find one with all the
-colors and contrast you want. And then come back here for the&#x2026;
-
+colors and contrast you want. And then come back here for the...
 
 <a id="orgc81ac44"></a>
 
-## Editors.
+## editors.
 
 The choice of an editor goes beyond mere utility to become an
 identity, a side to stand when the flame war starts. As above, the
