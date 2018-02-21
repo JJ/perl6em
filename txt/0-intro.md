@@ -182,31 +182,36 @@ colors and contrast you want. And then come back here for the...
 
 ## editors.
 
-The choice of an editor goes beyond mere utility to become an
-identity, a side to stand when the flame war starts. As above, the
+The choice of an editor goes beyond mere utility to become part of the 
+identity of the developer, a side to stand when the flame war starts. As above, the
 motto is always *suit yourself*, but since we are in the realm of
 Perl6, I would propose [Atom](http://atom.io) as the editor to use. It is a modern
 editor, it has got a good and evolving support for Perl 6, and it is
 free software.  [Perl6 scripts look positively pretty](https://github.com/perl6/atom-language-perl6#how-do-i-use-this) with the Atom Perl 6
 support, and they include goodies such as completing variable names
-and that kind of things. However, Emacs goes a bit further providing
-an environment where you can work with all kind of Unicode characters,
-run the REPL and complete variables if you so like. 
+and that kind of things. 
 
-You can also run chunks of code with the
+However, it is not the only one out there. Good old Emacs goes a bit further providing
+an environment where you can work with all kind of Unicode characters,
+run the REPL and complete variables if you so like. Mind you, you can
+probably do that with Atom too. But Emacs has been my editor for as
+long as I remember, so I thought I should just plug it in. 
+
+You can also run chunks of code in Atom with the
 [script plugin installed](https://atom.io/packages/script). However, for the time being we are going to
 focus on expressions, and these will not print anything except from
 the REPL. You can keep it for later if you so wish. 
 
-Not that the traditional Emacs and Vi/Vim are not good choices too. At
-least Emacs, but Atom is easier to use and is improving in speed and
-support by the minute. Besides, it has got everything it takes for
+Not that the traditional Vi/Vim or the new VSCode are not good choices
+too, but Atom is easier to use and is improving in speed and
+support by the minute, although you might find both these faster than
+Atom. Besides, it has got everything it takes for 
 professional editor: syntax highlighting, being able to do some checks
 from the editor itself, and allow running and debugging. It has got
 all that, so that will be it. 
 
 To go with the editor, you need some relatively fast way of inputting
-some characters such as ሁ or Щ. I have used the application "Character
+some characters such as ☬ or Щ. I have used the application "Character
 Map" that comes with Ubuntu; after finding a character by the name of
 the alphabet, you can go to Character Details and copy/paste it to
 wherever you want it used. You can also click twice and the character
