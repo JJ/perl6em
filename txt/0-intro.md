@@ -141,8 +141,6 @@ it is booting from a partition or a virtual machine.
 But let's proceed to that thing that actually allows users to run programs, the *shell*. 
 
 
-<a id="orgf0ec3f4"></a>
-
 ## Shells
 
 The command line interpreter is also called *shell*. This might seem
@@ -218,7 +216,7 @@ will appear in the "Text to copy" slot.
 ![Character map for Unicode](./img/charmap.png)
 
 However, if you are an old-timer getting into new languages, Emacs
-offers a straighforward way to enter all kind of Unicode
+offers a straightforward way to enter all kind of Unicode
 characters. Control-x, 8, then press enter, and you can enter the name
 of the character, or press `Tab` and open a buffer with all of
 them. Search for it (Control-s) and then click on the name of the
