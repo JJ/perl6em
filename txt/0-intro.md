@@ -219,19 +219,32 @@ will appear in the "Text to copy" slot.
 
 ![Character map for Unicode](./img/charmap.png)
 
-However, if you are an old-timer getting into new languages, probably
-emacs will be much more suitable for you. Although the
-[mode that supports perl6 is in flux at this precise moment](https://github.com/perl6/perl6-mode) it does
-have a couple of advantages that set it apart: the integrated shell
-that allows you to work easily with code alongside REPL, and also how
-easy it is to input Unicode characters. Which are not necessary for
+However, if you are an old-timer getting into new languages, Emacs
+offers a straighforward way to enter all kind of Unicode
+characters. Control-x, 8, then press enter, and you can enter the name
+of the character, or press `Tab` and open a buffer with all of
+them. Search for it (Control-s) and then click on the name of the
+character and it will be inserted into the buffer. If you use one
+repeatedly, you will end up learning the name, or just create a macro
+that will key it for you.
+
+
+The
+[mode that supports perl6, by Tom Browder, is a great thing](https://github.com/perl6/perl6-mode),
+although it could use a few improvements. Besides, there is a plus
+in Emacs: the integrated shell
+that allows you to work easily with code alongside REPL. The above
+mentioned facility to work with Unicode characters is also a nice
+thing; they are not necessary for
 Perl6, but are terribly convenient. 
 
-Of course, something would be missing here if I did not mention
-\`vim\`. Here you go, a mention.
+I am not going to mention proprietary editors, but maybe I should talk
+about other small editors such as `nano` or even graphic ones such as
+Kate or Geany. I really do not know the state of support for these
+languages and they are not even mentioned in the [Whatever page of the
+Perl6.org website](https://perl6.org/whatever/). So your mileage might
+vary from 0 to, well, Whatever. 
 
-
-<a id="org1632eaa"></a>
 
 ## Shells within editors
 
@@ -246,8 +259,6 @@ have your shell running *inside* Emacs, with access to all kind of
 goodies, like saving sessions as files, searching using all Emacs
 facilities, and all kind of symbols that can be used in it. 
 
-
-<a id="org239311a"></a>
 
 # We need to talk about Unicode
 
