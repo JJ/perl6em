@@ -7,6 +7,7 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
   color: #222;
   content: open-quote;
@@ -17,7 +18,7 @@ blockquote:before {
 }
 
 section[data-background] h1 { 
-       background-color:rgba(233,223,213,0.6);
+       background-color:rgba(23,22,21,0.6);
        padding: 50px;
        margin: 20px;
        border-radius: 30px

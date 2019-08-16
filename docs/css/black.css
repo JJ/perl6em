@@ -142,10 +142,10 @@ body {
 .reveal pre {
   display: block;
   position: relative;
-  width: 95%;
-  margin: 20px auto;
+  width: 99%;
+  margin: 5px auto;
   text-align: left;
-  font-size: 0.75em;
+  font-size: 0.5em;
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;
