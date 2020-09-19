@@ -43,7 +43,8 @@ sin(π/3)² + cos(π/3)² + " is 1";
 # Array y bucle
 <a b 7 ⅓ π²>;
 sort <a b 7 ⅓ π²>;
-for <1 2 3 2 1>  { say $_ x $_ }
+<a b 7 ⅓ π²>.sort;
+for <1 2 3 2 1> { say $_ x $_ }
 
 # Magia con operadores
 
@@ -122,8 +123,8 @@ say (&sin, &cos, &sqrt)».(0.5);
 
 # Operadores simples
 
-so "this";
-so "";
+so "";so "this";
+
 
 # Comparando
 
